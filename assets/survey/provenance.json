@@ -1,10 +1,11 @@
 {
   "surveyPdf": {
-    "path": "assets/survey/survey.pdf",
-    "source": "virtual-human-survey/1008_overleaf/main_revised.pdf",
-    "pages": 48,
-    "builtAt": "2026-10-08T11:52:20Z",
-    "note": "The current main.tex abstract matches main_revised.pdf; main.pdf is an earlier 53-page build at 05:46:17Z."
+    "path": "assets/survey/survey-2026-10-09.pdf",
+    "source": "virtual-human-survey/1008_overleaf/main_revised_1009.pdf",
+    "pages": 49,
+    "snapshot": "VH-2026-10-09",
+    "sha256": "c76428fd118047cb23add0d19634acaceac0f452a56e4f8e2ae271f3a1065c00",
+    "note": "9 October 2026 revision; see the snapshot manifest for the paired frozen catalogue and evidence."
   },
   "figures": {
     "fig1_fast_stable": {
@@ -43,5 +44,13 @@
       "width": 1600,
       "height": 788
     }
-  }
+  },
+  "reviewedBaselinePdf": {
+    "path": "assets/survey/survey.pdf",
+    "source": "virtual-human-survey/1008_overleaf/main_revised.pdf",
+    "pages": 48,
+    "builtAt": "2026-10-08T11:52:20Z",
+    "note": "Preserved 48-page draft reviewed on 9 October 2026."
+  },
+  "figureNote": "Existing preview assets are retained from the reviewed draft; the revised PDF includes additional source-attributed figures, documented in data/snapshots/2026-10-09/source-figure-provenance.json."
 }

@@ -87,7 +87,7 @@ nav{display:flex;align-items:stretch;gap:31px;height:100%}
 .search-box>svg{color:#82927c;width:19px;height:19px}
 .search-box input{outline:0;border:0;background:none;width:100%;height:50px;font-size:13px;color:var(--ink);min-width:0}
 .search-box input::placeholder{color:#74806f;opacity:1}
-.search-box kbd{font:12px Manrope,Arial,sans-serif;color:#798873;border:1px solid #dfe7da;background:#fafcf6;border-radius:4px;line-height:23px;min-width:24px;text-align:center}
+.search-box kbd{font:12px Manrope,Arial,sans-serif;color:#53644f;border:1px solid #dfe7da;background:#fafcf6;border-radius:4px;line-height:23px;min-width:24px;text-align:center;padding-inline:5px}
 select{appearance:auto;color:var(--ink);background:var(--surface);border:1px solid #d7e0d5;border-radius:7px;min-height:42px;padding:9px 27px 9px 12px;font-size:12px;max-width:100%}
 .sort-control select{height:52px;min-width:160px}
 .catalog-layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:37px}
@@ -269,6 +269,24 @@ legend,.year-filter>label{font-size:11px;font-weight:800;margin-bottom:13px;disp
   .gallery-caption{gap:8px}.gallery-controls{gap:3px}
   .paper-full-title,.list-view .paper-full-title{-webkit-line-clamp:3}
 }
+.catalog-introduction{max-width:75ch;font-size:14px;line-height:1.8;margin:0 0 20px;color:var(--muted)}
+.taxonomy-explanation{border-block:1px solid var(--line);margin-bottom:24px;scroll-margin-top:110px}
+.taxonomy-explanation>summary{padding:15px 0;cursor:pointer;font-size:14px;font-weight:600;min-height:48px}
+.taxonomy-content{max-width:75ch;padding:0 0 18px;font-size:14px;line-height:1.8}
+.taxonomy-content p{margin:0 0 14px}.taxonomy-content dt{font-weight:600;margin-top:12px}.taxonomy-content dd{margin:0}
+.paper-evidence{border-top:1px solid var(--line);grid-column:1/-1;min-width:0}
+.paper-grid:has(.paper-evidence[open]){align-items:start}
+.paper-evidence>summary{padding:13px 18px;font-size:12px;font-weight:600;min-height:44px;cursor:pointer;color:var(--ink)}
+.evidence-content{padding:0 18px 18px;font-size:13px;line-height:1.75;overflow-wrap:anywhere}
+.evidence-content p{margin:12px 0}.evidence-content a,.snapshot-links a,.stability-patterns a{color:#245f4c;text-decoration:underline;text-underline-offset:3px}
+.evidence-content label{display:block;font-weight:600;margin-bottom:6px}.evidence-content select{width:100%;max-width:100%;min-height:44px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);font:inherit;padding:8px}
+.evidence-fields{display:grid;grid-template-columns:minmax(78px,.7fr) minmax(0,1.3fr);gap:10px 12px;margin:15px 0}
+.evidence-fields dt{font-weight:600}.evidence-fields dd{margin:0}.evidence-fields small{display:block;font-size:12px;color:#53644f;line-height:1.6;margin-top:3px}
+.catalogue-provenance{border-top:1px solid var(--line);margin-top:18px;padding-top:4px}.snapshot-note{color:#53644f;font-size:12px}
+.evidence-load-note{padding:14px;background:var(--soft);font-size:14px}.evidence-load-note button{min-height:44px;text-decoration:underline;font:inherit;background:transparent;border:0;cursor:pointer;color:var(--ink)}
+.snapshot-section{padding-block:12px 45px}.snapshot-section h2{font-size:28px;margin-bottom:16px}.snapshot-section>p{max-width:75ch;font-size:14px;line-height:1.8;margin-bottom:14px}.snapshot-links{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13px}.snapshot-links a{display:inline-flex;align-items:center;min-height:44px}
+summary:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #839b68;outline-offset:3px}
+@media(max-width:720px){.paper-evidence>summary{font-size:13px}.evidence-content{font-size:14px}.taxonomy-explanation>summary{font-size:14px}.snapshot-section{padding-bottom:30px}.snapshot-section h2{font-size:25px}.patterns-heading p{font-size:13px;line-height:1.7}}
 .chart-legend{list-style:none;display:flex;flex-wrap:wrap;gap:8px 14px;margin:34px 0 0;padding:0;color:#536449;font-size:10px}
 .chart-legend li{display:flex;align-items:center;gap:5px}
 .legend-swatch{display:block;width:7px;height:7px;border-radius:2px;flex-shrink:0}
