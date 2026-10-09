@@ -1,5 +1,7 @@
 # AR second-pass review
 
+This review records the AR update's 72-preview snapshot. The later [missing-image review](image-supplement-review.md) completes preview coverage for all 164 papers without changing the catalogue or its AR classifications.
+
 Reviewed 9 October 2026 against the supplied `AR_Second_Pass_Supplement`, the manuscript's Section 5, and original publications. The website keeps the user's chosen **strict temporal visual-AR definition**: prior generated visual state must condition appearance generation across time. Spatial token order, recurrent feature processing, or an AR controller alone does not establish that property.
 
 **Result:** four new source-paper records, three additional temporal-AR examples for browsing, and a correction to FluentAvatar's classification. The catalogue contains **164 unique papers, 122 arXiv links, and 72 source previews**. AR browsing contains **eight records: five primary-route papers and three cross-listed baselines**. The five primary entries comprise four existing human/video methods and DualLip's regional branch. Baselines retain one citation and one statistical count under their source paper's supporting category.

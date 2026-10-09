@@ -44,7 +44,9 @@ Missing links were resolved through exact title matching in official CVF proceed
 - HDTF, TalkVerse, and NeRSemble each also introduce a method, but are counted once under datasets according to their role in this catalogue.
 - Demonstration duration, claimed horizon, media frame rate, measured throughput, and end-to-end latency are different quantities. The site should not infer a stability or speed leaderboard from architecture labels or these brief summaries.
 
-The asset manifest may contain previews for seven additional bibliography records that were not selected for this catalogue: MaineCoon, Towards Interactive Intelligence for Digital Humans, EchoAvatar, Avatar Forcing, IF-MDM, ViSA, and SadTalker. Asset availability alone does not determine inclusion or route assignment.
+All 164 catalogue papers now have source previews. The supplied `Missing_Paper_Images` collection added 92 verified figures to the previous 72, with English captions and preserved attribution. The new images were checked against original PDFs or author-hosted images and optimized to 7.4 MB in total. See the [image-supplement review](image-supplement-review.md) and its file-level audit for validation details, source edition notes, and the SyncTalk++ filename adjustment. Paper counts and classification were not changed by the image update.
+
+The asset manifest also contains previews for seven additional bibliography records that were not selected for this catalogue: MaineCoon, Towards Interactive Intelligence for Digital Humans, EchoAvatar, Avatar Forcing, IF-MDM, ViSA, and SadTalker. Asset availability alone does not determine inclusion or route assignment.
 
 ## External availability check
 

@@ -1,0 +1,2216 @@
+{
+  "checkedOn": "2026-10-09",
+  "sourceCollection": "Missing_Paper_Images",
+  "catalogueCommit": "5c74992553cdcd10c34e7d03d2708a3ef845a725",
+  "fileCount": 92,
+  "files": [
+    {
+      "id": "zhu2022celebv",
+      "path": "assets/papers/zhu2022celebv.webp",
+      "suppliedFile": "assets/papers/zhu2022celebv.webp",
+      "suppliedSha256": "2e594ba0302ef8064099295cb9eb09140203ddfa9941559117ed085a245f2185",
+      "publishedSha256": "8e5903a8e0ccd9f16c2334d98e8e69c3567cd83a1918c4faf7484246c19ad2d1",
+      "suppliedBytes": 616282,
+      "publishedBytes": 97570,
+      "suppliedDimensions": [
+        1103,
+        700
+      ],
+      "publishedDimensions": [
+        1103,
+        700
+      ],
+      "sourceUrl": "https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670641.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "efb1cd57a67a2bdddefac0fc11013288b154663042b6e2227d3926d768762006",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 1e-05,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zhang2021flow",
+      "path": "assets/papers/zhang2021flow.webp",
+      "suppliedFile": "assets/papers/zhang2021flow.webp",
+      "suppliedSha256": "d0d56bd464d0ea23f9ca7f87f697d7ead1efbaef12e71b87e5ef0fea719a1529",
+      "publishedSha256": "1954c1fb5c1432c052a7d439f447f2f213dd978681c6dffd71402623f61d4720",
+      "suppliedBytes": 294382,
+      "publishedBytes": 53362,
+      "suppliedDimensions": [
+        1185,
+        345
+      ],
+      "publishedDimensions": [
+        1185,
+        345
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2021/papers/Zhang_Flow-Guided_One-Shot_Talking_Face_Generation_With_a_High-Resolution_Audio-Visual_Dataset_CVPR_2021_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "ee997236f5066e32187c57267f038120de97fcdaaa68cb698b38e6811207216f",
+      "figure": "Figure 3",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wang2020mead",
+      "path": "assets/papers/wang2020mead.webp",
+      "suppliedFile": "assets/papers/wang2020mead.webp",
+      "suppliedSha256": "b27923a961424d85561d47cb050ff1aeafea3e0575b5268786ca4295aabfcc41",
+      "publishedSha256": "586ed38dfaa32ddda9d01993b82085a918b340cc79c0171ef67ba3e8779283d4",
+      "suppliedBytes": 764296,
+      "publishedBytes": 146250,
+      "suppliedDimensions": [
+        1218,
+        889
+      ],
+      "publishedDimensions": [
+        1200,
+        876
+      ],
+      "sourceUrl": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660698.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "15025cc592fcf72cb716eba8825385f2393f28711a0389a0a2b13c7fe47225c0",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "kirschstein2023nersemble",
+      "path": "assets/papers/kirschstein2023nersemble.webp",
+      "suppliedFile": "assets/papers/kirschstein2023nersemble.webp",
+      "suppliedSha256": "f5d9d10019c360fdf1a874e2fd54ef48a7adef5971f88cc0745ef2a2c7ff5adb",
+      "publishedSha256": "e4ac5bbc904d70e6fdcb0fd3c0be93eaf16df3fbb6eab6d96dbefb85cce9b773",
+      "suppliedBytes": 947844,
+      "publishedBytes": 98384,
+      "suppliedDimensions": [
+        1786,
+        676
+      ],
+      "publishedDimensions": [
+        1200,
+        454
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2305.03027",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "6ff5c0a5ab7005717169686710924aba0b5e5eaa51fd9994e419bbe72ae466a0",
+      "figure": "Figure 2",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "li2025openhumanvid",
+      "path": "assets/papers/li2025openhumanvid.webp",
+      "suppliedFile": "assets/papers/li2025openhumanvid.webp",
+      "suppliedSha256": "057b77732ef1e2962f6962e84ae1e832d821223fc1dd8dd8a69e493032035ab9",
+      "publishedSha256": "0b23d6dda1f870bad468e3754bef4c30c72f84dc7f926ae6deace60c89c4ad9f",
+      "suppliedBytes": 627510,
+      "publishedBytes": 101572,
+      "suppliedDimensions": [
+        1568,
+        533
+      ],
+      "publishedDimensions": [
+        1200,
+        408
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2025/papers/Li_OpenHumanVid_A_Large-Scale_High-Quality_Dataset_for_Enhancing_Human-Centric_Video_Generation_CVPR_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "0e3cd47f0a9a75890129978b8d6d6dc83e2830ab0dfbd14948546f601f5a8d32",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "agrawal2025seamless",
+      "path": "assets/papers/agrawal2025seamless.webp",
+      "suppliedFile": "assets/papers/agrawal2025seamless.webp",
+      "suppliedSha256": "c8ef8f5a235071cbe1a51d343860a670791ea3b619823b5574fa3938f51f528f",
+      "publishedSha256": "07e096c6feed4ff123d2ced212605744d8b76f80f4e54c57f4131204b8dcbf47",
+      "suppliedBytes": 246520,
+      "publishedBytes": 32228,
+      "suppliedDimensions": [
+        1488,
+        585
+      ],
+      "publishedDimensions": [
+        1200,
+        472
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2506.22554",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "c1971b4a59caa99f8de68a00223c2033e7ab3992a821dc78e4cd414b6adac649",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wang2025talkverse",
+      "path": "assets/papers/wang2025talkverse.webp",
+      "suppliedFile": "assets/papers/wang2025talkverse.webp",
+      "suppliedSha256": "5cd22a3e1bb48957133555537cfb5127acc595d5dac8549ae663d23404021f47",
+      "publishedSha256": "fd7acfacd73433ed9cf48c31b96a40fdfee150a48b24391599ba9b5173b733b5",
+      "suppliedBytes": 736274,
+      "publishedBytes": 105192,
+      "suppliedDimensions": [
+        1736,
+        491
+      ],
+      "publishedDimensions": [
+        1200,
+        339
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2512.14938",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "e9596cef4db7ea5d2473b0832b39157f50c32ed121b021bdb454116d8b980053",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "xie2022vfhq",
+      "path": "assets/papers/xie2022vfhq.webp",
+      "suppliedFile": "assets/papers/xie2022vfhq.webp",
+      "suppliedSha256": "16224d97e00ff07fe1cf118e16ed45c94568335517a77a0f1424581f588cb01a",
+      "publishedSha256": "2fb42ac3d97aa3da90fcd70f97aa6fabc7e4d5b6a363247ce44e058e6eb3aee2",
+      "suppliedBytes": 707038,
+      "publishedBytes": 110736,
+      "suppliedDimensions": [
+        1190,
+        1115
+      ],
+      "publishedDimensions": [
+        1190,
+        1115
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022W/NTIRE/papers/Xie_VFHQ_A_High-Quality_Dataset_and_Benchmark_for_Video_Face_Super-Resolution_CVPRW_2022_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "6e390418faecfd48a5537154337c515dcf4bdcfe7b3d4ab5de2f9446fce9096d",
+      "figure": "Figure 2",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 7e-05,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zhou2022responsive",
+      "path": "assets/papers/zhou2022responsive.webp",
+      "suppliedFile": "assets/papers/zhou2022responsive.webp",
+      "suppliedSha256": "a786019cb67de831a2f51360af8276a790da617f0560ab95cf109b38717dc62e",
+      "publishedSha256": "ed1a90bfcaccb0bca967c5e05835b9bc6b84814aa68d1f0455726b27aa29ee1b",
+      "suppliedBytes": 202702,
+      "publishedBytes": 63614,
+      "suppliedDimensions": [
+        1218,
+        267
+      ],
+      "publishedDimensions": [
+        1200,
+        263
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2112.13548",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "adc15fe9bda214fdacdd6d57975c595c6c021e8549afb4bb0696591dd71a024a",
+      "figure": "Figure 3",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "hu2024animate",
+      "path": "assets/papers/hu2024animate.webp",
+      "suppliedFile": "assets/papers/hu2024animate.webp",
+      "suppliedSha256": "7b1b529233b1cdee3eb69891ffeb6aa2bc5da7b8fefe486431be0d5b790b591b",
+      "publishedSha256": "15c5bad202dab50a3b465f4798a39509e16d115ee84c971c01b7bc12f00cbd15",
+      "suppliedBytes": 779898,
+      "publishedBytes": 76434,
+      "suppliedDimensions": [
+        1740,
+        652
+      ],
+      "publishedDimensions": [
+        1200,
+        450
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2024/papers/Hu_Animate_Anyone_Consistent_and_Controllable_Image-to-Video_Synthesis_for_Character_Animation_CVPR_2024_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "377d15d50abec6b789abbba603cb5c28eb3f5b122c3b1f39b898e7e44b599137",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wang2025emotivetalk",
+      "path": "assets/papers/wang2025emotivetalk.webp",
+      "suppliedFile": "assets/papers/wang2025emotivetalk.webp",
+      "suppliedSha256": "f2cfb979f0b74ea508570c4d3702207f8ce464b5f5e417b93042633d7985ae9f",
+      "publishedSha256": "53d5f3fb5cbd55ff55755f1b52ec5e3e7cf0c4a5e8695fc8e90967a4f9e4f124",
+      "suppliedBytes": 804996,
+      "publishedBytes": 106636,
+      "suppliedDimensions": [
+        1736,
+        638
+      ],
+      "publishedDimensions": [
+        1200,
+        441
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_EmotiveTalk_Expressive_Talking_Head_Generation_through_Audio_Information_Decoupling_and_CVPR_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "5e2410346066b65ef65ba06f06ade877e0945344c0264e1548ea3484211bbffe",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.0061,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "ma2026follow",
+      "path": "assets/papers/ma2026follow.webp",
+      "suppliedFile": "assets/papers/ma2026follow.webp",
+      "suppliedSha256": "c8ccdaa81c7c51cca60d8fe453989542bba64f3cbe1d53bf2368c5eb8b1070f9",
+      "publishedSha256": "8fbc461e84c71ed06f0d3daef77bb78548fcb5429e21031acdcc179c045b324a",
+      "suppliedBytes": 1483080,
+      "publishedBytes": 225918,
+      "suppliedDimensions": [
+        1736,
+        1484
+      ],
+      "publishedDimensions": [
+        1200,
+        1026
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2509.16630",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "29e6137eb801425716ce4e96aa86cc53084541aec7bad222cc8b892d2e05022a",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.0005,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "cui2025hallo2",
+      "path": "assets/papers/cui2025hallo2.webp",
+      "suppliedFile": "assets/papers/cui2025hallo2.webp",
+      "suppliedSha256": "52a95a51f01ef6962c1f2ff2832ee6ead7f3e4be99e42788ba08d3742653fd19",
+      "publishedSha256": "85a7cee39382d47080e4ffe33d705007be6f22158e87232a1de2bdb335a07924",
+      "suppliedBytes": 594198,
+      "publishedBytes": 87642,
+      "suppliedDimensions": [
+        1366,
+        802
+      ],
+      "publishedDimensions": [
+        1200,
+        705
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2410.07718",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "186bf20bee88ffd28c1c38afe507eaf074012bc0fc37d70a4712075e4ad62c3a",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "long2026lightning",
+      "path": "assets/papers/long2026lightning.webp",
+      "suppliedFile": "assets/papers/long2026lightning.webp",
+      "suppliedSha256": "5309697dac2ed94df499618cacc895ba6c068d09ece823b4e57ff1d08beff49a",
+      "publishedSha256": "12afeaf5feaa73ccc6bcd5405e6d259ae5dc39b475576e34b8197b811176032a",
+      "suppliedBytes": 92096,
+      "publishedBytes": 78014,
+      "suppliedDimensions": [
+        1200,
+        1070
+      ],
+      "publishedDimensions": [
+        1200,
+        1070
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2509.00052",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "d422e878a3449181eb914ab24d833797a817407834e23245a16011ee9eb70bd5",
+      "figure": "Figure 3",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "lin2025omnihuman",
+      "path": "assets/papers/lin2025omnihuman.webp",
+      "suppliedFile": "assets/papers/lin2025omnihuman.webp",
+      "suppliedSha256": "86f411317dd0f545878196236b975fbad58606bc96b8fb94167fcb10497b06d8",
+      "publishedSha256": "f37d38f0f5d0d993b61a786f3b0f6ecebf26e61c76d82adbe15916c114e2552c",
+      "suppliedBytes": 1523696,
+      "publishedBytes": 169774,
+      "suppliedDimensions": [
+        1736,
+        1037
+      ],
+      "publishedDimensions": [
+        1200,
+        717
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2025/papers/Lin_OmniHuman-1_Rethinking_the_Scaling-Up_of_One-Stage_Conditioned_Human_Animation_Models_ICCV_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "f01ecb90965b1a6a26af01adaf108e55e7f53ed8df1ec1ab2eba428be3eaab8c",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "li2026personalive",
+      "path": "assets/papers/li2026personalive.webp",
+      "suppliedFile": "assets/papers/li2026personalive.webp",
+      "suppliedSha256": "eb820d7e7a618c027b284e9e1067e4ad3c6db43bb8a1a2ee5a0a80316c6715f8",
+      "publishedSha256": "479a8ecb423bcb2a4d64bf66d78329aa4349985136a577827dd30b5c00ec05d7",
+      "suppliedBytes": 985174,
+      "publishedBytes": 132122,
+      "suppliedDimensions": [
+        1736,
+        1145
+      ],
+      "publishedDimensions": [
+        1200,
+        791
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2512.11253",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "f7bce75040c968ce1dc81084b5d81bab7cea671ab994864dc39eb35bd2658c55",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wang2026read",
+      "path": "assets/papers/wang2026read.webp",
+      "suppliedFile": "assets/papers/wang2026read.webp",
+      "suppliedSha256": "7b707ca597cc03fcc6b6b67f204de2ee0f27c40d1413b39b701d02a816ec00eb",
+      "publishedSha256": "c8901ad57afd1597ba959bfb0bb8faa99ee90224f960af89b5dcbfcc3fac93c3",
+      "suppliedBytes": 281132,
+      "publishedBytes": 106930,
+      "suppliedDimensions": [
+        1764,
+        1001
+      ],
+      "publishedDimensions": [
+        1200,
+        681
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2508.03457",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "240902ef2a03815c1e96b5ff9f6bcf52321269159cbb9096b65044e8a484352d",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "deng2019arcface",
+      "path": "assets/papers/deng2019arcface.webp",
+      "suppliedFile": "assets/papers/deng2019arcface.webp",
+      "suppliedSha256": "b5260347d535b528ab620635980ac3b668fccc54e3b3c3ab55156c899a0425b9",
+      "publishedSha256": "1d4da612b250acde9544a50c39491f2ee1d614f6527d768473961f110c4ee56a",
+      "suppliedBytes": 251186,
+      "publishedBytes": 66986,
+      "suppliedDimensions": [
+        776,
+        552
+      ],
+      "publishedDimensions": [
+        776,
+        552
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Deng_ArcFace_Additive_Angular_Margin_Loss_for_Deep_Face_Recognition_CVPR_2019_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "d4e68e03c2722d7ef1f0241721a5e74ce3bba58cb7860a4a18fdafb826bc1f0b",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "heusel2017gans",
+      "path": "assets/papers/heusel2017gans.webp",
+      "suppliedFile": "assets/papers/heusel2017gans.webp",
+      "suppliedSha256": "9bc43c0d3775b56e966829792d3c813ff3008a20088094e1ec83abaef76fbd1e",
+      "publishedSha256": "32b7ee07d9b36dc9f04a226fa5a74687ca5a93311058b19472d1b59e68cbbb73",
+      "suppliedBytes": 225368,
+      "publishedBytes": 62408,
+      "suppliedDimensions": [
+        1588,
+        676
+      ],
+      "publishedDimensions": [
+        1200,
+        511
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/1706.08500",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "4abcb2e018d07ae53cfc41e02b48d6158730cfe55523bd38e875e9a19a5178ff",
+      "figure": "Figure 3",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.37927,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "unterthiner2018towards",
+      "path": "assets/papers/unterthiner2018towards.webp",
+      "suppliedFile": "assets/papers/unterthiner2018towards.webp",
+      "suppliedSha256": "26ec2d8eefa65fb7a50d8701538fe7cc279cb8f37895295e8d87fb51813c99be",
+      "publishedSha256": "ff332aa0e1456abb78a3bb047b4ad48a03a88b17c745fba0beb86005e84ea0ae",
+      "suppliedBytes": 390148,
+      "publishedBytes": 26140,
+      "suppliedDimensions": [
+        1992,
+        348
+      ],
+      "publishedDimensions": [
+        1200,
+        210
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/1812.01717",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "6802a958cb841e1de093969b2814fc3e0c79978152d279cd78af5ff0379edadd",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zhang2018unreasonable",
+      "path": "assets/papers/zhang2018unreasonable.webp",
+      "suppliedFile": "assets/papers/zhang2018unreasonable.webp",
+      "suppliedSha256": "4e33088c4f3cb8b5e5035f27c620797877b036b8e6256b3d7f8c6184583e2602",
+      "publishedSha256": "fdebe6386dee047f4ff5c801bc2e1b2efcefe588052edc8b81a44b63a17d1efe",
+      "suppliedBytes": 192494,
+      "publishedBytes": 40390,
+      "suppliedDimensions": [
+        1992,
+        476
+      ],
+      "publishedDimensions": [
+        1200,
+        287
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/1801.03924",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "c43575003d83757725739ad87acfc4026d0d3129b27bee69fd1a4c362dc0db33",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wang2004image",
+      "path": "assets/papers/wang2004image.webp",
+      "suppliedFile": "assets/papers/wang2004image.webp",
+      "suppliedSha256": "7a7cc16f8d4b52ef81baa97322cf6259e3c14e572418f586c43f042379baf3a7",
+      "publishedSha256": "32c9100ded08fc83a2b7ce12ffc27b439dd6994a9f18ae2b0c251977f6633e9a",
+      "suppliedBytes": 296396,
+      "publishedBytes": 127256,
+      "suppliedDimensions": [
+        1996,
+        1376
+      ],
+      "publishedDimensions": [
+        1200,
+        827
+      ],
+      "sourceUrl": "https://ece.uwaterloo.ca/~z70wang/publications/ssim.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "c83f6f0f5357eb2714ce084d97bef4006358574d06ba546210e505149438b489",
+      "figure": "Figure 2",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "chung2016out",
+      "path": "assets/papers/chung2016out.webp",
+      "suppliedFile": "assets/papers/chung2016out.webp",
+      "suppliedSha256": "cbebdd526c0888d1f4a327f68346749d89347a1df443d4f67fd438bb4d70b6ae",
+      "publishedSha256": "5a57fe2b2090c9f3e06a7b35e92d77198352cb40f3b59c480fd9fb7ab9d68360",
+      "suppliedBytes": 60526,
+      "publishedBytes": 51964,
+      "suppliedDimensions": [
+        1168,
+        980
+      ],
+      "publishedDimensions": [
+        1168,
+        980
+      ],
+      "sourceUrl": "https://www.robots.ox.ac.uk/~vgg/publications/2016/Chung16a/chung16a.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "4ebed9c35248e587ff8267059f3606619b1c7cb0a4fb4f0a67348e864d9ee96d",
+      "figure": "Figure 2",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "kerbl20233d",
+      "path": "assets/papers/kerbl20233d.webp",
+      "suppliedFile": "assets/papers/kerbl20233d.webp",
+      "suppliedSha256": "b18de60cbea1fe6cd81a47772743cb544f247e49554afdc2f3ab71241ddb8307",
+      "publishedSha256": "3157a7b585f01cf31d22f77e3a6ca46c8dab7163f3ba0e817dc0bf0817a9d092",
+      "suppliedBytes": 912048,
+      "publishedBytes": 111490,
+      "suppliedDimensions": [
+        2048,
+        480
+      ],
+      "publishedDimensions": [
+        1200,
+        281
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2308.04079",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "f4c0c9f27e2d02b0265017f66049d471eb66cb50203bc918f51ba07d20cbbe11",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "yin2025slow",
+      "path": "assets/papers/yin2025slow.webp",
+      "suppliedFile": "assets/papers/yin2025slow.webp",
+      "suppliedSha256": "2d5dd8e13872d9669ab80256e56660ee8310ccc8f201ecd45d1e14fc6b58e6c0",
+      "publishedSha256": "fafac846820bf7b4bb6d368c766a38198bf7b16e08f91376a75004edd996ca8b",
+      "suppliedBytes": 1021222,
+      "publishedBytes": 117854,
+      "suppliedDimensions": [
+        1980,
+        708
+      ],
+      "publishedDimensions": [
+        1200,
+        429
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2025/papers/Yin_From_Slow_Bidirectional_to_Fast_Autoregressive_Video_Diffusion_Models_CVPR_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "a366cde8ec9a9fc75a8c7556229d7a07d626c9e34c133cf73832afba244333ca",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "chen2025deep",
+      "path": "assets/papers/chen2025deep.webp",
+      "suppliedFile": "assets/papers/chen2025deep.webp",
+      "suppliedSha256": "7737ec93a81aba51db47cc2c6b1e0b6bdfa48a59d18b9537dc36b211cb97a8f2",
+      "publishedSha256": "7403baa183ccf1bba16410a7513355fd09f13286f31646b85b79c827915bdeeb",
+      "suppliedBytes": 31120,
+      "publishedBytes": 23050,
+      "suppliedDimensions": [
+        1600,
+        288
+      ],
+      "publishedDimensions": [
+        1200,
+        216
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2410.10733",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "eb852d2eba91f034f1ff9d1f9dc85a1941c57be3cf5a9afedeacf86ee2288e48",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.00335,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "ho2020denoising",
+      "path": "assets/papers/ho2020denoising.webp",
+      "suppliedFile": "assets/papers/ho2020denoising.webp",
+      "suppliedSha256": "4e68baf312172fe09ee241b6cac251f1fc76a6c1eeff3726b2bc790c6910eac2",
+      "publishedSha256": "db620e9468ae9f560dafa7c8b87b1f10924a14dcbfe38733940e9d835f798e06",
+      "suppliedBytes": 1116240,
+      "publishedBytes": 140636,
+      "suppliedDimensions": [
+        1600,
+        960
+      ],
+      "publishedDimensions": [
+        1200,
+        720
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2006.11239",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "aee5e07a802e8dfd2a386374c94fd61d1d056cb7e1e0fec4f28e8120ff5d8505",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.00046,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "chen2024diffusion",
+      "path": "assets/papers/chen2024diffusion.webp",
+      "suppliedFile": "assets/papers/chen2024diffusion.webp",
+      "suppliedSha256": "94ef813202efdece964fe2a550192250281bb9de4bb8e8a20bd408b4f6a655f4",
+      "publishedSha256": "5a6af0d602a8a62688d9aa439926ea9bde43509c1f0e673f859340aac447cd68",
+      "suppliedBytes": 54288,
+      "publishedBytes": 37162,
+      "suppliedDimensions": [
+        1600,
+        460
+      ],
+      "publishedDimensions": [
+        1200,
+        345
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2407.01392",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "c56876c19d3e98ff687226b4872242f744c617c4a6eaf1c386f0f967359ff878",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.00029,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "yin2024one",
+      "path": "assets/papers/yin2024one.webp",
+      "suppliedFile": "assets/papers/yin2024one.webp",
+      "suppliedSha256": "0f21972d5884bb40272d0d0de3ba31f911850056777ce8f73b36bf5f7bb17337",
+      "publishedSha256": "dedca2c1fdfcf73f03d238a86dde1d0e512627086c732501676bea3d4c9c2a72",
+      "suppliedBytes": 1666126,
+      "publishedBytes": 159746,
+      "suppliedDimensions": [
+        1992,
+        792
+      ],
+      "publishedDimensions": [
+        1200,
+        477
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2024/papers/Yin_One-step_Diffusion_with_Distribution_Matching_Distillation_CVPR_2024_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "26dfa2d56ffcbc058a4f36142530d0dbd07e0fabc99ff22b0800bba73295148d",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "lipmanflow",
+      "path": "assets/papers/lipmanflow.webp",
+      "suppliedFile": "assets/papers/lipmanflow.webp",
+      "suppliedSha256": "992bf262f47bdecf1ed38f76df206a52f4af56245644d1afe9eb2fd5056d8033",
+      "publishedSha256": "e6c98c0ceed20acf822fa9ab60c4a775c4aa3aff6c161ee4df6510ecb1fd6190",
+      "suppliedBytes": 652766,
+      "publishedBytes": 131134,
+      "suppliedDimensions": [
+        716,
+        716
+      ],
+      "publishedDimensions": [
+        716,
+        716
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2210.02747",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "5eeb39ba516396924aba4787452f9d0abdee88467a4d0c264d9f66cad0c5ee14",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "muller2022instant",
+      "path": "assets/papers/muller2022instant.webp",
+      "suppliedFile": "assets/papers/muller2022instant.webp",
+      "suppliedSha256": "b5646747b7819415518c5badb93a50b551b9993af478006cd22151c8f1e0abd3",
+      "publishedSha256": "c0d3d91c320e9e3d607ffb06c8d6c8d8befe933d8fb7b9a7c15d742741039a6f",
+      "suppliedBytes": 2147004,
+      "publishedBytes": 204842,
+      "suppliedDimensions": [
+        2096,
+        1036
+      ],
+      "publishedDimensions": [
+        1200,
+        593
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2201.05989",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "8e1950c40dbee009b37349c77a8858fbfb6a8e9dbf135b5ce2c986b7dac76790",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 4e-05,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "yang2025longlive",
+      "path": "assets/papers/yang2025longlive.webp",
+      "suppliedFile": "assets/papers/yang2025longlive.webp",
+      "suppliedSha256": "4301d733934f232e66c7925b334d4878b5597e50c05fbf71255ae5d75e56c735",
+      "publishedSha256": "3964e598f2540eaf635d839b934bf8b3a5a9762a001240e6d25d4c44fe8ad592",
+      "suppliedBytes": 273822,
+      "publishedBytes": 83188,
+      "suppliedDimensions": [
+        1600,
+        788
+      ],
+      "publishedDimensions": [
+        1200,
+        591
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2509.22622",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "c02db70004d281be6f35b760052457b86860eebbb6356abd3044690a96b54905",
+      "figure": "Figure 2",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "mildenhall2020nerf",
+      "path": "assets/papers/mildenhall2020nerf.webp",
+      "suppliedFile": "assets/papers/mildenhall2020nerf.webp",
+      "suppliedSha256": "ff72a5297393be65d4c831e36b0b6020eedd4e5a950d9dc2e623274e12be19f3",
+      "publishedSha256": "1d435400a25e6f70b19dc49b3f4622fef45c119d210dc9b0368df5d219085d72",
+      "suppliedBytes": 257878,
+      "publishedBytes": 55380,
+      "suppliedDimensions": [
+        1392,
+        368
+      ],
+      "publishedDimensions": [
+        1200,
+        317
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2003.08934",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "c7fc70b38f84cb2e42890a69a7c9b9c26ded464b221e0355031004f24fb8e727",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "huang2026self",
+      "path": "assets/papers/huang2026self.webp",
+      "suppliedFile": "assets/papers/huang2026self.webp",
+      "suppliedSha256": "8fb348d1906bd0f4991907f64d7f42161aaccf46db8562f359754f0d714136e1",
+      "publishedSha256": "136a3eb3dd39e52229608f95ad68832be1fe83c8b7c2a06a0a12670a75873e61",
+      "suppliedBytes": 341852,
+      "publishedBytes": 75464,
+      "suppliedDimensions": [
+        1600,
+        576
+      ],
+      "publishedDimensions": [
+        1200,
+        432
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2506.08009",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "4374996e5afedccea389065da9371662f7ba04ec8e635aa4eacb3e1781043169",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zhang2023dinet",
+      "path": "assets/papers/zhang2023dinet.webp",
+      "suppliedFile": "assets/papers/zhang2023dinet.webp",
+      "suppliedSha256": "39bbc5c5bc66d86562907cf52042c2b476e11f58675722ae989e7ab0a0f03e5f",
+      "publishedSha256": "69be574e4762a21530bbeae4ce8193d2e3def0fecb52fb222578e1e9baff9361",
+      "suppliedBytes": 240580,
+      "publishedBytes": 69864,
+      "suppliedDimensions": [
+        944,
+        580
+      ],
+      "publishedDimensions": [
+        944,
+        580
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2303.03988",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "ec6e0e5b86cc3a996373212b22ec26e0e4b61f14ebef54770815f92d80ec8159",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 1e-05,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "gan2023eat",
+      "path": "assets/papers/gan2023eat.webp",
+      "suppliedFile": "assets/papers/gan2023eat.webp",
+      "suppliedSha256": "536d2a7e9e7a2ff5c855ec8819e03c5af9b600c04b249081664f3710e8ad20a2",
+      "publishedSha256": "cb7f8ac93db633c799d3f9d2a56342c69012d403087940bfd70c7989ecb30dea",
+      "suppliedBytes": 129636,
+      "publishedBytes": 63582,
+      "suppliedDimensions": [
+        988,
+        732
+      ],
+      "publishedDimensions": [
+        988,
+        732
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2023/papers/Gan_Efficient_Emotional_Adaptation_for_Audio-Driven_Talking-Head_Generation_ICCV_2023_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "48d7aa96dc9d4471958040c605a2eaaddd65a87136c289ea3f58e2ccd2708d51",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "tan2024edtalk",
+      "path": "assets/papers/tan2024edtalk.webp",
+      "suppliedFile": "assets/papers/tan2024edtalk.webp",
+      "suppliedSha256": "68a7e61d53ee5fdffb304a74072b70f4e0c7c73f2cf5a7bb71c05a7724235911",
+      "publishedSha256": "4445ed84d5c179024483b49d76024f52b5e3ecb4087f20644ba5ca417c52d9c0",
+      "suppliedBytes": 1055668,
+      "publishedBytes": 122588,
+      "suppliedDimensions": [
+        1860,
+        980
+      ],
+      "publishedDimensions": [
+        1200,
+        632
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2404.01647",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "f6391601c420dacd42dad49e6350ccf160c01d12d9907bf2ae5cea58835a574d",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "tan2025fixtalk",
+      "path": "assets/papers/tan2025fixtalk.webp",
+      "suppliedFile": "assets/papers/tan2025fixtalk.webp",
+      "suppliedSha256": "f4c0a055276d478b6a6db2ee7d68f295264118de74941d183fa379d02fd30a0f",
+      "publishedSha256": "766d84752e8bc6474430d7a1728479c111f80dba80813c084f8c84c2d5e9a245",
+      "suppliedBytes": 1184810,
+      "publishedBytes": 138206,
+      "suppliedDimensions": [
+        1840,
+        984
+      ],
+      "publishedDimensions": [
+        1200,
+        642
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2025/papers/Tan_FixTalk_Taming_Identity_Leakage_for_High-Quality_Talking_Head_Generation_in_ICCV_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "9f3095405e980350e9dbcc504d55119f1bfecdea6c3bd612f04415865f20cec3",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "tan2024flowvqtalker",
+      "path": "assets/papers/tan2024flowvqtalker.webp",
+      "suppliedFile": "assets/papers/tan2024flowvqtalker.webp",
+      "suppliedSha256": "679878b64c48245fe8d9d9a0428556c1e8208076b5ad5ade0d473910ca668e04",
+      "publishedSha256": "f45c18197153b1674591cb6168ed7f62953143e240e2977346865193f9bd013b",
+      "suppliedBytes": 281766,
+      "publishedBytes": 87112,
+      "suppliedDimensions": [
+        928,
+        700
+      ],
+      "publishedDimensions": [
+        928,
+        700
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2403.06375",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "bacd247c6c0d83370af622284df0afb6d5d3597c52f4097db3f00c7912ab6672",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 5e-05,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "bounareli2023hyperreenact",
+      "path": "assets/papers/bounareli2023hyperreenact.webp",
+      "suppliedFile": "assets/papers/bounareli2023hyperreenact.webp",
+      "suppliedSha256": "2bcc092f7387f3d00cf8bdec42f9c625372d0d2d78d4ccc3e6f2f0e7bf80aa55",
+      "publishedSha256": "1188d8b0e88cd99baa442244bc49ba5fd5c0cc4df88119335c311ce7b572c081",
+      "suppliedBytes": 528996,
+      "publishedBytes": 44352,
+      "suppliedDimensions": [
+        1800,
+        460
+      ],
+      "publishedDimensions": [
+        1200,
+        307
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2023/papers/Bounareli_HyperReenact_One-Shot_Reenactment_via_Jointly_Learning_to_Refine_and_Retarget_ICCV_2023_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "e771824360c907a21ac6cc87cdb50a1b5bff3184360ddd4e5ed68b5ed693472d",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "lu2021live",
+      "path": "assets/papers/lu2021live.webp",
+      "suppliedFile": "assets/papers/lu2021live.webp",
+      "suppliedSha256": "33c8ee085a5dda5602e50a58cefc799e8c9d38caa2879eba3b81fc8c956e1a27",
+      "publishedSha256": "91ff4f387f16472d67bd78fec4654b2c2415217b60967e8fb7553e8bba290584",
+      "suppliedBytes": 648390,
+      "publishedBytes": 63130,
+      "suppliedDimensions": [
+        2048,
+        720
+      ],
+      "publishedDimensions": [
+        1200,
+        422
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2109.10595",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "e8cea540f2fc859b1152172c8e126c715ae0c20c13dff639963ace087929dce5",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zhou2020makelttalk",
+      "path": "assets/papers/zhou2020makelttalk.webp",
+      "suppliedFile": "assets/papers/zhou2020makelttalk.webp",
+      "suppliedSha256": "a885bd2bfd41184b3c81bd0fe32f1643e10c7afc53f0eec7be044eb5c5d866fa",
+      "publishedSha256": "e363602bb637539627e4424e1ef1a4eccc262e7ea9790c9b0de7547f93df5ae2",
+      "suppliedBytes": 270812,
+      "publishedBytes": 58648,
+      "suppliedDimensions": [
+        2048,
+        684
+      ],
+      "publishedDimensions": [
+        1200,
+        401
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2004.12992",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "3a82545551ece6a5a7e351d40622b8d85d765993a30e4ba4af9010f14d457868",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "tang2024memories",
+      "path": "assets/papers/tang2024memories.webp",
+      "suppliedFile": "assets/papers/tang2024memories.webp",
+      "suppliedSha256": "0d67a8c7b6d5d93ce687250f6da82820d99509bbf1dde4893a1fb9b48d32f7b9",
+      "publishedSha256": "b7c1df8e2e644c1894051ad642aa9d2a6cc00f632394c336a67cb64b2ef2c90b",
+      "suppliedBytes": 358218,
+      "publishedBytes": 68520,
+      "suppliedDimensions": [
+        920,
+        556
+      ],
+      "publishedDimensions": [
+        920,
+        556
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2212.05005",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "8673b16549789595b1112c7ef748a6b79582e155beef6ca038625345750bd4ad",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zhou2021pose",
+      "path": "assets/papers/zhou2021pose.webp",
+      "suppliedFile": "assets/papers/zhou2021pose.webp",
+      "suppliedSha256": "bffa2b6bb627320a0129b96cbb1e4613e4ab2e7b26c5570621228b1279f9cb73",
+      "publishedSha256": "1b6cb5bd6df3852afaec95cf614141a776be1686e3fea1ab1c33cc9988251273",
+      "suppliedBytes": 590108,
+      "publishedBytes": 79774,
+      "suppliedDimensions": [
+        1868,
+        820
+      ],
+      "publishedDimensions": [
+        1200,
+        527
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2021/papers/Zhou_Pose-Controllable_Talking_Face_Generation_by_Implicitly_Modularized_Audio-Visual_Representation_CVPR_2021_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "ea9e61d9814fe2239c23713c90c0f2d0e825c65765840ca55477224a36a38ea3",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "deng2024ramavatar",
+      "path": "assets/papers/deng2024ramavatar.webp",
+      "suppliedFile": "assets/papers/deng2024ramavatar.webp",
+      "suppliedSha256": "49465f3b47d82aec14c2166ada988511cf937f1793eb4d3a0b75c0787975a083",
+      "publishedSha256": "b89a0803ac4942b4b20282ce744dc18b11cf9ee0e88ca2de3010ee906e714a23",
+      "suppliedBytes": 675606,
+      "publishedBytes": 61836,
+      "suppliedDimensions": [
+        1900,
+        848
+      ],
+      "publishedDimensions": [
+        1200,
+        536
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2024/papers/Deng_RAM-Avatar_Real-time_Photo-Realistic_Avatar_from_Monocular_Videos_with_Full-body_Control_CVPR_2024_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "f3a38e79a7293e878d1cfd4daa5f0cdfba3981663f7b173019ea1b838cf72a5d",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "guan2024resyncer",
+      "path": "assets/papers/guan2024resyncer.webp",
+      "suppliedFile": "assets/papers/guan2024resyncer.webp",
+      "suppliedSha256": "a88cae4121eaaa377d647a946de454399c676c8da8104bc2bc7b43d649c83760",
+      "publishedSha256": "2eff0b0a60047b9ba28f4a36855d0880ecc713763818b420d4db7e14c634329b",
+      "suppliedBytes": 687834,
+      "publishedBytes": 112662,
+      "suppliedDimensions": [
+        1356,
+        728
+      ],
+      "publishedDimensions": [
+        1200,
+        644
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2408.03284",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "0f2e8bee4ce1b26ad04133a5fbb204b3a073c006b0915fc16dfcd58998ed037f",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "ki2023stylelipsync",
+      "path": "assets/papers/ki2023stylelipsync.webp",
+      "suppliedFile": "assets/papers/ki2023stylelipsync.webp",
+      "suppliedSha256": "0cd87eff2254df8fbf89a47bbe9311c50b50da19ccd5ffba57966a72e7ed12a1",
+      "publishedSha256": "a90f52e30a31ec414896ac21dc3958f8272a04f98a4fbfdbd5244c941e425bbf",
+      "suppliedBytes": 183652,
+      "publishedBytes": 43312,
+      "suppliedDimensions": [
+        1900,
+        732
+      ],
+      "publishedDimensions": [
+        1200,
+        462
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2305.00521",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "069af625f6d13632612246847226f5b3800955987e0ca521cd72f6b06a980b3f",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "bounareli2023stylemask",
+      "path": "assets/papers/bounareli2023stylemask.webp",
+      "suppliedFile": "assets/papers/bounareli2023stylemask.webp",
+      "suppliedSha256": "3b1874d8b281e5a61224deac9fe2d34d7de59a13bca982035934ccf4ea6b6b2d",
+      "publishedSha256": "d71d62cae50803fa2be79dab7579a7cacba8867605af7b12fb9bd418a05f09dd",
+      "suppliedBytes": 182624,
+      "publishedBytes": 55736,
+      "suppliedDimensions": [
+        1024,
+        744
+      ],
+      "publishedDimensions": [
+        1024,
+        744
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2209.13375",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "f9fde091077c4b4c35ea402f793836b8cf3fdbb08b6e45c8b469d9bc1130434a",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "guan2023stylesync",
+      "path": "assets/papers/guan2023stylesync.webp",
+      "suppliedFile": "assets/papers/guan2023stylesync.webp",
+      "suppliedSha256": "f0dcb65c04957d318003b5ee17602ddb211e86eed7ff80f04db32d6cd5d1b8b5",
+      "publishedSha256": "8c487eb900fcd4623baf25b2c3f0eea79fd10d42e6bfeba1d552feadb5765330",
+      "suppliedBytes": 1191764,
+      "publishedBytes": 126314,
+      "suppliedDimensions": [
+        1904,
+        1040
+      ],
+      "publishedDimensions": [
+        1200,
+        655
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2023/papers/Guan_StyleSync_High-Fidelity_Generalized_and_Personalized_Lip_Sync_in_Style-Based_Generator_CVPR_2023_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "8d9f4a58161fc48380f6013f5f560205d22c3e071f8e1c4326450ca94dc02441",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "park2022synctalkface",
+      "path": "assets/papers/park2022synctalkface.webp",
+      "suppliedFile": "assets/papers/park2022synctalkface.webp",
+      "suppliedSha256": "f7e9a6b4a86553f492459c5cd30c1fcd2248c0bc9d31665b0d9412e2a496a92a",
+      "publishedSha256": "f86500aafcf1fe1457eb331768dc7fadbf96b5022cdd89211eebc726458d6799",
+      "suppliedBytes": 142776,
+      "publishedBytes": 71298,
+      "suppliedDimensions": [
+        2016,
+        1004
+      ],
+      "publishedDimensions": [
+        1200,
+        598
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2211.00924",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "18710a8d35dcc5b5595be7d8a810d9b34265220e03da04230ac029e2b5359317",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wang2023seeing",
+      "path": "assets/papers/wang2023seeing.webp",
+      "suppliedFile": "assets/papers/wang2023seeing.webp",
+      "suppliedSha256": "902fc433d21c84482ff03b79778af22cf66f6cbc58674059822f1026374fd41c",
+      "publishedSha256": "ecc9a92d87b08155ffb6ee931fd42f7c0d8bf08d6d12766670764a1f6ddd438f",
+      "suppliedBytes": 276108,
+      "publishedBytes": 76316,
+      "suppliedDimensions": [
+        1980,
+        852
+      ],
+      "publishedDimensions": [
+        1200,
+        516
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_Seeing_What_You_Said_Talking_Face_Generation_Guided_by_a_CVPR_2023_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "3478f86321ec0f26b33b27c51e3e3acf0f3a168b5d4e1d541ed220fe280278b3",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "cheng2022videoretalking",
+      "path": "assets/papers/cheng2022videoretalking.webp",
+      "suppliedFile": "assets/papers/cheng2022videoretalking.webp",
+      "suppliedSha256": "2cc88fb3b1e59c997d885cffde079d6c461ba35454037d91ba47f9c12b6fe2cb",
+      "publishedSha256": "fc3f001a3d10227083d1caff48c4647668c591d7fbc94b3b9cf6b428a8dd3ed3",
+      "suppliedBytes": 874048,
+      "publishedBytes": 93014,
+      "suppliedDimensions": [
+        2036,
+        1172
+      ],
+      "publishedDimensions": [
+        1200,
+        691
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2211.14758",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "7685fcb2ecbc5fbeb3a0ce31bc08a7bf7ffaefc730c687ecffcff2b5d2d005f8",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wang2023efficient",
+      "path": "assets/papers/wang2023efficient.webp",
+      "suppliedFile": "assets/papers/wang2023efficient.webp",
+      "suppliedSha256": "60ac3ab8a03f4ea5eff4c2ca4069ff80ee91192a638718d4f246293915f26d70",
+      "publishedSha256": "bbaa3ae11da59f4b7ae9fd7a9b2d8ae85384a9aef903fce6034e38676417f380",
+      "suppliedBytes": 165984,
+      "publishedBytes": 71838,
+      "suppliedDimensions": [
+        1770,
+        768
+      ],
+      "publishedDimensions": [
+        1200,
+        521
+      ],
+      "sourceUrl": "https://raw.githubusercontent.com/uniBruce/VPGC_Pytorch/main/Figures/pipeline.png",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "cb6c1a32e72da7a61c8d0491e79fe8c56913b4202bac8151955bebd1dd00971c",
+      "figure": "Official repository pipeline image",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "qian20243dgs",
+      "path": "assets/papers/qian20243dgs.webp",
+      "suppliedFile": "assets/papers/qian20243dgs.webp",
+      "suppliedSha256": "58b6810a6c052d34b2874d397d8166bb4b2510eb9a6c23b7954702fb368a14f2",
+      "publishedSha256": "5ab4ad016d8245d00fdf0d30ddfc331ae3ab0464650a82203a50c5426806336f",
+      "suppliedBytes": 167166,
+      "publishedBytes": 41006,
+      "suppliedDimensions": [
+        1491,
+        339
+      ],
+      "publishedDimensions": [
+        1200,
+        273
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2024/papers/Qian_3DGS-Avatar_Animatable_Avatars_via_Deformable_3D_Gaussian_Splatting_CVPR_2024_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "c60fdbc44317fc7511a77de5c3e31734ae7c5e9fd9e38d3352d9c3d2838f3b35",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "guo2021ad",
+      "path": "assets/papers/guo2021ad.webp",
+      "suppliedFile": "assets/papers/guo2021ad.webp",
+      "suppliedSha256": "bfeb46414d0bb5a9a7e4b1128049adc2620ce9188cd7b959e36907d824520ce3",
+      "publishedSha256": "2aab8873cdfcef41930cd358889e9a8970652aa16a81ffd45296a7b1c6ebca9d",
+      "suppliedBytes": 119218,
+      "publishedBytes": 39936,
+      "suppliedDimensions": [
+        1491,
+        441
+      ],
+      "publishedDimensions": [
+        1200,
+        355
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2021/papers/Guo_AD-NeRF_Audio_Driven_Neural_Radiance_Fields_for_Talking_Head_Synthesis_ICCV_2021_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "8495b4c314757e9858fcdd83528309fc2245ce317c3916f87e544e327bb6eea5",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.01575,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "guo2025arig",
+      "path": "assets/papers/guo2025arig.webp",
+      "suppliedFile": "assets/papers/guo2025arig.webp",
+      "suppliedSha256": "abde62a8e2f1d51428ba8b04316930bec4390baa0a0a109cec8c9f90fefdf037",
+      "publishedSha256": "62467712ddcb757f941d8f936d75111d9d5d8eed76905877c40fe6510d56249e",
+      "suppliedBytes": 165764,
+      "publishedBytes": 54232,
+      "suppliedDimensions": [
+        2000,
+        752
+      ],
+      "publishedDimensions": [
+        1200,
+        451
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2025/papers/Guo_ARIG_Autoregressive_Interactive_Head_Generation_for_Real-time_Conversations_ICCV_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "840933d04c41d57fed633f61990c20d2c77b2eae36b024a61000cec1078f8e2c",
+      "figure": "Figure 2",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "lee2026audioavatar",
+      "path": "assets/papers/lee2026audioavatar.webp",
+      "suppliedFile": "assets/papers/lee2026audioavatar.webp",
+      "suppliedSha256": "9f4cd14a96e7f96d3dacb97e4ef7e8a954a77da9780d3fe771b0338164e66517",
+      "publishedSha256": "9109062f61a5407e9a1150ac0b983d62feb8d4382d4c6ba269a54ecb71909616",
+      "suppliedBytes": 237246,
+      "publishedBytes": 48038,
+      "suppliedDimensions": [
+        1804,
+        624
+      ],
+      "publishedDimensions": [
+        1200,
+        415
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lee_AudioAvatar_Personalized_Audio-driven_Whole-body_Talking_Avatars_CVPR_2026_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "7c46e34ffaff8128b63e89f1dc5e9a0494bc39031a60790fc8a122f165661ca7",
+      "figure": "Figure 2",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "lee2025audio",
+      "path": "assets/papers/lee2025audio.webp",
+      "suppliedFile": "assets/papers/lee2025audio.webp",
+      "suppliedSha256": "03d5e2a57ac56f7ee541977ab049207cd33917a20d1e73d6b5b19e115c8e6c2d",
+      "publishedSha256": "6ce0bf91de7139175b9786a3a4f387471e3ce8dc64ec2f9cd019b405736ae016",
+      "suppliedBytes": 714530,
+      "publishedBytes": 64146,
+      "suppliedDimensions": [
+        2052,
+        564
+      ],
+      "publishedDimensions": [
+        1200,
+        330
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2510.01176",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "ffef3b4c8e9885707e5b725819a73a45bac764fcf0bbd75fb41df50b4925cf54",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zheng2023avatarrex",
+      "path": "assets/papers/zheng2023avatarrex.webp",
+      "suppliedFile": "assets/papers/zheng2023avatarrex.webp",
+      "suppliedSha256": "7afee264ecbfd5371350e56bb21b77ddad694cfff346277669623aa5bfb0506f",
+      "publishedSha256": "d3e9d052dbf92d2c13000437ebd2b04fefbe693595943b2808cb6809762b24a2",
+      "suppliedBytes": 250174,
+      "publishedBytes": 29844,
+      "suppliedDimensions": [
+        1530,
+        507
+      ],
+      "publishedDimensions": [
+        1200,
+        398
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2305.04789",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "65954c076122051979c8f9e4241a2553110b5a05377013e4eb8b5514627f930d",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "liang2025dgtalker",
+      "path": "assets/papers/liang2025dgtalker.webp",
+      "suppliedFile": "assets/papers/liang2025dgtalker.webp",
+      "suppliedSha256": "72a79380efe3045f8dfcfad9299576e000915c71f784254db834183e3b037222",
+      "publishedSha256": "2861366f0f29ed336fd85a8abb5f33d312f7ec74b172183032353a9f5ac613e2",
+      "suppliedBytes": 82230,
+      "publishedBytes": 34634,
+      "suppliedDimensions": [
+        717,
+        366
+      ],
+      "publishedDimensions": [
+        717,
+        366
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2025/papers/Liang_DGTalker_Disentangled_Generative_Latent_Space_Learning_for_Audio-Driven_Gaussian_Talking_ICCV_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "f247f657ae24ba32adb4b4cdbdc1738fae4bf7003d22ebe99bcbaa2eea73ee7c",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "li2025ditto",
+      "path": "assets/papers/li2025ditto.webp",
+      "suppliedFile": "assets/papers/li2025ditto.webp",
+      "suppliedSha256": "18b0efbe225b2bb8dd5176c7369295222de3cba2d93a4e575d654eb7d637a9f1",
+      "publishedSha256": "dcad47aca18e92dd93537cca670b013eeb2ad1345e03b36cfc74f20448c063a6",
+      "suppliedBytes": 172686,
+      "publishedBytes": 51216,
+      "suppliedDimensions": [
+        2060,
+        836
+      ],
+      "publishedDimensions": [
+        1200,
+        487
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2411.19509",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "361cde1d6f45420733c10ac88c694350a1240aa1ae1b6c9c08c3c8c68a83b2c1",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.02111,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wang2021one",
+      "path": "assets/papers/wang2021one.webp",
+      "suppliedFile": "assets/papers/wang2021one.webp",
+      "suppliedSha256": "91f6919ea006535787b1b96199dc4db2caff7ef48b3c1438ba12f938de1dfcf3",
+      "publishedSha256": "f0e0efa98c78a53e1bbb8adaa189db6951f32f04c1b6a4bcd6162879c6dd7879",
+      "suppliedBytes": 419904,
+      "publishedBytes": 42332,
+      "suppliedDimensions": [
+        2008,
+        488
+      ],
+      "publishedDimensions": [
+        1200,
+        292
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_One-Shot_Free-View_Neural_Talking-Head_Synthesis_for_Video_Conferencing_CVPR_2021_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "94408095aec83b6a35d09d21acd7178e05bb0436dfac09f3b41e235f9f9f4fef",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "siarohin2019first",
+      "path": "assets/papers/siarohin2019first.webp",
+      "suppliedFile": "assets/papers/siarohin2019first.webp",
+      "suppliedSha256": "c8d9f7b0a715c72b1631d2faed04513479017a1f5d06f931998071ce3892727b",
+      "publishedSha256": "54c0c9810ce6c5f03b0e99a759bcfd735f0a13690a0557feeb188f6ce1592d17",
+      "suppliedBytes": 885558,
+      "publishedBytes": 130136,
+      "suppliedDimensions": [
+        1592,
+        1092
+      ],
+      "publishedDimensions": [
+        1200,
+        823
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2003.00196",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "c7aa18ff976369dc3907fff42fd44ccdaa24cf994965d26178430bb6e0cb2a4c",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "ki2025float",
+      "path": "assets/papers/ki2025float.webp",
+      "suppliedFile": "assets/papers/ki2025float.webp",
+      "suppliedSha256": "1ec21d762f7f40882e9fe69389b1da77982549a43d22a3c871055692ea1c15f5",
+      "publishedSha256": "870183816dd8b7de4268f44ea77d4e9b56cd1de2036909971bf64fe41ef806b4",
+      "suppliedBytes": 380242,
+      "publishedBytes": 56488,
+      "suppliedDimensions": [
+        1632,
+        624
+      ],
+      "publishedDimensions": [
+        1200,
+        459
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2025/papers/Ki_FLOAT_Generative_Motion_Latent_Flow_Matching_for_Audio-driven_Talking_Portrait_ICCV_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "b998e323b7b938c6e3136ba508cc2d73da910592b46f5183c8b3e93b238979ca",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "he2024gaia",
+      "path": "assets/papers/he2024gaia.webp",
+      "suppliedFile": "assets/papers/he2024gaia.webp",
+      "suppliedSha256": "f3da6727918f1a9fc00cf2577b3a37c60cba53485d8a7c4b089d58fca5a95cfc",
+      "publishedSha256": "a17b9015aafbb5b7f127ef94f5b51b730b101b5f9b191a38ee455acc5316410c",
+      "suppliedBytes": 126824,
+      "publishedBytes": 41916,
+      "suppliedDimensions": [
+        1580,
+        596
+      ],
+      "publishedDimensions": [
+        1200,
+        453
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2311.15230",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "1938593944af70084a61d4d1d97cdf9d006fbec191f1b3a8f8e90382a770d4ca",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zhao2024gaussianhand",
+      "path": "assets/papers/zhao2024gaussianhand.webp",
+      "suppliedFile": "assets/papers/zhao2024gaussianhand.webp",
+      "suppliedSha256": "2cb8919518385d94fcf2749e6d2b4e3d6462b52c4b8eeff21b9b3c76d3ef7e03",
+      "publishedSha256": "935411de8d2a34b13c83c3c12fd7d463a3460d1e4807ff56a1dafe5b4b2ca7b8",
+      "suppliedBytes": 445554,
+      "publishedBytes": 78506,
+      "suppliedDimensions": [
+        1416,
+        688
+      ],
+      "publishedDimensions": [
+        1200,
+        583
+      ],
+      "sourceUrl": "https://liliwang.net/publications/PDF/2024/Real_time_3D_Guassian_rendering_for_Hand_Avatar_Animation.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "7a75e05b7c0166575cdb8f79d5c87a96b6c48cf24e78ff2885022a20649287ab",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.0001,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "agarwal2026gaussianheadtalk",
+      "path": "assets/papers/agarwal2026gaussianheadtalk.webp",
+      "suppliedFile": "assets/papers/agarwal2026gaussianheadtalk.webp",
+      "suppliedSha256": "fa63445a6a60539e972b9cf689959ce7e95012226ba9e49d74c2d1d4ffb6f3de",
+      "publishedSha256": "c54d002c18a1abe26f80ce18dc2df6e0bd271b0b22c2ae7c632437e9edc02bc7",
+      "suppliedBytes": 333722,
+      "publishedBytes": 76484,
+      "suppliedDimensions": [
+        1728,
+        664
+      ],
+      "publishedDimensions": [
+        1200,
+        461
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/WACV2026/papers/Agarwal_GaussianHeadTalk_Wobble-Free_3D_Talking_Heads_with_Audio_Driven_Gaussian_Splatting_WACV_2026_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "9535a9a39c53efc842b798333b25c1024f5e4ccdd23e87219a52a3a56b7e9d3d",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "aneja2025gaussianspeech",
+      "path": "assets/papers/aneja2025gaussianspeech.webp",
+      "suppliedFile": "assets/papers/aneja2025gaussianspeech.webp",
+      "suppliedSha256": "f91c6e0d0a18c6dc4ca872ca2f59f38f2ac25b79cc3db59403c4b95bcb90e0ab",
+      "publishedSha256": "4bfe340959b845fdc2bfcb8ab70b45d4bc03c173c0bc4c545e511bf5e7e30093",
+      "suppliedBytes": 462160,
+      "publishedBytes": 73136,
+      "suppliedDimensions": [
+        1488,
+        465
+      ],
+      "publishedDimensions": [
+        1200,
+        375
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2025/papers/Aneja_GaussianSpeech_Audio-Driven_Personalized_3D_Gaussian_Avatars_ICCV_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "3ed93ad3d1b46664cdadf756bcdd849aa08370bcd1a5b53c26671ffe25b099fe",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "cho2024gaussiantalker",
+      "path": "assets/papers/cho2024gaussiantalker.webp",
+      "suppliedFile": "assets/papers/cho2024gaussiantalker.webp",
+      "suppliedSha256": "0c18a921ce399fd0e8926b4c8d30b6f21045636fa95632ae0ff3382547ef7247",
+      "publishedSha256": "1fdd2e9e63ec89e2b3025d8ad4e5aa40af8929d2dbd09db520e8f198146be06f",
+      "suppliedBytes": 176544,
+      "publishedBytes": 54366,
+      "suppliedDimensions": [
+        1521,
+        636
+      ],
+      "publishedDimensions": [
+        1200,
+        502
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2404.16012",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "812b1c9f16d69e27a8b86b41515c4f37aecbc4cc1bec4b2c364edc69058a475d",
+      "figure": "Figure 2",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "yu2024gaussiantalker",
+      "path": "assets/papers/yu2024gaussiantalker.webp",
+      "suppliedFile": "assets/papers/yu2024gaussiantalker.webp",
+      "suppliedSha256": "1d9475e9a2a5b116da67999f587aa52ecae8c45e86687749d26cd9f071f3c592",
+      "publishedSha256": "c2b6e4e589987d0742e43b149ffa8028c4700cee48000480a73214fbc3e729e6",
+      "suppliedBytes": 404198,
+      "publishedBytes": 67218,
+      "suppliedDimensions": [
+        1518,
+        519
+      ],
+      "publishedDimensions": [
+        1200,
+        410
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2404.14037",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "02adfaaebe44bff7c1dd1d65ab960b3cb0e56c04027a3fe57bfadff307e115e7",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "hu2025ggtalker",
+      "path": "assets/papers/hu2025ggtalker.webp",
+      "suppliedFile": "assets/papers/hu2025ggtalker.webp",
+      "suppliedSha256": "16bba0d3698516620f2bc537f7a3a46a19d590c3462b195214e42045ab384896",
+      "publishedSha256": "3339258e0d54f4b1c5d8caccd5f1361293cf17085d941d468bcb977efa167d29",
+      "suppliedBytes": 431954,
+      "publishedBytes": 92544,
+      "suppliedDimensions": [
+        1488,
+        516
+      ],
+      "publishedDimensions": [
+        1200,
+        416
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2025/papers/Hu_GGTalker_Talking_Head_Systhesis_with_Generalizable_Gaussian_Priors_and_Identity-Specific_ICCV_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "c8b56b58e3de59919e7697c05e26a3a2a1fcea8c69eee5a4b7176c6cf1327583",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "chugpavatar",
+      "path": "assets/papers/chugpavatar.webp",
+      "suppliedFile": "assets/papers/chugpavatar.webp",
+      "suppliedSha256": "d59e11b76d5517b573b40866a346f25914fa750e9393c9e2a08ceb1881b7aebf",
+      "publishedSha256": "1f8892bb8bd578f3164d8e717e962285715d82a4d908fb2258a9a4ee70f8b9ff",
+      "suppliedBytes": 403856,
+      "publishedBytes": 80968,
+      "suppliedDimensions": [
+        1194,
+        366
+      ],
+      "publishedDimensions": [
+        1194,
+        366
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2401.10215",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "fb06681d24e576db2c884fc4796cf6c711f653f39765678252b6848f71d153b6",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zhang2025guava",
+      "path": "assets/papers/zhang2025guava.webp",
+      "suppliedFile": "assets/papers/zhang2025guava.webp",
+      "suppliedSha256": "b1a95fce447ddd35fb12b4845861c5461ab1334cc12fcce7f2a22d3dc5469ae5",
+      "publishedSha256": "5e7b5ab447bf54dd6b2cb3a53643cb1a158aa2db7b64a2d79999f18324a1ac51",
+      "suppliedBytes": 290960,
+      "publishedBytes": 56028,
+      "suppliedDimensions": [
+        1515,
+        450
+      ],
+      "publishedDimensions": [
+        1200,
+        356
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_GUAVA_Generalizable_Upper_Body_3D_Gaussian_Avatar_ICCV_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "16e9397bcc436ebf5fb0f553386719d62fa0d75385612032119173da576dedc1",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "dhamo2024headgas",
+      "path": "assets/papers/dhamo2024headgas.webp",
+      "suppliedFile": "assets/papers/dhamo2024headgas.webp",
+      "suppliedSha256": "572da4a5a36be6984798faefe8be73e51b287e4337953b9f0420db7248e219c2",
+      "publishedSha256": "edc319b966c4f8a3daae6b4a7eccb46fe888cb20809ee9dbd30c8d2fe69b82f1",
+      "suppliedBytes": 121182,
+      "publishedBytes": 36828,
+      "suppliedDimensions": [
+        1029,
+        378
+      ],
+      "publishedDimensions": [
+        1029,
+        378
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2312.02902",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "35740d0fdd2f57bf0dce52bdbc928b5b6570bef1387944768c0a93df7066864b",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.16415,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "he2025lam",
+      "path": "assets/papers/he2025lam.webp",
+      "suppliedFile": "assets/papers/he2025lam.webp",
+      "suppliedSha256": "2bd463a0d6b4a19817931cfcc5279c0b899f9007d7abb5b2d92cc11882f3785f",
+      "publishedSha256": "d6f111df88c8267cadb260df500d889e7d5fc6ce8043cb04796082e7b341c183",
+      "suppliedBytes": 336564,
+      "publishedBytes": 62008,
+      "suppliedDimensions": [
+        1518,
+        435
+      ],
+      "publishedDimensions": [
+        1200,
+        344
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2502.17796",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "6ad3c1b1a407fd37c68632060c512bc0cab033077e123a96b3e40007cbe89623",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "luo2026omniresponse",
+      "path": "assets/papers/luo2026omniresponse.webp",
+      "suppliedFile": "assets/papers/luo2026omniresponse.webp",
+      "suppliedSha256": "23d41b21a589209f3ebdc003000b0f038cfe869c7e1f84b5d26c728dbb2a3316",
+      "publishedSha256": "36df1a873404769fd79bd6b783bdd29b9c8c2d13b8c15362ff87d6351eb7049e",
+      "suppliedBytes": 209530,
+      "publishedBytes": 50736,
+      "suppliedDimensions": [
+        1592,
+        652
+      ],
+      "publishedDimensions": [
+        1200,
+        491
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2505.21724",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "11cfbf606406cae16f81a75e2c8c66c06bab7ccef181346eeefb2c32039404a7",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "wang2026omnitalker",
+      "path": "assets/papers/wang2026omnitalker.webp",
+      "suppliedFile": "assets/papers/wang2026omnitalker.webp",
+      "suppliedSha256": "bcc1fb9174c9eaade22c5e38ce5e91b1c1be93b3c4db96eabe9de6810d08f476",
+      "publishedSha256": "c1aa09b3d111244206cff4804432a0e5825b56b9623a2e56e29df91250b140c1",
+      "suppliedBytes": 236950,
+      "publishedBytes": 97974,
+      "suppliedDimensions": [
+        1592,
+        1016
+      ],
+      "publishedDimensions": [
+        1200,
+        766
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2504.02433",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "8c64da301eb504b9c271ed7a91929ebb343a8e755d75c9e69279c78e4fbddef1",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.08852,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "tang2025real",
+      "path": "assets/papers/tang2025real.webp",
+      "suppliedFile": "assets/papers/tang2025real.webp",
+      "suppliedSha256": "8111322b616a51e6367a4a0a7431e953cc11fbc9b90cecd32dfb3815cca40869",
+      "publishedSha256": "e0b3fe9d661be5de21550788ae20e1d82d2708ca78a2ed25f99872d972a04f97",
+      "suppliedBytes": 146528,
+      "publishedBytes": 63438,
+      "suppliedDimensions": [
+        1491,
+        777
+      ],
+      "publishedDimensions": [
+        1200,
+        625
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2211.12368",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "4fbfe5c4a7e8c4d874a881d93d2f422df7bdc4ccc5f4ee815fb2373e0749a9cf",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.00398,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "song2023rc",
+      "path": "assets/papers/song2023rc.webp",
+      "suppliedFile": "assets/papers/song2023rc.webp",
+      "suppliedSha256": "1b0a14c1504a2c60cabc134117ee4c4243cd5de05d76293b5c11c27cbcd1b4b3",
+      "publishedSha256": "9971b620fd7c9835433891789393798c786a63b334f41ab715ead1ae24140e7d",
+      "suppliedBytes": 304460,
+      "publishedBytes": 41478,
+      "suppliedDimensions": [
+        1848,
+        692
+      ],
+      "publishedDimensions": [
+        1200,
+        449
+      ],
+      "sourceUrl": "https://hailsong.github.io/assets/pdf/RC_SMPL_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "e5144799435f18903241d5c596d2abbc83958b2ca99d9f08408a9a94de752ae2",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zhao2025rea",
+      "path": "assets/papers/zhao2025rea.webp",
+      "suppliedFile": "assets/papers/zhao2025rea.webp",
+      "suppliedSha256": "c676bdd0b0f32fe1afd26ffd919fb96d818e15e5afb6f65c51187fa9833b04a3",
+      "publishedSha256": "f1c926c8cfbd8855109ef8faaa2e1a6af7e50589aee9d0c241879512818e9c14",
+      "suppliedBytes": 1477702,
+      "publishedBytes": 72372,
+      "suppliedDimensions": [
+        5359,
+        1672
+      ],
+      "publishedDimensions": [
+        1200,
+        374
+      ],
+      "sourceUrl": "https://aipixel.github.io/REA-Listener/img/teaser.png",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "942a2dca0f84523211e2ad8029e476c350dec552e2fde4043242d06e8543898e",
+      "figure": "Official project teaser",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "shao2024splattingavatar",
+      "path": "assets/papers/shao2024splattingavatar.webp",
+      "suppliedFile": "assets/papers/shao2024splattingavatar.webp",
+      "suppliedSha256": "f72fa8774b3cfb26debd77ffcfac62ba235752af9551ee1ba0a4edcdccd11bfa",
+      "publishedSha256": "4af72f66df082846abb7def2951cdcd91623f687c385b29e1753eabc09d8a938",
+      "suppliedBytes": 359706,
+      "publishedBytes": 68234,
+      "suppliedDimensions": [
+        1494,
+        486
+      ],
+      "publishedDimensions": [
+        1200,
+        390
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2024/papers/Shao_SplattingAvatar_Realistic_Real-Time_Human_Avatars_with_Mesh-Embedded_Gaussian_Splatting_CVPR_2024_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "a92710bd8423e8c4213b3a75089fb7629b9bec1449f51605f7f7b375c50d2d63",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "iandola2025squeezeme",
+      "path": "assets/papers/iandola2025squeezeme.webp",
+      "suppliedFile": "assets/papers/iandola2025squeezeme.webp",
+      "suppliedSha256": "e65c70981c65a8dc4e62c88980411a07af6054cf8c298f81b134634774b6bb3b",
+      "publishedSha256": "64f2a68d836464523af0e8569472cecbb73a6bd86f5feebc346a764a42cbf606",
+      "suppliedBytes": 360254,
+      "publishedBytes": 37272,
+      "suppliedDimensions": [
+        1374,
+        891
+      ],
+      "publishedDimensions": [
+        1200,
+        778
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2412.15171",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "edc545f37e14d5827251b9a67c52e482e96d45b166985585f0b3ff362b238d55",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "peng2024synctalk",
+      "path": "assets/papers/peng2024synctalk.webp",
+      "suppliedFile": "assets/papers/peng2024synctalk.webp",
+      "suppliedSha256": "130bf86d793c197924721b53c0b7f15e9b4bcda7e446f74d2a90dc312b1decbf",
+      "publishedSha256": "195030ae947bc78c6ae37f83024f60c5e332c8c33c54558f268398a0be024a3a",
+      "suppliedBytes": 472860,
+      "publishedBytes": 90052,
+      "suppliedDimensions": [
+        1491,
+        630
+      ],
+      "publishedDimensions": [
+        1200,
+        507
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2024/papers/Peng_SyncTalk_The_Devil_is_in_the_Synchronization_for_Talking_Head_CVPR_2024_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "3d58c126a720d6c1f066c95d101772910f3d85fe640bea0edf7b2cfda2eb4ab0",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.01381,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "peng2025synctalk++",
+      "path": "assets/papers/peng2025synctalk-plus-plus.webp",
+      "suppliedFile": "assets/papers/peng2025synctalk++.webp",
+      "suppliedSha256": "37dc150256aa7f92a059f61e12781b621c47ee680e06506cf7cfeaf4d5801412",
+      "publishedSha256": "168429cace85e8bd89e1dc659b1823f6903824c1b920955e194b7fa70c70e7ed",
+      "suppliedBytes": 543146,
+      "publishedBytes": 101848,
+      "suppliedDimensions": [
+        1545,
+        669
+      ],
+      "publishedDimensions": [
+        1200,
+        520
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2506.14742",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "bef30cadbd5c6f1b7d8623b17cf5789d25f25bb8d448cdc2794253deea769ed9",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 3e-05,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zhen2025teller",
+      "path": "assets/papers/zhen2025teller.webp",
+      "suppliedFile": "assets/papers/zhen2025teller.webp",
+      "suppliedSha256": "076ef7250948345eece890d965283e638b037a068f1f64713b0beb3de7b46c9c",
+      "publishedSha256": "fef0ace2f575636ea302012a4977112caa139533ab2d2e5c5e1996b5fe293d10",
+      "suppliedBytes": 425690,
+      "publishedBytes": 66442,
+      "suppliedDimensions": [
+        1944,
+        836
+      ],
+      "publishedDimensions": [
+        1200,
+        516
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2025/papers/Zhen_Teller_Real-Time_Streaming_Audio-Driven_Portrait_Animation_with_Autoregressive_Motion_Generation_CVPR_2025_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "e33dd629db677dd0af27cd08197f3ec3a3fd72e5cc2ac8d38089b754b928f1b6",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "song2024texttoon",
+      "path": "assets/papers/song2024texttoon.webp",
+      "suppliedFile": "assets/papers/song2024texttoon.webp",
+      "suppliedSha256": "2a1620fa14e0463fceac2e61bb39ad4fb886fdc561948fc9d3939d217146c337",
+      "publishedSha256": "9dad2b91fbdc3bf6cd328d9a6952811c1d3489af7a825a39e23f2d2fc2b11695",
+      "suppliedBytes": 1475242,
+      "publishedBytes": 122252,
+      "suppliedDimensions": [
+        2056,
+        1320
+      ],
+      "publishedDimensions": [
+        1200,
+        770
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2410.07160",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "543965f4b656d5fa90325e081030ec948d732798b440433b71d829341aaa69b7",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 3e-05,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "chu2026unils",
+      "path": "assets/papers/chu2026unils.webp",
+      "suppliedFile": "assets/papers/chu2026unils.webp",
+      "suppliedSha256": "b6cc4ce96058263429d730e49a1cbede50235c33b5e4121f269cd42dbd66b2e3",
+      "publishedSha256": "c9b14978c42bfc877dd0a66623559b1fabc1cee5474f86c3f9c4a3ef2b178f70",
+      "suppliedBytes": 152474,
+      "publishedBytes": 48652,
+      "suppliedDimensions": [
+        1996,
+        608
+      ],
+      "publishedDimensions": [
+        1200,
+        366
+      ],
+      "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2026/papers/Chu_UniLS_End-to-End_Audio-Driven_Avatars_for_Unified_Listening_and_Speaking_CVPR_2026_paper.pdf",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "dc9828ea325c7de4cc8cbaabed0f09d1acd310fc1dff0848d0dc99316b0d4a75",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.00975,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "hu2025unitalker",
+      "path": "assets/papers/hu2025unitalker.webp",
+      "suppliedFile": "assets/papers/hu2025unitalker.webp",
+      "suppliedSha256": "003722cb62546269cc630f76a873b750ed6a8f524931f8fe2d81e0f3135a2a31",
+      "publishedSha256": "eec4a288f5fa810d39e8b39d3a54a591b13ca0ff833036eb1cd6de65a0fdcc96",
+      "suppliedBytes": 186330,
+      "publishedBytes": 72214,
+      "suppliedDimensions": [
+        984,
+        928
+      ],
+      "publishedDimensions": [
+        984,
+        928
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2508.04585",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "86247f56591e00abf448a5905e059fdf5f08c51ad3309a8a81b56f8497ed3eaa",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "xu2026vasa",
+      "path": "assets/papers/xu2026vasa.webp",
+      "suppliedFile": "assets/papers/xu2026vasa.webp",
+      "suppliedSha256": "f56157b4dc1d82988187f4dacb15fa499b1d3c60acf562e71a4c652cbaac5939",
+      "publishedSha256": "a6ff30b85323060ed29a249b7793e5fadbd7856e1c4cb43520d41e04727ad46f",
+      "suppliedBytes": 354062,
+      "publishedBytes": 75696,
+      "suppliedDimensions": [
+        1194,
+        432
+      ],
+      "publishedDimensions": [
+        1194,
+        432
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2512.14677",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "bd3b8ff309931c26b58aa40428176475e78991e04692673fee6f69df47009e59",
+      "figure": "Figure 1",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "zielonka2026builddigitalhumanspriors",
+      "path": "assets/papers/zielonka2026builddigitalhumanspriors.webp",
+      "suppliedFile": "assets/papers/zielonka2026builddigitalhumanspriors.webp",
+      "suppliedSha256": "56fa2af0767a7d743fa8f04264de2b71731191d98c2991d4a82eb68d6950156e",
+      "publishedSha256": "7f436be39f833df4d4f4919b04bf6fb32e37fe3dd13b40590c25606554e9ab48",
+      "suppliedBytes": 1029768,
+      "publishedBytes": 107324,
+      "suppliedDimensions": [
+        2024,
+        748
+      ],
+      "publishedDimensions": [
+        1200,
+        443
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2607.04341",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "081b4cfd95e76094f7cb9a577c5eb8b043ce65d73a5eb8ff7c91fad89b112f3e",
+      "figure": "Figure 1",
+      "sourceComparison": "same figure and crop, visually verified with minor rasterization differences",
+      "meanAbsoluteChannelDifference": 0.00043,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "yu2025survey",
+      "path": "assets/papers/yu2025survey.webp",
+      "suppliedFile": "assets/papers/yu2025survey.webp",
+      "suppliedSha256": "1df7db05c16d6065d5cc06942ef91f8ea3b40a78bc98a4396db416be73f70f03",
+      "publishedSha256": "15097585f4445f8411f3c125bcf26b324d75711f3330599b1cc634b1944579ec",
+      "suppliedBytes": 154588,
+      "publishedBytes": 51588,
+      "suppliedDimensions": [
+        1836,
+        768
+      ],
+      "publishedDimensions": [
+        1200,
+        502
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2504.21853",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "380bfcbb3b124e071f6e9aad4a01fa2e67d44205272fe708eed71f8ae7d1a22a",
+      "figure": "Figure 3",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    },
+    {
+      "id": "li2024survey",
+      "path": "assets/papers/li2024survey.webp",
+      "suppliedFile": "assets/papers/li2024survey.webp",
+      "suppliedSha256": "e0594f3b9e66c66ba004b62351411102294c94f897ed038c859fc3f6c8e69d5f",
+      "publishedSha256": "9e3da3f7faaa1001300aa0133da945ec09935b0fa2f695ac447f68acf7fbc5b1",
+      "suppliedBytes": 340968,
+      "publishedBytes": 56988,
+      "suppliedDimensions": [
+        2028,
+        448
+      ],
+      "publishedDimensions": [
+        1200,
+        265
+      ],
+      "sourceUrl": "https://arxiv.org/pdf/2403.16407",
+      "sourceHttpStatus": 200,
+      "downloadSha256": "9ff88476c8f92448a8973ab4b5f2b65775e0150da6f05c094a0576ee639ea24f",
+      "figure": "Figure 3",
+      "sourceComparison": "pixel-identical",
+      "meanAbsoluteChannelDifference": 0.0,
+      "visuallyReviewed": true
+    }
+  ]
+}
