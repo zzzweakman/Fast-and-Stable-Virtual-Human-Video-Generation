@@ -1030,6 +1030,16 @@
     "kind": "figure",
     "credit": "Original paper authors; reproduced as a research preview."
   },
+  "deng2026fluentavatarflickerfreetalkingheadanimation": {
+    "path": "assets/papers/deng2026fluentavatarflickerfreetalkingheadanimation.webp",
+    "width": 1000,
+    "height": 430,
+    "sourceUrl": "https://arxiv.org/abs/2509.12052",
+    "sourceImageUrl": "https://arxiv.org/html/2509.12052v3/AvatarSync-mainfig_v7.png",
+    "caption": "Phoneme-guided visual-token keyframes and inter-frame interpolation — Figure 4.",
+    "kind": "figure",
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
   "chen2025taoavatar": {
     "path": "assets/papers/chen2025taoavatar.webp",
     "width": 800,

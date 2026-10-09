@@ -5139,5 +5139,45 @@
       "note": "General video-generation or efficiency reference included as supporting context. This record is not counted as a virtual-human method in the four primary route totals.",
       "verificationUrl": "https://arxiv.org/abs/2602.10825"
     }
+  },
+  {
+    "id": "deng2026fluentavatarflickerfreetalkingheadanimation",
+    "title": "FluentAvatar: Flicker-Free Talking-Head Animation via Phoneme-Guided Autoregressive Modeling",
+    "shortTitle": "FluentAvatar",
+    "authors": "Yuchen Deng, Xiuyang Wu, Hai-Tao Zheng, Suiyang Zhang, Yi He, Yuxing Han",
+    "year": 2026,
+    "category": "autoregressive",
+    "subcategory": "Phoneme-aligned visual tokens",
+    "summary": "Autoregressively predicts phoneme-aligned keyframes in discrete visual-token space, then generates transition frames with timestamp-aware state-space interpolation. Its causal attention design targets temporal flicker, evaluated with a background-isolated BG-Flicker metric.",
+    "tags": [
+      "visual autoregression",
+      "phoneme conditioning",
+      "keyframe interpolation",
+      "flicker reduction"
+    ],
+    "url": "https://arxiv.org/abs/2509.12052",
+    "arxiv": "2509.12052",
+    "section": "AR literature supplement",
+    "source": {
+      "citationKey": "deng2026fluentavatarflickerfreetalkingheadanimation",
+      "bibliography": "bib/AR.bib",
+      "sections": [],
+      "csv": {
+        "file": "data.csv",
+        "paperId": "338",
+        "category": "AR (Sec 5)"
+      }
+    },
+    "bibtex": "@misc{deng2026fluentavatarflickerfreetalkingheadanimation,\n      title={FluentAvatar: Flicker-Free Talking-Head Animation via Phoneme-Guided Autoregressive Modeling}, \n      author={Yuchen Deng and Xiuyang Wu and Hai-Tao Zheng and Suiyang Zhang and Yi He and Yuxing Han},\n      year={2026},\n      eprint={2509.12052},\n      archivePrefix={arXiv},\n      primaryClass={cs.CV},\n      url={https://arxiv.org/abs/2509.12052}, \n}",
+    "featured": false,
+    "venue": "arXiv preprint arXiv:2509.12052",
+    "provenance": {
+      "metadata": "Manuscript bibliography and supplied CSV, checked against the original arXiv record",
+      "summary": "Original paper v3, Sections 3.1–3.3",
+      "yearPolicy": "2026 bibliography edition, matching arXiv v3; the first preprint and CSV year field are 2025",
+      "linkSource": "Supplied CSV bibliography and original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2509.12052v3",
+      "note": "Added from CSV paper ID 338. The model predicts image-token keyframes, with RGB reconstruction from visual tokens, so it satisfies the manuscript's native visual-AR rule. It was not cited in the draft's AR comparison table. No real-time or streaming latency claim is inferred."
+    }
   }
 ]

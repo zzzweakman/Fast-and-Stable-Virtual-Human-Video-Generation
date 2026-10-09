@@ -24,7 +24,7 @@ Search and filter literature; browse four visual-ownership routes; inspect catal
 
 ## Evidence on Hand
 
-The 1008_overleaf manuscript, its section files and bibliography, supplied main_revised.pdf, local paper sources, and verified primary paper links. The supplied Feishu URL returns HTTP 404 during this release and is not an ingested source. Survey authorship is anonymous in the supplied manuscript; no author or affiliation is invented.
+The 1008_overleaf manuscript, its section files and bibliography, supplied main_revised.pdf, local paper sources, and verified primary paper links. The supplied Feishu URL returned HTTP 404; its subsequent local CSV was reviewed specifically for AR supplementation. The user confirmed retaining the manuscript's strict visual-AR category. Survey authorship is anonymous in the supplied manuscript; no author or affiliation is invented.
 
 ## Product Principles
 

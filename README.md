@@ -22,17 +22,18 @@ Open http://127.0.0.1:4173. Serve over HTTP rather than opening the HTML as a lo
 
 - `data/papers.json`: curated records, summaries, original bibliography entries, and manuscript provenance.
 - `data/catalog-notes.md`: selection policy and source limitations.
+- `data/ar-supplement-notes.md`: review of all 28 AR-labelled CSV rows and the verified FluentAvatar addition.
 - `assets/papers/manifest.json`: preview provenance, source pages, figure captions, and image paths.
 - `assets/survey/survey.pdf`: the supplied October 2026 revised draft (`main_revised.pdf`), which matches the current source abstract.
 - `assets/survey/provenance.json`: source information for the survey PDF and diagrams.
 
 Methods are assigned by the manuscript's **visual owner**, not solely by whether any component uses GANs, diffusion, autoregression, or rendering. Supporting foundations, datasets, evaluation work, and surveys are counted separately. Years follow the cited bibliography edition and may differ from the earliest preprint. Counts describe the curated collection and are not an exhaustive census or a speed leaderboard.
 
-The supplied Feishu literature document returned HTTP 404 during preparation. This release uses the local survey and its bibliography; it does not claim to include Feishu-only entries. Source paper previews are reproduced for scholarly reference and remain attributable to their respective authors. Records without a source preview use visibly labelled text covers. Manrope is distributed under its included SIL Open Font License.
+The supplied Feishu literature document returned HTTP 404 during preparation. Its subsequently supplied local CSV was reviewed for AR coverage, adding FluentAvatar after verification against the original paper. The catalogue now contains 149 papers, including five native visual-AR methods. CSV systems that predict motion or dialogue remain outside that strict category; the review notes explain each decision. Source paper previews are reproduced for scholarly reference and remain attributable to their respective authors. Records without a source preview use visibly labelled text covers. Manrope is distributed under its included SIL Open Font License.
 
 ## Update the catalogue
 
-Add or revise a record in `data/papers.json`, keeping its citation key unique. Required fields are checked by `scripts/validate.py`. Provide an original paper URL, a faithful one- or two-sentence summary, the primary category, bibliography year, mechanism tags, and BibTeX. Every record should identify its manuscript/bibliography source.
+Add or revise a record in `data/papers.json`, keeping its citation key unique. Required fields are checked by `scripts/validate.py`. Provide an original paper URL, a faithful one- or two-sentence summary, the primary category, bibliography year, mechanism tags, and BibTeX. Every record should identify its manuscript/bibliography or supplied-literature source. Mark supplemental records explicitly and verify their classification against the original paper.
 
 For a preview, add an optimized image under `assets/papers/` and an entry keyed by the paper's citation ID in `assets/papers/manifest.json`. Include the original source URL, caption, and figure/page provenance; do not fabricate a paper preview. `heroPath` optionally points to a larger source crop.
 
