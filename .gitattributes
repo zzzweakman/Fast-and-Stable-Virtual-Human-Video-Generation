@@ -4,3 +4,8 @@ data/*-2026-10-09.json -text
 data/*-2026-10-09.csv -text whitespace=cr-at-eol
 data/evidence-guide.md -text
 data/snapshots/2026-10-09/** -text
+data/*-2026-10-09-final.json -text
+data/*-2026-10-09-final.csv -text whitespace=cr-at-eol
+data/evidence-guide-final.md -text
+data/omniresponse-review.md -text
+data/snapshots/2026-10-09-final/** -text

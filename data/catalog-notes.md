@@ -1,15 +1,15 @@
 # Literature catalogue provenance
 
-Prepared on 9 October 2026 from the manuscript rooted at `virtual-human-survey/1008_overleaf/main.tex`, its `sec_new` sections, and ten bibliography files. No manuscript source was edited.
+Prepared on 9 October 2026 from the manuscript rooted at `virtual-human-survey/1008_overleaf/main.tex`, its `sec_new` sections, and ten bibliography files. The illustrated manuscript in `virtual-human-survey/1009_final` now includes the checked OmniResponse case study and ResponseNet dataset entry.
 
-The catalogue contains **164 distinct bibliography records** with original-paper or author-hosted links, including **122 arXiv links**. Every named method in the comparison tables of all four route sections is represented. The collection also includes selected methods discussed in the surrounding text, verified additions from the supplied CSV and two AR collections, ten dataset papers, six evaluation references, eighteen foundations, three related surveys, and four related-method records. It is a curated view of this draft and its supplied literature, not a complete census of the field or an exhaustive export of its bibliography.
+The catalogue contains **164 distinct bibliography records** with original-paper or author-hosted links, including **122 arXiv identifiers**. Every named method in the comparison tables of all four route sections is represented. The collection also includes selected methods discussed in the surrounding text, verified additions from the supplied CSV and two AR collections, ten dataset papers, six evaluation references, eighteen foundations, three related surveys, and four related-method records. It is a curated view of this draft and its supplied literature, not a complete census of the field or an exhaustive export of its bibliography.
 
 | Category | Records |
 | --- | ---: |
-| GAN-based | 22 |
+| GAN-based | 21 |
 | Diffusion-based | 43 |
 | Temporal visual autoregressive (including regional DualLip) | 5 |
-| Render-based | 53 |
+| Render-based | 54 |
 | Foundations and general-video context | 18 |
 | Datasets | 10 |
 | Evaluation | 6 |
@@ -22,7 +22,7 @@ Category follows the manuscript's **visual ownership** test, rather than the fil
 
 The 123 records assigned to the four routes include general-video bridges, historical regional methods, and contextual controller systems described by the survey. The remaining 41 supporting references are counted separately. MotionStream is general motion-controlled video, UniMo bridges general human video and motion, and the Wan-Streamer records are successive versions of one series. Counts measure records in this catalogue, not independent architectures, full-avatar systems, research quality, performance, or adoption.
 
-Three verified visual-AR baselines are cross-listed: SpeakerVid-5M stays under datasets, while ART-V and TransformerT2L retain the MMVID and ParaLip source papers under Related methods. Thus AR navigation contains eight papers, while the exclusive chart records five primary AR papers. MMVID and ParaLip's main methods are not classified as AR. NOVA, VideoPoet, and VideoGPT remain supporting general-video foundations; FluentAvatar and Taming Transformer have a separate spatial/unresolved-AR context link. See the [15-paper collection review](ar-collection-review.md) and [second-pass review](ar-second-pass-review.md) for evidence and decisions.
+Three verified visual-AR baselines are cross-listed: SpeakerVid-5M stays under datasets, while ART-V and TransformerT2L retain the MMVID and ParaLip source papers under Related methods. OmniResponse (NeurIPS 2025) is additionally cross-listed as an AR response controller: facial coefficients are generated causally and a pretrained portrait renderer supplies appearance. Thus AR navigation contains nine papers, while the exclusive chart records five primary visual-AR papers. See the [OmniResponse source review](omniresponse-review.md). MMVID and ParaLip's main methods are not classified as AR. NOVA, VideoPoet, and VideoGPT remain supporting general-video foundations; FluentAvatar and Taming Transformer have a separate spatial/unresolved-AR context link. See the [15-paper collection review](ar-collection-review.md) and [second-pass review](ar-second-pass-review.md) for evidence and decisions.
 
 Summaries mainly paraphrase the manuscript's mechanism descriptions in one or two sentences. For Vidu S1, Rolling Forcing, Forcing-KV, and FlowCache, the original arXiv abstracts supplement the manuscript's brief contextual mentions. FluentAvatar and both AR collections use verified original method sections, with uncertainties recorded explicitly. Cross-listed baselines have separate source-backed titles, summaries, and optional tags for their route view. Tags describe mechanisms or tasks and are editorial annotations. `featured` marks eight examples for navigation, not a ranking.
 

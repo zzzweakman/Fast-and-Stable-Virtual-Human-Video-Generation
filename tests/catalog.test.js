@@ -6,7 +6,7 @@ import { attachEvidence, defaultConfiguration, fieldText, matchesPattern } from 
 
 const papers = JSON.parse(fs.readFileSync(new URL('../data/papers.json', import.meta.url), 'utf8'));
 const defaults = { q: '', route: 'all', year: 'all', tag: '', sort: 'newest' };
-const snapshot = JSON.parse(fs.readFileSync(new URL('../data/evidence-2026-10-09.json', import.meta.url), 'utf8'));
+const snapshot = JSON.parse(fs.readFileSync(new URL('../data/evidence-2026-10-09-final.json', import.meta.url), 'utf8'));
 const audited = attachEvidence(papers, snapshot);
 
 test('hybrid correction preserves one primary record and the total catalogue', () => {
@@ -126,7 +126,28 @@ test('spatial and unresolved AR cases remain discoverable outside strict tempora
   assert.ok(context.every(p => p.category === 'context'));
   assert.equal(filterPapers(papers, { ...defaults, route: 'autoregressive', tag: 'AR scope context' }).length, 0);
   assert.equal(countRoutes(papers).autoregressive, 5);
-  assert.equal(countBrowseRoutes(papers).autoregressive, 8);
+  assert.equal(countBrowseRoutes(papers).autoregressive, 9);
+});
+
+test('OmniResponse is discoverable as a 2025 AR controller without changing visual-AR counts', () => {
+  const omni = audited.find(p => p.id === 'luo2026omniresponse');
+  assert.equal(omni.year, 2025);
+  assert.equal(omni.venue, 'NeurIPS 2025');
+  assert.equal(omni.category, 'rendering');
+  assert.equal(crossListingOf(omni, 'autoregressive').kind, 'controller');
+  for (const route of ['all', 'autoregressive', 'rendering']) {
+    assert.deepEqual(filterPapers(audited, { ...defaults, route, year: '2025', q: 'OmniResponse' }).map(p => p.id), [omni.id]);
+  }
+  assert.equal(countRoutes(papers).autoregressive, 5);
+  assert.match(omni.bibtex, /luo2025omniresponse/);
+  const full = defaultConfiguration(omni.evidence);
+  assert.equal(full.fields.throughput.value, 15.62);
+  assert.equal(full.fields.hardware.value, '1 NVIDIA A100 80 GB');
+  assert.match(full.boundary, /not identified as time to first visible frame/);
+  assert.equal(full.fields.resolution.status, 'not-reported');
+  assert.equal(full.fields.duration.status, 'not-reported');
+  assert.equal(full.additionalSources[0].edition, 'NeurIPS 2025 supplementary Appendix.pdf');
+  assert.equal(omni.evidence.length, 3);
 });
 
 test('sorting and historical buckets operate on numeric bibliography years', () => {

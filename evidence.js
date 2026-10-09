@@ -4,7 +4,7 @@ export const PATTERNS = {
   'L4-G': 'Generated-history training', 'L4-C': 'Corrupted-history training', L5: 'Boundary-state transfer'
 };
 export const EVIDENCE_STATUS = { A: 'documented architecture', Q: 'qualitative example', T: 'quantitative temporal evidence', B: 'component ablation', H: 'proposed transfer' };
-export const FIELD_STATUS = { 'not-reported': 'Not reported in the checked source', unavailable: 'Source unavailable', conflict: 'Unresolved source conflict', 'not-applicable': 'Not applicable', 'not-audited': 'Not audited in this snapshot' };
+export const FIELD_STATUS = { 'not-reported': 'Not reported in the checked source', unavailable: 'Source unavailable', conflict: 'Unresolved source conflict', 'not-applicable': 'Not applicable', 'not-audited': 'Not yet audited' };
 
 export function attachEvidence(papers, snapshot) {
   const byPaper = new Map();
@@ -33,7 +33,7 @@ export function defaultConfiguration(rows) {
 }
 
 export function fieldText(field) {
-  if (!field) return 'Not audited in this snapshot';
+  if (!field) return 'Not yet audited';
   if (field.status !== 'reported') {
     const status = FIELD_STATUS[field.status] || 'Unknown evidence status';
     return field.status === 'conflict' && field.value !== undefined ? `${status}: ${field.value}${field.unit ? ` ${field.unit}` : ''} in the recorded table` : status;
