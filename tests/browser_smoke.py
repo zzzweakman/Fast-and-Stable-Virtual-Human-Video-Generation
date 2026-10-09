@@ -6,7 +6,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = os.environ.get('SURVEY_TEST_URL', 'http://127.0.0.1:4173/')
-OUT = ROOT / '.impeccable/review'
+OUT = Path(os.environ.get('SURVEY_TEST_OUTPUT', ROOT / '.impeccable/review'))
 OUT.mkdir(parents=True, exist_ok=True)
 papers = json.loads((ROOT / 'data/papers.json').read_text())
 
@@ -66,7 +66,7 @@ with sync_playwright() as p:
     page.locator('#sort').select_option('oldest')
     page.locator('#reset-filters').click()
     page.keyboard.press('Tab')
-    page.keyboard.press('/')
+    page.keyboard.press('Control+k')
     assert page.locator('#search').evaluate('(e) => e === document.activeElement')
     page.locator('.stability-patterns summary').first.click()
     assert page.locator('.stability-patterns details').first.get_attribute('open') is not None

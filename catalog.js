@@ -1,3 +1,5 @@
+import { matchesPattern, patternAssociations } from './evidence.js';
+
 export const ROUTES = {
   gan: { label: 'GAN-based', color: '#956333', cover: '#f3ede4' },
   diffusion: { label: 'Diffusion-based', color: '#536dc6', cover: '#edf0fb' },
@@ -19,8 +21,10 @@ export function filterPapers(papers, state) {
   const result = papers.filter(p => {
     if (!matchesRoute(p, state.route)) return false;
     if (state.year !== 'all' && (state.year.startsWith('before:') ? p.year >= +state.year.split(':')[1] : p.year !== +state.year)) return false;
-    const haystack = normalize([p.title, p.shortTitle, p.authors, p.summary, p.subcategory, ...(p.tags || []), ...(p.crossListings || []).map(c => `${c.shortTitle || ''} ${c.label} ${c.summary} ${(c.tags || []).join(' ')}`)].join(' '));
-    if (state.tag && !haystack.includes(normalize(state.tag))) return false;
+    const haystack = normalize([p.title, p.shortTitle, p.authors, p.summary, p.subcategory, ...(p.tags || []), ...patternAssociations(p).map(a => `${a.code} ${a.note}`), ...(p.crossListings || []).map(c => `${c.shortTitle || ''} ${c.label} ${c.summary} ${(c.tags || []).join(' ')}`)].join(' '));
+    if (/^L[1-5](?:-[GC])?$/.test(state.tag)) {
+      if (!matchesPattern(p, state.tag)) return false;
+    } else if (state.tag && !haystack.includes(normalize(state.tag))) return false;
     return tokens.every(token => haystack.includes(token));
   });
   result.sort((a, b) => state.sort === 'title'

@@ -1,0 +1,2441 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "VH-2026-10-09",
+  "auditDate": "2026-10-09",
+  "selection": "Retrospective narrative-survey cohort: 57 systems from the submitted route evidence tables. Not a systematic search or field census.",
+  "sourceCollections": [
+    "Submitted bibliography and evidence tables",
+    "Companion catalogue and catalogue provenance",
+    "Local material/data.csv",
+    "AR_Paper_Collection",
+    "AR_Second_Pass_Supplement"
+  ],
+  "statusDefinitions": {
+    "reported": "Value stated in the pinned source",
+    "not-reported": "Not stated for this field in the checked source",
+    "unavailable": "Source could not be checked",
+    "conflict": "Unresolved contradictory source values",
+    "not-applicable": "Field does not apply to this boundary",
+    "not-audited": "Field was not rechecked; no absence claim"
+  },
+  "patternStatusDefinitions": {
+    "A": "Documented architecture",
+    "Q": "Qualitative source example",
+    "T": "Quantitative measurements at stated times or durations",
+    "B": "Source component ablation; not necessarily longitudinal",
+    "H": "Proposed transfer, not a documented implementation"
+  },
+  "cohort": [
+    {
+      "paperId": "prajwal2020lip",
+      "citationKey": "prajwal2020lip",
+      "primaryRoute": "gan",
+      "title": "A lip sync expert is all you need for speech to lip generation in the wild",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2008.10010v1",
+        "url": "https://arxiv.org/pdf/2008.10010v1",
+        "sha256": "800a9f83d97b7d44901f5ea93008364de7b22890907bbb9aa847c833179193f0",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:gan-methods",
+          "tex": "Wav2Lip+\\allowbreak GAN~\\cite{prajwal2020lip} & Feed-forward RGB face-crop generator; identity-general & Face-crop rather than full-canvas synthesis; training-only sync and quality critics & FPS, hardware, resolution, TTFF, and timer NR & Stateless framewise generation; evaluated duration NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "zhang2024musetalk",
+      "citationKey": "zhang2024musetalk",
+      "primaryRoute": "gan",
+      "title": "MuseTalk: Real-time high-fidelity video dubbing via spatio-temporal sampling",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2410.10122v3",
+        "url": "https://arxiv.org/pdf/2410.10122v3",
+        "sha256": "9f4536d58fa198e76078b2b6bd46d2988c3b12ee9a031e7d4be46a509ddc1c9f",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:gan-methods",
+          "tex": "MuseTalk~\\cite{zhang2024musetalk} & U-Net-generated lower-face VAE latent; no subject adaptation & One-call regional latent prediction; reusable blend mask & 30~FPS, $256^2$, one V100, preloaded data; included stages NR & Single-frame jitter reported; quantitative long-horizon evidence NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "wang2023seeing",
+      "citationKey": "wang2023seeing",
+      "primaryRoute": "gan",
+      "title": "Seeing what you said: Talking face generation guided by a lip reading expert",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "publication PDF; edition requires inspection",
+        "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Seeing_What_You_Said_Talking_Face_Generation_Guided_by_a_CVPR_2023_paper.html",
+        "sha256": "3478f86321ec0f26b33b27c51e3e3acf0f3a168b5d4e1d541ed220fe280278b3",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:gan-methods",
+          "tex": "TalkLip~\\cite{wang2023seeing} & Feed-forward $96^2$ RGB face-crop generator; identity-general & Training-only lip-reading expert improves intelligibility & FPS, latency, hardware, parameters, and timer NR & Stateless framewise generation; long-horizon evidence NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "lu2021live",
+      "citationKey": "lu2021live",
+      "primaryRoute": "gan",
+      "title": "Live speech portraits: real-time photorealistic talking-head animation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2109.10595v2",
+        "url": "https://arxiv.org/pdf/2109.10595v2",
+        "sha256": "e8cea540f2fc859b1152172c8e126c715ae0c20c13dff639963ace087929dce5",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:gan-methods",
+          "tex": "Live Speech Portraits~\\cite{lu2021live} & Person-specific adversarial portrait generator & Compact predicted motion; person-specific appearance & Source-reported 30~FPS system rate on a consumer GPU; timer boundary NR & Recurrent motion prediction; long-horizon evidence NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "tan2024edtalk",
+      "citationKey": "tan2024edtalk",
+      "primaryRoute": "gan",
+      "title": "EDTalk: Efficient disentanglement for emotional talking head synthesis",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2404.01647v1",
+        "url": "https://arxiv.org/pdf/2404.01647v1",
+        "sha256": "f6391601c420dacd42dad49e6350ccf160c01d12d9907bf2ae5cea58835a574d",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:gan-methods",
+          "tex": "EDTalk~\\cite{tan2024edtalk} & Adversarial RGB generator controlled by mouth/pose/expression banks; one-shot & Compact reusable bases and progressive freezing & Inference timing NR; about 7~h disentanglement training on two 3090 GPUs & Compact controller state only; long-horizon evidence NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "tan2024flowvqtalker",
+      "citationKey": "tan2024flowvqtalker",
+      "primaryRoute": "gan",
+      "title": "FlowVQTalker: High-Quality Emotional Talking Face Generation through Normalizing Flow and Quantization",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2403.06375v3",
+        "url": "https://arxiv.org/pdf/2403.06375v3",
+        "sha256": "bacd247c6c0d83370af622284df0afb6d5d3597c52f4097db3f00c7912ab6672",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:gan-methods",
+          "tex": "FlowVQ\\allowbreak Talker~\\cite{tan2024flowvqtalker} & Adversarial VQ image generator; full $512^2$ portrait & Compact coefficient control and learned spatial codebook & Inference FPS, latency, hardware, memory, and timer NR & Coefficient history in the controller; long-horizon evidence NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "tan2025fixtalk",
+      "citationKey": "tan2025fixtalk",
+      "primaryRoute": "gan",
+      "title": "FixTalk: Taming identity leakage for high-quality talking head generation in extreme cases",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "publication PDF; edition requires inspection",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Tan_FixTalk_Taming_Identity_Leakage_for_High-Quality_Talking_Head_Generation_in_ICCV_2025_paper.html",
+        "sha256": "9f3095405e980350e9dbcc504d55119f1bfecdea6c3bd612f04415865f20cec3",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:gan-methods",
+          "tex": "FixTalk~\\cite{tan2025fixtalk} & Adversarial dense portrait generator; one-shot & Identity-suppressing EMI and compressed memory-retrieved EDI detail & 27.601~FPS on A100 80~GB; $512^2$ data, full timer boundary NR & Retrieval memory (weak L2); TTFF and long-horizon evidence NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "wang2023styleavatar",
+      "citationKey": "wang2023styleavatar",
+      "primaryRoute": "rendering",
+      "title": "StyleAvatar: Real-time photo-realistic portrait avatar from a single video",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2305.00942v1",
+        "url": "https://arxiv.org/pdf/2305.00942v1",
+        "sha256": "8ca87c7d4f7c26252647f2e40067d300083434a1fbea4ea371c8ff083c3e7637",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:gan-methods",
+          "tex": "StyleAvatar~\\cite{wang2023styleavatar} & Person-specific compositional StyleUNet stack; full portrait & Static regional features, wavelet-domain processing, FP16 TensorRT & Source-labeled ``live system'': 35~FPS / 28~ms on one RTX~3090; 20~ms model-only component & Subject-specific enrollment as L1 anchor; Stable drift evaluation NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence.",
+      "checkedConfigurationIds": [
+        "wang2023styleavatar--tensorrt-model",
+        "wang2023styleavatar--live-system"
+      ]
+    },
+    {
+      "paperId": "zhong2025fada",
+      "citationKey": "zhong2025fada",
+      "primaryRoute": "diffusion",
+      "title": "FADA: Fast diffusion avatar synthesis with mixed-supervised multi-CFG distillation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2412.16915v2",
+        "url": "https://arxiv.org/pdf/2412.16915v2",
+        "sha256": "86c44c41b586ea7778b100b1f45ae83d23c17c8039417a70f31ed2e78aa0ecd4",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "FADA~\\cite{zhong2025fada} & PeRFlow and multi-CFG folding & 6 steps; $75\\rightarrow18/6$ NFE-D & $4.17\\times/12.5\\times$ NFE-D ratio & Hardware, FPS, and wall-clock time NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "yu2025llia",
+      "citationKey": "yu2025llia",
+      "primaryRoute": "diffusion",
+      "title": "LLIA–Enabling Low-Latency Interactive Avatars: Real-Time Audio-Driven Portrait Video Generation with Diffusion Models",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2506.05806v1",
+        "url": "https://arxiv.org/pdf/2506.05806v1",
+        "sha256": "aad377bfcb6fc68ed991e5212fd396d804e6ed37420a8fbe68965be891475f92",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "LLIA~\\cite{yu2025llia} & 2-step consistency, INT8, pipeline & 2/4 steps; strict NFE NR & 78 FPS steady state; source-defined approximately 140 ms initial/state-switch four-frame response & RTX 4090D, $384^2$; 12-frame steady-state and 4-frame startup settings \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "du2026rap",
+      "citationKey": "du2026rap",
+      "primaryRoute": "diffusion",
+      "title": "RAP: Real-time Audio-driven Portrait Animation with Video Diffusion Transformer",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2508.05115v2",
+        "url": "https://arxiv.org/pdf/2508.05115v2",
+        "sha256": "2077f522088c042921fe8b7b5293ce68f82fd72a1bf99a558cdc9d2e3386ed96",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "RAP~\\cite{du2026rap} & Compressed LTX latent, hybrid attention & Strict NFE NR & 42.41 / 39.87 FPS & One A800, $512^2$; complete timing boundary NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "long2026lightning",
+      "citationKey": "long2026lightning",
+      "primaryRoute": "diffusion",
+      "title": "Lightning fast caching-based parallel denoising prediction for accelerating talking head generation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2509.00052v2",
+        "url": "https://arxiv.org/pdf/2509.00052v2",
+        "sha256": "d422e878a3449181eb914ab24d833797a817407834e23245a16011ee9eb70bd5",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "LightningCP~\\cite{long2026lightning} & Feature cache, parallel denoising & Steps / NFE NR & Hallo U-Net 23.692$\\rightarrow$7.528 s/clip & One-GPU baseline versus unspecified multi-A800 method; not end-to-end \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "ma2026follow",
+      "citationKey": "ma2026follow",
+      "primaryRoute": "diffusion",
+      "title": "Follow-Your-Emoji-Faster: Towards efficient, fine-controllable, and expressive freestyle portrait animation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2509.16630v1",
+        "url": "https://arxiv.org/pdf/2509.16630v1",
+        "sha256": "29e6137eb801425716ce4e96aa86cc53084541aec7bad222cc8b892d2e05022a",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "Follow-Your-Emoji-Faster~\\cite{ma2026follow} & Timestep-aware cache & 30 DDIM steps; NFE NR & U-Net 6.28$\\rightarrow$2.36 s & 64 frames, $256^2$; inference hardware NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "li2026personalive",
+      "citationKey": "li2026personalive",
+      "primaryRoute": "diffusion",
+      "title": "PersonaLive! Expressive portrait image animation for live streaming",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2512.11253v1",
+        "url": "https://arxiv.org/pdf/2512.11253v1",
+        "sha256": "f7bce75040c968ce1dc81084b5d81bab7cea671ab994864dc39eb35bd2658c55",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "PersonaLive~\\cite{li2026personalive} & 4-step micro-chunks, optional TinyVAE & 4 denoising steps; amortized NFE NR & 15.82 FPS; 0.253 s mean inter-chunk latency & One H100, $512^2$, default SD-VAE; not first-frame latency \\\\"
+        },
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "PersonaLive~\\cite{li2026personalive} & Four-step micro-chunk window & Motion-distance keyframe selection (L2); bank cap/eviction NR & Quantitative: LV100 (100 clips, at least 1 min); demonstration-only: 2700 generated frames & One H100; 0.253 s is mean inter-chunk latency; duration scaling NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence.",
+      "checkedConfigurationIds": [
+        "li2026personalive--svd-vae",
+        "li2026personalive--sd-vae",
+        "li2026personalive--tinyvae"
+      ]
+    },
+    {
+      "paperId": "shin2025motionstream",
+      "citationKey": "shin2025motionstream",
+      "primaryRoute": "diffusion",
+      "title": "MotionStream: Real-time video generation with interactive motion controls",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2511.01266v5",
+        "url": "https://arxiv.org/pdf/2511.01266v5",
+        "sha256": "196728c8302b1d5161c90ea0268faa48e89369ea5f688ec9bc11635abe8da27c",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "Motion\\allowbreak Stream~\\cite{shin2025motionstream} & Self Forcing, 3-NFE student, TinyVAE & 3 NFE/chunk & 29.5 FPS; 0.39 s reported latency & One H100, 480p; complete timing boundary NR; general motion task \\\\"
+        },
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "Motion\\allowbreak Stream~\\cite{shin2025motionstream} & Three-frame chunks; one fixed sink and one rolling recent window & Self Forcing (L4), fixed-state rolling KV (L1), cache-relative RoPE (L3) & Quantitative: 241 frames (about 15 s); claimed: indefinite & One H100, 480p; general-motion task; fixed sink restricts scene changes \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "sun2026streamavatar",
+      "citationKey": "sun2026streamavatar",
+      "primaryRoute": "diffusion",
+      "title": "StreamAvatar: Streaming diffusion models for real-time interactive human avatars",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2512.22065v2",
+        "url": "https://arxiv.org/pdf/2512.22065v2",
+        "sha256": "8dcec63aecbdd25220613bb8a992271c58d31ae41839359c5bb6b7d0c36eed83",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "Stream\\allowbreak Avatar~\\cite{sun2026streamavatar} & 3-step student, two-GPU DiT/VAE pipeline & 3 steps; strict NFE NR & About 1.20 s to first output & Two H800, $928\\times704$; 25 FPS is playback setting \\\\"
+        },
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "Stream\\allowbreak Avatar~\\cite{sun2026streamavatar} & 3-step local window, two-device pipeline & Reference Sink (L1), RAPR (L3), self-history (L4) & Quantitative: 20 s protocol; demonstration-only: about 150 s & About 1.20 s first output; two H800 \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "li2026hallo",
+      "citationKey": "li2026hallo",
+      "primaryRoute": "diffusion",
+      "title": "Hallo-Live: Real-Time Streaming Joint Audio-Video Avatar Generation with Asynchronous Dual-Stream and Human-Centric Preference Distillation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2604.23632v1",
+        "url": "https://arxiv.org/pdf/2604.23632v1",
+        "sha256": "8cb89ab01fa546e71f2dc682862f46df3bdf6153a19b9c1463083a079a13536d",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "Hallo-Live~\\cite{li2026hallo} & Preference DMD, asynchronous audio/video & Steps / NFE NR & 20.38 FPS; 0.94 s reported latency & Two H200; resolution and complete boundary NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "cho2026lip",
+      "citationKey": "cho2026lip",
+      "primaryRoute": "diffusion",
+      "title": "Lip Forcing: Few-Step Autoregressive Diffusion for Real-time Lip Synchronization",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2606.11180v1",
+        "url": "https://arxiv.org/pdf/2606.11180v1",
+        "sha256": "732a5ba3e50cd9d9ca9ed70b5421870b84870c27d5c119b6396450107bcf915d",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "Lip Forcing~\\cite{cho2026lip} & 2-step SW-DMD, rolling KV, TAE & 2 denoising NFE + 1 cache call & 31.58 / 15.11 FPS (1.3B / 14B) & One H100, $512^2$; excludes speech preprocessing, detection, and paste-back \\\\"
+        },
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "Lip Forcing~\\cite{cho2026lip} & 2 denoising NFE + clean-KV call; 7-latent cache & Sink (L1), pre-RoPE KV and dynamic RoPE (L3), SW-DMD (L4) & Quantitative: up to 6 min & One H100, 31.58/15.11 FPS; speech pre-encoded offline \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "wang2026flowact",
+      "citationKey": "wang2026flowact",
+      "primaryRoute": "diffusion",
+      "title": "FlowAct-R1: Towards Interactive Humanoid Video Generation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2601.10103v1",
+        "url": "https://arxiv.org/pdf/2601.10103v1",
+        "sha256": "f763ff9c2f4e86b61ed3316ba951ee508b9abd48d15bb31a39fcf63ad211e755",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "FlowAct-R1~\\cite{wang2026flowact} & Base stream, FP8, parallel and asynchronous decode & 3 base-cycle NFE, no CFG; refinement NFE NR & 25 FPS; about 1.5 s TTFF & 480p, A100 platform; GPU count, repair/MLLM timing inclusion, and full boundary NR \\\\"
+        },
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "FlowAct-R1~\\cite{wang2026flowact} & Chunkwise generation with fixed structured memory & Reference/long/short memory (L2), Memory Refinement, generated-GT replacement (L4) & Quantitative: longest rollout NR; claimed: arbitrary duration & 25 FPS / about 1.5 s TTFF; repair/MLLM timing inclusion NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "huang2025live",
+      "citationKey": "huang2025live",
+      "primaryRoute": "diffusion",
+      "title": "Live Avatar: Streaming real-time audio-driven avatar generation with infinite length",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "source unavailable in audit cache",
+        "url": "https://arxiv.org/abs/2512.04677",
+        "sha256": null,
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "Live Avatar~\\cite{huang2025live} & 4-step DMD, noisy KV, TPP, FP8/VAE pipeline & 4 NFE & 45.2 FPS; 1.21 s TTFF & Five H800, $720\\times400$; TTFF excludes network; about 3 s network-inclusive end-to-end latency \\\\"
+        },
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "Live Avatar~\\cite{huang2025live} & Three-latent chunks; four-block rolling, per-step local KV & History Corrupt (L4), AAS (L1), Rolling RoPE (L3) & Quantitative: over 5 min and sampled to 10000--10010 s with looped speech & Five H800, 45.2 FPS / 1.21 s TTFF; static-scene prior \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence.",
+      "checkedConfigurationIds": [
+        "huang2025live--teacher",
+        "huang2025live--distilled",
+        "huang2025live--sequence-parallel",
+        "huang2025live--timestep-pipeline",
+        "huang2025live--vae-parallel",
+        "huang2025live--full-kernel-optimized"
+      ]
+    },
+    {
+      "paperId": "shen2026soulxflashtalkrealtimeinfinitestreaming",
+      "citationKey": "shen2026soulxflashtalkrealtimeinfinitestreaming",
+      "primaryRoute": "diffusion",
+      "title": "SoulX-FlashTalk: Real-Time Infinite Streaming of Audio-Driven Avatars via Self-Correcting Bidirectional Distillation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2512.23379v3",
+        "url": "https://arxiv.org/pdf/2512.23379v3",
+        "sha256": "e27f77d57ded1b6431f6235c07770360ba0a2f16f0833bae18a84ae3e446fb07",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "SoulX-FlashTalk~\\cite{shen2026soulxflashtalkrealtimeinfinitestreaming} & 4-NFE DMD, multi-block correction, pipeline & 4 NFE & 32 FPS; 0.87 s startup & Eight H800, $720\\times416$ \\\\"
+        },
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "SoulX-FlashTalk~\\cite{shen2026soulxflashtalkrealtimeinfinitestreaming} & Five history + 28 new frames per cycle & Multi-block retrospective self-correction (L4) & Quantitative: over 5 min; demonstration-only: 1000 s & Eight H800, 32 FPS, 0.87 s startup \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "yu2026soulx",
+      "citationKey": "yu2026soulx",
+      "primaryRoute": "diffusion",
+      "title": "SoulX-FlashHead: Oracle-guided Generation of Infinite Real-time Streaming Talking Heads",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2602.07449v3",
+        "url": "https://arxiv.org/pdf/2602.07449v3",
+        "sha256": "03acdf364fe5fce3ecb58a7131887401b914ab6e9322cc9fd30e4ed48c0819f7",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "SoulX-FlashHead~\\cite{yu2026soulx} & 1.3B DiT, compressed latent, DMD & Exact steps / NFE NR & Lite 96 FPS; Pro 10.81 FPS & Paper conflicts between one H20 and RTX 4090 for the Lite result \\\\"
+        },
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "SoulX-FlashHead~\\cite{yu2026soulx} & Blockwise generation with trailing 8 s speech context & Oracle-guided self-history (L4) and reference latent (L1) & Demonstration-only: 60 s & Hardware reports conflict (H20 vs. RTX 4090) \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "zhen2026soulx",
+      "citationKey": "zhen2026soulx",
+      "primaryRoute": "diffusion",
+      "title": "SoulX-LiveAct: Towards Hour-Scale Real-Time Human Animation with Neighbor Forcing and ConvKV Memory",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2603.11746v2",
+        "url": "https://arxiv.org/pdf/2603.11746v2",
+        "sha256": "5457f7c26e68220cab6821ac62684afb23286b11a163fd85c4cc28431b5d86d1",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "SoulX-LiveAct~\\cite{zhen2026soulx} & DMD, Neighbor Forcing, ConvKV, FP8 & 3 sampling steps; strict NFE NR & 20 FPS; 0.94 s latency (definition NR) & Two H100 or H200; codec and conditioning boundary NR \\\\"
+        },
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "SoulX-LiveAct~\\cite{zhen2026soulx} & Same-step Neighbor Forcing; fixed 2/2/2 context & ConvKV-compressed history (L2) and reference anchor (L1) & Claimed: hour-scale/unbounded mechanism; demonstration-only duration: NR & Two H100/H200, 20 FPS; 0.94 s definition NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence.",
+      "checkedConfigurationIds": [
+        "zhen2026soulx--bounded-memory"
+      ]
+    },
+    {
+      "paperId": "liang2026avatar",
+      "citationKey": "liang2026avatar",
+      "primaryRoute": "diffusion",
+      "title": "Avatar V: Scaling Video-Reference Avatar Video Generation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2606.13872v1",
+        "url": "https://arxiv.org/pdf/2606.13872v1",
+        "sha256": "68fc65144e5e3277a6b46aa1c084198d28314c3436fa2fa48c6037c9a174c039",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-fast",
+          "tex": "Avatar~V~\\cite{liang2026avatar} & CFG/DMD distillation, reference KV, USP & 24 base-DiT steps + 1-step SR & About $3\\times$ relative latency reduction & Eight GPUs of unspecified model; no absolute latency, FPS, or RTF \\\\"
+        },
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "Avatar~V~\\cite{liang2026avatar} & About 6.4 s recurrent chunks; two-frame overlap & Appearance anchor (L1), motion propagation (L5), reference-KV reuse & Claimed: unbounded length; quantitative duration: NR & Eight unspecified GPUs; no absolute latency or FPS \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "cui2025hallo2",
+      "citationKey": "cui2025hallo2",
+      "primaryRoute": "diffusion",
+      "title": "Hallo2: Long-duration and high-resolution audio-driven portrait image animation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2410.07718v2",
+        "url": "https://arxiv.org/pdf/2410.07718v2",
+        "sha256": "186bf20bee88ffd28c1c38afe507eaf074012bc0fc37d70a4712075e4ad62c3a",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "Hallo2~\\cite{cui2025hallo2} & Segmented long video with patch-drop/noise augmentation & Robustness to corrupted history (L4); separate 4K enhancer & Quantitative: 4 min at $512^2$, enhancer off; claimed: hour-long & NFE, FPS, latency, and inference hardware NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "tu2025stableavatar",
+      "citationKey": "tu2025stableavatar",
+      "primaryRoute": "diffusion",
+      "title": "StableAvatar: Infinite-length audio-driven avatar video generation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2508.08248v1",
+        "url": "https://arxiv.org/pdf/2508.08248v1",
+        "sha256": "09e56baa63032cee393b2025455883324642fc3d6ddf5d18ac227ed329344390",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "StableAvatar~\\cite{tu2025stableavatar} & Dynamic weighted sliding window; window length NR & First-frame/history conditioning (L1/L5) and full-sequence training & Quantitative: Long100, 100 clips of 2--5 min & 2.32 min per 81-frame sample at $480\\times832$; offline \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "li2025joyavatar",
+      "citationKey": "li2025joyavatar",
+      "primaryRoute": "diffusion",
+      "title": "JoyAvatar-Flash: Real-time and Infinite Audio-Driven Avatar Generation with Autoregressive Diffusion",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2512.11423v3",
+        "url": "https://arxiv.org/pdf/2512.11423v3",
+        "sha256": "3d928e56c3b8bdaa6743f4c0a4a3f10d9da9e9206ac39736e2fe68097176a384",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "JoyAvatar-Flash~\\cite{li2025joyavatar} & 4-step steady state; 8/7/6/5 startup steps & PSB, MCI (L5), URCR (L3) & Quantitative: NR; demonstration-only: 120 s; claimed: unbounded (theoretical) & Single-GPU DiT 16.2 FPS; end-to-end latency NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence.",
+      "checkedConfigurationIds": [
+        "li2025joyavatar--dit-component"
+      ]
+    },
+    {
+      "paperId": "chern2025livetalk",
+      "citationKey": "chern2025livetalk",
+      "primaryRoute": "diffusion",
+      "title": "LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2512.23576v1",
+        "url": "https://arxiv.org/pdf/2512.23576v1",
+        "sha256": "271f75ed7b15fef15c0064455282f646455c19881418942d4f99b492797f9cde",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "LiveTalk~\\cite{chern2025livetalk} & 4-step rolling window & Three identity sinks (L1), two rolling slots, on-policy distillation (L4) & Claimed: several minutes; demonstration-only: 100 s & Unspecified single GPU, 24.82 FPS / 0.33 s \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "meng2026echotorrent",
+      "citationKey": "meng2026echotorrent",
+      "primaryRoute": "diffusion",
+      "title": "EchoTorrent: Towards Swift, Sustained, and Streaming Multi-Modal Video Generation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2602.13669v5",
+        "url": "https://arxiv.org/pdf/2602.13669v5",
+        "sha256": "387005351a93cd79f13c2fee0208291ea0aa41e6d2d772fbe6c683b838449e3d",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "EchoTorrent~\\cite{meng2026echotorrent} & 4 NFE chunkwise generation & Reference sink (L1) and tail-only forcing (L4) & Demonstration-only: 1000 s & Eight A100, 10.50 FPS; timing boundary NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "zeng2026lpm",
+      "citationKey": "zeng2026lpm",
+      "primaryRoute": "diffusion",
+      "title": "LPM 1.0: Video-based character performance model",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2604.07823v2",
+        "url": "https://arxiv.org/pdf/2604.07823v2",
+        "sha256": "9a46ff7a10ed9aa823619be31792246cfa2fd17dacd0761fdcfa7df20b7dcf4a",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "LPM~1.0~\\cite{zeng2026lpm} & 2-NFE generator + 1-NFE refiner & Sink/reference token (L1), pre-RoPE KV (L3), duplex conditions & Duration-binned metrics: NR; benchmark inputs up to 1 h; demonstration-only: 60,000 s timeline; claimed: unbounded & 0.35 s is one DiT component \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "lu2026asymtalker",
+      "citationKey": "lu2026asymtalker",
+      "primaryRoute": "diffusion",
+      "title": "AsymTalker: Identity-Consistent Long-Term Talking Head Generation via Asymmetric Distillation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2605.02948v3",
+        "url": "https://arxiv.org/pdf/2605.02948v3",
+        "sha256": "c5b120851f9af1bbddb45e56060dca5cf012340946dd18fce9f9ed84d918e94a",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:diffusion-methods-long",
+          "tex": "AsymTalker~\\cite{lu2026asymtalker} & 4-step block generation & TRE and asymmetric GT/self-history distillation (L4) & Quantitative: FID/ArcFace at 5/50/150/300/600 s & One A100, 66.02 FPS for 30 s at $512^2$; full boundary NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "chen2025midas",
+      "citationKey": "chen2025midas",
+      "primaryRoute": "autoregressive",
+      "title": "MIDAS: Multimodal interactive digital-human synthesis via real-time autoregressive video generation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2508.19320v2",
+        "url": "https://arxiv.org/pdf/2508.19320v2",
+        "sha256": "61c2c21741ae29e93c348700ff51d39d5bf9bcdaa99442773b9734ed7e3e3d9d",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:ar-evidence",
+          "tex": "MIDAS~\\cite{chen2025midas}; native AR visual owner & Qwen2.5-3B next-frame state; at most 60 tokens/frame; four-step, approximately 0.5B local diffusion head; DC-AE decode & Five-frame codec history and eight-block AR truncation; cache implementation and reset NR & Inference hardware, measured FPS, TTFF, and inter-block latency NR; 480~ms is media span and 25~FPS is media rate & Claimed: one hour, identity-specific author statement; quantitative: NR; demonstration-only: four minutes, qualitative \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence.",
+      "checkedConfigurationIds": [
+        "chen2025midas--reported-architecture"
+      ]
+    },
+    {
+      "paperId": "ao2024body",
+      "citationKey": "ao2024body",
+      "primaryRoute": "autoregressive",
+      "title": "Body of Her: A Preliminary Study on End-to-End Humanoid Agent",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2408.02879v1",
+        "url": "https://arxiv.org/pdf/2408.02879v1",
+        "sha256": "40ec22445ec174ca5571b135cf19e3992f6ba6d11561f1d46f81b7465c7fc65b",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:ar-evidence",
+          "tex": "Body of Her~\\cite{ao2024body}; native AR visual owner & Framewise Transformer state; current-frame continuous tokens sampled in parallel by a compact diffusion head; video decode & Context capacity, cache growth/eviction, and reset NR & Author reports a 24~FPS media rate and 42~ms/next frame at $640\\times360$; inference hardware and included components NR & Claimed: NR; quantitative: NR; demonstration-only: NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence.",
+      "checkedConfigurationIds": [
+        "ao2024body--next-frame"
+      ]
+    },
+    {
+      "paperId": "pang2025unimo",
+      "citationKey": "pang2025unimo",
+      "primaryRoute": "autoregressive",
+      "title": "UniMo: Unifying 2D Video and 3D Human Motion with an Autoregressive Framework",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2512.03918v1",
+        "url": "https://arxiv.org/pdf/2512.03918v1",
+        "sha256": "924c83d81dbf2c7e66ad151a04ce355f5f781fde6929ea667263bdf1de2b8f4b",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:ar-evidence",
+          "tex": "UniMo~\\cite{pang2025unimo}; native visual AR, general-task bridge & Interleaved causal sequence of Cosmos 2D visual tokens and quantized 3D motion tokens; modality-specific embeddings and decoders & Prior visual and motion tokens form causal context; deployment cache, window, eviction, and reset contract NR & General human video--motion generation; no matched conversational-avatar TTFF or component ledger & Claimed or quantitative conversational long-horizon evidence NR; not a real-time dyadic deployment \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "weng2026eartalking",
+      "citationKey": "weng2026eartalking",
+      "primaryRoute": "autoregressive",
+      "title": "EARTalking: End-to-end GPT-style Autoregressive Talking Head Synthesis with Frame-wise Control",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2603.20307v1",
+        "url": "https://arxiv.org/pdf/2603.20307v1",
+        "sha256": "8f1f39b934148e51797b803e43e1b8b85cfaac0d2bc60e5ba7e58e6842042b31",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:ar-evidence",
+          "tex": "EARTalking \\cite{weng2026eartalking}; native AR visual owner & Framewise 3D-VAE visual state with frame-level control; local frame emission and decode & Sink-frame anchor, sliding KV window, and cyclic positions; reset and recovery behavior NR & Reported media and runtime statements are not used as common end-to-end latency without a matched component ledger & Claimed horizon and qualitative demonstrations are not accompanied by a minute/hour time-binned stability protocol \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence.",
+      "checkedConfigurationIds": [
+        "weng2026eartalking--full",
+        "weng2026eartalking--without-noise",
+        "weng2026eartalking--without-anchor"
+      ]
+    },
+    {
+      "paperId": "guo2021ad",
+      "citationKey": "guo2021ad",
+      "primaryRoute": "rendering",
+      "title": "AD-NeRF: Audio Driven Neural Radiance Fields for Talking Head Synthesis",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "publication PDF; edition requires inspection",
+        "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Guo_AD-NeRF_Audio_Driven_Neural_Radiance_Fields_for_Talking_Head_Synthesis_ICCV_2021_paper.html",
+        "sha256": "8495b4c314757e9858fcdd83528309fc2245ce317c3916f87e544e327bb6eea5",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "AD-NeRF~\\cite{guo2021ad} & Head/torso fields; target-specific, 3--5-min video & Audio-conditioned fields; separate head/torso render & $\\sim$12 s/frame, $450^2$, RTX~3090; frame rendering; $\\sim$36 h training & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "hong2022headnerf",
+      "citationKey": "hong2022headnerf",
+      "primaryRoute": "rendering",
+      "title": "HeadNeRF: A Real-time NeRF-Based Parametric Head Model",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2112.05637v3",
+        "url": "https://arxiv.org/pdf/2112.05637v3",
+        "sha256": "f9dfb483b1363946bf28a80db24ce2c98540426dc4618ab0c69a3f0a3929a5d6",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "HeadNeRF~\\cite{hong2022headnerf} & Parametric head field; latent fitting required & $32^2$ feature render $\\rightarrow$ 2D decoder to $256^2$ & $\\sim$25 ms/frame ($>40$ FPS); GPU NR; excludes fitting/tracking/I/O & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "tang2025real",
+      "citationKey": "tang2025real",
+      "primaryRoute": "rendering",
+      "title": "Real-Time Neural Radiance Talking Portrait Synthesis via Audio-Spatial Decomposition",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2211.12368v1",
+        "url": "https://arxiv.org/pdf/2211.12368v1",
+        "sha256": "4fbfe5c4a7e8c4d874a881d93d2f422df7bdc4ccc5f4ee815fb2373e0749a9cf",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "RAD-NeRF~\\cite{tang2025real} & Head field plus 2D torso; target-specific & Audio grid, spatial hash, occupancy-pruned render & 40 FPS, one V100; resolution/timer coverage NR; $\\sim$7 h training & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "li2023efficient",
+      "citationKey": "li2023efficient",
+      "primaryRoute": "rendering",
+      "title": "Efficient Region-Aware Neural Radiance Fields for High-Fidelity Talking Portrait Synthesis",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2307.09323v2",
+        "url": "https://arxiv.org/pdf/2307.09323v2",
+        "sha256": "6faf292ebd116febe0cab1419861bd7757165d9fac772a87d817a5b73890f66b",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "ER-NeRF~\\cite{li2023efficient} & Tri-plane head field plus 2D torso; target-specific & Audio control, regional attention, field render & 34 FPS, $450^2$, RTX~3080~Ti; component/I/O boundary NR & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "yu2024gaussiantalker",
+      "citationKey": "yu2024gaussiantalker",
+      "primaryRoute": "rendering",
+      "title": "GaussianTalker: Speaker-Specific Talking Head Synthesis via 3D Gaussian Splatting",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2404.14037v3",
+        "url": "https://arxiv.org/pdf/2404.14037v3",
+        "sha256": "02adfaaebe44bff7c1dd1d65ab960b3cb0e56c04027a3fe57bfadff307e115e7",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "Gaussian\\allowbreak Talker~\\cite{yu2024gaussiantalker} & FLAME-bound face Gaussians; target-specific & Blendshapes $\\rightarrow$ splat/inpaint; outside-face source pixels retained & 130 FPS, RTX~4090, preloaded; 36 FPS Apple M1; resolution/full timer NR; $\\sim$10 h training & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "shao2024splattingavatar",
+      "citationKey": "shao2024splattingavatar",
+      "primaryRoute": "rendering",
+      "title": "SplattingAvatar: Realistic Real-Time Human Avatars with Mesh-Embedded Gaussian Splatting",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "publication PDF; edition requires inspection",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Shao_SplattingAvatar_Realistic_Real-Time_Human_Avatars_with_Mesh-Embedded_Gaussian_Splatting_CVPR_2024_paper.html",
+        "sha256": "a92710bd8423e8c4213b3a75089fb7629b9bec1449f51605f7f7b375c50d2d63",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "Splatting\\allowbreak Avatar~\\cite{shao2024splattingavatar} & Mesh-embedded head/body Gaussians; tracked mesh required & Mesh deformation $\\rightarrow$ direct splatting & $>300$ FPS RTX~3090; 30 FPS iPhone~13; resolution/full timer NR & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "xiang2024flashavatar",
+      "citationKey": "xiang2024flashavatar",
+      "primaryRoute": "rendering",
+      "title": "FlashAvatar: High-Fidelity Head Avatar with Efficient Gaussian Embedding",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2312.02214v2",
+        "url": "https://arxiv.org/pdf/2312.02214v2",
+        "sha256": "500b8d8fcf43f0f48a7e68b1f547aad1ff12f2f17d7c80c96bfcd0eaedda94e8",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "FlashAvatar~\\cite{xiang2024flashavatar} & FLAME-surface head Gaussians; 1--3-min target video & FLAME/residual deformation $\\rightarrow$ direct splatting & 304 FPS, $512^2$, RTX~3090; animation/render only & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "chen2025taoavatar",
+      "citationKey": "chen2025taoavatar",
+      "primaryRoute": "rendering",
+      "title": "TaoAvatar: Real-Time Lifelike Full-Body Talking Avatars for Augmented Reality via 3D Gaussian Splatting",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "source unavailable in audit cache",
+        "url": "https://arxiv.org/abs/2503.17032",
+        "sha256": null,
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "TaoAvatar~\\cite{chen2025taoavatar} & Full-body Gaussians with baked deformation; multi-view capture & Tracked control $\\rightarrow$ lightweight MLP $\\rightarrow$ splatting & 90 FPS on Apple Vision Pro; full pipeline coverage NR & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "he2025lam",
+      "citationKey": "he2025lam",
+      "primaryRoute": "rendering",
+      "title": "LAM: Large Avatar Model for One-Shot Animatable Gaussian Head",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2502.17796v2",
+        "url": "https://arxiv.org/pdf/2502.17796v2",
+        "sha256": "6ad3c1b1a407fd37c68632060c512bc0cab033077e123a96b3e40007cbe89623",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "LAM~\\cite{he2025lam} & One-shot feed-forward Gaussian head & Blendshape/joint control $\\rightarrow$ direct splatting & Source reports cross-platform real-time rendering; full timer NR & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "guo2024liveportrait",
+      "citationKey": "guo2024liveportrait",
+      "primaryRoute": "rendering",
+      "title": "LivePortrait: Efficient portrait animation with stitching and retargeting control",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2407.03168v2",
+        "url": "https://arxiv.org/pdf/2407.03168v2",
+        "sha256": "09c4808528eab67f48d3cd51886c2323c9e2c9238afa7f8f77d370e60d9a2225",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "LivePortrait~\\cite{guo2024liveportrait} & Source feature volume; one-shot & Implicit motion, feature warp/decoder; optional paste-back & $12.8$ ms model generation, RTX~4090; resolution/E2E boundary NR & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence.",
+      "checkedConfigurationIds": [
+        "guo2024liveportrait--hybrid-assignment"
+      ]
+    },
+    {
+      "paperId": "xu2024vasa",
+      "citationKey": "xu2024vasa",
+      "primaryRoute": "rendering",
+      "title": "VASA-1: Lifelike Audio-Driven Talking Faces Generated in Real Time",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2404.10667v2",
+        "url": "https://arxiv.org/pdf/2404.10667v2",
+        "sha256": "f2eb11e6d47128a58b2cdb100c74e0f2322b6577590c7800170a48c22afecd71",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "VASA-1~\\cite{xu2024vasa} & One-shot face latent appearance decoder & DiT motion diffusion in face latent space $\\rightarrow$ decoder & Up to 40 FPS at $512^2$, 170/95 ms latency, one/two RTX~4090; protocol-stated boundary & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "zhen2025teller",
+      "citationKey": "zhen2025teller",
+      "primaryRoute": "rendering",
+      "title": "Teller: Real-time streaming audio-driven portrait animation with autoregressive motion generation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "publication PDF; edition requires inspection",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Zhen_Teller_Real-Time_Streaming_Audio-Driven_Portrait_Animation_with_Autoregressive_Motion_Generation_CVPR_2025_paper.html",
+        "sha256": "e33dd629db677dd0af27cd08197f3ec3a3fd72e5cc2ac8d38089b754b928f1b6",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "Teller~\\cite{zhen2025teller} & Source-conditioned image features; personalization NR & AR motion $\\rightarrow$ warp/enhance RGB & Components $7/106/71$ ms; total $<200$ ms; machine with four H800; resolution/TTFF NR & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "guo2025arig",
+      "citationKey": "guo2025arig",
+      "primaryRoute": "rendering",
+      "title": "ARIG: Autoregressive interactive head generation for real-time conversations",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "publication PDF; edition requires inspection",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Guo_ARIG_Autoregressive_Interactive_Head_Generation_for_Real-time_Conversations_ICCV_2025_paper.html",
+        "sha256": "840933d04c41d57fed633f61990c20d2c77b2eae36b024a61000cec1078f8e2c",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "ARIG~\\cite{guo2025arig} & Source-conditioned image features; one-shot & AR coefficients + 15-step DiffusionMLP $\\rightarrow$ LivePortrait-style warp & 31 FPS ``generation process''; device/resolution/component boundary NR & NR \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "chen2025dystream",
+      "citationKey": "chen2025dystream",
+      "primaryRoute": "rendering",
+      "title": "DyStream: Streaming Dyadic Talking Heads Generation via Flow Matching-based Autoregressive Model",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2512.24408v2",
+        "url": "https://arxiv.org/pdf/2512.24408v2",
+        "sha256": "53093d02f1957184896a99ffacc2f047c0dbfca0ffec46f1aa1a0c0d3f42ec97",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "DyStream~\\cite{chen2025dystream} & Reference appearance volume; one-shot & AR/flow motion code $\\rightarrow$ dense flow warp/decode & 29.24 FPS, 34.2 ms packet-to-motion delay, one H200; render/display boundary NR & 180-s pose-drift ablation on ten 3-min clips \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence.",
+      "checkedConfigurationIds": [
+        "chen2025dystream--five-step"
+      ]
+    },
+    {
+      "paperId": "zhao2025rea",
+      "citationKey": "zhao2025rea",
+      "primaryRoute": "rendering",
+      "title": "REA-Listener: Real-Time Listening Head Generation with Dynamic Emotion Modeling and Flexible Modality Adaptation",
+      "verification": "primary-source-unavailable; inherited timings unverified",
+      "source": {
+        "edition": "ACM MM 2025 proceedings, DOI 10.1145/3746027.3755093",
+        "url": "https://dl.acm.org/doi/10.1145/3746027.3755093",
+        "sha256": null,
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "REA-Listener~\\cite{zhao2025rea} & GAGAvatar 3DGS head; one-shot & Lightweight Transformer motion $\\rightarrow$ splat + inpaint & Six stages sum 33.14 ms/frame, RTX~3090; render is 21.45 ms & NR \\\\"
+        }
+      ],
+      "note": "Primary PDF returned HTTP 403 in this audit. Official project page supports the architecture but does not expose the component timing table. Inherited timings are not used for new quantitative findings."
+    },
+    {
+      "paperId": "zheng2023avatarrex",
+      "citationKey": "zheng2023avatarrex",
+      "primaryRoute": "rendering",
+      "title": "AvatarReX: Real-time Expressive Full-body Avatars",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2305.04789v1",
+        "url": "https://arxiv.org/pdf/2305.04789v1",
+        "sha256": "65954c076122051979c8f9e4241a2553110b5a05377013e4eb8b5514627f930d",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "{AvatarReX~\\cite{zheng2023avatarrex}} & {NeRF body/hands/face; full-body; multi-view (22 cams, $\\sim$2000 frames)} & {Parametric-template control $\\rightarrow$ deferred surface render} & {25 FPS, $1024^2$, RTX~3090; animation+render; $\\sim$2 orders faster than prior NeRF avatars} & {NR} \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "peng2024synctalk",
+      "citationKey": "peng2024synctalk",
+      "primaryRoute": "rendering",
+      "title": "SyncTalk: The Devil is in the Synchronization for Talking Head Synthesis",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "publication PDF; edition requires inspection",
+        "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Peng_SyncTalk_The_Devil_is_in_the_Synchronization_for_Talking_Head_CVPR_2024_paper.html",
+        "sha256": "3d58c126a720d6c1f066c95d101772910f3d85fe640bea0edf7b2cfda2eb4ab0",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "{SyncTalk~\\cite{peng2024synctalk}} & {Tri-plane hash head field; head+torso; per-subject video ($\\sim$min)} & {Face/Head-Sync control $\\rightarrow$ field render + Portrait-Sync blend} & {52/50 FPS (w/o, w/ Portrait-Sync), $450^2$, RTX~3090, preloaded; $\\sim$2 h training} & {NR} \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "peng2025synctalkplusplus",
+      "citationKey": "peng2025synctalk++",
+      "primaryRoute": "unresolved",
+      "title": "peng2025synctalk++",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2506.14742v1",
+        "url": "https://arxiv.org/pdf/2506.14742v1",
+        "sha256": "bef30cadbd5c6f1b7d8623b17cf5789d25f25bb8d448cdc2794253deea769ed9",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "{SyncTalk++~\\cite{peng2025synctalk++}} & {3DGS dynamic portrait; head+torso; per-subject video ($\\sim$min)} & {OOD-audio expression + Head-Sync $\\rightarrow$ splat + torso restore} & {101 FPS, $512^2$, RTX~4090; $\\sim$1.5 h training} & {NR} \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "cho2024gaussiantalker",
+      "citationKey": "cho2024gaussiantalker",
+      "primaryRoute": "rendering",
+      "title": "GaussianTalker: Real-Time High-Fidelity Talking Head Synthesis with Audio-Driven 3D Gaussian Splatting",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2404.16012v2",
+        "url": "https://arxiv.org/pdf/2404.16012v2",
+        "sha256": "812b1c9f16d69e27a8b86b41515c4f37aecbc4cc1bec4b2c364edc69058a475d",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "{Gaussian\\allowbreak Talker (Cho)~\\cite{cho2024gaussiantalker}} & {Audio-driven 3DGS head; per-subject video ($\\sim$4 min)} & {Spatial--audio attention $\\rightarrow$ per-frame Gaussian offsets $\\rightarrow$ splat} & {98 FPS (120 FPS lite), $512^2$; GPU NR} & {NR} \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "chugpavatar",
+      "citationKey": "chugpavatar",
+      "primaryRoute": "rendering",
+      "title": "GPAvatar: Generalizable and Precise Head Avatar from Image(s)",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2401.10215v1",
+        "url": "https://arxiv.org/pdf/2401.10215v1",
+        "sha256": "fb06681d24e576db2c884fc4796cf6c711f653f39765678252b6848f71d153b6",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "{GPAvatar~\\cite{chugpavatar}} & {Tri-plane+NeRF head; one-/few-shot, generalizable} & {FLAME point expression field + multi-image attention $\\rightarrow$ $128^2$ feature $\\rightarrow$ SR $512^2$} & {$\\sim$15 FPS, A100; author-labeled pre-real-time} & {NR} \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "chu2024generalizable",
+      "citationKey": "chu2024generalizable",
+      "primaryRoute": "rendering",
+      "title": "Generalizable and animatable gaussian head avatar",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2410.07971v1",
+        "url": "https://arxiv.org/pdf/2410.07971v1",
+        "sha256": "f1d41160c07804dfdcb121601fd863ed0acd2ea0813e35b99d28af6c02cfebb9",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "{GAGAvatar~\\cite{chu2024generalizable}} & {3DGS head; one-shot single image, generalizable} & {Dual-lifting + FLAME expression Gaussians $\\rightarrow$ splat + neural refine} & {67 FPS, $512^2$, A100, 2.5 GB; driving-render only, excludes driving-param acquisition} & {NR} \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    },
+    {
+      "paperId": "li2025moda",
+      "citationKey": "li2025moda",
+      "primaryRoute": "rendering",
+      "title": "MoDA: Multi-modal Diffusion Architecture for Talking Head Generation",
+      "verification": "inherited-extraction; not fully rechecked",
+      "source": {
+        "edition": "2507.03256v3",
+        "url": "https://arxiv.org/pdf/2507.03256v3",
+        "sha256": "d931fc08a9be8b56a499fe8c5ff2d32f26f927907541aa99f78a6717cb9213ae",
+        "locations": []
+      },
+      "submittedRows": [
+        {
+          "table": "tab:render-evidence-boundaries",
+          "tex": "{MoDA~\\cite{li2025moda}} & {LivePortrait reused appearance; one-shot single image} & {Rectified-flow motion diffusion (50$\\rightarrow$10 steps) $\\rightarrow$ LivePortrait warp/decode} & {RTF 0.846 on wild data; inference GPU NR; trained 8$\\times$H20} & {NR} \\\\"
+        }
+      ],
+      "note": "Original source boundaries retained for traceability; new checked configuration records take precedence. Blank source locations must not be treated as verified absence."
+    }
+  ],
+  "configurations": [
+    {
+      "id": "huang2025live--teacher",
+      "paperId": "huang2025live",
+      "configuration": "teacher",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.04677v6",
+        "url": "https://arxiv.org/pdf/2512.04677v6",
+        "sha256": "f79055a1d41b8ca61cb3c64826b54f98fd9cc43bc4736ab6004eb6b613fcd3dd",
+        "locations": [
+          "Table 3, PDF p.12",
+          "Section 5.1, PDF p.10; Appendix D (timing definitions)"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 0.29,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "reported",
+          "value": 45.5,
+          "unit": "s",
+          "note": "Time to first frame"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "1 NVIDIA H100"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "720 × 400"
+        },
+        "duration": {
+          "status": "not-audited"
+        },
+        "stability": {
+          "status": "not-audited"
+        },
+        "nfe": {
+          "status": "reported",
+          "value": 80,
+          "unit": "calls"
+        }
+      },
+      "boundary": "Source inference pipeline; TTFF excludes network. Configurations change device count and multiple system components."
+    },
+    {
+      "id": "huang2025live--distilled",
+      "paperId": "huang2025live",
+      "configuration": "distilled",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.04677v6",
+        "url": "https://arxiv.org/pdf/2512.04677v6",
+        "sha256": "f79055a1d41b8ca61cb3c64826b54f98fd9cc43bc4736ab6004eb6b613fcd3dd",
+        "locations": [
+          "Table 3, PDF p.12",
+          "Section 5.1, PDF p.10; Appendix D (timing definitions)"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 3.66,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "reported",
+          "value": 4.56,
+          "unit": "s",
+          "note": "Time to first frame"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "1 NVIDIA H100"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "720 × 400"
+        },
+        "duration": {
+          "status": "not-audited"
+        },
+        "stability": {
+          "status": "not-audited"
+        },
+        "nfe": {
+          "status": "reported",
+          "value": 5,
+          "unit": "calls"
+        }
+      },
+      "boundary": "Source inference pipeline; TTFF excludes network. Configurations change device count and multiple system components."
+    },
+    {
+      "id": "huang2025live--sequence-parallel",
+      "paperId": "huang2025live",
+      "configuration": "sequence parallel",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.04677v6",
+        "url": "https://arxiv.org/pdf/2512.04677v6",
+        "sha256": "f79055a1d41b8ca61cb3c64826b54f98fd9cc43bc4736ab6004eb6b613fcd3dd",
+        "locations": [
+          "Table 3, PDF p.12",
+          "Section 5.1, PDF p.10; Appendix D (timing definitions)"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 4.5,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "reported",
+          "value": 3.94,
+          "unit": "s",
+          "note": "Time to first frame"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "4 NVIDIA H100"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "720 × 400"
+        },
+        "duration": {
+          "status": "not-audited"
+        },
+        "stability": {
+          "status": "not-audited"
+        },
+        "nfe": {
+          "status": "reported",
+          "value": 5,
+          "unit": "calls"
+        }
+      },
+      "boundary": "Source inference pipeline; TTFF excludes network. Configurations change device count and multiple system components."
+    },
+    {
+      "id": "huang2025live--timestep-pipeline",
+      "paperId": "huang2025live",
+      "configuration": "timestep pipeline",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.04677v6",
+        "url": "https://arxiv.org/pdf/2512.04677v6",
+        "sha256": "f79055a1d41b8ca61cb3c64826b54f98fd9cc43bc4736ab6004eb6b613fcd3dd",
+        "locations": [
+          "Table 3, PDF p.12",
+          "Section 5.1, PDF p.10; Appendix D (timing definitions)"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 10.16,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "reported",
+          "value": 4.73,
+          "unit": "s",
+          "note": "Time to first frame"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "4 NVIDIA H100"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "720 × 400"
+        },
+        "duration": {
+          "status": "not-audited"
+        },
+        "stability": {
+          "status": "not-audited"
+        },
+        "nfe": {
+          "status": "reported",
+          "value": 4,
+          "unit": "calls"
+        }
+      },
+      "boundary": "Source inference pipeline; TTFF excludes network. Configurations change device count and multiple system components."
+    },
+    {
+      "id": "huang2025live--vae-parallel",
+      "paperId": "huang2025live",
+      "configuration": "vae parallel",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.04677v6",
+        "url": "https://arxiv.org/pdf/2512.04677v6",
+        "sha256": "f79055a1d41b8ca61cb3c64826b54f98fd9cc43bc4736ab6004eb6b613fcd3dd",
+        "locations": [
+          "Table 3, PDF p.12",
+          "Section 5.1, PDF p.10; Appendix D (timing definitions)"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 20.88,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "reported",
+          "value": 2.89,
+          "unit": "s",
+          "note": "Time to first frame"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "5 NVIDIA H100"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "720 × 400"
+        },
+        "duration": {
+          "status": "not-audited"
+        },
+        "stability": {
+          "status": "not-audited"
+        },
+        "nfe": {
+          "status": "reported",
+          "value": 4,
+          "unit": "calls"
+        }
+      },
+      "boundary": "Source inference pipeline; TTFF excludes network. Configurations change device count and multiple system components."
+    },
+    {
+      "id": "huang2025live--full-kernel-optimized",
+      "paperId": "huang2025live",
+      "configuration": "full kernel optimized",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.04677v6",
+        "url": "https://arxiv.org/pdf/2512.04677v6",
+        "sha256": "f79055a1d41b8ca61cb3c64826b54f98fd9cc43bc4736ab6004eb6b613fcd3dd",
+        "locations": [
+          "Table 3, PDF p.12",
+          "Section 5.1, PDF p.10; Appendix D (timing definitions)",
+          "Appendix C.1, Table 7, PDF p.20",
+          "Section 5.3, Table 4, PDF p.12",
+          "Appendix C.4, Table 10, PDF pp.23–24 (TTFF discrepancy)"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 45.2,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "conflict",
+          "value": 1.21,
+          "unit": "s",
+          "note": "Table 3 reports 1.21 s TTFF; Table 10 reports 0.94 s for the stated default three-latent block. The configuration discrepancy is unresolved."
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "5 NVIDIA H100"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "720 × 400"
+        },
+        "duration": {
+          "status": "reported",
+          "value": "0–10, 100–110, 1000–1010, 10000–10010",
+          "unit": "s",
+          "note": "Sampled windows; approximately seven-minute speech inputs repeated"
+        },
+        "stability": {
+          "status": "reported",
+          "value": "Q-Align aesthetic/image quality, Sync-C, DINOv2 similarity",
+          "note": "Quantitative sampled-window evidence, not continuous monitoring"
+        },
+        "nfe": {
+          "status": "reported",
+          "value": 4,
+          "unit": "calls"
+        }
+      },
+      "boundary": "Source inference pipeline; TTFF excludes network. Configurations change device count and multiple system components.",
+      "patterns": [
+        {
+          "code": "L1",
+          "status": [
+            "A",
+            "B"
+          ],
+          "note": "Adaptive Attention Sink; component ablation on GenBench-Long"
+        },
+        {
+          "code": "L3",
+          "status": [
+            "A",
+            "B"
+          ],
+          "note": "Rolling RoPE; component ablation on GenBench-Long"
+        },
+        {
+          "code": "L4-G",
+          "status": [
+            "A",
+            "B"
+          ],
+          "note": "Generated-history distillation; noisy-cache inference is separately described"
+        }
+      ]
+    },
+    {
+      "id": "li2026personalive--svd-vae",
+      "paperId": "li2026personalive",
+      "configuration": "svd vae",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.11253v1",
+        "url": "https://arxiv.org/pdf/2512.11253v1",
+        "sha256": "f7bce75040c968ce1dc81084b5d81bab7cea671ab994864dc39eb35bd2658c55",
+        "locations": [
+          "Supplementary Table 4, PDF p.14",
+          "Section 5.2 (runtime setup), PDF p.7"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 11.4,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "not-reported",
+          "note": "Decoder-specific latency not in Table 4"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "1 NVIDIA H100"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "512 × 512"
+        },
+        "duration": {
+          "status": "not-reported",
+          "note": "Decoder-ablation duration not specified in Table 4"
+        },
+        "stability": {
+          "status": "reported",
+          "value": {
+            "ID-SIM": 0.692,
+            "AED": 0.7452,
+            "APD": 0.0489,
+            "tLP": 12.97
+          },
+          "note": "Source decoder ablation; not a duration-binned comparison"
+        }
+      },
+      "boundary": "Within-paper decoder replacement; animation inference on one H100. FPS is not TTFF.",
+      "memory": {
+        "type": "selected-keyframe history",
+        "capacity": "not reported",
+        "eviction": "not reported",
+        "qualifiesAsL2": false
+      }
+    },
+    {
+      "id": "li2026personalive--sd-vae",
+      "paperId": "li2026personalive",
+      "configuration": "sd vae",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.11253v1",
+        "url": "https://arxiv.org/pdf/2512.11253v1",
+        "sha256": "f7bce75040c968ce1dc81084b5d81bab7cea671ab994864dc39eb35bd2658c55",
+        "locations": [
+          "Supplementary Table 4, PDF p.14",
+          "Section 5.2 (runtime setup), PDF p.7"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 15.8,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "reported",
+          "value": 0.253,
+          "unit": "s",
+          "note": "Default SD-VAE mean inter-chunk latency; only this configuration"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "1 NVIDIA H100"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "512 × 512"
+        },
+        "duration": {
+          "status": "not-reported",
+          "note": "Decoder-ablation duration not specified in Table 4"
+        },
+        "stability": {
+          "status": "reported",
+          "value": {
+            "ID-SIM": 0.6983,
+            "AED": 0.7028,
+            "APD": 0.0305,
+            "tLP": 12.83
+          },
+          "note": "Source decoder ablation; not a duration-binned comparison"
+        }
+      },
+      "boundary": "Within-paper decoder replacement; animation inference on one H100. FPS is not TTFF.",
+      "memory": {
+        "type": "selected-keyframe history",
+        "capacity": "not reported",
+        "eviction": "not reported",
+        "qualifiesAsL2": false
+      }
+    },
+    {
+      "id": "li2026personalive--tinyvae",
+      "paperId": "li2026personalive",
+      "configuration": "tinyvae",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.11253v1",
+        "url": "https://arxiv.org/pdf/2512.11253v1",
+        "sha256": "f7bce75040c968ce1dc81084b5d81bab7cea671ab994864dc39eb35bd2658c55",
+        "locations": [
+          "Supplementary Table 4, PDF p.14",
+          "Section 5.2 (runtime setup), PDF p.7"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 20,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "not-reported",
+          "note": "Decoder-specific latency not in Table 4"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "1 NVIDIA H100"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "512 × 512"
+        },
+        "duration": {
+          "status": "not-reported",
+          "note": "Decoder-ablation duration not specified in Table 4"
+        },
+        "stability": {
+          "status": "reported",
+          "value": {
+            "ID-SIM": 0.6758,
+            "AED": 0.7593,
+            "APD": 0.0489,
+            "tLP": 14.66
+          },
+          "note": "Source decoder ablation; not a duration-binned comparison"
+        }
+      },
+      "boundary": "Within-paper decoder replacement; animation inference on one H100. FPS is not TTFF.",
+      "memory": {
+        "type": "selected-keyframe history",
+        "capacity": "not reported",
+        "eviction": "not reported",
+        "qualifiesAsL2": false
+      }
+    },
+    {
+      "id": "weng2026eartalking--full",
+      "paperId": "weng2026eartalking",
+      "configuration": "full",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2603.20307v1",
+        "url": "https://arxiv.org/pdf/2603.20307v1",
+        "sha256": "8f1f39b934148e51797b803e43e1b8b85cfaac0d2bc60e5ba7e58e6842042b31",
+        "locations": [
+          "Section 4.1 and Algorithm 1, PDF p.6",
+          "Table 3, Figure 5 and limitations, PDF p.8"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "not-reported"
+        },
+        "latency": {
+          "status": "not-reported"
+        },
+        "hardware": {
+          "status": "not-reported"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "512 × 512",
+          "note": "Source experimental setup"
+        },
+        "duration": {
+          "status": "reported",
+          "value": "3 × training-window length",
+          "note": "Qualitative Figure 5, not a minute-scale time-binned test"
+        },
+        "stability": {
+          "status": "reported",
+          "value": {
+            "FID": 18.981,
+            "FVD": 363.909,
+            "Sync-C": 5.707
+          },
+          "note": "Table 3 component ablation"
+        }
+      },
+      "boundary": "36 spatial masked-AR steps and 25 local denoising steps; ten-latent-frame window. Numeric runtime and inference hardware are not reported in the checked v1 paper.",
+      "patterns": [
+        {
+          "code": "L1",
+          "status": [
+            "A",
+            "Q",
+            "B"
+          ],
+          "note": "adaLN reference sink"
+        },
+        {
+          "code": "L3",
+          "status": [
+            "A"
+          ],
+          "note": "Cyclic temporal positions"
+        },
+        {
+          "code": "L4-C",
+          "status": [
+            "A",
+            "Q",
+            "B"
+          ],
+          "note": "Noise on ground-truth history; not generated-history training"
+        }
+      ]
+    },
+    {
+      "id": "weng2026eartalking--without-noise",
+      "paperId": "weng2026eartalking",
+      "configuration": "without noise",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2603.20307v1",
+        "url": "https://arxiv.org/pdf/2603.20307v1",
+        "sha256": "8f1f39b934148e51797b803e43e1b8b85cfaac0d2bc60e5ba7e58e6842042b31",
+        "locations": [
+          "Section 4.1 and Algorithm 1, PDF p.6",
+          "Table 3, Figure 5 and limitations, PDF p.8"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "not-reported"
+        },
+        "latency": {
+          "status": "not-reported"
+        },
+        "hardware": {
+          "status": "not-reported"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "512 × 512",
+          "note": "Source experimental setup"
+        },
+        "duration": {
+          "status": "reported",
+          "value": "3 × training-window length",
+          "note": "Qualitative Figure 5, not a minute-scale time-binned test"
+        },
+        "stability": {
+          "status": "reported",
+          "value": {
+            "FID": 20.643,
+            "FVD": 401.354,
+            "Sync-C": 4.277
+          },
+          "note": "Table 3 component ablation"
+        }
+      },
+      "boundary": "36 spatial masked-AR steps and 25 local denoising steps; ten-latent-frame window. Numeric runtime and inference hardware are not reported in the checked v1 paper.",
+      "patterns": []
+    },
+    {
+      "id": "weng2026eartalking--without-anchor",
+      "paperId": "weng2026eartalking",
+      "configuration": "without anchor",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2603.20307v1",
+        "url": "https://arxiv.org/pdf/2603.20307v1",
+        "sha256": "8f1f39b934148e51797b803e43e1b8b85cfaac0d2bc60e5ba7e58e6842042b31",
+        "locations": [
+          "Section 4.1 and Algorithm 1, PDF p.6",
+          "Table 3, Figure 5 and limitations, PDF p.8"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "not-reported"
+        },
+        "latency": {
+          "status": "not-reported"
+        },
+        "hardware": {
+          "status": "not-reported"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "512 × 512",
+          "note": "Source experimental setup"
+        },
+        "duration": {
+          "status": "reported",
+          "value": "3 × training-window length",
+          "note": "Qualitative Figure 5, not a minute-scale time-binned test"
+        },
+        "stability": {
+          "status": "reported",
+          "value": {
+            "FID": 42.298,
+            "FVD": 489.197,
+            "Sync-C": 4.067
+          },
+          "note": "Table 3 component ablation"
+        }
+      },
+      "boundary": "36 spatial masked-AR steps and 25 local denoising steps; ten-latent-frame window. Numeric runtime and inference hardware are not reported in the checked v1 paper.",
+      "patterns": []
+    },
+    {
+      "id": "chen2025midas--reported-architecture",
+      "paperId": "chen2025midas",
+      "configuration": "reported architecture",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2508.19320v2",
+        "url": "https://arxiv.org/pdf/2508.19320v2",
+        "sha256": "61c2c21741ae29e93c348700ff51d39d5bf9bcdaa99442773b9734ed7e3e3d9d",
+        "locations": [
+          "Sections 3.2–3.3, Figures 2–4, PDF pp.4–7; Sections 3.4–3.5, PDF p.8; Sections 4.1–4.2, PDF pp.9–10"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "not-reported"
+        },
+        "latency": {
+          "status": "not-reported"
+        },
+        "hardware": {
+          "status": "not-reported"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "up to 384 × 640",
+          "note": "Source token-budget example"
+        },
+        "duration": {
+          "status": "reported",
+          "value": "one hour",
+          "note": "Author claim; four-minute qualitative demonstration; no time-binned quantitative study"
+        },
+        "stability": {
+          "status": "not-reported",
+          "note": "Longitudinal quantitative measurements"
+        }
+      },
+      "boundary": "Dense frame-state AR with a four-step local head. 25 FPS and 480 ms denote media rate/span, not measured runtime.",
+      "patterns": [
+        {
+          "code": "L4-C",
+          "status": [
+            "A"
+          ],
+          "note": "Gaussian-corrupted frame tokens during teacher forcing"
+        }
+      ],
+      "memory": {
+        "type": "separate codec feature history and AR context",
+        "capacity": "five codec frames; eight AR blocks",
+        "qualifiesAsL2": false
+      }
+    },
+    {
+      "id": "ao2024body--next-frame",
+      "paperId": "ao2024body",
+      "configuration": "next frame",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2408.02879v1",
+        "url": "https://arxiv.org/pdf/2408.02879v1",
+        "sha256": "40ec22445ec174ca5571b135cf19e3992f6ba6d11561f1d46f81b7465c7fc65b",
+        "locations": [
+          "Section 2 and Figure 2, PDF pp.2–3; inference implementation, PDF p.5"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "not-reported",
+          "note": "24 FPS is media rate"
+        },
+        "latency": {
+          "status": "reported",
+          "value": 42,
+          "unit": "ms",
+          "note": "Next-frame time; not TTFF"
+        },
+        "hardware": {
+          "status": "not-reported"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "640 × 360"
+        },
+        "duration": {
+          "status": "not-reported"
+        },
+        "stability": {
+          "status": "not-reported",
+          "note": "Time-binned long-session evaluation"
+        }
+      },
+      "boundary": "Author reports time to next frame; included pipeline stages and device are not disclosed."
+    },
+    {
+      "id": "wang2023styleavatar--tensorrt-model",
+      "paperId": "wang2023styleavatar",
+      "configuration": "tensorrt model",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2305.00942v1",
+        "url": "https://arxiv.org/pdf/2305.00942v1",
+        "sha256": "8ca87c7d4f7c26252647f2e40067d300083434a1fbea4ea371c8ff083c3e7637",
+        "locations": [
+          "Sections 3.1–3.4, PDF pp.3–5"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "not-reported"
+        },
+        "latency": {
+          "status": "reported",
+          "value": 20,
+          "unit": "ms/frame",
+          "note": "Frame time; not TTFF"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "1 RTX 3090"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "1024 × 1024",
+          "note": "Source image representation"
+        },
+        "duration": {
+          "status": "not-reported"
+        },
+        "stability": {
+          "status": "not-reported",
+          "note": "Longitudinal output measurements"
+        }
+      },
+      "boundary": "Model-only GPU timing",
+      "patterns": [
+        {
+          "code": "L1",
+          "status": [
+            "A"
+          ],
+          "note": "Enrolled UV appearance; no measured long-session benefit inferred"
+        }
+      ],
+      "assignment": {
+        "route": "rendering",
+        "reason": "Subject-specific UV appearance is geometrically queried before adversarial decoding; render-first rule",
+        "appearance": "UV and background features",
+        "temporal": "3DMM-driven per-frame synthesis",
+        "training": "adversarial StyleGAN/StyleUNet",
+        "personalization": "per-subject training"
+      }
+    },
+    {
+      "id": "wang2023styleavatar--live-system",
+      "paperId": "wang2023styleavatar",
+      "configuration": "live system",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2305.00942v1",
+        "url": "https://arxiv.org/pdf/2305.00942v1",
+        "sha256": "8ca87c7d4f7c26252647f2e40067d300083434a1fbea4ea371c8ff083c3e7637",
+        "locations": [
+          "Sections 3.1–3.4, PDF pp.3–5"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 35,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "reported",
+          "value": 28,
+          "unit": "ms/frame",
+          "note": "Frame time; not TTFF"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "1 RTX 3090"
+        },
+        "resolution": {
+          "status": "reported",
+          "value": "1024 × 1024",
+          "note": "Source image representation"
+        },
+        "duration": {
+          "status": "not-reported"
+        },
+        "stability": {
+          "status": "not-reported",
+          "note": "Longitudinal output measurements"
+        }
+      },
+      "boundary": "Tracking, OpenGL rendering and two FP16 TensorRT StyleUNets; source also reports 35 FPS (rounded)",
+      "patterns": [
+        {
+          "code": "L1",
+          "status": [
+            "A"
+          ],
+          "note": "Enrolled UV appearance; no measured long-session benefit inferred"
+        }
+      ],
+      "assignment": {
+        "route": "rendering",
+        "reason": "Subject-specific UV appearance is geometrically queried before adversarial decoding; render-first rule",
+        "appearance": "UV and background features",
+        "temporal": "3DMM-driven per-frame synthesis",
+        "training": "adversarial StyleGAN/StyleUNet",
+        "personalization": "per-subject training"
+      }
+    },
+    {
+      "id": "chen2025dystream--five-step",
+      "paperId": "chen2025dystream",
+      "configuration": "five step",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.24408v2",
+        "url": "https://arxiv.org/pdf/2512.24408v2",
+        "sha256": "53093d02f1957184896a99ffacc2f047c0dbfca0ffec46f1aa1a0c0d3f42ec97",
+        "locations": [
+          "Table 4, PDF p.8",
+          "Anchor ablation text, PDF p.6; Figure 4, PDF p.7"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 29.24,
+          "unit": "FPS",
+          "note": "Source inference table"
+        },
+        "latency": {
+          "status": "reported",
+          "value": 34.2,
+          "unit": "ms",
+          "note": "Audio packet to motion; not RGB TTFF"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "1 H200"
+        },
+        "resolution": {
+          "status": "not-reported",
+          "note": "For the motion timing boundary"
+        },
+        "duration": {
+          "status": "reported",
+          "value": 180,
+          "unit": "s",
+          "note": "Ten three-minute clips in pose-drift ablation"
+        },
+        "stability": {
+          "status": "reported",
+          "value": "Head-pose drift",
+          "note": "Partial longitudinal evidence"
+        }
+      },
+      "boundary": "Audio Packet Delay ends at motion generation; warp/render/display inclusion is not established.",
+      "patterns": [
+        {
+          "code": "L1",
+          "status": [
+            "A",
+            "B",
+            "T"
+          ],
+          "note": "Anchor conditioning; pose-drift ablation over 180 s"
+        }
+      ]
+    },
+    {
+      "id": "li2025joyavatar--dit-component",
+      "paperId": "li2025joyavatar",
+      "configuration": "dit component",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2512.11423v3",
+        "url": "https://arxiv.org/pdf/2512.11423v3",
+        "sha256": "3d928e56c3b8bdaa6743f4c0a4a3f10d9da9e9206ac39736e2fe68097176a384",
+        "locations": [
+          "Section 3.4, PDF p.6; Table 1 and Table 3, PDF p.8; Figure 7, PDF p.9"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 16.2,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "not-reported"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "single GPU",
+          "note": "Model unspecified in timing table"
+        },
+        "resolution": {
+          "status": "not-audited"
+        },
+        "duration": {
+          "status": "reported",
+          "value": 120,
+          "unit": "s",
+          "note": "Qualitative Figure 7, not time-binned numeric metrics"
+        },
+        "stability": {
+          "status": "reported",
+          "value": "Boundary flicker and later artifacts",
+          "note": "Source visual and component ablations"
+        }
+      },
+      "boundary": "16.2 FPS times the DiT component; full-pipeline latency is not supplied by that value.",
+      "patterns": [
+        {
+          "code": "L3",
+          "status": [
+            "A"
+          ],
+          "note": "Unbounded RoPE via Cache-Resetting"
+        },
+        {
+          "code": "L5",
+          "status": [
+            "A",
+            "Q",
+            "B"
+          ],
+          "note": "Explicit previous-frame motion condition at chunk boundary; not generic attention to history"
+        }
+      ]
+    },
+    {
+      "id": "zhen2026soulx--bounded-memory",
+      "paperId": "zhen2026soulx",
+      "configuration": "bounded memory",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2603.11746v2",
+        "url": "https://arxiv.org/pdf/2603.11746v2",
+        "sha256": "5457f7c26e68220cab6821ac62684afb23286b11a163fd85c4cc28431b5d86d1",
+        "locations": [
+          "Section 3 (Neighbor Forcing and ConvKV Memory), PDF pp.3–5; abstract, PDF p.1"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "reported",
+          "value": 20,
+          "unit": "FPS"
+        },
+        "latency": {
+          "status": "not-audited"
+        },
+        "hardware": {
+          "status": "reported",
+          "value": "2 H100 or H200"
+        },
+        "resolution": {
+          "status": "not-audited"
+        },
+        "duration": {
+          "status": "reported",
+          "value": "hour-scale",
+          "note": "Author claim, not a time-binned result"
+        },
+        "stability": {
+          "status": "not-reported",
+          "note": "Duration-binned output metrics"
+        }
+      },
+      "boundary": "Source headline inference configuration; complete timing boundary remains unspecified.",
+      "patterns": [
+        {
+          "code": "L1",
+          "status": [
+            "A"
+          ],
+          "note": "Reference slots"
+        },
+        {
+          "code": "L2",
+          "status": [
+            "A"
+          ],
+          "note": "Fixed reference, compressed long-term and recent slots; architectural bound, not a drift guarantee"
+        }
+      ]
+    },
+    {
+      "id": "xie2025x--hybrid-assignment",
+      "paperId": "xie2025x",
+      "configuration": "hybrid assignment",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2509.21574v1",
+        "url": "https://arxiv.org/pdf/2509.21574v1",
+        "sha256": "db4762b030b3161a8904b3bd1240600546c527f3d5c6a366d8ed775452fe5dfa",
+        "locations": [
+          "Sections 3.1–3.2, Eq.3, PDF pp.5–6"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "not-audited"
+        },
+        "latency": {
+          "status": "not-audited"
+        },
+        "hardware": {
+          "status": "not-audited"
+        },
+        "resolution": {
+          "status": "not-audited"
+        },
+        "duration": {
+          "status": "not-audited"
+        },
+        "stability": {
+          "status": "not-audited"
+        }
+      },
+      "boundary": "Architecture audit; not a timing extraction.",
+      "assignment": {
+        "route": "diffusion",
+        "appearance": "LTX-VAE dense chunks",
+        "temporal": "causal video history in Actor",
+        "training": "velocity prediction with current noisy chunk and noise level entering the backbone; DDIM sampling",
+        "personalization": "reference portrait",
+        "reason": "Actor temporal backbone is repeatedly evaluated during denoising"
+      }
+    },
+    {
+      "id": "guo2024liveportrait--hybrid-assignment",
+      "paperId": "guo2024liveportrait",
+      "configuration": "hybrid assignment",
+      "verification": "source-checked",
+      "source": {
+        "edition": "arXiv:2407.03168v2",
+        "url": "https://arxiv.org/pdf/2407.03168v2",
+        "sha256": "09c4808528eab67f48d3cd51886c2323c9e2c9238afa7f8f77d370e60d9a2225",
+        "locations": [
+          "Section 3, Figure 2 (appearance volume, motion, warping and generation)"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "not-audited"
+        },
+        "latency": {
+          "status": "not-audited"
+        },
+        "hardware": {
+          "status": "not-audited"
+        },
+        "resolution": {
+          "status": "not-audited"
+        },
+        "duration": {
+          "status": "not-audited"
+        },
+        "stability": {
+          "status": "not-audited"
+        }
+      },
+      "boundary": "Architecture audit; the baseline table's 12.8 ms is preserved separately and not reclassified as TTFF.",
+      "assignment": {
+        "route": "rendering",
+        "appearance": "source feature volume",
+        "temporal": "keypoint-driven feature deformation",
+        "training": "learned warper and image decoder",
+        "personalization": "one-shot",
+        "reason": "Source appearance is spatially transported before RGB decoding"
+      },
+      "patterns": [
+        {
+          "code": "L1",
+          "status": [
+            "A"
+          ],
+          "note": "Source appearance reuse; long-session benefit not inferred"
+        }
+      ]
+    },
+    {
+      "id": "agarwal2026gaussianheadtalk--failure-evidence",
+      "paperId": "agarwal2026gaussianheadtalk",
+      "configuration": "failure evidence",
+      "verification": "source-checked",
+      "source": {
+        "edition": "WACV 2026 proceedings",
+        "url": "https://openaccess.thecvf.com/content/WACV2026/papers/Agarwal_GaussianHeadTalk_Wobble-Free_3D_Talking_Heads_with_Audio_Driven_Gaussian_Splatting_WACV_2026_paper.pdf",
+        "sha256": "9535a9a39c53efc842b798333b25c1024f5e4ccdd23e87219a52a3a56b7e9d3d",
+        "locations": [
+          "Figures 3–4 and Section 4.1, PDF p.6 (proceedings p.8022)"
+        ]
+      },
+      "fields": {
+        "throughput": {
+          "status": "not-audited"
+        },
+        "latency": {
+          "status": "not-audited"
+        },
+        "hardware": {
+          "status": "not-audited"
+        },
+        "resolution": {
+          "status": "not-audited"
+        },
+        "duration": {
+          "status": "not-reported",
+          "note": "Absolute timestamps of displayed panels; Figure 3 columns are ten frames apart"
+        },
+        "stability": {
+          "status": "reported",
+          "value": "Image-difference wobble and mouth/teeth comparisons",
+          "note": "Short-horizon partial evidence; source temporal stability metric also described in Section 3.3"
+        }
+      },
+      "boundary": "Source-reported wobble and mouth-detail evidence, not a newly run survey experiment."
+    }
+  ],
+  "corrections": [
+    "StyleAvatar is rendering-primary under the consistent geometric-reuse rule; GAN is a secondary annotation.",
+    "Live Avatar v6 uses H100 hardware; the earlier draft's H800 label is not mixed into v6 results.",
+    "EARTalking has source ablations but no numeric inference speed or minute-scale time-binned protocol in checked v1.",
+    "A missing joint longitudinal protocol does not erase shorter temporal evidence."
+  ]
+}

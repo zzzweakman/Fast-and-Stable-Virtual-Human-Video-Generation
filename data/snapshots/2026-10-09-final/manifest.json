@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "VH-2026-10-09-final",
+  "parentSnapshot": "VH-2026-10-09",
+  "auditDate": "2026-10-09",
+  "selection": "Documented collections and retrospective audit; user-nominated OmniResponse checked against official NeurIPS 2025 main and supplementary papers.",
+  "manuscript": {
+    "path": "assets/survey/survey-2026-10-09-final.pdf",
+    "source": "1009_final/main.tex",
+    "pages": 51,
+    "references": 237
+  },
+  "catalogue": {
+    "path": "data/snapshots/2026-10-09-final/papers.json",
+    "records": 164,
+    "primaryRecords": 123,
+    "supportingRecords": 41
+  },
+  "evidence": {
+    "cohortSystems": 57,
+    "checkedConfigurations": 25,
+    "checkedSystems": 13,
+    "note": "Three OmniResponse configurations extend the earlier 22 checked records; inherited cohort fields remain separately marked."
+  },
+  "files": [
+    {
+      "path": "assets/survey/survey-2026-10-09-final.pdf",
+      "sha256": "0c945829ce35514c73c4a4ba0ae739f97cdab23f6d121b251a25144a97483130",
+      "bytes": 10608656
+    },
+    {
+      "path": "data/evidence-2026-10-09-final.json",
+      "sha256": "cd8d765f754b131c15f1214138f4bfe0f0bf178369773cae3e9438edc4ba1aaf",
+      "bytes": 113854
+    },
+    {
+      "path": "data/configurations-2026-10-09-final.csv",
+      "sha256": "f6269a6106faecf7cf65e16ebdfdc5ae855f7b998e5987ed913c4bca7790f202",
+      "bytes": 23813
+    },
+    {
+      "path": "data/cohort-2026-10-09.csv",
+      "sha256": "1fefcd3fb5b32226d4c17c768c4fabcdf8df669503a69cf9505c0e232edf2d05",
+      "bytes": 29406
+    },
+    {
+      "path": "data/evidence-guide-final.md",
+      "sha256": "f7f6482bbed8eb4def85639dd2aecd3dabeccb1753db0f82a7dcf4826f72cb3c",
+      "bytes": 4135
+    },
+    {
+      "path": "data/omniresponse-review.md",
+      "sha256": "d88985e3afd0c8e23a196cf7f09952703b5f328681fb1e624185fbd0d9569615",
+      "bytes": 3949
+    },
+    {
+      "path": "data/snapshots/2026-10-09-final/papers.json",
+      "sha256": "2678b4d1ba0e03a26f9216b0f581df222175907413091f49df9db763ba642fe1",
+      "bytes": 320282
+    },
+    {
+      "path": "data/snapshots/2026-10-09-final/source-figure-provenance.json",
+      "sha256": "67161fe3bacf2f8838ed6c76a625514269ef7dd246c84fe85c95bcc48133fc85",
+      "bytes": 1992
+    },
+    {
+      "path": "data/snapshots/2026-10-09-final/illustration-provenance.json",
+      "sha256": "0c04ba1b39d32a6363f202bead7e090cc955243b98177396a095b32a317d8ef9",
+      "bytes": 2411
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 {
   "surveyPdf": {
-    "path": "assets/survey/survey.pdf",
-    "source": "virtual-human-survey/1008_overleaf/main_revised.pdf",
-    "pages": 48,
-    "builtAt": "2026-10-08T11:52:20Z",
-    "note": "The current main.tex abstract matches main_revised.pdf; main.pdf is an earlier 53-page build at 05:46:17Z."
+    "path": "assets/survey/survey-2026-10-09-final.pdf",
+    "source": "virtual-human-survey/1009_final/main.tex",
+    "pages": 51,
+    "snapshot": "VH-2026-10-09-final",
+    "sha256": "0c945829ce35514c73c4a4ba0ae739f97cdab23f6d121b251a25144a97483130",
+    "note": "Completed illustrations and the checked OmniResponse/ResponseNet revision; compiled from the exact source files in 1009_final_overleaf.zip."
   },
   "figures": {
     "fig1_fast_stable": {
@@ -42,6 +43,69 @@
       "source": "virtual-human-survey/1008_overleaf/figures/fig10_cross_route_mechanisms.pdf",
       "width": 1600,
       "height": 788
+    }
+  },
+  "reviewedBaselinePdf": {
+    "path": "assets/survey/survey.pdf",
+    "source": "virtual-human-survey/1008_overleaf/main_revised.pdf",
+    "pages": 48,
+    "builtAt": "2026-10-08T11:52:20Z",
+    "note": "Preserved 48-page draft reviewed on 9 October 2026."
+  },
+  "figureNote": "Legacy standalone website previews remain archived. The current manuscript includes the returned author-provided diagrams and attributed source-failure panels, recorded in data/snapshots/2026-10-09-final/.",
+  "earlierRevisionPdf": {
+    "path": "assets/survey/survey-2026-10-09.pdf",
+    "source": "virtual-human-survey/1008_overleaf/main_revised_1009.pdf",
+    "pages": 49,
+    "snapshot": "VH-2026-10-09",
+    "sha256": "c76428fd118047cb23add0d19634acaceac0f452a56e4f8e2ae271f3a1065c00",
+    "note": "9 October 2026 revision; see the snapshot manifest for the paired frozen catalogue and evidence."
+  },
+  "manuscriptFigures": {
+    "fig4_system_boundary": {
+      "source": "1009_final/figures/fig4_system_boundary.pdf",
+      "sha256": "1741e60cfbf203264aabe07227932983b0ae0d05e6e36facd52d4c52037781f0",
+      "note": "Returned author-provided diagram; retained in the illustrated manuscript."
+    },
+    "fig_diffusion_execution": {
+      "source": "1009_final/figures/fig_diffusion_execution.pdf",
+      "sha256": "0331be433a0f30ddd440d0b4da8c7c174eccdebdf9c80c69d46927e5cfd0b88e",
+      "note": "Returned author-provided diagram; retained in the illustrated manuscript."
+    },
+    "fig_fast_stable_concept": {
+      "source": "1009_final/figures/fig_fast_stable_concept.pdf",
+      "sha256": "19ec8f5f0f2aed622d682f611de7162fe40b90b70857d886262db768febd2050",
+      "note": "Returned author-provided diagram; retained in the illustrated manuscript."
+    },
+    "fig_hybrid_mechanisms": {
+      "source": "1009_final/figures/fig_hybrid_mechanisms.pdf",
+      "sha256": "0884e7e8df1be1bccbaba69112d74090219a66aa7e03cabfb7dff04adb048e87",
+      "note": "Returned author-provided diagram; retained in the illustrated manuscript."
+    },
+    "fig_ownership_flow": {
+      "source": "1009_final/figures/fig_ownership_flow.pdf",
+      "sha256": "9643d62ee2732e044522ceba52986a124e036b4eda991f5800fef420f51bddae",
+      "note": "Returned author-provided diagram; retained in the illustrated manuscript."
+    },
+    "fig_render_representations": {
+      "source": "1009_final/figures/fig_render_representations.pdf",
+      "sha256": "f377ceef62e46d65fd58519709e5a998052e0fa5b02b529547a316b6d61d29fa",
+      "note": "Returned author-provided diagram; retained in the illustrated manuscript."
+    },
+    "fig_route_timeline": {
+      "source": "1009_final/figures/fig_route_timeline.pdf",
+      "sha256": "a2879582cfde846f3d7e20b53f9633f01d08410d1b887e017228739659548a89",
+      "note": "Returned author-provided diagram; retained in the illustrated manuscript."
+    },
+    "fig_stability_mechanisms": {
+      "source": "1009_final/figures/fig_stability_mechanisms.pdf",
+      "sha256": "0383c64485898b58968b34d883156e9a925a7ca2127f16fdd66f220157d3e0ca",
+      "note": "Returned author-provided diagram; retained in the illustrated manuscript."
+    },
+    "fig_survey_perspectives": {
+      "source": "1009_final/figures/fig_survey_perspectives.pdf",
+      "sha256": "4b2b9a3f74a160ee59fa0b6d2059bf2d8c9e3116b76c47bfc69d9105cb7d20d1",
+      "note": "Returned author-provided diagram; retained in the illustrated manuscript."
     }
   }
 }

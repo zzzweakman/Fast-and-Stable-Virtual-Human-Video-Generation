@@ -1,4 +1,5 @@
 import { ROUTES, SUPPORT_LABELS, groupOf, textOf, filterPapers, countRoutes, countBrowseRoutes, crossListingOf, paperUrl, safeUrl, readState } from './catalog.js';
+import { PATTERNS, EVIDENCE_STATUS, attachEvidence, defaultConfiguration, fieldText } from './evidence.js';
 
 const $ = selector => document.querySelector(selector);
 const esc = value => textOf(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -10,7 +11,35 @@ const icons = {
 const icon = name => `<svg viewBox="0 0 24 24" aria-hidden="true">${icons[name]}</svg>`;
 let papers = [], images = {}, visible = 12, filtered = [], featured = [], featureIndex = 0, toastTimer;
 let state = readState(location.search);
-const mechanisms = ['Streaming', 'Distillation', 'Caching', 'Identity', '3D Gaussian'];
+const mechanisms = ['Streaming', 'Distillation', 'Caching', 'Identity', '3D Gaussian', ...Object.keys(PATTERNS)];
+
+function evidenceConfiguration(row) {
+  const fields = Object.entries(row.fields).filter(([, f]) => f.status !== 'not-audited');
+  const labels = { throughput: 'Throughput', latency: 'Timing', hardware: 'Hardware', resolution: 'Resolution', precision: 'Precision', duration: 'Evaluated horizon', stability: 'Stability evidence', nfe: 'Model calls' };
+  const source = row.source;
+  const url = safeUrl(source.url);
+  return `<p class="evidence-boundary">${esc(row.boundary)}</p>${fields.length ? `<dl class="evidence-fields">${fields.map(([key, f]) => `<dt>${esc(labels[key] || key)}</dt><dd>${esc(fieldText(f))}${f.note ? `<small>${esc(f.note)}</small>` : ''}</dd>`).join('')}</dl>` : '<p>Architecture record. Timing and duration fields have not been audited for this configuration.</p>'}
+    ${row.assignment ? `<p><strong>Assignment:</strong> ${esc(row.assignment.reason)}</p>` : ''}
+    ${(row.patterns || []).map(p => `<p class="pattern-evidence"><strong>${esc(p.code)}</strong> · ${p.status.map(s => esc(EVIDENCE_STATUS[s])).join(', ')}<br>${esc(p.note)}</p>`).join('')}
+    <p class="evidence-source"><strong>Checked edition:</strong> ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(source.edition)}</a>` : esc(source.edition)}<br>${source.locations.map(esc).join('; ')}</p>
+    ${(row.additionalSources || []).map(s => `<p class="evidence-source"><strong>Additional source:</strong> <a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.edition)}</a><br>${s.locations.map(esc).join('; ')}</p>`).join('')}`;
+}
+
+function provenance(p) {
+  const pr = p.provenance || {}, cited = safeUrl(pr.publicationUrl || pr.bibtexSource);
+  const details = [pr.yearPolicy, pr.note].filter(Boolean);
+  return `<div class="catalogue-provenance"><p><strong>Bibliography edition:</strong> ${esc(p.venue || 'Recorded bibliography entry')} · ${p.year}${cited ? ` · <a href="${esc(cited)}" target="_blank" rel="noopener noreferrer">Open cited edition</a>` : ''}</p>
+    ${details.map(t => `<p>${esc(t)}</p>`).join('')}
+    ${(pr.evidence || []).map(e => `<p><strong>${esc(e.version)}:</strong> ${esc(e.section)}${e.pdfPages ? `, PDF p. ${esc(e.pdfPages.join(', '))}` : ''}. ${esc(e.finding)}</p>`).join('')}
+    <p><strong>Catalogue provenance:</strong> ${esc(p.source?.collection || p.source?.bibliography || 'Manuscript collection')} · ${esc(p.source?.citationKey || p.id)}. ${esc(p.section || '')}</p></div>`;
+}
+
+function evidenceDisclosure(p, index) {
+  const rows = p.evidence || [], selected = defaultConfiguration(rows);
+  return `<details class="paper-evidence"><summary>${rows.length ? 'Fast / Stable evidence' : 'Source & catalogue provenance'}</summary><div class="evidence-content">
+    ${selected ? `${rows.length > 1 ? `<label for="evidence-config-${index}">Source configuration</label><select id="evidence-config-${index}" data-evidence-config="${esc(p.id)}">${rows.map(r => `<option value="${esc(r.id)}" ${r.id === selected.id ? 'selected' : ''}>${esc(r.configuration)}</option>`).join('')}</select>` : ''}<div class="configuration-content">${evidenceConfiguration(selected)}</div><p class="snapshot-note">Checked source configurations. Each value retains its reported measurement boundary.</p>` : '<p>A detailed Fast / Stable extraction is not yet available for this record.</p>'}
+    ${provenance(p)}</div></details>`;
+}
 
 function imageFor(p) {
   const record = images[p.id];
@@ -36,6 +65,7 @@ function renderPaper(p, index) {
     <p class="paper-summary">${esc(listing?.summary || p.summary)}</p>
     <div class="paper-tags">${(listing?.tags || p.tags || []).slice(0, 3).map(tag => `<span class="paper-tag">${esc(tag)}</span>`).join('')}</div></div>
     <div class="paper-footer"><a class="paper-source" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${arxiv ? 'arXiv' : 'Read paper'} ${icon('external')}</a><button class="citation-button" type="button" data-cite="${esc(p.id)}" aria-expanded="false" aria-controls="citation-${index}">${icon('quote')} Cite</button></div>
+    ${evidenceDisclosure(p, index)}
     <div class="citation-details" id="citation-${index}" hidden><strong>BibTeX citation</strong><p>Citation from the recorded source edition. Verify the publication record before use.</p><label class="sr-only" for="bib-${index}">BibTeX for ${esc(p.shortTitle || p.title)}</label><textarea id="bib-${index}" readonly spellcheck="false">${esc(p.bibtex)}</textarea><div class="citation-actions"><button type="button" data-copy="${esc(p.id)}">Copy citation</button><button type="button" data-download="${esc(p.id)}">Download .bib</button></div></div>
     </article>`;
 }
@@ -62,7 +92,7 @@ function updateFilters() {
     : focused?.matches('[data-mechanism]') ? ['data-mechanism', focused.dataset.mechanism] : null;
   const counts = countBrowseRoutes(papers);
   $('#route-filters').innerHTML = `<button class="route-filter ${state.route === 'all' ? 'active' : ''}" type="button" data-filter-route="all" aria-pressed="${state.route === 'all'}">All literature <span class="filter-count">${papers.length}</span></button>` + Object.entries(ROUTES).map(([key, route]) => `${key === 'supporting' ? '<div class="filter-separator"></div>' : ''}<button class="route-filter ${state.route === key ? 'active' : ''}" style="--category:${route.color}" type="button" data-filter-route="${key}" aria-pressed="${state.route === key}"><span class="filter-dot" aria-hidden="true"></span>${route.label}<span class="filter-count">${counts[key]}</span></button>`).join('');
-  $('#mechanism-filters').innerHTML = mechanisms.map(tag => `<button type="button" class="mechanism-button ${state.tag === tag ? 'active' : ''}" data-mechanism="${esc(tag)}" aria-pressed="${state.tag === tag}">${esc(tag)}</button>`).join('');
+  $('#mechanism-filters').innerHTML = mechanisms.map(tag => `<button type="button" class="mechanism-button ${state.tag === tag ? 'active' : ''}" data-mechanism="${esc(tag)}" aria-pressed="${state.tag === tag}" ${PATTERNS[tag] ? `title="${esc(PATTERNS[tag])}" aria-label="${esc(tag + ': ' + PATTERNS[tag])}"` : ''}>${esc(tag)}</button>`).join('');
   const chips = [];
   if (state.route !== 'all') chips.push(['route', ROUTES[state.route].label]);
   if (state.year !== 'all') chips.push(['year', state.year.startsWith('before:') ? `Before ${state.year.split(':')[1]}` : state.year]);
@@ -82,10 +112,11 @@ function render({ preserveFilters = false } = {}) {
   $('#pagination-note').textContent = filtered.length ? `Showing ${shown} of ${filtered.length} papers` : '';
   const primaryCount = papers.filter(p => p.category === 'autoregressive').length;
   const crossCount = papers.filter(p => crossListingOf(p, 'autoregressive')).length;
+  const controllerCount = papers.filter(p => crossListingOf(p, 'autoregressive')?.kind === 'controller').length;
   const foundationCount = papers.filter(p => p.category === 'foundations' && p.tags.includes('AR foundations')).length;
   const contextCount = papers.filter(p => p.category === 'context' && p.tags.includes('AR scope context')).length;
   $('#ar-scope').hidden = state.route !== 'autoregressive';
-  $('#ar-scope-summary').textContent = `${primaryCount} primary-route papers + ${crossCount} cross-listed baselines. Includes historical lip-region models; charts count each source paper once.`;
+  $('#ar-scope-summary').textContent = `${primaryCount} visual AR papers + ${crossCount - controllerCount} cross-listed baselines${controllerCount ? ` + ${controllerCount} AR ${controllerCount === 1 ? 'controller' : 'controllers'}` : ''}. Controllers retain their appearance-generation route in the charts; each source paper is counted once.`;
   $('#ar-foundations-link').textContent = `Explore ${foundationCount} general-video AR foundations`;
   $('#ar-context-link').textContent = `Explore ${contextCount} spatial or unresolved AR papers`;
   $('#empty-state').hidden = filtered.length > 0; $('#load-more').hidden = shown >= filtered.length;
@@ -116,7 +147,7 @@ function renderStats() {
   const counts = countRoutes(papers), mainRoutes = Object.keys(ROUTES).filter(k => k !== 'supporting'), total = papers.length - counts.supporting;
   $('#method-total').textContent = `${total} method papers`;
   const maxCount = Math.max(...mainRoutes.map(k => counts[k]), 1);
-  $('#route-chart').innerHTML = mainRoutes.map(key => `<button class="bar-row" type="button" data-stats-route="${key}" aria-label="${counts[key]} primary ${ROUTES[key].label} papers; explore this route and any cross-listed baselines"><span>${ROUTES[key].label}</span><span class="bar-track"><span class="bar-fill" style="--percent:${counts[key] / maxCount * 100}%;--category:${ROUTES[key].color}"></span></span><span class="bar-value">${counts[key]}</span></button>`).join('');
+  $('#route-chart').innerHTML = mainRoutes.map(key => `<button class="bar-row" type="button" data-stats-route="${key}" aria-label="${counts[key]} primary ${ROUTES[key].label} papers; explore this route and its cross-listed references"><span>${ROUTES[key].label}</span><span class="bar-track"><span class="bar-fill" style="--percent:${counts[key] / maxCount * 100}%;--category:${ROUTES[key].color}"></span></span><span class="bar-value">${counts[key]}</span></button>`).join('');
   const allYears = [...new Set(papers.map(p => p.year))].sort((a, b) => a - b), latest = allYears.at(-1), cutoff = latest - 9;
   const buckets = [];
   const older = papers.filter(p => p.year < cutoff);
@@ -166,6 +197,16 @@ async function load() {
     const data = await response.json();
     if (!Array.isArray(data) || !data.length || data.some(p => !p.id || !p.title || !paperUrl(p))) throw new Error('Invalid catalogue');
     papers = data;
+    $('#evidence-status').hidden = true;
+    try {
+      const evidenceResponse = await fetch(new URL('data/evidence-2026-10-09-final.json', import.meta.url));
+      if (!evidenceResponse.ok) throw new Error('Evidence unavailable');
+      const snapshot = await evidenceResponse.json();
+      if (!Array.isArray(snapshot.configurations)) throw new Error('Invalid evidence snapshot');
+      papers = attachEvidence(papers, snapshot);
+    } catch {
+      $('#evidence-status').hidden = false;
+    }
     try {
       const res = await fetch(new URL('assets/papers/manifest.json', import.meta.url));
       if (res.ok) { const manifest = await res.json(); images = manifest.papers || manifest; }
@@ -183,6 +224,7 @@ $('#sort').addEventListener('change', event => change({ sort: event.target.value
 $('#year').addEventListener('change', event => change({ year: event.target.value }));
 $('#reset-filters').addEventListener('click', reset); $('#empty-reset').addEventListener('click', reset);
 $('#retry-load').addEventListener('click', load);
+$('#retry-evidence').addEventListener('click', load);
 $('#load-more').addEventListener('click', () => {
   const previous = Math.min(visible, filtered.length); visible += 12; render({ preserveFilters: true });
   const next = $('#paper-grid').children[previous]?.querySelector('h3 a'); if (next) next.focus({ preventScroll: true });
@@ -197,6 +239,11 @@ for (const [id, tag] of [['ar-foundations-link', 'AR foundations'], ['ar-context
 $('#gallery-prev').addEventListener('click', () => { featureIndex = (featureIndex - 1 + featured.length) % featured.length; renderFeature(); });
 $('#gallery-next').addEventListener('click', () => { featureIndex = (featureIndex + 1) % featured.length; renderFeature(); });
 document.addEventListener('click', async event => {
+  if (event.target.closest('a[href="#taxonomy"]')) $('#taxonomy').open = true;
+  const pattern = event.target.closest('[data-pattern-link]');
+  if (pattern && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) {
+    event.preventDefault(); change({ tag: pattern.dataset.patternLink, route: 'all', year: 'all', q: '' }, true); $('#search').focus({ preventScroll: true });
+  }
   const route = event.target.closest('[data-filter-route]'); if (route) change({ route: route.dataset.filterRoute });
   const routeLink = event.target.closest('[data-route]'); if (routeLink) change({ route: routeLink.dataset.route, q: '', year: 'all', tag: '' });
   const tag = event.target.closest('[data-mechanism]'); if (tag) change({ tag: state.tag === tag.dataset.mechanism ? '' : tag.dataset.mechanism });
@@ -213,8 +260,14 @@ document.addEventListener('click', async event => {
   }
   const down = event.target.closest('[data-download]'); if (down) { const p = papers.find(p => p.id === down.dataset.download); download(p.bibtex + '\n', `${p.id.replace(/[^\w-]/g, '')}.bib`); }
 });
+document.addEventListener('change', event => {
+  const select = event.target.closest('[data-evidence-config]');
+  if (!select) return;
+  const row = papers.find(p => p.id === select.dataset.evidenceConfig)?.evidence.find(r => r.id === select.value);
+  if (row) select.closest('.evidence-content').querySelector('.configuration-content').innerHTML = evidenceConfiguration(row);
+});
 document.addEventListener('keydown', event => {
-  if (event.key === '/' && !event.ctrlKey && !event.metaKey && !event.altKey && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName) && !document.activeElement.isContentEditable) { event.preventDefault(); $('#search').focus(); }
+  if (event.key.toLowerCase() === 'k' && (event.ctrlKey || event.metaKey) && !event.altKey) { event.preventDefault(); $('#search').focus(); }
 });
 window.addEventListener('popstate', () => { state = readState(location.search); visible = 12; syncInputs(); render(); });
 function updateNavigation() {

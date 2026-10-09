@@ -2,9 +2,54 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { countRoutes, countBrowseRoutes, crossListingOf, filterPapers, groupOf, paperUrl, readState, safeUrl } from '../catalog.js';
+import { attachEvidence, defaultConfiguration, fieldText, matchesPattern } from '../evidence.js';
 
 const papers = JSON.parse(fs.readFileSync(new URL('../data/papers.json', import.meta.url), 'utf8'));
 const defaults = { q: '', route: 'all', year: 'all', tag: '', sort: 'newest' };
+const snapshot = JSON.parse(fs.readFileSync(new URL('../data/evidence-2026-10-09-final.json', import.meta.url), 'utf8'));
+const audited = attachEvidence(papers, snapshot);
+
+test('hybrid correction preserves one primary record and the total catalogue', () => {
+  assert.equal(papers.find(p => p.id === 'wang2023styleavatar').category, 'rendering');
+  assert.equal(papers.length, 164);
+  assert.deepEqual(countRoutes(papers), { gan: 21, diffusion: 43, autoregressive: 5, rendering: 54, supporting: 41 });
+});
+
+test('pattern filters distinguish corrupted history, generated history, and memory types', () => {
+  const find = id => audited.find(p => p.id === id);
+  assert.ok(matchesPattern(find('weng2026eartalking'), 'L4-C'));
+  assert.ok(!matchesPattern(find('weng2026eartalking'), 'L4-G'));
+  assert.ok(matchesPattern(find('huang2025live'), 'L4-G'));
+  assert.ok(!matchesPattern(find('li2026personalive'), 'L2'));
+  assert.ok(!matchesPattern(find('chen2025midas'), 'L2'));
+  assert.ok(matchesPattern(find('zhen2026soulx'), 'L2'));
+  assert.ok(matchesPattern(find('li2025joyavatar'), 'L5'));
+  const hypothetical = { evidence: [{ patterns: [{ code: 'L2', status: ['H'], note: 'Proposed only' }] }] };
+  assert.ok(!matchesPattern(hypothetical, 'L2'));
+  const results = filterPapers(audited, { ...defaults, route: 'autoregressive', tag: 'L4-C', q: 'EARTalking' });
+  assert.deepEqual(results.map(p => p.id), ['weng2026eartalking']);
+});
+
+test('configuration selection preserves source values and unresolved conflicts', () => {
+  const live = audited.find(p => p.id === 'huang2025live').evidence;
+  assert.equal(live.length, 6);
+  const full = defaultConfiguration(live);
+  assert.equal(full.fields.throughput.value, 45.2);
+  assert.equal(full.fields.hardware.value, '5 NVIDIA H100');
+  assert.match(full.source.edition, /v6$/);
+  assert.equal(full.fields.latency.status, 'conflict');
+  assert.match(fieldText(full.fields.latency), /conflict.*1\.21 s/);
+  assert.equal(live.find(r => r.configuration === 'teacher').fields.throughput.value, 0.29);
+  assert.match(fieldText({ status: 'not-reported' }), /Not reported/);
+  assert.equal(fieldText({ status: 'reported', value: 0, unit: 'ms' }), '0 ms');
+});
+
+test('cited proceedings edition is visible for the ART-V baseline', () => {
+  const mmvid = papers.find(p => p.id === 'han2022mmvid');
+  assert.match(paperUrl(mmvid), /openaccess\.thecvf\.com/);
+  assert.match(mmvid.crossListings[0].evidenceUrl, /CVPR2022.*pdf#page=5$/);
+  assert.ok(mmvid.provenance.evidence.every(e => e.version === 'CVPR proceedings'));
+});
 
 test('all catalogue entries have a single count and a usable source link', () => {
   assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
@@ -81,7 +126,28 @@ test('spatial and unresolved AR cases remain discoverable outside strict tempora
   assert.ok(context.every(p => p.category === 'context'));
   assert.equal(filterPapers(papers, { ...defaults, route: 'autoregressive', tag: 'AR scope context' }).length, 0);
   assert.equal(countRoutes(papers).autoregressive, 5);
-  assert.equal(countBrowseRoutes(papers).autoregressive, 8);
+  assert.equal(countBrowseRoutes(papers).autoregressive, 9);
+});
+
+test('OmniResponse is discoverable as a 2025 AR controller without changing visual-AR counts', () => {
+  const omni = audited.find(p => p.id === 'luo2026omniresponse');
+  assert.equal(omni.year, 2025);
+  assert.equal(omni.venue, 'NeurIPS 2025');
+  assert.equal(omni.category, 'rendering');
+  assert.equal(crossListingOf(omni, 'autoregressive').kind, 'controller');
+  for (const route of ['all', 'autoregressive', 'rendering']) {
+    assert.deepEqual(filterPapers(audited, { ...defaults, route, year: '2025', q: 'OmniResponse' }).map(p => p.id), [omni.id]);
+  }
+  assert.equal(countRoutes(papers).autoregressive, 5);
+  assert.match(omni.bibtex, /luo2025omniresponse/);
+  const full = defaultConfiguration(omni.evidence);
+  assert.equal(full.fields.throughput.value, 15.62);
+  assert.equal(full.fields.hardware.value, '1 NVIDIA A100 80 GB');
+  assert.match(full.boundary, /not identified as time to first visible frame/);
+  assert.equal(full.fields.resolution.status, 'not-reported');
+  assert.equal(full.fields.duration.status, 'not-reported');
+  assert.equal(full.additionalSources[0].edition, 'NeurIPS 2025 supplementary Appendix.pdf');
+  assert.equal(omni.evidence.length, 3);
 });
 
 test('sorting and historical buckets operate on numeric bibliography years', () => {

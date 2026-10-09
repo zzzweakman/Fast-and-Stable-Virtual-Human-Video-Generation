@@ -5044,84 +5044,35 @@
     "title": "OmniResponse: Online Multimodal Conversational Response Generation in Dyadic Interactions",
     "shortTitle": "OmniResponse",
     "authors": "Cheng Luo, Jianghui Wang, Bing Li, Siyang Song, Bernard Ghanem",
-    "year": 2025,
+    "year": 2026,
     "category": "rendering",
     "subcategory": "Interactive motion controllers",
-    "summary": "Autoregressively predicts conversational text and facial coefficients; Chrono-Text Markup and TempoVoice align speech with facial behavior. A pretrained portrait renderer supplies appearance, so the survey treats it as an AR response controller within a render-based system.",
+    "summary": "Autoregressively coordinates verbal and non-verbal responses to a conversational partner. A pretrained portrait renderer maps the predicted facial coefficients to pixels, separating behavioral state from appearance ownership.",
     "tags": [
       "online interaction",
-      "AR response controller",
-      "facial coefficients",
-      "ResponseNet"
+      "behavior autoregression",
+      "facial coefficients"
     ],
-    "url": "https://proceedings.nips.cc/paper_files/paper/2025/hash/b734c30b9c955c535e333f0301f5e45c-Abstract-Conference.html",
+    "url": "https://arxiv.org/abs/2505.21724",
     "arxiv": "2505.21724",
     "section": "Autoregressive Methods",
     "source": {
-      "citationKey": "luo2025omniresponse",
+      "citationKey": "luo2026omniresponse",
       "bibliography": "bib/AR.bib",
       "sections": [
-        "sec_new/5_autoregressive_methods.tex",
-        "sec_new/7_datasets_and_evaluation.tex"
+        "sec_new/5_autoregressive_methods.tex"
       ]
     },
-    "bibtex": "@inproceedings{luo2025omniresponse,\n  title={{OmniResponse}: Online Multimodal Conversational Response Generation in Dyadic Interactions},\n  author={Luo, Cheng and Wang, Jianghui and Li, Bing and Song, Siyang and Ghanem, Bernard},\n  booktitle={Advances in Neural Information Processing Systems},\n  volume={38},\n  pages={125869--125891},\n  year={2025},\n  url={https://doi.org/10.52202/085713-4196}\n}",
+    "bibtex": "@article{luo2026omniresponse,\n  title={Omniresponse: Online multimodal conversational response generation in dyadic interactions},\n  author={Luo, Cheng and Wang, Jianghui and Li, Bing and Song, Siyang and Ghanem, Bernard},\n  journal={Advances in Neural Information Processing Systems},\n  volume={38},\n  pages={125869--125891},\n  year={2026}\n}",
     "featured": false,
-    "venue": "NeurIPS 2025",
+    "venue": "Advances in Neural Information Processing Systems",
     "provenance": {
-      "metadata": "Official NeurIPS 2025 proceedings",
-      "summary": "Checked main paper and official supplementary Appendix.pdf",
-      "yearPolicy": "Conference year 2025, verified against the official proceedings. The stable catalogue ID retains its earlier year for existing links.",
+      "metadata": "Manuscript bibliography",
+      "summary": "Manuscript synthesis",
+      "yearPolicy": "Bibliography year; may differ from first preprint date",
       "linkSource": "Verified original-paper record",
-      "note": "Dedicated AR-section case study. The causal model predicts 52 blendshape and 12 pose parameters; portrait rendering supplies appearance. The reported 64 ms lacks timing endpoints and is not established as TTFF.",
-      "publicationUrl": "https://proceedings.nips.cc/paper_files/paper/2025/hash/b734c30b9c955c535e333f0301f5e45c-Abstract-Conference.html",
-      "evidence": [
-        {
-          "version": "NeurIPS 2025 main paper",
-          "section": "Section 3.1; Tables 2–3",
-          "pdfPages": [
-            4,
-            5,
-            8,
-            10
-          ],
-          "finding": "Coefficient-level response autoregression and synchronization ablations; a downstream portrait renderer produces RGB."
-        },
-        {
-          "version": "NeurIPS 2025 supplement",
-          "section": "Appendices A, B.1, B.5, C.2",
-          "pdfPages": [
-            1,
-            2,
-            3,
-            5,
-            6,
-            7
-          ],
-          "finding": "64-dimensional facial controls; reported 15.62 FPS on one A100 80 GB; timing boundary unspecified; participant-pair-disjoint ResponseNet split."
-        }
-      ]
-    },
-    "crossListings": [
-      {
-        "route": "autoregressive",
-        "kind": "controller",
-        "label": "AR controller",
-        "shortTitle": "OmniResponse",
-        "summary": "An AR conversational controller: causal text and facial-coefficient prediction, with Chrono-Text Markup and TempoVoice for synchronization. A separate portrait renderer produces the images; this entry does not contribute to native visual-AR statistics.",
-        "tags": [
-          "AR response controller",
-          "NeurIPS 2025",
-          "ResponseNet"
-        ],
-        "evidenceUrl": "https://proceedings.nips.cc/paper_files/paper/2025/file/b734c30b9c955c535e333f0301f5e45c-Paper-Conference.pdf#page=5"
-      }
-    ],
-    "evidenceIds": [
-      "luo2026omniresponse--neurips2025-full",
-      "luo2026omniresponse--without-chrono-text",
-      "luo2026omniresponse--without-tempovoice"
-    ]
+      "note": "Included in the autoregressive section as a contextual behavior/control example. Under the manuscript ownership test, a downstream renderer owns appearance; this is not a native visual-AR system."
+    }
   },
   {
     "id": "zhang2026vidus1realtimeinteractive",

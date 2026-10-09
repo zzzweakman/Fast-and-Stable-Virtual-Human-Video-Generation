@@ -1,0 +1,62 @@
+[
+  {
+    "file": "source_liveavatar_ablation.pdf",
+    "citationKey": "huang2025live",
+    "source": "/tmp/survey-revision-evidence-1009/huang2025live-v6.pdf",
+    "sourceSha256": "f79055a1d41b8ca61cb3c64826b54f98fd9cc43bc4736ab6004eb6b613fcd3dd",
+    "pdfPage": 13,
+    "cropPoints": [
+      133,
+      114,
+      481,
+      192
+    ],
+    "sourceLocation": "arXiv:2512.04677v6, Figure 4; timestamps not supplied",
+    "treatment": "Unaltered PDF crop; source labels retained"
+  },
+  {
+    "file": "source_joyavatar_boundary.pdf",
+    "citationKey": "li2025joyavatar",
+    "source": "/tmp/survey-assets-3eggh7pf/li2025joyavatar.pdf",
+    "sourceSha256": "3d928e56c3b8bdaa6743f4c0a4a3f10d9da9e9206ac39736e2fe68097176a384",
+    "pdfPage": 9,
+    "cropPoints": [
+      96,
+      304,
+      516,
+      466
+    ],
+    "sourceLocation": "Figure 7; source labels 0, 30, 60, 120 seconds",
+    "treatment": "Unaltered PDF crop; source labels retained"
+  },
+  {
+    "file": "source_gaussian_wobble.pdf",
+    "citationKey": "agarwal2026gaussianheadtalk",
+    "source": "/tmp/survey-missing-images-20261009/originals/agarwal2026gaussianheadtalk.pdf",
+    "sourceSha256": "9535a9a39c53efc842b798333b25c1024f5e4ccdd23e87219a52a3a56b7e9d3d",
+    "pdfPage": 6,
+    "cropPoints": [
+      57,
+      68,
+      298,
+      204
+    ],
+    "sourceLocation": "WACV 2026, Figure 3; ten-frame spacing, absolute timestamps not supplied",
+    "treatment": "Unaltered PDF crop; source labels retained"
+  },
+  {
+    "file": "source_gaussian_mouth.pdf",
+    "citationKey": "agarwal2026gaussianheadtalk",
+    "source": "/tmp/survey-missing-images-20261009/originals/agarwal2026gaussianheadtalk.pdf",
+    "sourceSha256": "9535a9a39c53efc842b798333b25c1024f5e4ccdd23e87219a52a3a56b7e9d3d",
+    "pdfPage": 6,
+    "cropPoints": [
+      57,
+      278,
+      298,
+      477
+    ],
+    "sourceLocation": "WACV 2026, Figure 4; absolute timestamps not supplied",
+    "treatment": "Unaltered PDF crop; source labels retained"
+  }
+]
