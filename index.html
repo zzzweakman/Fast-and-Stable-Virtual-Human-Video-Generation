@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#193e35">
+  <meta name="description" content="Explore Fast and Stable Virtual Human Video Generation: A Survey. A visual literature catalogue of GAN, diffusion, autoregressive, and render-based methods, with paper previews, summaries, citations, and research statistics.">
+  <meta property="og:title" content="Fast and Stable Virtual Human Video Generation: A Survey">
+  <meta property="og:description" content="Four generation routes. Two complementary perspectives. Explore the research behind efficient and consistent virtual humans.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zzzweakman.github.io/Fast-and-Stable-Virtual-Human-Video-Generation/">
+  <title>Fast &amp; Stable — Virtual Human Video Generation: A Survey</title>
+  <link rel="canonical" href="https://zzzweakman.github.io/Fast-and-Stable-Virtual-Human-Video-Generation/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/manrope.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#literature">Skip to the literature</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#survey" aria-label="Fast and Stable, back to overview">
+        <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true"><path d="M3 11V4h23v23h-7M10 32h23V9h-7M3 18h16v14H3z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M10 11h9v7h-9z" fill="currentColor"/></svg>
+        <span>Fast <span class="brand-amp">&amp;</span> Stable</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#survey" class="nav-link active">Overview</a>
+        <a href="#literature" class="nav-link">Literature</a>
+        <a href="#landscape" class="nav-link">Landscape</a>
+        <a href="#perspectives" class="nav-link">Perspectives</a>
+      </nav>
+      <a class="repo-link" href="https://github.com/zzzweakman/Fast-and-Stable-Virtual-Human-Video-Generation" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-3c3 0 6-1.5 6-5a4 4 0 0 0-1-3c0-1 0-2-1-3-2 0-3 1-3 1a12 12 0 0 0-6 0S8 4 6 4C5 5 5 6 5 7a4 4 0 0 0-1 3c0 3.5 3 5 6 5a3.5 3.5 0 0 0-1 3v4"/></svg><span>GitHub</span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="survey" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Fast and stable<br><span>virtual humans.</span></h1>
+        <p class="hero-subtitle">A survey of virtual-human video generation</p>
+        <p class="hero-description">How do we generate human video efficiently—and keep it consistent over time? Explore the methods, mechanisms, and open questions shaping the field.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#literature">Explore the literature <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <a class="button button-outline" href="assets/survey/survey.pdf" target="_blank" rel="noopener">Read the survey <span class="file-label">PDF</span></a>
+        </div>
+        <p class="edition-note">Research companion <span aria-hidden="true">·</span> October 2026 draft</p>
+      </div>
+      <div class="hero-gallery" aria-label="A selection from the literature">
+        <div class="gallery-heading"><span>From the literature</span><span id="gallery-counter">01 / 04</span></div>
+        <a id="hero-paper-link" class="hero-image-link" href="#literature" aria-label="Explore the featured research">
+          <div id="hero-image" class="hero-image"><div class="gallery-placeholder">Appearance. Motion. Continuity.</div></div>
+        </a>
+        <div class="gallery-caption">
+          <div><span id="hero-category" class="category-label">Four generation routes</span><h2 id="hero-paper-title">One field, complementary approaches.</h2><p id="hero-paper-description">Discover the visual mechanisms behind virtual humans.</p></div>
+          <div class="gallery-controls"><button type="button" id="gallery-prev" class="icon-button" aria-label="Previous featured paper"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button><button type="button" id="gallery-next" class="icon-button" aria-label="Next featured paper"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="route-strip container" aria-label="The four visual generation routes">
+      <a class="route-link" href="#literature" data-route="gan"><span class="route-number route-gan" aria-hidden="true"></span><div><strong>GAN-based</strong><span>Feed-forward visual synthesis</span></div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="route-link" href="#literature" data-route="diffusion"><span class="route-number route-diffusion" aria-hidden="true"></span><div><strong>Diffusion-based</strong><span>Iterative visual generation</span></div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="route-link" href="#literature" data-route="autoregressive"><span class="route-number route-autoregressive" aria-hidden="true"></span><div><strong>Autoregressive</strong><span>Prediction from visual history</span></div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <a class="route-link" href="#literature" data-route="rendering"><span class="route-number route-rendering" aria-hidden="true"></span><div><strong>Render-based</strong><span>Reusable visual representations</span></div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+    </section>
+
+    <section class="literature-section container" id="literature" aria-labelledby="literature-title">
+      <div class="section-heading">
+        <div><h2 id="literature-title">Explore the literature<span class="heading-period">.</span></h2><p>Find a method. Follow an idea. Go straight to the source.</p></div>
+        <button class="text-button" type="button" id="export-button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/></svg>Export results <span class="file-label">BIB</span></button>
+      </div>
+      <div class="search-row">
+        <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Search papers, authors, or mechanisms</span><input id="search" type="search" placeholder="Search papers, authors, or mechanisms…" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+        <label class="sort-control"><span class="sr-only">Sort papers</span><select id="sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></label>
+      </div>
+      <div class="catalog-layout">
+        <aside class="filter-sidebar" aria-label="Filter the literature">
+          <fieldset><legend>Generation route</legend><div id="route-filters" class="route-filters"><p class="muted">Loading categories…</p></div></fieldset>
+          <div class="year-filter"><label for="year">Publication year</label><select id="year"><option value="all">All years</option></select></div>
+          <fieldset class="mechanism-filters"><legend>Explore a mechanism</legend><div id="mechanism-filters"></div></fieldset>
+          <button id="reset-filters" class="reset-filters" type="button">Reset filters <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></svg></button>
+          <div class="taxonomy-note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg><p>Routes follow the component that owns generated appearance. Hybrid methods receive one primary route.</p><a href="#landscape">About the taxonomy <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div>
+        </aside>
+        <div class="catalog-content">
+          <div class="results-toolbar"><p id="results-count" role="status" aria-live="polite">Loading the literature…</p><div class="view-controls" role="group" aria-label="Paper view"><button id="grid-view" class="icon-button selected" type="button" aria-label="Card view" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></button><button id="list-view" class="icon-button" type="button" aria-label="List view" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h12M9 12h12M9 19h12M3 5h1M3 12h1M3 19h1"/></svg></button></div></div>
+          <div id="active-filters" class="active-filters" role="group" aria-label="Active filters"></div>
+          <div id="paper-grid" class="paper-grid" aria-busy="true"></div>
+          <div id="empty-state" class="empty-state" hidden><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="20" cy="20" r="12"/><path d="m29 29 12 12M14 20h12"/></svg><h3>No papers found</h3><p>Try a broader search or remove a filter.</p><button class="button button-outline" type="button" id="empty-reset">Clear all filters</button></div>
+          <div id="error-state" class="empty-state" hidden><h3>The catalogue could not load</h3><p>Check your connection, then try again. The survey PDF remains available above.</p><button class="button button-primary" id="retry-load" type="button">Try again</button></div>
+          <div class="load-more-wrap"><button id="load-more" class="button button-outline" type="button" hidden>Show more papers <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"/></svg></button><span id="pagination-note"></span></div>
+          <noscript><p class="noscript-note">Enable JavaScript for search and filters. You can still <a href="assets/survey/survey.pdf">read the complete survey PDF</a> or <a href="data/papers.json">download the literature catalogue</a>.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="landscape-section" id="landscape" aria-labelledby="landscape-title">
+      <div class="container">
+        <div class="section-heading"><div><h2 id="landscape-title">The research landscape<span class="heading-period">.</span></h2><p>Different routes. A shared pursuit of speed and consistency.</p></div><span class="data-note">Computed from the catalogue</span></div>
+        <div class="landscape-grid">
+          <div class="chart-panel"><div class="chart-heading"><h3>Four routes, at a glance</h3><span id="method-total"></span></div><div id="route-chart" class="route-chart"></div><p class="chart-footnote">One primary route per paper. Separate version records are counted individually; supporting references are counted separately.</p></div>
+          <div class="chart-panel"><div class="chart-heading"><h3>A field in motion</h3><span>Publications by year</span></div><div id="year-chart" class="year-chart" role="group" aria-label="Catalogue papers by publication year"></div><ul id="year-legend" class="chart-legend" aria-label="Publication chart categories"></ul><p class="chart-footnote">Years follow the bibliography's cited edition. This is catalogue coverage, not an exhaustive publication census.</p></div>
+        </div>
+        <div class="coverage-line" id="coverage-line"></div>
+        <p class="measurement-note"><strong>Read performance in context.</strong> Reported throughput, latency, and stability come from different hardware, tasks, and evaluation durations. The survey preserves these measurement boundaries.</p>
+      </div>
+    </section>
+
+    <section class="perspectives-section container" id="perspectives" aria-labelledby="perspectives-title">
+      <div class="section-heading"><div><h2 id="perspectives-title">Two lenses on every method<span class="heading-period">.</span></h2><p>Fast output and stable generation are independent requirements.</p></div><a class="text-button" href="assets/survey/survey.pdf" target="_blank" rel="noopener">Read the full analysis <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div>
+      <div class="lenses-grid">
+        <article class="lens lens-fast"><div class="lens-title"><h3>Fast<span aria-hidden="true">.</span></h3><svg viewBox="0 0 80 60" aria-hidden="true"><path d="M5 18h36M12 30h29M5 42h36M47 13l22 17-22 17"/></svg></div><h4>Reduce the time to visible output.</h4><p>Representation size, model calls, computation reuse, and decoding all shape the cost. Throughput and the wait for the first frame tell different stories.</p><div class="lens-terms"><span>Distillation</span><span>Caching</span><span>Compact representations</span></div></article>
+        <article class="lens lens-stable"><div class="lens-title"><h3>Stable<span aria-hidden="true">.</span></h3><svg viewBox="0 0 80 60" aria-hidden="true"><path d="M6 30h12l8-16 13 32 12-32 8 16h15"/></svg></div><h4>Preserve consistency over time.</h4><p>Identity, appearance, motion, and synchronization need evidence over a continuous duration. Bounded memory alone does not establish bounded visual drift.</p><div class="lens-terms"><span>Identity</span><span>Motion continuity</span><span>Long-horizon evidence</span></div></article>
+      </div>
+      <div class="patterns-heading"><h3>Five recurring patterns for stability</h3><p>A common vocabulary across the survey.</p></div>
+      <div class="stability-patterns">
+        <details><summary><span>Persistent identity anchors</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"/></svg></summary><p>Keep a reference image, appearance representation, or identity asset available throughout generation. It can constrain identity drift while also limiting intended changes.</p></details>
+        <details><summary><span>Bounded multiscale memory</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"/></svg></summary><p>Combine recent detail with longer-term context under a finite state budget. Memory size and retention policy must be evaluated alongside visual consistency.</p></details>
+        <details><summary><span>Position re-indexing</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"/></svg></summary><p>Adjust temporal position indices as the generation window advances, helping a model operate within its trained positional range during extended generation.</p></details>
+        <details><summary><span>Self-history training</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"/></svg></summary><p>Train with model-generated histories to address the difference between clean training context and imperfect inference-time context.</p></details>
+        <details><summary><span>Motion inheritance</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"/></svg></summary><p>Carry motion information across generation boundaries to support continuity. The representation and hand-off policy influence how errors propagate.</p></details>
+      </div>
+    </section>
+
+    <section class="read-survey container" aria-label="Read and contribute"><div><h2>The full picture is in the survey.</h2><p>Explore the taxonomy, evidence boundaries, datasets, and open research questions.</p></div><div><a class="button button-primary" href="assets/survey/survey.pdf" target="_blank" rel="noopener">Read the draft <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><a class="contribute-link" href="https://github.com/zzzweakman/Fast-and-Stable-Virtual-Human-Video-Generation/issues/new" target="_blank" rel="noopener">Suggest a paper or correction</a></div></section>
+  </main>
+
+  <footer class="container site-footer"><div class="footer-top"><a class="brand" href="#survey">Fast <span class="brand-amp">&amp;</span> Stable</a><p>Fast and Stable Virtual Human Video Generation: A Survey</p><a href="https://github.com/zzzweakman/Fast-and-Stable-Virtual-Human-Video-Generation" target="_blank" rel="noopener">Source on GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a></div><div class="footer-bottom"><p>Curated from the October 2026 manuscript. Paper imagery belongs to its respective authors.</p><details class="source-details"><summary>Sources &amp; catalogue scope</summary><p>This companion follows the manuscript's visual-ownership taxonomy. Summaries describe the cited work; inclusion does not imply a common-hardware benchmark. The PDF is the supplied revised draft. Paper preview sources and citation records are included in the repository. The <a href="https://pcnexlwlgqxz.feishu.cn/wiki/CpS4w8Rsii1rxAkhfRfcs3n4nIf?from=from_copylink" target="_blank" rel="noopener">original Feishu literature notes</a> were unavailable when this edition was assembled and are not included as an ingested source.</p><a href="data/papers.json" download>Download catalogue JSON</a></details></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

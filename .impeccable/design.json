@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T04:30:04.977223+00:00",
+  "title": "Design System: Fast and Stable",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Forest",
+        "tonalRamp": [
+          "oklch(15% 0.0456 175.2)",
+          "oklch(25% 0.0456 175.2)",
+          "oklch(35% 0.0456 175.2)",
+          "oklch(45% 0.0456 175.2)",
+          "oklch(60% 0.0456 175.2)",
+          "oklch(72% 0.0456 175.2)",
+          "oklch(85% 0.0456 175.2)",
+          "oklch(95% 0.0456 175.2)"
+        ]
+      },
+      "lime": {
+        "role": "primary",
+        "displayName": "Lime",
+        "tonalRamp": [
+          "oklch(15% 0.0707 119.0)",
+          "oklch(25% 0.0707 119.0)",
+          "oklch(35% 0.0707 119.0)",
+          "oklch(45% 0.0707 119.0)",
+          "oklch(60% 0.0707 119.0)",
+          "oklch(72% 0.0707 119.0)",
+          "oklch(85% 0.0707 119.0)",
+          "oklch(95% 0.0707 119.0)"
+        ]
+      },
+      "background": {
+        "role": "neutral",
+        "displayName": "Cool white",
+        "tonalRamp": [
+          "oklch(15% 0.0041 121.6)",
+          "oklch(25% 0.0041 121.6)",
+          "oklch(35% 0.0041 121.6)",
+          "oklch(45% 0.0041 121.6)",
+          "oklch(60% 0.0041 121.6)",
+          "oklch(72% 0.0041 121.6)",
+          "oklch(85% 0.0041 121.6)",
+          "oklch(95% 0.0041 121.6)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Paper white",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(25% 0.0000 0.0)",
+          "oklch(35% 0.0000 0.0)",
+          "oklch(45% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(85% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Forest ink",
+        "tonalRamp": [
+          "oklch(15% 0.0293 174.1)",
+          "oklch(25% 0.0293 174.1)",
+          "oklch(35% 0.0293 174.1)",
+          "oklch(45% 0.0293 174.1)",
+          "oklch(60% 0.0293 174.1)",
+          "oklch(72% 0.0293 174.1)",
+          "oklch(85% 0.0293 174.1)",
+          "oklch(95% 0.0293 174.1)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted green-gray",
+        "tonalRamp": [
+          "oklch(15% 0.0210 165.8)",
+          "oklch(25% 0.0210 165.8)",
+          "oklch(35% 0.0210 165.8)",
+          "oklch(45% 0.0210 165.8)",
+          "oklch(60% 0.0210 165.8)",
+          "oklch(72% 0.0210 165.8)",
+          "oklch(85% 0.0210 165.8)",
+          "oklch(95% 0.0210 165.8)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Quiet border",
+        "tonalRamp": [
+          "oklch(15% 0.0120 145.5)",
+          "oklch(25% 0.0120 145.5)",
+          "oklch(35% 0.0120 145.5)",
+          "oklch(45% 0.0120 145.5)",
+          "oklch(60% 0.0120 145.5)",
+          "oklch(72% 0.0120 145.5)",
+          "oklch(85% 0.0120 145.5)",
+          "oklch(95% 0.0120 145.5)"
+        ]
+      },
+      "mineral": {
+        "role": "neutral",
+        "displayName": "Mineral",
+        "tonalRamp": [
+          "oklch(15% 0.0090 134.9)",
+          "oklch(25% 0.0090 134.9)",
+          "oklch(35% 0.0090 134.9)",
+          "oklch(45% 0.0090 134.9)",
+          "oklch(60% 0.0090 134.9)",
+          "oklch(72% 0.0090 134.9)",
+          "oklch(85% 0.0090 134.9)",
+          "oklch(95% 0.0090 134.9)"
+        ]
+      },
+      "gan": {
+        "role": "secondary",
+        "displayName": "GAN brown",
+        "tonalRamp": [
+          "oklch(15% 0.0909 62.7)",
+          "oklch(25% 0.0909 62.7)",
+          "oklch(35% 0.0909 62.7)",
+          "oklch(45% 0.0909 62.7)",
+          "oklch(60% 0.0909 62.7)",
+          "oklch(72% 0.0909 62.7)",
+          "oklch(85% 0.0909 62.7)",
+          "oklch(95% 0.0909 62.7)"
+        ]
+      },
+      "diffusion": {
+        "role": "secondary",
+        "displayName": "Diffusion blue",
+        "tonalRamp": [
+          "oklch(15% 0.1409 269.2)",
+          "oklch(25% 0.1409 269.2)",
+          "oklch(35% 0.1409 269.2)",
+          "oklch(45% 0.1409 269.2)",
+          "oklch(60% 0.1409 269.2)",
+          "oklch(72% 0.1409 269.2)",
+          "oklch(85% 0.1409 269.2)",
+          "oklch(95% 0.1409 269.2)"
+        ]
+      },
+      "autoregressive": {
+        "role": "secondary",
+        "displayName": "Autoregressive plum",
+        "tonalRamp": [
+          "oklch(15% 0.1089 331.2)",
+          "oklch(25% 0.1089 331.2)",
+          "oklch(35% 0.1089 331.2)",
+          "oklch(45% 0.1089 331.2)",
+          "oklch(60% 0.1089 331.2)",
+          "oklch(72% 0.1089 331.2)",
+          "oklch(85% 0.1089 331.2)",
+          "oklch(95% 0.1089 331.2)"
+        ]
+      },
+      "rendering": {
+        "role": "secondary",
+        "displayName": "Rendering teal",
+        "tonalRamp": [
+          "oklch(15% 0.0786 183.6)",
+          "oklch(25% 0.0786 183.6)",
+          "oklch(35% 0.0786 183.6)",
+          "oklch(45% 0.0786 183.6)",
+          "oklch(60% 0.0786 183.6)",
+          "oklch(72% 0.0786 183.6)",
+          "oklch(85% 0.0786 183.6)",
+          "oklch(95% 0.0786 183.6)"
+        ]
+      },
+      "supporting": {
+        "role": "secondary",
+        "displayName": "Supporting green-gray",
+        "tonalRamp": [
+          "oklch(15% 0.0171 157.9)",
+          "oklch(25% 0.0171 157.9)",
+          "oklch(35% 0.0171 157.9)",
+          "oklch(45% 0.0171 157.9)",
+          "oklch(60% 0.0171 157.9)",
+          "oklch(72% 0.0171 157.9)",
+          "oklch(85% 0.0171 157.9)",
+          "oklch(95% 0.0171 157.9)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Survey display",
+        "purpose": "Hero statement, with responsive overrides."
+      },
+      "headline": {
+        "displayName": "Section headline",
+        "purpose": "Main content sections."
+      },
+      "title": {
+        "displayName": "Paper title",
+        "purpose": "Catalogue card headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default reading text."
+      },
+      "summary": {
+        "displayName": "Paper summary",
+        "purpose": "13px desktop/list floor; 14px mobile cards."
+      }
+    },
+    "shadows": [
+      {
+        "name": "notification",
+        "value": "0 8px 28px #193e3526",
+        "purpose": "Transient toast; cards remain flat."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Gallery image reveal."
+      },
+      {
+        "name": "image-reveal",
+        "value": "350ms",
+        "purpose": "Opacity from .55 to 1 when the featured image changes."
+      },
+      {
+        "name": "control-transition",
+        "value": "200ms",
+        "purpose": "Most control transitions; reduced motion disables them."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1550px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1190px"
+      },
+      {
+        "name": "two-column-cards",
+        "value": "960px"
+      },
+      {
+        "name": "mobile-layout",
+        "value": "720px"
+      },
+      {
+        "name": "single-column-cards",
+        "value": "430px"
+      },
+      {
+        "name": "narrow-phone",
+        "value": "360px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Principal reading or exploration action.",
+      "html": "<a class=\"ds-primary\" href=\"#literature\">Explore the literature</a>",
+      "css": ".ds-primary{font-family:Manrope,Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:45px;padding:11px 18px;border-radius:7px;font-size:12px;font-weight:750;line-height:1.4;text-decoration:none;cursor:pointer;transition:background .2s,color .2s;background:var(--green,#193e35);color:var(--surface,#fff);border:1px solid var(--green,#193e35)}.ds-primary:hover{background:#2c5846}.ds-primary:focus-visible{outline:3px solid #728b3d;outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Outline button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary reading or pagination action.",
+      "html": "<button class=\"ds-outline\" type=\"button\">Show more papers</button>",
+      "css": ".ds-outline{font-family:Manrope,Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:45px;padding:11px 18px;border-radius:7px;font-size:12px;font-weight:750;line-height:1.4;text-decoration:none;cursor:pointer;transition:background .2s,color .2s;background:transparent;color:var(--ink,#1b302a);border:1px solid #cfd8cd}.ds-outline:hover{background:var(--soft,#eff3ed);border-color:#9cae9e}.ds-outline:focus-visible{outline:3px solid #728b3d;outline-offset:4px;}.ds-outline:disabled{opacity:.45;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-outline{transition:none}}"
+    },
+    {
+      "name": "Search field",
+      "kind": "input",
+      "refersTo": "search",
+      "description": "Search with the implemented focus-within treatment.",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"10.5\" cy=\"10.5\" r=\"6.5\"/><path d=\"m16 16 5 5\"/></svg><input type=\"search\" aria-label=\"Search papers, authors, or mechanisms\" placeholder=\"Search papers, authors, or mechanisms\u2026\"></label>",
+      "css": ".ds-search{display:flex;align-items:center;gap:13px;background:var(--surface,#fff);border:1px solid #d7e0d5;border-radius:8px;padding:0 16px;max-width:550px}.ds-search svg{width:19px;height:19px;fill:none;stroke:#82927c;stroke-width:1.65;stroke-linecap:round;flex-shrink:0}.ds-search input{font-family:Manrope,Arial,sans-serif;outline:0;border:0;background:none;width:100%;height:50px;font-size:13px;color:var(--ink,#1b302a);min-width:0;caret-color:var(--green,#193e35)}.ds-search input::placeholder{color:#74806f;opacity:1}.ds-search:focus-within{border-color:var(--green,#193e35);outline:2px solid #d9e5ca;outline-offset:1px}"
+    },
+    {
+      "name": "Section navigation",
+      "kind": "nav",
+      "description": "Masthead links with a forest active underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Example navigation\"><a href=\"#survey\" aria-current=\"location\">Overview</a><a href=\"#literature\">Literature</a><a href=\"#landscape\">Landscape</a></nav>",
+      "css": ".ds-nav{font-family:Manrope,Arial,sans-serif;display:flex;gap:31px;height:83px;background:var(--bg,#fcfdfa);border-bottom:1px solid var(--line,#dfe6df)}.ds-nav a{display:flex;align-items:center;position:relative;text-decoration:none;font-size:13px;font-weight:650;color:var(--muted,#62716a);transition:color .18s}.ds-nav a:hover,.ds-nav a[aria-current]{color:var(--green,#193e35)}.ds-nav a[aria-current]:after{content:\"\";position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--green,#193e35)}.ds-nav a:focus-visible{outline:3px solid #728b3d;outline-offset:4px;}@media(max-width:720px){.ds-nav{height:43px;gap:18px}.ds-nav a{font-size:12px}}@media(prefers-reduced-motion:reduce){.ds-nav a{transition:none}}"
+    },
+    {
+      "name": "Mechanism filter",
+      "kind": "chip",
+      "refersTo": "mechanism",
+      "description": "Mechanism choices, with pressed and hover states in forest.",
+      "html": "<div class=\"ds-mechanisms\" role=\"group\" aria-label=\"Mechanism examples\"><button type=\"button\" aria-pressed=\"true\">Streaming</button><button type=\"button\" aria-pressed=\"false\">Caching</button></div>",
+      "css": ".ds-mechanisms{display:flex;gap:7px;flex-wrap:wrap}.ds-mechanisms button{font-family:Manrope,Arial,sans-serif;background:#f0f3ed;padding:5px 9px;border:0;border-radius:4px;color:#5f7058;font-size:11px;min-height:34px;text-align:left;cursor:pointer}.ds-mechanisms button:hover,.ds-mechanisms button[aria-pressed=\"true\"]{background:var(--green,#193e35);color:var(--surface,#fff)}.ds-mechanisms button:focus-visible{outline:3px solid #728b3d;outline-offset:4px;}@media(max-width:720px){.ds-mechanisms button{min-height:44px}}"
+    },
+    {
+      "name": "Paper card with text cover",
+      "kind": "card",
+      "refersTo": "paper-card",
+      "description": "The implemented fallback cover and card hierarchy. Example copy is illustrative.",
+      "html": "<article class=\"ds-card\"><a class=\"ds-cover\" href=\"#paper\"><span></span><strong>Method title</strong><small>TEXT COVER \u00b7 2025 \u00b7 Diffusion-based</small></a><div class=\"ds-body\"><div class=\"ds-meta\"><span>Diffusion-based</span><span>2025</span></div><h3><a href=\"#paper\">Method title</a></h3><p class=\"ds-authors\">Paper authors</p><p class=\"ds-summary\">A concise description of the method and its contribution to virtual-human generation.</p><span class=\"ds-tag\">Streaming</span></div><div class=\"ds-footer\"><a href=\"#paper\">Read paper</a><button type=\"button\">Cite</button></div></article>",
+      "css": ".ds-card{font-family:Manrope,Arial,sans-serif;max-width:320px;background:var(--surface,#fff);color:var(--ink,#1b302a);border:1px solid var(--line,#dfe6df);border-radius:var(--radius,12px);overflow:hidden;transition:border-color .2s}.ds-card:hover{border-color:#a7b9a1}.ds-card a{color:inherit;text-decoration:none}.ds-card a:focus-visible,.ds-card button:focus-visible{outline:3px solid #728b3d;outline-offset:4px;}.ds-cover{display:flex;height:171px;padding:24px;flex-direction:column;justify-content:center;background:#eff3ed;color:var(--diffusion,#536dc6)!important;border-bottom:1px solid #e7ece4}.ds-cover>span{width:28px;height:3px;background:currentColor;margin-bottom:15px}.ds-cover strong{font-size:24px;line-height:1.15;letter-spacing:-.03em}.ds-cover small{color:#52634f;font-size:10px;margin-top:12px}.ds-body{padding:17px 17px 12px}.ds-meta{display:flex;justify-content:space-between;font-size:10px;color:var(--diffusion,#536dc6);font-weight:800;margin-bottom:10px}.ds-meta>span:last-child{color:var(--muted,#62716a);font-weight:400}.ds-body h3{font-size:18px;line-height:1.3;font-weight:800;letter-spacing:-.025em;margin:0}.ds-body h3 a:hover{text-decoration:underline;color:var(--green,#193e35)}.ds-authors{font-size:11px;color:#5e705a;margin:9px 0 0}.ds-summary{font-size:13px;line-height:1.75;color:#5b6a5e;margin:12px 0 15px}.ds-tag{font-size:10px;font-weight:600;background:#f0f4ec;color:#546747;border-radius:3px;padding:2px 6px}.ds-footer{padding:6px 17px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #eef1eb}.ds-footer a,.ds-footer button{font-family:Manrope,Arial,sans-serif;display:inline-flex;align-items:center;min-height:32px;font-size:11px;font-weight:750;color:var(--green,#193e35)}.ds-footer button{border:0;background:none;min-width:44px;cursor:pointer;color:#5c7054}.ds-footer a:hover,.ds-footer button:hover{color:#2b826e}@media(max-width:720px){.ds-summary{font-size:14px}.ds-footer a,.ds-footer button{min-height:44px;font-size:12px}}@media(prefers-reduced-motion:reduce){.ds-card{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Visual Research Index",
+    "overview": "A spacious research index pairs open Manrope typography with real paper imagery. Forest headings and controls establish the reading hierarchy; mineral panels separate supporting material, and restrained lime marks the invitation to read the survey. This descriptive name records the implemented world.",
+    "keyCharacteristics": [
+      "Clear reading surfaces with thin borders and restrained rounding.",
+      "Source figures or explicitly labelled text covers.",
+      "Categorical colors connecting navigation, papers, and charts.",
+      "Dense literature browsing beneath a spacious introduction."
+    ],
+    "rules": [
+      {
+        "name": "The Route Continuity Rule",
+        "body": "A route retains its color across every representation and is also identified by text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading Floor Rule",
+        "body": "Paper summaries use 13px with 1.75 line height; mobile cards use 14px while compact list summaries remain 13px. Apply the final overrides, not the superseded smaller declarations.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do preserve route-to-color mappings and visible category names.",
+      "Do apply the final reading and mobile interaction floors.",
+      "Do use real source imagery or the labelled text-cover fallback.",
+      "Do retain focus visibility and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't substitute color alone for category labels or chart legends.",
+      "Don't promote superseded small text declarations into new components.",
+      "Don't add card shadows where the shipped system uses borders and tonal surfaces."
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "surveyPdf": {
+    "path": "assets/survey/survey.pdf",
+    "source": "virtual-human-survey/1008_overleaf/main_revised.pdf",
+    "pages": 48,
+    "builtAt": "2026-10-08T11:52:20Z",
+    "note": "The current main.tex abstract matches main_revised.pdf; main.pdf is an earlier 53-page build at 05:46:17Z."
+  },
+  "figures": {
+    "fig1_fast_stable": {
+      "path": "assets/survey/fig1_fast_stable.webp",
+      "source": "virtual-human-survey/1008_overleaf/figures/fig1_fast_stable.pdf",
+      "width": 1600,
+      "height": 788
+    },
+    "fig2_timeline": {
+      "path": "assets/survey/fig2_timeline.webp",
+      "source": "virtual-human-survey/1008_overleaf/figures/fig2_timeline.pdf",
+      "width": 1600,
+      "height": 788
+    },
+    "fig3_ownership_taxonomy": {
+      "path": "assets/survey/fig3_ownership_taxonomy.webp",
+      "source": "virtual-human-survey/1008_overleaf/figures/fig3_ownership_taxonomy.pdf",
+      "width": 1600,
+      "height": 788
+    },
+    "fig5_diffusion_fast_stable": {
+      "path": "assets/survey/fig5_diffusion_fast_stable.webp",
+      "source": "virtual-human-survey/1008_overleaf/figures/fig5_diffusion_fast_stable.pdf",
+      "width": 1600,
+      "height": 788
+    },
+    "fig7_drift_control_patterns": {
+      "path": "assets/survey/fig7_drift_control_patterns.webp",
+      "source": "virtual-human-survey/1008_overleaf/figures/fig7_drift_control_patterns.pdf",
+      "width": 1600,
+      "height": 788
+    },
+    "fig10_cross_route_mechanisms": {
+      "path": "assets/survey/fig10_cross_route_mechanisms.webp",
+      "source": "virtual-human-survey/1008_overleaf/figures/fig10_cross_route_mechanisms.pdf",
+      "width": 1600,
+      "height": 788
+    }
+  }
+}

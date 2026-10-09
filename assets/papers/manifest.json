@@ -1,0 +1,1043 @@
+{
+  "guo2024liveportrait": {
+    "path": "assets/papers/guo2024liveportrait.webp",
+    "width": 800,
+    "height": 513,
+    "sourceUrl": "https://arxiv.org/abs/2407.03168",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2407.03168",
+    "caption": "Portrait animation, stitching, and expression retargeting — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      69.0,
+      193.0,
+      546.0,
+      499.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview.",
+    "heroPath": "assets/papers/guo2024liveportrait-hero.webp",
+    "heroCaption": "Portrait animation, stitching, and expression retargeting — Figure 1."
+  },
+  "zhang2024musetalk": {
+    "path": "assets/papers/zhang2024musetalk.webp",
+    "width": 800,
+    "height": 756,
+    "sourceUrl": "https://arxiv.org/abs/2410.10122",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2410.10122",
+    "caption": "Talking-head generation and video dubbing — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      317.0,
+      247.0,
+      554.0,
+      471.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview.",
+    "heroPath": "assets/papers/zhang2024musetalk-hero.webp",
+    "heroCaption": "Video dubbing with MuseTalk — excerpt from Figure 1."
+  },
+  "chen2025midas": {
+    "path": "assets/papers/chen2025midas.webp",
+    "width": 800,
+    "height": 426,
+    "sourceUrl": "https://arxiv.org/abs/2508.19320",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2508.19320",
+    "caption": "Two-speaker avatar dialogue with audio waveforms — Figure 5.",
+    "kind": "figure",
+    "sourcePage": 8,
+    "cropPdfPoints": [
+      108.0,
+      81.0,
+      504.0,
+      292.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview.",
+    "heroPath": "assets/papers/chen2025midas-hero.webp",
+    "heroCaption": "Two-speaker avatar dialogue with audio waveforms — Figure 5."
+  },
+  "ao2024body": {
+    "path": "assets/papers/ao2024body.webp",
+    "width": 800,
+    "height": 380,
+    "sourceUrl": "https://arxiv.org/abs/2408.02879",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2408.02879",
+    "caption": "Streaming multimodal agent system — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      51.0,
+      53.0,
+      561.0,
+      295.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "xiang2024flashavatar": {
+    "path": "assets/papers/xiang2024flashavatar.webp",
+    "width": 800,
+    "height": 186,
+    "sourceUrl": "https://arxiv.org/abs/2312.02214",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2312.02214",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      45.796173095703125,
+      197.01763916015625,
+      526.77783203125,
+      308.1688232421875
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "xu2024vasa": {
+    "path": "assets/papers/xu2024vasa.webp",
+    "width": 800,
+    "height": 424,
+    "sourceUrl": "https://arxiv.org/abs/2404.10667",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2404.10667",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      101.14099884033203,
+      63.000946044921875,
+      508.36773681640625,
+      278.727294921875
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "shen2026soulxflashtalkrealtimeinfinitestreaming": {
+    "path": "assets/papers/shen2026soulxflashtalkrealtimeinfinitestreaming.webp",
+    "width": 800,
+    "height": 410,
+    "sourceUrl": "https://arxiv.org/abs/2512.23379",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2512.23379",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      86.74058532714844,
+      24.146591186523438,
+      567.103271484375,
+      270.60845947265625
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "weng2026eartalking": {
+    "path": "assets/papers/weng2026eartalking.webp",
+    "width": 800,
+    "height": 299,
+    "sourceUrl": "https://arxiv.org/abs/2603.20307",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2603.20307",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      58.40319061279297,
+      239.95933532714844,
+      553.982666015625,
+      424.48529052734375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "liang2026avatar": {
+    "path": "assets/papers/liang2026avatar.webp",
+    "width": 800,
+    "height": 508,
+    "sourceUrl": "https://arxiv.org/abs/2606.13872",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2606.13872",
+    "caption": "Avatar V model architecture — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 6,
+    "cropPdfPoints": [
+      83.0,
+      85.0,
+      529.0,
+      368.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "prajwal2020lip": {
+    "path": "assets/papers/prajwal2020lip.webp",
+    "width": 800,
+    "height": 416,
+    "sourceUrl": "https://arxiv.org/abs/2008.10010",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2008.10010",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      46.79800033569336,
+      218.15858459472656,
+      565.2066040039062,
+      487.31536865234375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "pang2025unimo": {
+    "path": "assets/papers/pang2025unimo.webp",
+    "width": 800,
+    "height": 370,
+    "sourceUrl": "https://arxiv.org/abs/2512.03918",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2512.03918",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      51.5,
+      265.5738525390625,
+      560.4886474609375,
+      500.08697509765625
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "zhang2026vidus1realtimeinteractive": {
+    "path": "assets/papers/zhang2026vidus1realtimeinteractive.webp",
+    "width": 800,
+    "height": 420,
+    "sourceUrl": "https://arxiv.org/abs/2607.03118",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2607.03118",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      83.01426696777344,
+      429.7716369628906,
+      545.4746704101562,
+      672.583740234375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "bai2026mainecoon": {
+    "path": "assets/papers/bai2026mainecoon.webp",
+    "width": 800,
+    "height": 574,
+    "sourceUrl": "https://arxiv.org/abs/2606.17800",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2606.17800",
+    "caption": "Two-person interaction examples — Figure 10.",
+    "kind": "figure",
+    "sourcePage": 30,
+    "cropPdfPoints": [
+      115.0,
+      401.0,
+      496.0,
+      674.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "huang2026wan": {
+    "path": "assets/papers/huang2026wan.webp",
+    "width": 800,
+    "height": 354,
+    "sourceUrl": "https://arxiv.org/abs/2606.25041",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2606.25041",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      65.31959533691406,
+      43.498809814453125,
+      548.1055908203125,
+      256.5814208984375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "huang2026wanstreamerv02higherresolution": {
+    "path": "assets/papers/huang2026wanstreamerv02higherresolution.webp",
+    "width": 800,
+    "height": 332,
+    "sourceUrl": "https://arxiv.org/abs/2607.04443",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2607.04443",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      65.31959533691406,
+      56.90331268310547,
+      548.1055908203125,
+      256.5814208984375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "zeng2026lpm": {
+    "path": "assets/papers/zeng2026lpm.webp",
+    "width": 800,
+    "height": 349,
+    "sourceUrl": "https://arxiv.org/abs/2604.07823",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2604.07823",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      67.31068420410156,
+      474.3402099609375,
+      538.803955078125,
+      679.4595336914062
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "cai2025towards": {
+    "path": "assets/papers/cai2025towards.webp",
+    "width": 800,
+    "height": 463,
+    "sourceUrl": "https://arxiv.org/abs/2512.13674",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2512.13674",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      80.7969970703125,
+      174.33380126953125,
+      531.1973266601562,
+      435.1148986816406
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "ji2026forcing": {
+    "path": "assets/papers/ji2026forcing.webp",
+    "width": 800,
+    "height": 316,
+    "sourceUrl": "https://arxiv.org/abs/2605.09681",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2605.09681",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      126.74099731445312,
+      493.97332763671875,
+      485.2575988769531,
+      635.0602416992188
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "ma2026flow": {
+    "path": "assets/papers/ma2026flow.webp",
+    "width": 800,
+    "height": 403,
+    "sourceUrl": "https://arxiv.org/abs/2602.10825",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2602.10825",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      140.57720947265625,
+      472.2536926269531,
+      507.0299987792969,
+      656.7316284179688
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "tu2025stableavatar": {
+    "path": "assets/papers/tu2025stableavatar.webp",
+    "width": 800,
+    "height": 241,
+    "sourceUrl": "https://arxiv.org/abs/2508.08248",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2508.08248",
+    "caption": "Long-duration avatar video comparison — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      58.0,
+      205.0,
+      554.0,
+      354.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "yang2025infinitetalk": {
+    "path": "assets/papers/yang2025infinitetalk.webp",
+    "width": 800,
+    "height": 467,
+    "sourceUrl": "https://arxiv.org/abs/2508.14033",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2508.14033",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      92.85602569580078,
+      271.7713317871094,
+      510.6749267578125,
+      515.4984130859375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "zhen2026soulx": {
+    "path": "assets/papers/zhen2026soulx.webp",
+    "width": 800,
+    "height": 273,
+    "sourceUrl": "https://arxiv.org/abs/2603.11746",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2603.11746",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      116.52843475341797,
+      244.15907287597656,
+      542.0611572265625,
+      389.25640869140625
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "yu2026soulx": {
+    "path": "assets/papers/yu2026soulx.webp",
+    "width": 800,
+    "height": 295,
+    "sourceUrl": "https://arxiv.org/abs/2602.07449",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2602.07449",
+    "caption": "SoulX-FlashHead data filtering pipeline — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 3,
+    "cropPdfPoints": [
+      77.0,
+      117.0,
+      537.0,
+      286.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "wang2026flowact": {
+    "path": "assets/papers/wang2026flowact.webp",
+    "width": 800,
+    "height": 203,
+    "sourceUrl": "https://arxiv.org/abs/2601.10103",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2601.10103",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      82.677001953125,
+      581.8659057617188,
+      529.3201904296875,
+      694.9365844726562
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "liu2026turbotalk": {
+    "path": "assets/papers/liu2026turbotalk.webp",
+    "width": 800,
+    "height": 217,
+    "sourceUrl": "https://arxiv.org/abs/2604.14580",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2604.14580",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      54.56181335449219,
+      244.78514099121094,
+      528.3543701171875,
+      373.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "li2026hallo": {
+    "path": "assets/papers/li2026hallo.webp",
+    "width": 800,
+    "height": 489,
+    "sourceUrl": "https://arxiv.org/abs/2604.23632",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2604.23632",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      159.49208068847656,
+      228.85862731933594,
+      553.8475341796875,
+      469.8507385253906
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "yu2025llia": {
+    "path": "assets/papers/yu2025llia.webp",
+    "width": 800,
+    "height": 543,
+    "sourceUrl": "https://arxiv.org/abs/2506.05806",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2506.05806",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 4,
+    "cropPdfPoints": [
+      95.24955749511719,
+      83.9621353149414,
+      520.0095825195312,
+      372.3421325683594
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "ki2026avatar": {
+    "path": "assets/papers/ki2026avatar.webp",
+    "width": 800,
+    "height": 303,
+    "sourceUrl": "https://arxiv.org/abs/2601.00664",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2601.00664",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      12.210174560546875,
+      228.998291015625,
+      560.4810791015625,
+      436.39776611328125
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "zhang2026embodiedhead": {
+    "path": "assets/papers/zhang2026embodiedhead.webp",
+    "width": 800,
+    "height": 327,
+    "sourceUrl": "https://arxiv.org/abs/2604.17211",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2604.17211",
+    "caption": "Listening and speaking avatar system — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      142.0,
+      115.0,
+      471.0,
+      249.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "chern2025livetalk": {
+    "path": "assets/papers/chern2025livetalk.webp",
+    "width": 800,
+    "height": 204,
+    "sourceUrl": "https://arxiv.org/abs/2512.23576",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2512.23576",
+    "caption": "LiveTalk streaming conversation system — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      71.0,
+      459.0,
+      525.0,
+      574.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "cho2026lip": {
+    "path": "assets/papers/cho2026lip.webp",
+    "width": 800,
+    "height": 309,
+    "sourceUrl": "https://arxiv.org/abs/2606.11180",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2606.11180",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      103.93072509765625,
+      261.69366455078125,
+      510.84771728515625,
+      418.4703674316406
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "shin2025motionstream": {
+    "path": "assets/papers/shin2025motionstream.webp",
+    "width": 800,
+    "height": 282,
+    "sourceUrl": "https://arxiv.org/abs/2511.01266",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2511.01266",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      101.5530776977539,
+      221.5577392578125,
+      511.5909729003906,
+      365.87646484375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "lu2026asymtalker": {
+    "path": "assets/papers/lu2026asymtalker.webp",
+    "width": 800,
+    "height": 420,
+    "sourceUrl": "https://arxiv.org/abs/2605.02948",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2605.02948",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      139.4637451171875,
+      68.69622039794922,
+      507.8394470214844,
+      262.37791442871094
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "yang2024if": {
+    "path": "assets/papers/yang2024if.webp",
+    "width": 800,
+    "height": 556,
+    "sourceUrl": "https://arxiv.org/abs/2412.04000",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2412.04000",
+    "caption": "Implicit face motion diffusion design — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      317.0,
+      233.0,
+      553.0,
+      397.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "yang2025visa": {
+    "path": "assets/papers/yang2025visa.webp",
+    "width": 800,
+    "height": 409,
+    "sourceUrl": "https://arxiv.org/abs/2512.07720",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2512.07720",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      52.06074142456055,
+      226.51112365722656,
+      560.03125,
+      486.37640380859375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "meng2026echotorrent": {
+    "path": "assets/papers/meng2026echotorrent.webp",
+    "width": 800,
+    "height": 231,
+    "sourceUrl": "https://arxiv.org/abs/2602.13669",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2602.13669",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      56.48005676269531,
+      202.4385223388672,
+      553.1222534179688,
+      345.3565673828125
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "li2025joyavatar": {
+    "path": "assets/papers/li2025joyavatar.webp",
+    "width": 800,
+    "height": 299,
+    "sourceUrl": "https://arxiv.org/abs/2512.11423",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2512.11423",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      88.4010009765625,
+      334.0740966796875,
+      523.5906982421875,
+      496.1512451171875
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "ma2026synccache": {
+    "path": "assets/papers/ma2026synccache.webp",
+    "width": 800,
+    "height": 624,
+    "sourceUrl": "https://arxiv.org/abs/2606.30849",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2606.30849",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      293.27459716796875,
+      123.49752807617188,
+      480.453125,
+      269.3377990722656
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "liu2025rolling": {
+    "path": "assets/papers/liu2025rolling.webp",
+    "width": 800,
+    "height": 355,
+    "sourceUrl": "https://arxiv.org/abs/2509.25161",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2509.25161",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      102.46990966796875,
+      194.5767822265625,
+      509.91925048828125,
+      374.8863830566406
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "xie2025x": {
+    "path": "assets/papers/xie2025x.webp",
+    "width": 800,
+    "height": 422,
+    "sourceUrl": "https://arxiv.org/abs/2509.21574",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2509.21574",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      100.43730163574219,
+      180.2542266845703,
+      511.152099609375,
+      397.1536865234375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "chen2025dystream": {
+    "path": "assets/papers/chen2025dystream.webp",
+    "width": 800,
+    "height": 354,
+    "sourceUrl": "https://arxiv.org/abs/2512.24408",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2512.24408",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      310.25,
+      236.6490936279297,
+      560.4971313476562,
+      346.9241027832031
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "chen2026echoavatar": {
+    "path": "assets/papers/chen2026echoavatar.webp",
+    "width": 800,
+    "height": 358,
+    "sourceUrl": "https://arxiv.org/abs/2605.28272",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2605.28272",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      44.805999755859375,
+      184.59271240234375,
+      567.2034912109375,
+      417.5359191894531
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "huang2026video": {
+    "path": "assets/papers/huang2026video.webp",
+    "width": 800,
+    "height": 324,
+    "sourceUrl": "https://arxiv.org/abs/2607.15038",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2607.15038",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      63.865997314453125,
+      322.3179016113281,
+      548.1063842773438,
+      517.8864440917969
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "ye2026talker": {
+    "path": "assets/papers/ye2026talker.webp",
+    "width": 800,
+    "height": 631,
+    "sourceUrl": "https://arxiv.org/abs/2604.23586",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2604.23586",
+    "caption": "Joint autoregressive audio-video architecture — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 4,
+    "cropPdfPoints": [
+      68.0,
+      65.0,
+      527.0,
+      427.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "qi2025chatanyone": {
+    "path": "assets/papers/qi2025chatanyone.webp",
+    "width": 800,
+    "height": 237,
+    "sourceUrl": "https://arxiv.org/abs/2503.21144",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2503.21144",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      51.5,
+      204.76876831054688,
+      560.5100708007812,
+      354.99200439453125
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "meng2025mirrorme": {
+    "path": "assets/papers/meng2025mirrorme.webp",
+    "width": 800,
+    "height": 642,
+    "sourceUrl": "https://arxiv.org/abs/2506.22065",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2506.22065",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      323.3925476074219,
+      245.40719604492188,
+      544.3563232421875,
+      422.7029724121094
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "hong2022headnerf": {
+    "path": "assets/papers/hong2022headnerf.webp",
+    "width": 800,
+    "height": 314,
+    "sourceUrl": "https://arxiv.org/abs/2112.05637",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2112.05637",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      48.39830780029297,
+      189.04591369628906,
+      545.5001831054688,
+      383.43597412109375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "wang2023styleavatar": {
+    "path": "assets/papers/wang2023styleavatar.webp",
+    "width": 800,
+    "height": 208,
+    "sourceUrl": "https://arxiv.org/abs/2305.00942",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2305.00942",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      46.79800033569336,
+      312.8788146972656,
+      565.2033081054688,
+      446.8523864746094
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "zhong2025fada": {
+    "path": "assets/papers/zhong2025fada.webp",
+    "width": 800,
+    "height": 582,
+    "sourceUrl": "https://arxiv.org/abs/2412.16915",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2412.16915",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 4,
+    "cropPdfPoints": [
+      82.95784759521484,
+      84.56391143798828,
+      485.5524597167969,
+      377.7624816894531
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "du2026rap": {
+    "path": "assets/papers/du2026rap.webp",
+    "width": 800,
+    "height": 374,
+    "sourceUrl": "https://arxiv.org/abs/2508.05115",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2508.05115",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      313.3576354980469,
+      231.5501708984375,
+      564.7261962890625,
+      348.6171569824219
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "sun2026streamavatar": {
+    "path": "assets/papers/sun2026streamavatar.webp",
+    "width": 800,
+    "height": 248,
+    "sourceUrl": "https://arxiv.org/abs/2512.22065",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2512.22065",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      259.1595458984375,
+      283.49267578125,
+      552.0166625976562,
+      373.938720703125
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "chu2024generalizable": {
+    "path": "assets/papers/chu2024generalizable.webp",
+    "width": 800,
+    "height": 239,
+    "sourceUrl": "https://arxiv.org/abs/2410.07971",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2410.07971",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      104.35301208496094,
+      208.8651580810547,
+      508.05242919921875,
+      328.6380920410156
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "li2023efficient": {
+    "path": "assets/papers/li2023efficient.webp",
+    "width": 800,
+    "height": 380,
+    "sourceUrl": "https://arxiv.org/abs/2307.09323",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2307.09323",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      301.86199951171875,
+      250.59881591796875,
+      552.1011352539062,
+      369.1700134277344
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "wang2022latent": {
+    "path": "assets/papers/wang2022latent.webp",
+    "width": 800,
+    "height": 414,
+    "sourceUrl": "https://arxiv.org/abs/2203.09043",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2203.09043",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      101.0,
+      434.86444091796875,
+      511.0084228515625,
+      646.97900390625
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "cao2024joyvasa": {
+    "path": "assets/papers/cao2024joyvasa.webp",
+    "width": 800,
+    "height": 330,
+    "sourceUrl": "https://arxiv.org/abs/2411.09209",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2411.09209",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      76.70099639892578,
+      63.00114440917969,
+      535.3030395507812,
+      251.15846252441406
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "Zhao_2022_CVPR": {
+    "path": "assets/papers/Zhao_2022_CVPR.webp",
+    "width": 800,
+    "height": 595,
+    "sourceUrl": "https://arxiv.org/abs/2203.14367",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2203.14367",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      342.4574279785156,
+      207.58807373046875,
+      549.4788818359375,
+      361.5575256347656
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "li2025moda": {
+    "path": "assets/papers/li2025moda.webp",
+    "width": 800,
+    "height": 313,
+    "sourceUrl": "https://arxiv.org/abs/2507.03256",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2507.03256",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 2,
+    "cropPdfPoints": [
+      69.01075744628906,
+      56.866424560546875,
+      544.9074096679688,
+      242.45452880859375
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "qian2024gaussianavatars": {
+    "path": "assets/papers/qian2024gaussianavatars.webp",
+    "width": 800,
+    "height": 167,
+    "sourceUrl": "https://arxiv.org/abs/2312.02069",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2312.02069",
+    "caption": "Rigged 3D Gaussian head avatars — Figure 1.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      50.0,
+      220.0,
+      546.0,
+      323.0
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "zhang2023sadtalker": {
+    "path": "assets/papers/zhang2023sadtalker.webp",
+    "width": 800,
+    "height": 413,
+    "sourceUrl": "https://arxiv.org/abs/2211.12194",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2211.12194",
+    "caption": "Figure 1 from the original paper.",
+    "kind": "figure",
+    "sourcePage": 1,
+    "cropPdfPoints": [
+      45.13346862792969,
+      258.7879943847656,
+      550.6182861328125,
+      519.75
+    ],
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "tian2024emo": {
+    "path": "assets/papers/tian2024emo.webp",
+    "width": 800,
+    "height": 474,
+    "sourceUrl": "https://arxiv.org/abs/2402.17485",
+    "sourceImageUrl": "https://arxiv.org/html/2402.17485v3/images/intro.png",
+    "caption": "Audio-driven portrait animation examples — Figure 1.",
+    "kind": "figure",
+    "credit": "Original paper authors; reproduced as a research preview.",
+    "heroPath": "assets/papers/tian2024emo-hero.webp",
+    "heroCaption": "Audio-driven portrait animation examples — Figure 1."
+  },
+  "huang2025live": {
+    "path": "assets/papers/huang2025live.webp",
+    "width": 800,
+    "height": 827,
+    "sourceUrl": "https://arxiv.org/abs/2512.04677",
+    "sourceImageUrl": "https://arxiv.org/html/2512.04677v6/visual1.png",
+    "caption": "Long-duration avatar generation examples — Figure 6.",
+    "kind": "figure",
+    "credit": "Original paper authors; reproduced as a research preview."
+  },
+  "chen2025taoavatar": {
+    "path": "assets/papers/chen2025taoavatar.webp",
+    "width": 800,
+    "height": 343,
+    "sourceUrl": "https://arxiv.org/abs/2503.17032",
+    "sourceImageUrl": "https://arxiv.org/html/2503.17032v2/showcase_1113.png",
+    "caption": "Full-body poses and facial expressions — Figure 4.",
+    "kind": "figure",
+    "credit": "Original paper authors; reproduced as a research preview."
+  }
+}

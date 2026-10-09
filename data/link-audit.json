@@ -1,0 +1,894 @@
+{
+  "checkedAt": "2026-10-09",
+  "scope": "One bounded HTTP GET per link; response bodies not downloaded. Automated-access failures do not establish permanent unavailability.",
+  "results": [
+    {
+      "id": "prajwal2020lip",
+      "url": "https://arxiv.org/abs/2008.10010",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2008.10010"
+    },
+    {
+      "id": "zhang2024musetalk",
+      "url": "https://arxiv.org/abs/2410.10122",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2410.10122"
+    },
+    {
+      "id": "wang2023seeing",
+      "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Seeing_What_You_Said_Talking_Face_Generation_Guided_by_a_CVPR_2023_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2023/html/Wang_Seeing_What_You_Said_Talking_Face_Generation_Guided_by_a_CVPR_2023_paper.html"
+    },
+    {
+      "id": "lu2021live",
+      "url": "https://arxiv.org/abs/2109.10595",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2109.10595"
+    },
+    {
+      "id": "tan2024edtalk",
+      "url": "https://arxiv.org/abs/2404.01647",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2404.01647"
+    },
+    {
+      "id": "tan2024flowvqtalker",
+      "url": "https://arxiv.org/abs/2403.06375",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2403.06375"
+    },
+    {
+      "id": "tan2025fixtalk",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Tan_FixTalk_Taming_Identity_Leakage_for_High-Quality_Talking_Head_Generation_in_ICCV_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2025/html/Tan_FixTalk_Taming_Identity_Leakage_for_High-Quality_Talking_Head_Generation_in_ICCV_2025_paper.html"
+    },
+    {
+      "id": "wang2023styleavatar",
+      "url": "https://arxiv.org/abs/2305.00942",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2305.00942"
+    },
+    {
+      "id": "cheng2022videoretalking",
+      "url": "https://arxiv.org/abs/2211.14758",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2211.14758"
+    },
+    {
+      "id": "zhang2023dinet",
+      "url": "https://arxiv.org/abs/2303.03988",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2303.03988"
+    },
+    {
+      "id": "zhou2020makelttalk",
+      "url": "https://arxiv.org/abs/2004.12992",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2004.12992"
+    },
+    {
+      "id": "zhou2021pose",
+      "url": "https://openaccess.thecvf.com/content/CVPR2021/html/Zhou_Pose-Controllable_Talking_Face_Generation_by_Implicitly_Modularized_Audio-Visual_Representation_CVPR_2021_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2021/html/Zhou_Pose-Controllable_Talking_Face_Generation_by_Implicitly_Modularized_Audio-Visual_Representation_CVPR_2021_paper.html"
+    },
+    {
+      "id": "wang2023efficient",
+      "url": "https://doi.org/10.1145/3588432.3591509",
+      "status": 403,
+      "finalUrl": "https://dl.acm.org/doi/10.1145/3588432.3591509"
+    },
+    {
+      "id": "deng2024ramavatar",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Deng_RAM-Avatar_Real-time_Photo-Realistic_Avatar_from_Monocular_Videos_with_Full-body_Control_CVPR_2024_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2024/html/Deng_RAM-Avatar_Real-time_Photo-Realistic_Avatar_from_Monocular_Videos_with_Full-body_Control_CVPR_2024_paper.html"
+    },
+    {
+      "id": "gan2023eat",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Gan_Efficient_Emotional_Adaptation_for_Audio-Driven_Talking-Head_Generation_ICCV_2023_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Gan_Efficient_Emotional_Adaptation_for_Audio-Driven_Talking-Head_Generation_ICCV_2023_paper.html"
+    },
+    {
+      "id": "guan2023stylesync",
+      "url": "https://openaccess.thecvf.com/content/CVPR2023/html/Guan_StyleSync_High-Fidelity_Generalized_and_Personalized_Lip_Sync_in_Style-Based_Generator_CVPR_2023_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2023/html/Guan_StyleSync_High-Fidelity_Generalized_and_Personalized_Lip_Sync_in_Style-Based_Generator_CVPR_2023_paper.html"
+    },
+    {
+      "id": "ki2023stylelipsync",
+      "url": "https://arxiv.org/abs/2305.00521",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2305.00521"
+    },
+    {
+      "id": "guan2024resyncer",
+      "url": "https://arxiv.org/abs/2408.03284",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2408.03284"
+    },
+    {
+      "id": "park2022synctalkface",
+      "url": "https://arxiv.org/abs/2211.00924",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2211.00924"
+    },
+    {
+      "id": "tang2024memories",
+      "url": "https://arxiv.org/abs/2212.05005",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2212.05005"
+    },
+    {
+      "id": "bounareli2023hyperreenact",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Bounareli_HyperReenact_One-Shot_Reenactment_via_Jointly_Learning_to_Refine_and_Retarget_ICCV_2023_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2023/html/Bounareli_HyperReenact_One-Shot_Reenactment_via_Jointly_Learning_to_Refine_and_Retarget_ICCV_2023_paper.html"
+    },
+    {
+      "id": "bounareli2023stylemask",
+      "url": "https://arxiv.org/abs/2209.13375",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2209.13375"
+    },
+    {
+      "id": "wang2025emotivetalk",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Wang_EmotiveTalk_Expressive_Talking_Head_Generation_through_Audio_Information_Decoupling_and_CVPR_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2025/html/Wang_EmotiveTalk_Expressive_Talking_Head_Generation_through_Audio_Information_Decoupling_and_CVPR_2025_paper.html"
+    },
+    {
+      "id": "tian2024emo",
+      "url": "https://arxiv.org/abs/2402.17485",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2402.17485"
+    },
+    {
+      "id": "hu2024animate",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Hu_Animate_Anyone_Consistent_and_Controllable_Image-to-Video_Synthesis_for_Character_Animation_CVPR_2024_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2024/html/Hu_Animate_Anyone_Consistent_and_Controllable_Image-to-Video_Synthesis_for_Character_Animation_CVPR_2024_paper.html"
+    },
+    {
+      "id": "lin2025omnihuman",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Lin_OmniHuman-1_Rethinking_the_Scaling-Up_of_One-Stage_Conditioned_Human_Animation_Models_ICCV_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2025/html/Lin_OmniHuman-1_Rethinking_the_Scaling-Up_of_One-Stage_Conditioned_Human_Animation_Models_ICCV_2025_paper.html"
+    },
+    {
+      "id": "zhong2025fada",
+      "url": "https://arxiv.org/abs/2412.16915",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2412.16915"
+    },
+    {
+      "id": "yu2025llia",
+      "url": "https://arxiv.org/abs/2506.05806",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2506.05806"
+    },
+    {
+      "id": "du2026rap",
+      "url": "https://arxiv.org/abs/2508.05115",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2508.05115"
+    },
+    {
+      "id": "wang2026read",
+      "url": "https://arxiv.org/abs/2508.03457",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2508.03457"
+    },
+    {
+      "id": "long2026lightning",
+      "url": "https://arxiv.org/abs/2509.00052",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2509.00052"
+    },
+    {
+      "id": "ma2026follow",
+      "url": "https://arxiv.org/abs/2509.16630",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2509.16630"
+    },
+    {
+      "id": "ma2026synccache",
+      "url": "https://arxiv.org/abs/2606.30849",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2606.30849"
+    },
+    {
+      "id": "li2026personalive",
+      "url": "https://arxiv.org/abs/2512.11253",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2512.11253"
+    },
+    {
+      "id": "shin2025motionstream",
+      "url": "https://arxiv.org/abs/2511.01266",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2511.01266"
+    },
+    {
+      "id": "sun2026streamavatar",
+      "url": "https://arxiv.org/abs/2512.22065",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2512.22065"
+    },
+    {
+      "id": "li2026hallo",
+      "url": "https://arxiv.org/abs/2604.23632",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2604.23632"
+    },
+    {
+      "id": "cho2026lip",
+      "url": "https://arxiv.org/abs/2606.11180",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2606.11180"
+    },
+    {
+      "id": "wang2026flowact",
+      "url": "https://arxiv.org/abs/2601.10103",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2601.10103"
+    },
+    {
+      "id": "huang2025live",
+      "url": "https://arxiv.org/abs/2512.04677",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2512.04677"
+    },
+    {
+      "id": "shen2026soulxflashtalkrealtimeinfinitestreaming",
+      "url": "https://arxiv.org/abs/2512.23379",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2512.23379"
+    },
+    {
+      "id": "yu2026soulx",
+      "url": "https://arxiv.org/abs/2602.07449",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2602.07449"
+    },
+    {
+      "id": "zhen2026soulx",
+      "url": "https://arxiv.org/abs/2603.11746",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2603.11746"
+    },
+    {
+      "id": "liang2026avatar",
+      "url": "https://arxiv.org/abs/2606.13872",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2606.13872"
+    },
+    {
+      "id": "tu2025stableavatar",
+      "url": "https://arxiv.org/abs/2508.08248",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2508.08248"
+    },
+    {
+      "id": "cui2025hallo2",
+      "url": "https://arxiv.org/abs/2410.07718",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2410.07718"
+    },
+    {
+      "id": "yang2025infinitetalk",
+      "url": "https://arxiv.org/abs/2508.14033",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2508.14033"
+    },
+    {
+      "id": "li2025joyavatar",
+      "url": "https://arxiv.org/abs/2512.11423",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2512.11423"
+    },
+    {
+      "id": "chern2025livetalk",
+      "url": "https://arxiv.org/abs/2512.23576",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2512.23576"
+    },
+    {
+      "id": "meng2026echotorrent",
+      "url": "https://arxiv.org/abs/2602.13669",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2602.13669"
+    },
+    {
+      "id": "lu2026asymtalker",
+      "url": "https://arxiv.org/abs/2605.02948",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2605.02948"
+    },
+    {
+      "id": "zeng2026lpm",
+      "url": "https://arxiv.org/abs/2604.07823",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2604.07823"
+    },
+    {
+      "id": "liu2026turbotalk",
+      "url": "https://arxiv.org/abs/2604.14580",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2604.14580"
+    },
+    {
+      "id": "xie2025x",
+      "url": "https://arxiv.org/abs/2509.21574",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2509.21574"
+    },
+    {
+      "id": "huang2026wan",
+      "url": "https://arxiv.org/abs/2606.25041",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2606.25041"
+    },
+    {
+      "id": "huang2026wanstreamerv02higherresolution",
+      "url": "https://arxiv.org/abs/2607.04443",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2607.04443"
+    },
+    {
+      "id": "huang2026video",
+      "url": "https://arxiv.org/abs/2607.15038",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2607.15038"
+    },
+    {
+      "id": "chen2025midas",
+      "url": "https://arxiv.org/abs/2508.19320",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2508.19320"
+    },
+    {
+      "id": "ao2024body",
+      "url": "https://arxiv.org/abs/2408.02879",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2408.02879"
+    },
+    {
+      "id": "pang2025unimo",
+      "url": "https://arxiv.org/abs/2512.03918",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2512.03918"
+    },
+    {
+      "id": "weng2026eartalking",
+      "url": "https://arxiv.org/abs/2603.20307",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2603.20307"
+    },
+    {
+      "id": "guo2021ad",
+      "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Guo_AD-NeRF_Audio_Driven_Neural_Radiance_Fields_for_Talking_Head_Synthesis_ICCV_2021_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2021/html/Guo_AD-NeRF_Audio_Driven_Neural_Radiance_Fields_for_Talking_Head_Synthesis_ICCV_2021_paper.html"
+    },
+    {
+      "id": "hong2022headnerf",
+      "url": "https://arxiv.org/abs/2112.05637",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2112.05637"
+    },
+    {
+      "id": "tang2025real",
+      "url": "https://doi.org/10.1007/s11263-025-02481-9",
+      "status": 200,
+      "finalUrl": "https://link.springer.com/article/10.1007/s11263-025-02481-9"
+    },
+    {
+      "id": "li2023efficient",
+      "url": "https://arxiv.org/abs/2307.09323",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2307.09323"
+    },
+    {
+      "id": "peng2024synctalk",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Peng_SyncTalk_The_Devil_is_in_the_Synchronization_for_Talking_Head_CVPR_2024_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2024/html/Peng_SyncTalk_The_Devil_is_in_the_Synchronization_for_Talking_Head_CVPR_2024_paper.html"
+    },
+    {
+      "id": "zheng2023avatarrex",
+      "url": "https://arxiv.org/abs/2305.04789",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2305.04789"
+    },
+    {
+      "id": "chugpavatar",
+      "url": "https://arxiv.org/abs/2401.10215",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2401.10215"
+    },
+    {
+      "id": "yu2024gaussiantalker",
+      "url": "https://doi.org/10.1145/3664647.3681675",
+      "status": 403,
+      "finalUrl": "https://dl.acm.org/doi/10.1145/3664647.3681675"
+    },
+    {
+      "id": "cho2024gaussiantalker",
+      "url": "https://arxiv.org/abs/2404.16012",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2404.16012"
+    },
+    {
+      "id": "shao2024splattingavatar",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Shao_SplattingAvatar_Realistic_Real-Time_Human_Avatars_with_Mesh-Embedded_Gaussian_Splatting_CVPR_2024_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2024/html/Shao_SplattingAvatar_Realistic_Real-Time_Human_Avatars_with_Mesh-Embedded_Gaussian_Splatting_CVPR_2024_paper.html"
+    },
+    {
+      "id": "xiang2024flashavatar",
+      "url": "https://arxiv.org/abs/2312.02214",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2312.02214"
+    },
+    {
+      "id": "qian2024gaussianavatars",
+      "url": "https://arxiv.org/abs/2312.02069",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2312.02069"
+    },
+    {
+      "id": "dhamo2024headgas",
+      "url": "https://arxiv.org/abs/2312.02902",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2312.02902"
+    },
+    {
+      "id": "qian20243dgs",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Qian_3DGS-Avatar_Animatable_Avatars_via_Deformable_3D_Gaussian_Splatting_CVPR_2024_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2024/html/Qian_3DGS-Avatar_Animatable_Avatars_via_Deformable_3D_Gaussian_Splatting_CVPR_2024_paper.html"
+    },
+    {
+      "id": "peng2025synctalk++",
+      "url": "https://arxiv.org/abs/2506.14742",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2506.14742"
+    },
+    {
+      "id": "chu2024generalizable",
+      "url": "https://arxiv.org/abs/2410.07971",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2410.07971"
+    },
+    {
+      "id": "chen2025taoavatar",
+      "url": "https://arxiv.org/abs/2503.17032",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2503.17032"
+    },
+    {
+      "id": "iandola2025squeezeme",
+      "url": "https://arxiv.org/abs/2412.15171",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2412.15171"
+    },
+    {
+      "id": "he2025lam",
+      "url": "https://arxiv.org/abs/2502.17796",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2502.17796"
+    },
+    {
+      "id": "zhang2025guava",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_GUAVA_Generalizable_Upper_Body_3D_Gaussian_Avatar_ICCV_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2025/html/Zhang_GUAVA_Generalizable_Upper_Body_3D_Gaussian_Avatar_ICCV_2025_paper.html"
+    },
+    {
+      "id": "xu2026vasa",
+      "url": "https://arxiv.org/abs/2512.14677",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2512.14677"
+    },
+    {
+      "id": "aneja2025gaussianspeech",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Aneja_GaussianSpeech_Audio-Driven_Personalized_3D_Gaussian_Avatars_ICCV_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2025/html/Aneja_GaussianSpeech_Audio-Driven_Personalized_3D_Gaussian_Avatars_ICCV_2025_paper.html"
+    },
+    {
+      "id": "liang2025dgtalker",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Liang_DGTalker_Disentangled_Generative_Latent_Space_Learning_for_Audio-Driven_Gaussian_Talking_ICCV_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2025/html/Liang_DGTalker_Disentangled_Generative_Latent_Space_Learning_for_Audio-Driven_Gaussian_Talking_ICCV_2025_paper.html"
+    },
+    {
+      "id": "hu2025ggtalker",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Hu_GGTalker_Talking_Head_Systhesis_with_Generalizable_Gaussian_Priors_and_Identity-Specific_ICCV_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2025/html/Hu_GGTalker_Talking_Head_Systhesis_with_Generalizable_Gaussian_Priors_and_Identity-Specific_ICCV_2025_paper.html"
+    },
+    {
+      "id": "lee2026audioavatar",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Lee_AudioAvatar_Personalized_Audio-driven_Whole-body_Talking_Avatars_CVPR_2026_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2026/html/Lee_AudioAvatar_Personalized_Audio-driven_Whole-body_Talking_Avatars_CVPR_2026_paper.html"
+    },
+    {
+      "id": "agarwal2026gaussianheadtalk",
+      "url": "https://openaccess.thecvf.com/content/WACV2026/html/Agarwal_GaussianHeadTalk_Wobble-Free_3D_Talking_Heads_with_Audio_Driven_Gaussian_Splatting_WACV_2026_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/WACV2026/html/Agarwal_GaussianHeadTalk_Wobble-Free_3D_Talking_Heads_with_Audio_Driven_Gaussian_Splatting_WACV_2026_paper.html"
+    },
+    {
+      "id": "song2023rc",
+      "url": "https://doi.org/10.1109/ISMAR59233.2023.00023",
+      "status": 202,
+      "finalUrl": "https://ieeexplore.ieee.org/document/10316473/"
+    },
+    {
+      "id": "zhao2024gaussianhand",
+      "url": "https://doi.org/10.1109/TVCG.2024.3516778",
+      "status": 202,
+      "finalUrl": "https://ieeexplore.ieee.org/document/10798987/"
+    },
+    {
+      "id": "song2024texttoon",
+      "url": "https://arxiv.org/abs/2410.07160",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2410.07160"
+    },
+    {
+      "id": "siarohin2019first",
+      "url": "https://arxiv.org/abs/2003.00196",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2003.00196"
+    },
+    {
+      "id": "Zhao_2022_CVPR",
+      "url": "https://arxiv.org/abs/2203.14367",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2203.14367"
+    },
+    {
+      "id": "wang2021one",
+      "url": "https://openaccess.thecvf.com/content/CVPR2021/html/Wang_One-Shot_Free-View_Neural_Talking-Head_Synthesis_for_Video_Conferencing_CVPR_2021_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2021/html/Wang_One-Shot_Free-View_Neural_Talking-Head_Synthesis_for_Video_Conferencing_CVPR_2021_paper.html"
+    },
+    {
+      "id": "guo2024liveportrait",
+      "url": "https://arxiv.org/abs/2407.03168",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2407.03168"
+    },
+    {
+      "id": "wang2022latent",
+      "url": "https://arxiv.org/abs/2203.09043",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2203.09043"
+    },
+    {
+      "id": "xu2024vasa",
+      "url": "https://arxiv.org/abs/2404.10667",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2404.10667"
+    },
+    {
+      "id": "ki2025float",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Ki_FLOAT_Generative_Motion_Latent_Flow_Matching_for_Audio-driven_Talking_Portrait_ICCV_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2025/html/Ki_FLOAT_Generative_Motion_Latent_Flow_Matching_for_Audio-driven_Talking_Portrait_ICCV_2025_paper.html"
+    },
+    {
+      "id": "li2025ditto",
+      "url": "https://arxiv.org/abs/2411.19509",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2411.19509"
+    },
+    {
+      "id": "qi2025chatanyone",
+      "url": "https://arxiv.org/abs/2503.21144",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2503.21144"
+    },
+    {
+      "id": "meng2025mirrorme",
+      "url": "https://arxiv.org/abs/2506.22065",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2506.22065"
+    },
+    {
+      "id": "li2025moda",
+      "url": "https://arxiv.org/abs/2507.03256",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2507.03256"
+    },
+    {
+      "id": "he2024gaia",
+      "url": "https://arxiv.org/abs/2311.15230",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2311.15230"
+    },
+    {
+      "id": "cao2024joyvasa",
+      "url": "https://arxiv.org/abs/2411.09209",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2411.09209"
+    },
+    {
+      "id": "zhen2025teller",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Zhen_Teller_Real-Time_Streaming_Audio-Driven_Portrait_Animation_with_Autoregressive_Motion_Generation_CVPR_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2025/html/Zhen_Teller_Real-Time_Streaming_Audio-Driven_Portrait_Animation_with_Autoregressive_Motion_Generation_CVPR_2025_paper.html"
+    },
+    {
+      "id": "guo2025arig",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Guo_ARIG_Autoregressive_Interactive_Head_Generation_for_Real-time_Conversations_ICCV_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/ICCV2025/html/Guo_ARIG_Autoregressive_Interactive_Head_Generation_for_Real-time_Conversations_ICCV_2025_paper.html"
+    },
+    {
+      "id": "chen2025dystream",
+      "url": "https://arxiv.org/abs/2512.24408",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2512.24408"
+    },
+    {
+      "id": "zhao2025rea",
+      "url": "https://aipixel.github.io/REA-Listener/",
+      "status": 200,
+      "finalUrl": "https://aipixel.github.io/REA-Listener/"
+    },
+    {
+      "id": "zhang2026embodiedhead",
+      "url": "https://arxiv.org/abs/2604.17211",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2604.17211"
+    },
+    {
+      "id": "lee2025audio",
+      "url": "https://arxiv.org/abs/2510.01176",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2510.01176"
+    },
+    {
+      "id": "chu2026unils",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chu_UniLS_End-to-End_Audio-Driven_Avatars_for_Unified_Listening_and_Speaking_CVPR_2026_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2026/html/Chu_UniLS_End-to-End_Audio-Driven_Avatars_for_Unified_Listening_and_Speaking_CVPR_2026_paper.html"
+    },
+    {
+      "id": "ye2026talker",
+      "url": "https://arxiv.org/abs/2604.23586",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2604.23586"
+    },
+    {
+      "id": "wang2026omnitalker",
+      "url": "https://arxiv.org/abs/2504.02433",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2504.02433"
+    },
+    {
+      "id": "zhang2021flow",
+      "url": "https://doi.org/10.1109/CVPR46437.2021.00366",
+      "status": 202,
+      "finalUrl": "https://ieeexplore.ieee.org/document/9578462/"
+    },
+    {
+      "id": "xie2022vfhq",
+      "url": "https://doi.org/10.1109/CVPRW56347.2022.00081",
+      "status": 202,
+      "finalUrl": "https://ieeexplore.ieee.org/document/9857333/"
+    },
+    {
+      "id": "zhu2022celebv",
+      "url": "https://doi.org/10.1007/978-3-031-20071-7_38",
+      "status": 200,
+      "finalUrl": "https://link.springer.com/chapter/10.1007/978-3-031-20071-7_38"
+    },
+    {
+      "id": "wang2020mead",
+      "url": "https://doi.org/10.1007/978-3-030-58589-1_42",
+      "status": 200,
+      "finalUrl": "https://link.springer.com/chapter/10.1007/978-3-030-58589-1_42"
+    },
+    {
+      "id": "zhou2022responsive",
+      "url": "https://doi.org/10.1007/978-3-031-19839-7_8",
+      "status": 200,
+      "finalUrl": "https://link.springer.com/chapter/10.1007/978-3-031-19839-7_8"
+    },
+    {
+      "id": "zhang2025speakervid",
+      "url": "https://arxiv.org/abs/2507.09862",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2507.09862"
+    },
+    {
+      "id": "wang2025talkverse",
+      "url": "https://arxiv.org/abs/2512.14938",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2512.14938"
+    },
+    {
+      "id": "li2025openhumanvid",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Li_OpenHumanVid_A_Large-Scale_High-Quality_Dataset_for_Enhancing_Human-Centric_Video_Generation_CVPR_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2025/html/Li_OpenHumanVid_A_Large-Scale_High-Quality_Dataset_for_Enhancing_Human-Centric_Video_Generation_CVPR_2025_paper.html"
+    },
+    {
+      "id": "kirschstein2023nersemble",
+      "url": "https://doi.org/10.1145/3592455",
+      "status": 403,
+      "finalUrl": "https://dl.acm.org/doi/10.1145/3592455"
+    },
+    {
+      "id": "agrawal2025seamless",
+      "url": "https://arxiv.org/abs/2506.22554",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2506.22554"
+    },
+    {
+      "id": "ho2020denoising",
+      "url": "https://arxiv.org/abs/2006.11239",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2006.11239"
+    },
+    {
+      "id": "lipmanflow",
+      "url": "https://arxiv.org/abs/2210.02747",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2210.02747"
+    },
+    {
+      "id": "kerbl20233d",
+      "url": "https://arxiv.org/abs/2308.04079",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2308.04079"
+    },
+    {
+      "id": "mildenhall2020nerf",
+      "url": "https://arxiv.org/abs/2003.08934",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2003.08934"
+    },
+    {
+      "id": "muller2022instant",
+      "url": "https://arxiv.org/abs/2201.05989",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2201.05989"
+    },
+    {
+      "id": "chen2024diffusion",
+      "url": "https://arxiv.org/abs/2407.01392",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2407.01392"
+    },
+    {
+      "id": "huang2026self",
+      "url": "https://arxiv.org/abs/2506.08009",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2506.08009"
+    },
+    {
+      "id": "yin2025slow",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yin_From_Slow_Bidirectional_to_Fast_Autoregressive_Video_Diffusion_Models_CVPR_2025_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2025/html/Yin_From_Slow_Bidirectional_to_Fast_Autoregressive_Video_Diffusion_Models_CVPR_2025_paper.html"
+    },
+    {
+      "id": "yin2024one",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Yin_One-step_Diffusion_with_Distribution_Matching_Distillation_CVPR_2024_paper.html",
+      "status": 200,
+      "finalUrl": "https://openaccess.thecvf.com/content/CVPR2024/html/Yin_One-step_Diffusion_with_Distribution_Matching_Distillation_CVPR_2024_paper.html"
+    },
+    {
+      "id": "chen2025deep",
+      "url": "https://arxiv.org/abs/2410.10733",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2410.10733"
+    },
+    {
+      "id": "yang2025longlive",
+      "url": "https://arxiv.org/abs/2509.22622",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2509.22622"
+    },
+    {
+      "id": "wang2004image",
+      "url": "https://doi.org/10.1109/TIP.2003.819861",
+      "status": 202,
+      "finalUrl": "https://ieeexplore.ieee.org/document/1284395/"
+    },
+    {
+      "id": "zhang2018unreasonable",
+      "url": "https://arxiv.org/abs/1801.03924",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/1801.03924"
+    },
+    {
+      "id": "heusel2017gans",
+      "url": "https://arxiv.org/abs/1706.08500",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/1706.08500"
+    },
+    {
+      "id": "unterthiner2018towards",
+      "url": "https://arxiv.org/abs/1812.01717",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/1812.01717"
+    },
+    {
+      "id": "deng2019arcface",
+      "url": "https://arxiv.org/abs/1801.07698",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/1801.07698"
+    },
+    {
+      "id": "chung2016out",
+      "url": "https://www.robots.ox.ac.uk/~vgg/publications/2016/Chung16a/chung16a.pdf",
+      "status": 200,
+      "finalUrl": "https://www.robots.ox.ac.uk/~vgg/publications/2016/Chung16a/chung16a.pdf"
+    },
+    {
+      "id": "zielonka2026builddigitalhumanspriors",
+      "url": "https://arxiv.org/abs/2607.04341",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2607.04341"
+    },
+    {
+      "id": "li2024survey",
+      "url": "https://arxiv.org/abs/2403.16407",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2403.16407"
+    },
+    {
+      "id": "yu2025survey",
+      "url": "https://arxiv.org/abs/2504.21853",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2504.21853"
+    },
+    {
+      "id": "hu2025unitalker",
+      "url": "https://arxiv.org/abs/2508.04585",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2508.04585"
+    },
+    {
+      "id": "luo2026omniresponse",
+      "url": "https://arxiv.org/abs/2505.21724",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2505.21724"
+    },
+    {
+      "id": "zhang2026vidus1realtimeinteractive",
+      "url": "https://arxiv.org/abs/2607.03118",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2607.03118"
+    },
+    {
+      "id": "liu2025rolling",
+      "url": "https://arxiv.org/abs/2509.25161",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2509.25161"
+    },
+    {
+      "id": "ji2026forcing",
+      "url": "https://arxiv.org/abs/2605.09681",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2605.09681"
+    },
+    {
+      "id": "ma2026flow",
+      "url": "https://arxiv.org/abs/2602.10825",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2602.10825"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "fast-and-stable-survey",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static research companion for Fast and Stable Virtual Human Video Generation: A Survey",
+  "scripts": {
+    "test": "node --test tests/catalog.test.js",
+    "validate": "python3 scripts/validate.py",
+    "build": "python3 scripts/build.py",
+    "serve": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist"
+  }
+}
