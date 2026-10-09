@@ -42,7 +42,7 @@ test('a dataset baseline is discoverable in AR without duplicating records or st
   assert.equal(filterPapers(papers, { ...defaults, route: 'diffusion', q: 'SpeakerVid' }).length, 0);
   const primary = countRoutes(papers), browsing = countBrowseRoutes(papers);
   assert.equal(primary.autoregressive, papers.filter(p => p.category === 'autoregressive').length);
-  assert.equal(browsing.autoregressive, primary.autoregressive + 1);
+  assert.equal(browsing.autoregressive, primary.autoregressive + papers.filter(p => crossListingOf(p, 'autoregressive')).length);
   assert.equal(Object.values(primary).reduce((a, b) => a + b, 0), papers.length);
   assert.equal(filterPapers(papers, { ...defaults, route: 'autoregressive' }).length, browsing.autoregressive);
   assert.ok(filterPapers(papers, { ...defaults, route: 'autoregressive', q: 'SpeakerVid 3D-VAE' }).some(p => p.id === speaker.id));
@@ -54,6 +54,34 @@ test('general-video AR foundations remain separate from the native method route'
   assert.ok(foundations.every(p => p.category === 'foundations'));
   assert.equal(filterPapers(papers, { ...defaults, route: 'autoregressive', tag: 'AR foundations' }).length, 0);
   assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
+});
+
+test('historical AR baselines reuse their non-AR source paper and citation', () => {
+  for (const [id, alias] of [['han2022mmvid', 'ART-V'], ['liu2022paralip', 'TransformerT2L']]) {
+    const paper = papers.find(p => p.id === id);
+    assert.equal(paper.category, 'context');
+    assert.equal(groupOf(paper), 'supporting');
+    assert.match(crossListingOf(paper, 'autoregressive').shortTitle, new RegExp(alias));
+    for (const route of ['all', 'supporting', 'autoregressive']) {
+      const matches = filterPapers(papers, { ...defaults, route, q: alias });
+      assert.deepEqual(matches.map(p => p.id), [id]);
+      assert.equal(matches[0].bibtex, paper.bibtex);
+    }
+  }
+  const regional = filterPapers(papers, { ...defaults, route: 'autoregressive', tag: 'lip-region' });
+  assert.deepEqual(new Set(regional.map(p => p.id)), new Set(['chen2020duallip', 'liu2022paralip']));
+  const dual = papers.find(p => p.id === 'chen2020duallip');
+  assert.equal(dual.category, 'autoregressive');
+  assert.match(dual.shortTitle, /without duration/);
+});
+
+test('spatial and unresolved AR cases remain discoverable outside strict temporal counts', () => {
+  const context = filterPapers(papers, { ...defaults, route: 'supporting', tag: 'AR scope context' });
+  assert.deepEqual(new Set(context.map(p => p.id)), new Set(['deng2026fluentavatarflickerfreetalkingheadanimation', 'zhang2025tamingtransformer']));
+  assert.ok(context.every(p => p.category === 'context'));
+  assert.equal(filterPapers(papers, { ...defaults, route: 'autoregressive', tag: 'AR scope context' }).length, 0);
+  assert.equal(countRoutes(papers).autoregressive, 5);
+  assert.equal(countBrowseRoutes(papers).autoregressive, 8);
 });
 
 test('sorting and historical buckets operate on numeric bibliography years', () => {

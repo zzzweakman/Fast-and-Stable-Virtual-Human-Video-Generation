@@ -1,10 +1,10 @@
 # AR supplement review
 
-This records the first CSV supplement. See the subsequent [AR paper collection review](ar-collection-review.md) for the current catalogue totals and SpeakerVid-5M baseline cross-listing.
+This records the first CSV supplement. The [second-pass review](ar-second-pass-review.md) supersedes its original FluentAvatar classification and provides current totals. The intermediate [AR paper collection review](ar-collection-review.md) documents SpeakerVid-5M's baseline cross-listing.
 
 Reviewed 9 October 2026 against the user-supplied `virtual-human-survey/data.csv`, the manuscript's AR section, and original papers. The user confirmed retaining the manuscript's **strict native visual-AR definition**.
 
-The CSV contains **28 AR-labelled rows representing 20 distinct works**. Four were already in the native visual-AR category, eight were already assigned to another visual route, and eight were absent from the catalogue. Of the absent works, **FluentAvatar qualifies for native visual AR**. The other seven generate compact facial or body motion rather than visual frame state. After this supplement the website contains **five native visual-AR papers and 149 papers overall**.
+The CSV contains **28 AR-labelled rows representing 20 distinct works**. Four were already in the native visual-AR category, eight were already assigned to another visual route, and eight were absent from the catalogue. The initial supplement added FluentAvatar, producing a historical total of **149 papers and five primary AR entries**. That strict-AR inclusion was too strong: the later method re-audit found unresolved cross-frame dependencies, so FluentAvatar now remains under Related methods. The other seven absent works generate compact facial or body motion rather than visual frame state.
 
 ## Added: FluentAvatar
 
@@ -12,7 +12,7 @@ CSV paper ID **338**; citation key `deng2026fluentavatarflickerfreetalkingheadan
 
 [FluentAvatar: Flicker-Free Talking-Head Animation via Phoneme-Guided Autoregressive Modeling](https://arxiv.org/abs/2509.12052), by Yuchen Deng, Xiuyang Wu, Hai-Tao Zheng, Suiyang Zhang, Yi He, and Yuxing Han.
 
-[Sections 3.1–3.3 of v3](https://arxiv.org/html/2509.12052v3) describe autoregressive visual-token keyframes, phoneme-conditioned causal attention, and timestamp-aware interpolation. Open-MAGVIT2 image tokenization and RGB reconstruction establish that the predicted state is visual, satisfying the manuscript's inclusion rule. The website uses Figure 4 as the preview and a two-sentence mechanism summary; it makes no real-time latency claim.
+[Sections 3.1–3.3 of v3](https://arxiv.org/html/2509.12052v3) establish visual-token keyframes and timestamp-aware interpolation. Appearance-token prediction alone does not satisfy the manuscript's temporal condition: the general past-frame formulation conflicts with the specific keyframe mask, and interpolation's output-feedback order is not explicit. The website retains Figure 4 and a qualified summary under Related methods; it makes no real-time latency claim. See the [corrective review](ar-second-pass-review.md#corrections-to-earlier-interpretation).
 
 The CSV's year column says **2025**, matching the first arXiv submission. Its BibTeX and the manuscript bibliography say **2026**, matching the revised v3 edition. The catalogue retains **2026** under its existing bibliography-year policy, with the discrepancy recorded in `provenance`.
 
@@ -26,7 +26,7 @@ CSV IDs below identify source rows; duplicated works count once. Existing classi
 | Body of Her | 34 | Already native visual AR; continuous visual tokens. |
 | UniMo | 337 | Already native visual AR; interleaved video and human-motion tokens. |
 | EARTalking | 339 | Already native visual AR; framewise 3D-VAE visual representations. |
-| FluentAvatar | 338 | **Added**; phoneme-aligned visual-token keyframes. |
+| FluentAvatar | 338 | Added, then reclassified as related context; visual-token AR is established, strict temporal dependency is unresolved. |
 | X-Streamer | 35 | Already diffusion-based; its Actor denoises dense LTX-VAE video chunks. |
 | ARIG | 41, 334 | Already render-based; AR head-motion controls drive portrait warping. |
 | Teller | 49, 331 | Already render-based; motion tokens drive an implicit-keypoint warper. |

@@ -121,6 +121,7 @@ legend,.year-filter>label{font-size:11px;font-weight:800;margin-bottom:13px;disp
 .active-filters{display:flex;gap:7px;flex-wrap:wrap}.active-filters:not(:empty){margin-bottom:15px}
 .catalog-scope{margin-bottom:22px;padding:16px 18px;background:var(--soft);border-radius:8px;color:var(--green);font-size:13px;line-height:1.7}
 .catalog-scope p{max-width:75ch}
+.catalog-scope-links{display:flex;flex-wrap:wrap;column-gap:24px}
 .catalog-scope a{display:inline-flex;align-items:center;min-height:44px;margin-top:3px;font-weight:750;text-decoration:underline;text-underline-offset:4px}
 .filter-chip{display:flex;align-items:center;gap:8px;padding:4px 8px;background:var(--soft);border:1px solid #d5dfd0;border-radius:5px;font-size:10px;min-height:29px}.filter-chip svg{width:12px;height:12px}
 .paper-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:21px}

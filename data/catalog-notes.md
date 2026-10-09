@@ -2,28 +2,29 @@
 
 Prepared on 9 October 2026 from the manuscript rooted at `virtual-human-survey/1008_overleaf/main.tex`, its `sec_new` sections, and ten bibliography files. No manuscript source was edited.
 
-The catalogue contains **160 distinct bibliography records** with original-paper or author-hosted links, including **118 arXiv links**. Every named method in the comparison tables of all four route sections is represented. The collection also includes selected methods discussed in the surrounding text, verified additions from the supplied CSV and AR paper collection, ten dataset papers, six evaluation references, eighteen foundational/contextual papers, and three related surveys. It is a curated view of this draft and its supplied literature, not a complete census of the field or an exhaustive export of its bibliography.
+The catalogue contains **164 distinct bibliography records** with original-paper or author-hosted links, including **122 arXiv links**. Every named method in the comparison tables of all four route sections is represented. The collection also includes selected methods discussed in the surrounding text, verified additions from the supplied CSV and two AR collections, ten dataset papers, six evaluation references, eighteen foundations, three related surveys, and four related-method records. It is a curated view of this draft and its supplied literature, not a complete census of the field or an exhaustive export of its bibliography.
 
 | Category | Records |
 | --- | ---: |
 | GAN-based | 22 |
 | Diffusion-based | 43 |
-| Native visual autoregressive | 5 |
+| Temporal visual autoregressive (including regional DualLip) | 5 |
 | Render-based | 53 |
 | Foundations and general-video context | 18 |
 | Datasets | 10 |
 | Evaluation | 6 |
 | Related surveys | 3 |
+| Related methods and AR scope context | 4 |
 
 ## Classification and summaries
 
-Category follows the manuscript's **visual ownership** test, rather than the filename of a bibliography or the presence of an autoregressive/diffusion controller. For example, MuseTalk is a one-call adversarial latent generator; MIDAS has a native visual-AR backbone with a local diffusion head; and Teller, ARIG, DyStream, UniTalker, and OmniResponse use compact controls followed by a renderer. MIDAS, Body of Her, UniMo, EARTalking, and FluentAvatar are counted as native visual AR. The user explicitly confirmed this strict definition for the CSV supplement; see [the AR review](ar-supplement-notes.md).
+Category follows the manuscript's **visual ownership** test, rather than the filename of a bibliography or the presence of an autoregressive/diffusion controller. For example, MuseTalk is a one-call adversarial latent generator; MIDAS has a native visual-AR backbone with a local diffusion head; and Teller, ARIG, DyStream, UniTalker, and OmniResponse use compact controls followed by a renderer. MIDAS, Body of Her, UniMo, EARTalking, and DualLip's without-duration lip-region branch are primary temporal visual AR. The user explicitly confirmed the strict temporal definition. FluentAvatar's earlier inclusion was corrected after a method re-audit; it remains related context with temporal dependence unresolved. See [the second-pass review](ar-second-pass-review.md).
 
-The 123 records assigned to the four routes include general-video bridges and contextual controller systems described by the survey. The remaining 37 supporting references are counted separately. MotionStream is general motion-controlled video, UniMo bridges general human video and motion, and the Wan-Streamer records are successive versions of one series. Counts measure records in this catalogue, not independent architectures, research quality, performance, or adoption.
+The 123 records assigned to the four routes include general-video bridges, historical regional methods, and contextual controller systems described by the survey. The remaining 41 supporting references are counted separately. MotionStream is general motion-controlled video, UniMo bridges general human video and motion, and the Wan-Streamer records are successive versions of one series. Counts measure records in this catalogue, not independent architectures, full-avatar systems, research quality, performance, or adoption.
 
-SpeakerVid-5M's verified visual-AR baseline is cross-listed in AR browsing while its primary category remains datasets. Thus AR navigation contains six papers, while the exclusive category chart records five primary AR papers and counts SpeakerVid-5M once under datasets. NOVA, VideoPoet, and VideoGPT are supporting general-video foundations, accessible through a separate link from the AR view. See the [15-paper collection review](ar-collection-review.md) for the evidence and all inclusion decisions.
+Three verified visual-AR baselines are cross-listed: SpeakerVid-5M stays under datasets, while ART-V and TransformerT2L retain the MMVID and ParaLip source papers under Related methods. Thus AR navigation contains eight papers, while the exclusive chart records five primary AR papers. MMVID and ParaLip's main methods are not classified as AR. NOVA, VideoPoet, and VideoGPT remain supporting general-video foundations; FluentAvatar and Taming Transformer have a separate spatial/unresolved-AR context link. See the [15-paper collection review](ar-collection-review.md) and [second-pass review](ar-second-pass-review.md) for evidence and decisions.
 
-Summaries mainly paraphrase the manuscript's mechanism descriptions in one or two sentences. For Vidu S1, Rolling Forcing, Forcing-KV, and FlowCache, the original arXiv abstracts supplement the manuscript's brief contextual mentions. FluentAvatar and the AR paper collection additions use verified original method sections. Cross-listed baselines have a separate, source-backed summary for their route view. Tags describe mechanisms or tasks and are editorial annotations. `featured` marks eight examples for navigation, not a ranking.
+Summaries mainly paraphrase the manuscript's mechanism descriptions in one or two sentences. For Vidu S1, Rolling Forcing, Forcing-KV, and FlowCache, the original arXiv abstracts supplement the manuscript's brief contextual mentions. FluentAvatar and both AR collections use verified original method sections, with uncertainties recorded explicitly. Cross-listed baselines have separate source-backed titles, summaries, and optional tags for their route view. Tags describe mechanisms or tasks and are editorial annotations. `featured` marks eight examples for navigation, not a ranking.
 
 ## Metadata and links
 
@@ -31,7 +32,7 @@ Summaries mainly paraphrase the manuscript's mechanism descriptions in one or tw
 
 Missing links were resolved through exact title matching in official CVF proceedings and searches of original arXiv records, publisher records, or author project pages. Every record has a nonempty HTTPS article/project link; **no link remains unresolved**. A direct publisher or author link is retained when no arXiv identifier was established. This is source resolution, not a promise that every external server will remain available or allow automated access.
 
-`source` records the bibliography and manuscript citation locations. `section` names an actual section in which the work is cited; it can differ from the assigned category. Supplemental entries instead identify their CSV or collection paper ID and use an explicit supplement label, without claiming a manuscript citation. `provenance` records the metadata/year policy, link source, and known ambiguities. The original Feishu URL was unavailable; its subsequently supplied local `data.csv` and the later `AR_Paper_Collection` informed the supplements. Private CSV comments and creator fields are not published.
+`source` records the bibliography and manuscript citation locations. `section` names an actual section in which the work is cited; it can differ from the assigned category. Supplemental entries instead identify their CSV or collection paper ID and use an explicit supplement label, without claiming a manuscript citation. `provenance` records the metadata/year policy, link source, and known ambiguities. The original Feishu URL was unavailable; its subsequently supplied local `data.csv`, `AR_Paper_Collection`, and `AR_Second_Pass_Supplement` informed the additions. Private CSV comments and creator fields are not published.
 
 ## Preserved evidence boundaries
 
@@ -47,7 +48,7 @@ The asset manifest may contain previews for seven additional bibliography record
 
 ## External availability check
 
-Bounded HTTP checks of the original 148 links and 12 supplemental links returned **152 HTTP 200 responses**, three HTTP 403 responses from ACM, and five HTTP 202 responses from IEEE. There were no HTTP 404 responses or request timeouts. The eight publisher responses below do not establish that an article is unavailable in a browser; its DOI and paper identity were resolved independently. Full results are retained in `link-audit.json`.
+Bounded HTTP checks of the original 148 links and 16 supplemental links returned **156 HTTP 200 responses**, three HTTP 403 responses from ACM, and five HTTP 202 responses from IEEE. There were no HTTP 404 responses or request timeouts. The eight publisher responses below do not establish that an article is unavailable in a browser; its DOI and paper identity were resolved independently. Full results are retained in `link-audit.json`.
 
 | Automated-access response | Records |
 | --- | --- |
@@ -56,4 +57,4 @@ Bounded HTTP checks of the original 148 links and 12 supplemental links returned
 
 ## Validation
 
-Validation covers JSON structure; unique record and citation keys; required nonempty metadata; valid category names; numeric bibliography years; 160 direct links; 118 arXiv identifiers; eight featured entries; manuscript or explicit supplement provenance; cross-listing evidence; and full named-method coverage of all four route comparison tables. Publication links added beyond the bibliography were checked against original source records or official proceedings indexes. The underlying research results were not independently reproduced.
+Validation covers JSON structure; unique record and citation keys; required nonempty metadata; valid category names; numeric bibliography years; 164 direct links; 122 arXiv identifiers; eight featured entries; manuscript or explicit supplement provenance; cross-listing evidence; and full named-method coverage of all four route comparison tables. Regression checks cover baseline discovery without duplicate counts, regional scope, and exclusion of spatial/unresolved cases from strict temporal-AR statistics. Publication links added beyond the bibliography were checked against original source records or official proceedings indexes. The underlying research results were not independently reproduced.

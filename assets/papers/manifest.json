@@ -1229,5 +1229,86 @@
     "sourceSha256": "0ab07341f060cde03ca0f9b211113493ddfea268e1960e0ef7bc3614e748579f",
     "modifications": "Resized to at most 1000 pixels and encoded as WebP; transparency preserved.",
     "caption": "Joint audio-video streaming examples — Figure 1."
+  },
+  "han2022mmvid": {
+    "path": "assets/papers/han2022mmvid.webp",
+    "width": 654,
+    "height": 1000,
+    "sourceUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Han_Show_Me_What_and_Tell_Me_How_Video_Synthesis_via_CVPR_2022_paper.html",
+    "kind": "figure",
+    "credit": "Original paper authors; reproduced as a research preview.",
+    "sourceCollection": "AR_Second_Pass_Supplement",
+    "sourceFile": "images/art-v-fig2-face-video-comparison.png",
+    "sourceFigure": "Figure 2",
+    "sourceSha256": "ada110b37472bdc5c8bc09fb8938b648b097991d2a4c811b7350e810cd7ebfdb",
+    "caption": "Figure 2 compares face videos: ART-V rows show the AR baseline; Ours rows show the main MMVID masked-token model.",
+    "modifications": "Resized to at most 1000 pixels and encoded as WebP; original figure labels and comparisons preserved.",
+    "sourcePdfUrl": "https://openaccess.thecvf.com/content/CVPR2022/papers/Han_Show_Me_What_and_Tell_Me_How_Video_Synthesis_via_CVPR_2022_paper.pdf",
+    "sourcePdfPage": 5,
+    "sourceCropPoints": [
+      306,
+      68,
+      552,
+      444
+    ]
+  },
+  "chen2020duallip": {
+    "path": "assets/papers/chen2020duallip.webp",
+    "width": 723,
+    "height": 438,
+    "sourceUrl": "https://arxiv.org/abs/2009.05784",
+    "kind": "figure",
+    "credit": "Original paper authors; reproduced as a research preview.",
+    "sourceCollection": "AR_Second_Pass_Supplement",
+    "sourceFile": "images/duallip-fig3b-autoregressive-lip-generator.png",
+    "sourceFigure": "Figure 3(b); alternate preserves all of Figure 3 and its original caption",
+    "sourceSha256": "32dfe19c9ff541bf2bafa06eff7a571a8cc3910d911047c28f72ff336cc7166c",
+    "caption": "Figure 3(b): DualLip lip generation without duration. Temporal output feedback is specified in Section 3.3.2, not drawn in this panel.",
+    "modifications": "Resized to at most 1000 pixels and encoded as WebP; original figure labels and comparisons preserved.",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2009.05784",
+    "sourcePdfPage": 4,
+    "sourceCropPoints": [
+      312,
+      80,
+      553,
+      226
+    ]
+  },
+  "liu2022paralip": {
+    "path": "assets/papers/liu2022paralip.webp",
+    "width": 1000,
+    "height": 463,
+    "sourceUrl": "https://arxiv.org/abs/2107.06831",
+    "kind": "figure",
+    "credit": "Original paper authors; reproduced as a research preview.",
+    "sourceCollection": "AR_Second_Pass_Supplement",
+    "sourceFile": "images/transformert2l-fig3-lip-comparison.png",
+    "sourceFigure": "Figure 3",
+    "sourceSha256": "52315c59f3aa633f3364c72d8d81a540b5f0c65b7064f7c27ead248ece24fd03",
+    "caption": "Figure 3 compares lip images from AR DualLip and TransformerT2L with non-autoregressive ParaLip; row labels identify each model.",
+    "modifications": "Resized to at most 1000 pixels and encoded as WebP; original figure labels and comparisons preserved.",
+    "sourcePdfUrl": "https://arxiv.org/pdf/2107.06831",
+    "sourcePdfPage": 6,
+    "sourceCropPoints": [
+      50,
+      47,
+      564,
+      285
+    ]
+  },
+  "zhang2025tamingtransformer": {
+    "path": "assets/papers/zhang2025tamingtransformer.webp",
+    "width": 1000,
+    "height": 857,
+    "sourceUrl": "https://arxiv.org/abs/2508.14359",
+    "kind": "figure",
+    "credit": "Original paper authors; reproduced as a research preview.",
+    "sourceCollection": "AR_Second_Pass_Supplement",
+    "sourceFile": "images/taming-transformer-teaser.png",
+    "sourceFigure": "Figure 1",
+    "sourceSha256": "d84d4f5f51a657178d5de6ad66094b4cf3add63b021113f17baa073a75ee5661",
+    "caption": "Figure 1: emotion-controlled talking-face examples from Taming Transformer, a spatial visual-token AR method.",
+    "modifications": "Resized to at most 1000 pixels and encoded as WebP; original figure labels and comparisons preserved.",
+    "sourceImageUrl": "https://arxiv.org/html/2508.14359v1/intro.png"
   }
 }

@@ -152,7 +152,7 @@ Small tags and controls use compact rounding; reading cards and lens panels use 
 - **Filters and chips:** selected routes use a pale green surface; selected mechanisms use forest and white. Active-filter chips include an SVG remove control. Mobile filters wrap.
 - **Paper cards:** source preview or labelled text cover, route/year, title, citation metadata, summary, and up to three tags. The ruled footer holds source and citation actions; citations expand inside the card. Failed images use the text cover.
 - **Feedback and statistics:** live result counts accompany filters; empty and error states offer recovery actions. Chart bars filter the catalogue and repeat category text, colors, and a legend.
-- **Cross-listed baselines:** a mineral scope note in the AR view explains overlapping browsing and exclusive statistics. Dataset baselines use the route color and an explicit dataset label in that view, with their baseline summary; the same record retains its dataset presentation elsewhere. A 44px text-link target leads to general-video AR foundations.
+- **Cross-listed baselines:** a mineral scope note in the AR view explains overlapping browsing, regional examples, and exclusive statistics. Baselines use the route color plus their source paper's supporting category, with a distinct title, summary, and tags; the same record retains its main-method presentation elsewhere. Wrapping 44px text-link targets lead to general-video foundations and spatial or unresolved AR context. Source-paper titles and citations remain visible in either view.
 - **Stability disclosures:** native details/summary rows use thin rules. An SVG plus rotates when open; expanded text retains the reading floor.
 
 ## Do's and Don'ts

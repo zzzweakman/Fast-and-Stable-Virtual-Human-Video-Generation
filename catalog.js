@@ -5,7 +5,7 @@ export const ROUTES = {
   rendering: { label: 'Render-based', color: '#27786e', cover: '#eaf3ef' },
   supporting: { label: 'Supporting references', color: '#68736c', cover: '#edf1eb' }
 };
-export const SUPPORT_LABELS = { foundations: 'Foundations', datasets: 'Datasets', evaluation: 'Evaluation', surveys: 'Surveys' };
+export const SUPPORT_LABELS = { foundations: 'Foundations', datasets: 'Datasets', evaluation: 'Evaluation', surveys: 'Surveys', context: 'Related methods' };
 export const groupOf = paper => Object.hasOwn ? (Object.hasOwn(ROUTES, paper.category) ? paper.category : 'supporting') : (Object.prototype.hasOwnProperty.call(ROUTES, paper.category) ? paper.category : 'supporting');
 export const textOf = value => Array.isArray(value) ? value.join(', ') : String(value || '');
 export const normalize = value => textOf(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -19,7 +19,7 @@ export function filterPapers(papers, state) {
   const result = papers.filter(p => {
     if (!matchesRoute(p, state.route)) return false;
     if (state.year !== 'all' && (state.year.startsWith('before:') ? p.year >= +state.year.split(':')[1] : p.year !== +state.year)) return false;
-    const haystack = normalize([p.title, p.shortTitle, p.authors, p.summary, p.subcategory, ...(p.tags || []), ...(p.crossListings || []).map(c => `${c.label} ${c.summary}`)].join(' '));
+    const haystack = normalize([p.title, p.shortTitle, p.authors, p.summary, p.subcategory, ...(p.tags || []), ...(p.crossListings || []).map(c => `${c.shortTitle || ''} ${c.label} ${c.summary} ${(c.tags || []).join(' ')}`)].join(' '));
     if (state.tag && !haystack.includes(normalize(state.tag))) return false;
     return tokens.every(token => haystack.includes(token));
   });

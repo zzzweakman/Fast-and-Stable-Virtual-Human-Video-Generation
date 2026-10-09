@@ -5177,11 +5177,13 @@
     "shortTitle": "FluentAvatar",
     "authors": "Yuchen Deng, Xiuyang Wu, Hai-Tao Zheng, Suiyang Zhang, Yi He, Yuxing Han",
     "year": 2026,
-    "category": "autoregressive",
-    "subcategory": "Phoneme-aligned visual tokens",
-    "summary": "Autoregressively predicts phoneme-aligned keyframes in discrete visual-token space, then generates transition frames with timestamp-aware state-space interpolation. Its causal attention design targets temporal flicker, evaluated with a background-isolated BG-Flicker metric.",
+    "category": "context",
+    "subcategory": "Visual-token AR; temporal dependency unresolved",
+    "summary": "Generates phoneme-aligned keyframes in discrete visual-token space, followed by timestamp-aware interpolation. Visual-token autoregression is documented, but v3 gives conflicting descriptions of cross-frame causal dependencies.",
     "tags": [
-      "visual autoregression",
+      "temporal AR unresolved",
+      "visual-token AR",
+      "AR scope context",
       "phoneme conditioning",
       "keyframe interpolation",
       "flicker reduction"
@@ -5197,18 +5199,20 @@
         "file": "data.csv",
         "paperId": "338",
         "category": "AR (Sec 5)"
-      }
+      },
+      "reviewCollection": "AR_Second_Pass_Supplement"
     },
     "bibtex": "@misc{deng2026fluentavatarflickerfreetalkingheadanimation,\n      title={FluentAvatar: Flicker-Free Talking-Head Animation via Phoneme-Guided Autoregressive Modeling}, \n      author={Yuchen Deng and Xiuyang Wu and Hai-Tao Zheng and Suiyang Zhang and Yi He and Yuxing Han},\n      year={2026},\n      eprint={2509.12052},\n      archivePrefix={arXiv},\n      primaryClass={cs.CV},\n      url={https://arxiv.org/abs/2509.12052}, \n}",
     "featured": false,
     "venue": "arXiv preprint arXiv:2509.12052",
     "provenance": {
       "metadata": "Manuscript bibliography and supplied CSV, checked against the original arXiv record",
-      "summary": "Original paper v3, Sections 3.1–3.3",
+      "summary": "Original paper v3, Sections 3.1–3.3, Figure 4 and Appendix C.1; re-audited 2026-10-09.",
       "yearPolicy": "2026 bibliography edition, matching arXiv v3; the first preprint and CSV year field are 2025",
       "linkSource": "Supplied CSV bibliography and original arXiv record",
       "verificationUrl": "https://arxiv.org/html/2509.12052v3",
-      "note": "Added from CSV paper ID 338. The model predicts image-token keyframes, with RGB reconstruction from visual tokens, so it satisfies the manuscript's native visual-AR rule. It was not cited in the draft's AR comparison table. No real-time or streaming latency claim is inferred."
+      "note": "Correction to the initial CSV review: visual-token prediction and RGB reconstruction alone do not establish temporal visual AR. Eq. (4) includes earlier frames, while the Stage 1 attention mask blocks cross-frame access. Stage 2 couples adjacent keyframes, but its output-feedback schedule is not explicit. Retained as related visual-AR context; excluded from verified temporal-AR counts pending clarification. This does not imply an absence of temporal modeling. No real-time latency claim is inferred.",
+      "reviewUrl": "https://arxiv.org/html/2509.12052v3#S3.SS3"
     }
   },
   {
@@ -5743,6 +5747,274 @@
       "verifiedVersion": "v2",
       "revisedDate": "2026-08-07",
       "note": "Sections 3.2–3.4 preserve bidirectional attention within approximately one-second blocks and causal bounded history across blocks. The external language model plans speech; the LTX diffusion backbone owns dense visual generation. First submitted 2026-08-06; current v2 dated 2026-08-07 was verified. The local collection links v1. The official project code link remains marked Coming soon. Evaluation targets joint text-to-audio-video generation, so audio-conditioned avatar baselines have different inputs."
+    }
+  },
+  {
+    "id": "han2022mmvid",
+    "title": "Show Me What and Tell Me How: Video Synthesis via Multimodal Conditioning",
+    "authors": "Ligong Han, Jian Ren, Hsin-Ying Lee, Francesco Barbieri, Kyle Olszewski, Shervin Minaee, Dimitris Metaxas, Sergey Tulyakov",
+    "year": 2022,
+    "arxiv": "2203.02573",
+    "bibtex": "@InProceedings{han2022mmvid,\n  author = {Han, Ligong and Ren, Jian and Lee, Hsin-Ying and Barbieri, Francesco and Olszewski, Kyle and Minaee, Shervin and Metaxas, Dimitris and Tulyakov, Sergey},\n  title = {Show Me What and Tell Me How: Video Synthesis via Multimodal Conditioning},\n  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\n  month = {June},\n  year = {2022},\n  pages = {3615--3625},\n  url = {https://openaccess.thecvf.com/content/CVPR2022/html/Han_Show_Me_What_and_Tell_Me_How_Video_Synthesis_via_CVPR_2022_paper.html}\n}",
+    "venue": "CVPR 2022",
+    "shortTitle": "MMVID",
+    "category": "context",
+    "subcategory": "Temporal visual-AR baseline comparison",
+    "url": "https://arxiv.org/abs/2203.02573",
+    "section": "AR second-pass supplement",
+    "featured": false,
+    "summary": "MMVID synthesizes conditioned video with bidirectional masked-token prediction. Its ART-V comparison baseline instead predicts VQGAN appearance tokens autoregressively across frames, including human-video experiments.",
+    "tags": [
+      "baseline comparison",
+      "masked-token video",
+      "human video"
+    ],
+    "source": {
+      "citationKey": "han2022mmvid",
+      "collection": "AR_Second_Pass_Supplement",
+      "collectionPaperId": "art-v",
+      "sections": []
+    },
+    "provenance": {
+      "metadata": "Verified original arXiv record and official publication metadata; citation key normalized for this catalogue.",
+      "publicationUrl": "https://openaccess.thecvf.com/content/CVPR2022/html/Han_Show_Me_What_and_Tell_Me_How_Video_Synthesis_via_CVPR_2022_paper.html",
+      "bibtexSource": "https://openaccess.thecvf.com/content/CVPR2022/html/Han_Show_Me_What_and_Tell_Me_How_Video_Synthesis_via_CVPR_2022_paper.html",
+      "yearPolicy": "Published CVPR 2022 edition; first preprint 2022-03-04.",
+      "summary": "Original method sections and baseline evaluation, verified 2026-10-09.",
+      "verificationUrls": [
+        "https://openaccess.thecvf.com/content/CVPR2022/html/Han_Show_Me_What_and_Tell_Me_How_Video_Synthesis_via_CVPR_2022_paper.html",
+        "https://openaccess.thecvf.com/content/CVPR2022/papers/Han_Show_Me_What_and_Tell_Me_How_Video_Synthesis_via_CVPR_2022_paper.pdf",
+        "https://arxiv.org/html/2203.02573v1#S4",
+        "https://arxiv.org/html/2203.02573v1#S4.SS1"
+      ],
+      "evidence": [
+        {
+          "section": "Section 4, Baseline Methods",
+          "pdfPages": [
+            5
+          ],
+          "version": "CVPR proceedings",
+          "finding": "A DALL-E-style causal Transformer predicts the concatenated condition and target-video token sequence; VQGAN decodes appearance."
+        },
+        {
+          "section": "Section 4.1, Tables 2–3 and Figure 2",
+          "pdfPages": [
+            5,
+            6
+          ],
+          "version": "CVPR proceedings",
+          "finding": "ART-V is evaluated on MUG, iPER, and Multimodal VoxCeleb. Eight 128×128 VoxCeleb frames require 512 tokens, establishing cross-frame prediction."
+        },
+        {
+          "section": "Sections 3 and 4.3",
+          "pdfPages": [
+            3,
+            8
+          ],
+          "version": "CVPR proceedings",
+          "finding": "MMVID uses bidirectional mask prediction; its extrapolation demonstrations belong to MMVID."
+        }
+      ],
+      "note": "ART-V is a baseline within this paper, not the headline MMVID method or a separate publication. This is general video research with substantial human-video evaluation; short 128×128 clips do not establish streaming avatars or audio-driven lip synchronization. Published Table 3 differs from arXiv in metrics and values; do not combine their numerical results."
+    },
+    "crossListings": [
+      {
+        "route": "autoregressive",
+        "label": "AR baseline",
+        "shortTitle": "ART-V (MMVID baseline)",
+        "summary": "ART-V predicts VQGAN appearance tokens across complete video frames, with facial-expression, portrait, and body-video experiments. It is a baseline in the MMVID paper; the main MMVID model uses bidirectional masked prediction.",
+        "tags": [
+          "full-frame video",
+          "historical AR baseline",
+          "VQGAN tokens"
+        ],
+        "evidenceUrl": "https://arxiv.org/html/2203.02573v1#S4"
+      }
+    ]
+  },
+  {
+    "id": "chen2020duallip",
+    "title": "DualLip: A System for Joint Lip Reading and Generation",
+    "authors": "Weicong Chen, Xu Tan, Yingce Xia, Tao Qin, Yu Wang, Tie-Yan Liu",
+    "year": 2020,
+    "arxiv": "2009.05784",
+    "bibtex": "@inproceedings{chen2020duallip,\n  author = {Chen, Weicong and Tan, Xu and Xia, Yingce and Qin, Tao and Wang, Yu and Liu, Tie-Yan},\n  title = {{DualLip}: A System for Joint Lip Reading and Generation},\n  booktitle = {Proceedings of the 28th ACM International Conference on Multimedia},\n  series = {MM '20},\n  publisher = {ACM},\n  year = {2020},\n  month = {October},\n  pages = {1985--1993},\n  doi = {10.1145/3394171.3413623},\n  url = {https://doi.org/10.1145/3394171.3413623}\n}",
+    "venue": "ACM Multimedia 2020",
+    "shortTitle": "DualLip (without duration)",
+    "category": "autoregressive",
+    "subcategory": "Regional lip-image autoregression",
+    "url": "https://arxiv.org/abs/2009.05784",
+    "section": "AR second-pass supplement",
+    "featured": false,
+    "summary": "The without-duration branch predicts each lip image from the previous output, text, and a guide image. This historical temporal-AR model generates lip-region pixels; its full-face extension uses a separate module.",
+    "tags": [
+      "lip-region",
+      "without-duration branch",
+      "historical temporal AR",
+      "output feedback"
+    ],
+    "source": {
+      "citationKey": "chen2020duallip",
+      "collection": "AR_Second_Pass_Supplement",
+      "collectionPaperId": "duallip",
+      "sections": []
+    },
+    "provenance": {
+      "metadata": "Verified original arXiv record and official publication metadata; citation key normalized for this catalogue.",
+      "publicationUrl": "https://doi.org/10.1145/3394171.3413623",
+      "bibtexSource": "https://doi.org/10.1145/3394171.3413623 (publisher-deposited BibTeX via DOI content negotiation)",
+      "yearPolicy": "Published ACM Multimedia 2020 edition; first preprint 2020-09-12.",
+      "summary": "Original method sections and baseline evaluation, verified 2026-10-09.",
+      "verificationUrls": [
+        "https://arxiv.org/abs/2009.05784",
+        "https://arxiv.org/html/2009.05784v1#S3.SS3.SSS2",
+        "https://arxiv.org/pdf/2009.05784",
+        "https://doi.org/10.1145/3394171.3413623"
+      ],
+      "evidence": [
+        {
+          "section": "Section 3.3.2, Figure 3(b)",
+          "pdfPages": [
+            4
+          ],
+          "version": "arXiv v1",
+          "finding": "The decoder feeds the previous generated frame into the next prediction, establishing temporal appearance feedback."
+        },
+        {
+          "section": "Sections 3.3–3.4 and 4.1.3",
+          "pdfPages": [
+            4,
+            5,
+            6
+          ],
+          "version": "arXiv v1",
+          "finding": "An image decoder trained with pixel L1 loss outputs 128×64 lips; a separate lip-to-face module produces full faces."
+        },
+        {
+          "section": "Section 5.1.1 and Table 1",
+          "pdfPages": [
+            6,
+            7
+          ],
+          "version": "arXiv v1",
+          "finding": "Original without-duration results use GRID; TCD-TIMIT experiments use the with-duration variant."
+        }
+      ],
+      "note": "Include only the without-duration branch as proven output-feedback AR; the with-duration branch is not equivalent. Regional continuous-image AR, not discrete-token AR or full-portrait appearance generation. ParaLip later reproduces DualLip without duration on both GRID and TCD-TIMIT; distinguish that from DualLip’s original evaluation."
+    }
+  },
+  {
+    "id": "liu2022paralip",
+    "title": "Parallel and High-Fidelity Text-to-Lip Generation",
+    "authors": "Jinglin Liu, Zhiying Zhu, Yi Ren, Wencan Huang, Baoxing Huai, Nicholas Yuan, Zhou Zhao",
+    "year": 2022,
+    "arxiv": "2107.06831",
+    "bibtex": "@article{liu2022paralip,\n  author = {Liu, Jinglin and Zhu, Zhiying and Ren, Yi and Huang, Wencan and Huai, Baoxing and Yuan, Nicholas and Zhao, Zhou},\n  title = {Parallel and High-Fidelity Text-to-Lip Generation},\n  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},\n  volume = {36},\n  number = {2},\n  publisher = {Association for the Advancement of Artificial Intelligence (AAAI)},\n  year = {2022},\n  month = {June},\n  pages = {1738--1746},\n  doi = {10.1609/aaai.v36i2.20066},\n  url = {https://doi.org/10.1609/aaai.v36i2.20066}\n}",
+    "venue": "AAAI 2022",
+    "shortTitle": "ParaLip",
+    "category": "context",
+    "subcategory": "Temporal visual-AR baseline comparison",
+    "url": "https://arxiv.org/abs/2107.06831",
+    "section": "AR second-pass supplement",
+    "featured": false,
+    "summary": "ParaLip generates text-conditioned lip images in parallel with a non-autoregressive model. Its TransformerT2L comparison baseline predicts lip-region images autoregressively and illustrates error accumulation.",
+    "tags": [
+      "baseline comparison",
+      "lip-region",
+      "non-autoregressive main method"
+    ],
+    "source": {
+      "citationKey": "liu2022paralip",
+      "collection": "AR_Second_Pass_Supplement",
+      "collectionPaperId": "transformert2l",
+      "sections": []
+    },
+    "provenance": {
+      "metadata": "Verified original arXiv record and official publication metadata; citation key normalized for this catalogue.",
+      "publicationUrl": "https://ojs.aaai.org/index.php/AAAI/article/view/20066",
+      "bibtexSource": "https://doi.org/10.1609/aaai.v36i2.20066 (publisher-deposited BibTeX via DOI content negotiation)",
+      "yearPolicy": "Published AAAI 2022 edition; first preprint 2021-07-14.",
+      "summary": "Original method sections and baseline evaluation, verified 2026-10-09.",
+      "verificationUrls": [
+        "https://arxiv.org/abs/2107.06831",
+        "https://arxiv.org/pdf/2107.06831v2",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/20066",
+        "https://doi.org/10.1609/aaai.v36i2.20066"
+      ],
+      "evidence": [
+        {
+          "section": "Section 3.1, Equation 1",
+          "pdfPages": [
+            3
+          ],
+          "version": "arXiv v2",
+          "finding": "AR text-to-lip probability conditions each output image on preceding lip images; Equation 2 separately defines ParaLip’s NAR factorization."
+        },
+        {
+          "section": "Sections 4.2 and 5.1, Tables 1–2",
+          "pdfPages": [
+            5
+          ],
+          "version": "arXiv v2",
+          "finding": "The named AR baseline uses 160×80 GRID and TCD-TIMIT mouth crops; inference excludes ground-truth duration."
+        },
+        {
+          "section": "Section 5.1 and Figure 3",
+          "pdfPages": [
+            6
+          ],
+          "version": "arXiv v2",
+          "finding": "Later predictions depend on earlier generated lip images, providing explicit inference-time temporal evidence."
+        }
+      ],
+      "note": "ParaLip itself is non-autoregressive; TransformerT2L is a baseline inside its paper, not an independent publication. Lip-region appearance only. Figure 2 depicts ParaLip’s NAR architecture; Figure 3 compares the AR baselines. Use publication year 2022; the first arXiv submission was 2021-07-14. Method verification used arXiv v2 because the publisher PDF endpoint was unavailable."
+    },
+    "crossListings": [
+      {
+        "route": "autoregressive",
+        "label": "AR baseline",
+        "shortTitle": "TransformerT2L (ParaLip baseline)",
+        "summary": "TransformerT2L predicts each lip-region image from earlier generated images, text, and an identity image. It is a historical AR baseline in the ParaLip paper; the main ParaLip model is non-autoregressive.",
+        "tags": [
+          "lip-region",
+          "historical AR baseline",
+          "output feedback"
+        ],
+        "evidenceUrl": "https://arxiv.org/pdf/2107.06831v2"
+      }
+    ]
+  },
+  {
+    "id": "zhang2025tamingtransformer",
+    "title": "Taming Transformer for Emotion-Controllable Talking Face Generation",
+    "shortTitle": "Taming Transformer",
+    "authors": "Ziqi Zhang, Cheng Deng",
+    "year": 2025,
+    "category": "context",
+    "subcategory": "Spatial visual-token autoregression",
+    "summary": "Predicts emotion-conditioned image tokens with an autoregressive Transformer and decodes them through VQGAN. The documented AR axis is spatial; temporal consistency is encouraged through training, without an established cross-frame inference dependency.",
+    "tags": [
+      "spatial visual-token AR",
+      "temporal AR unverified",
+      "AR scope context"
+    ],
+    "url": "https://arxiv.org/abs/2508.14359",
+    "arxiv": "2508.14359",
+    "section": "AR second-pass supplement",
+    "source": {
+      "citationKey": "zhang2025tamingtransformer",
+      "collection": "AR_Second_Pass_Supplement",
+      "collectionPaperId": "taming-transformer",
+      "sections": []
+    },
+    "bibtex": "@misc{zhang2025tamingtransformer,\n  title={Taming Transformer for Emotion-Controllable Talking Face Generation},\n  author={Ziqi Zhang and Cheng Deng},\n  year={2025},\n  eprint={2508.14359},\n  archivePrefix={arXiv},\n  primaryClass={cs.CV},\n  url={https://arxiv.org/abs/2508.14359}\n}",
+    "featured": false,
+    "venue": "arXiv preprint arXiv:2508.14359",
+    "provenance": {
+      "metadata": "Original arXiv record, verified 2026-10-09.",
+      "summary": "Original v1 Sections 3.4–3.5 and 4.5.",
+      "verificationUrl": "https://arxiv.org/html/2508.14359v1#S3.SS4",
+      "note": "Related-method context only; excluded from the strict temporal visual-AR route. A cross-frame training loss does not establish inference-time output feedback. This is appearance-owning image-token generation, so a motion-only or renderer-owned exclusion would be inaccurate."
     }
   }
 ]

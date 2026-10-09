@@ -961,6 +961,30 @@
       "url": "https://arxiv.org/abs/2608.05663",
       "status": 200,
       "finalUrl": "https://arxiv.org/abs/2608.05663"
+    },
+    {
+      "id": "han2022mmvid",
+      "url": "https://arxiv.org/abs/2203.02573",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2203.02573"
+    },
+    {
+      "id": "chen2020duallip",
+      "url": "https://arxiv.org/abs/2009.05784",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2009.05784"
+    },
+    {
+      "id": "liu2022paralip",
+      "url": "https://arxiv.org/abs/2107.06831",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2107.06831"
+    },
+    {
+      "id": "zhang2025tamingtransformer",
+      "url": "https://arxiv.org/abs/2508.14359",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2508.14359"
     }
   ]
 }

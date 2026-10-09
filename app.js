@@ -22,6 +22,7 @@ function cover(p) {
 }
 function renderPaper(p, index) {
   const listing = crossListingOf(p, state.route);
+  const displayTitle = listing?.shortTitle || p.shortTitle || p.title;
   const route = ROUTES[listing?.route || groupOf(p)], media = imageFor(p), url = paperUrl(p);
   const label = listing ? `${listing.label} · ${SUPPORT_LABELS[p.category] || ROUTES[groupOf(p)].label}` : SUPPORT_LABELS[p.category] || route.label;
   const preview = media ? `<img src="${esc(media.path)}" alt="${esc(media.caption || `Preview from ${p.title}`)}" width="800" height="500" loading="lazy" decoding="async" ${media.kind === 'page' ? 'class="page-preview"' : ''}>` : cover(p);
@@ -29,11 +30,11 @@ function renderPaper(p, index) {
   return `<article class="paper-card" style="--category:${route.color}" data-paper-id="${esc(p.id)}">
     <a class="paper-image-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${esc(p.title)}">${preview}</a>
     <div class="paper-body"><div class="paper-meta"><span class="paper-category">${esc(label)}</span><span class="paper-year">${p.year}</span></div>
-    <h3 class="paper-title"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" title="${esc(p.title)}">${esc(p.shortTitle || p.title)}</a></h3>
-    ${p.shortTitle && p.shortTitle !== p.title ? `<p class="paper-full-title" title="${esc(p.title)}">${esc(p.title)}</p>` : ''}
+    <h3 class="paper-title"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" title="${esc(p.title)}">${esc(displayTitle)}</a></h3>
+    ${displayTitle !== p.title ? `<p class="paper-full-title" title="${esc(p.title)}">${esc(p.title)}</p>` : ''}
     <p class="paper-authors" title="${esc(p.authors)}">${esc(p.authors)}</p>
     <p class="paper-summary">${esc(listing?.summary || p.summary)}</p>
-    <div class="paper-tags">${(p.tags || []).slice(0, 3).map(tag => `<span class="paper-tag">${esc(tag)}</span>`).join('')}</div></div>
+    <div class="paper-tags">${(listing?.tags || p.tags || []).slice(0, 3).map(tag => `<span class="paper-tag">${esc(tag)}</span>`).join('')}</div></div>
     <div class="paper-footer"><a class="paper-source" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${arxiv ? 'arXiv' : 'Read paper'} ${icon('external')}</a><button class="citation-button" type="button" data-cite="${esc(p.id)}" aria-expanded="false" aria-controls="citation-${index}">${icon('quote')} Cite</button></div>
     <div class="citation-details" id="citation-${index}" hidden><strong>BibTeX citation</strong><p>Citation from the recorded source edition. Verify the publication record before use.</p><label class="sr-only" for="bib-${index}">BibTeX for ${esc(p.shortTitle || p.title)}</label><textarea id="bib-${index}" readonly spellcheck="false">${esc(p.bibtex)}</textarea><div class="citation-actions"><button type="button" data-copy="${esc(p.id)}">Copy citation</button><button type="button" data-download="${esc(p.id)}">Download .bib</button></div></div>
     </article>`;
@@ -82,9 +83,11 @@ function render({ preserveFilters = false } = {}) {
   const primaryCount = papers.filter(p => p.category === 'autoregressive').length;
   const crossCount = papers.filter(p => crossListingOf(p, 'autoregressive')).length;
   const foundationCount = papers.filter(p => p.category === 'foundations' && p.tags.includes('AR foundations')).length;
+  const contextCount = papers.filter(p => p.category === 'context' && p.tags.includes('AR scope context')).length;
   $('#ar-scope').hidden = state.route !== 'autoregressive';
-  $('#ar-scope-summary').textContent = `${primaryCount} primary-route papers + ${crossCount} dataset baseline. SpeakerVid-5M is cross-listed here; charts count it once under datasets.`;
+  $('#ar-scope-summary').textContent = `${primaryCount} primary-route papers + ${crossCount} cross-listed baselines. Includes historical lip-region models; charts count each source paper once.`;
   $('#ar-foundations-link').textContent = `Explore ${foundationCount} general-video AR foundations`;
+  $('#ar-context-link').textContent = `Explore ${contextCount} spatial or unresolved AR papers`;
   $('#empty-state').hidden = filtered.length > 0; $('#load-more').hidden = shown >= filtered.length;
   $('#export-button').disabled = !filtered.length;
   for (const view of ['grid', 'list']) {
@@ -186,9 +189,9 @@ $('#load-more').addEventListener('click', () => {
 });
 for (const view of ['grid', 'list']) $(`#${view}-view`).addEventListener('click', () => { state.view = view; render({ preserveFilters: true }); });
 $('#export-button').addEventListener('click', () => { download(filtered.map(p => p.bibtex).join('\n\n') + '\n', 'fast-and-stable-literature.bib'); toast(`Exported ${filtered.length} citations`); });
-$('#ar-foundations-link').addEventListener('click', event => {
+for (const [id, tag] of [['ar-foundations-link', 'AR foundations'], ['ar-context-link', 'AR scope context']]) $(`#${id}`).addEventListener('click', event => {
   if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-  event.preventDefault(); change({ route: 'supporting', tag: 'AR foundations', q: '', year: 'all' });
+  event.preventDefault(); change({ route: 'supporting', tag, q: '', year: 'all' });
   $('#search').focus({ preventScroll: true });
 });
 $('#gallery-prev').addEventListener('click', () => { featureIndex = (featureIndex - 1 + featured.length) % featured.length; renderFeature(); });

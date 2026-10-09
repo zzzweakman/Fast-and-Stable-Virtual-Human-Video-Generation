@@ -13,7 +13,7 @@ def validate():
     assert papers, 'Empty catalogue'
     ids = [p['id'] for p in papers]
     assert len(ids) == len(set(ids)), 'Duplicate paper IDs'
-    categories = {'gan', 'diffusion', 'autoregressive', 'rendering', 'foundations', 'datasets', 'evaluation', 'surveys'}
+    categories = {'gan', 'diffusion', 'autoregressive', 'rendering', 'foundations', 'datasets', 'evaluation', 'surveys', 'context'}
     for paper in papers:
         for key in ('id', 'title', 'shortTitle', 'authors', 'summary', 'url', 'section', 'source', 'bibtex'):
             assert paper.get(key), f"Missing {key}: {paper['id']}"
@@ -31,6 +31,10 @@ def validate():
             assert listing['route'] != paper['category'], f"Redundant cross-listing: {paper['id']}"
             assert listing.get('label') and listing.get('summary'), f"Missing cross-listing context: {paper['id']}"
             assert urlparse(listing.get('evidenceUrl', '')).scheme == 'https', f"Missing cross-listing evidence: {paper['id']}"
+            if 'shortTitle' in listing:
+                assert isinstance(listing['shortTitle'], str) and listing['shortTitle'].strip(), f"Invalid baseline title: {paper['id']}"
+            if 'tags' in listing:
+                assert isinstance(listing['tags'], list) and all(isinstance(tag, str) and tag.strip() for tag in listing['tags']), f"Invalid baseline tags: {paper['id']}"
     for key, asset in assets.items():
         for field in ('path', 'heroPath'):
             if field not in asset:
