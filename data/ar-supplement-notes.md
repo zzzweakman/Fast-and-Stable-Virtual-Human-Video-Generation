@@ -1,5 +1,7 @@
 # AR supplement review
 
+This records the first CSV supplement. See the subsequent [AR paper collection review](ar-collection-review.md) for the current catalogue totals and SpeakerVid-5M baseline cross-listing.
+
 Reviewed 9 October 2026 against the user-supplied `virtual-human-survey/data.csv`, the manuscript's AR section, and original papers. The user confirmed retaining the manuscript's **strict native visual-AR definition**.
 
 The CSV contains **28 AR-labelled rows representing 20 distinct works**. Four were already in the native visual-AR category, eight were already assigned to another visual route, and eight were absent from the catalogue. Of the absent works, **FluentAvatar qualifies for native visual AR**. The other seven generate compact facial or body motion rather than visual frame state. After this supplement the website contains **five native visual-AR papers and 149 papers overall**.

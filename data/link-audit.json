@@ -895,6 +895,72 @@
       "url": "https://arxiv.org/abs/2509.12052",
       "status": 200,
       "finalUrl": "https://arxiv.org/abs/2509.12052"
+    },
+    {
+      "id": "deng2024nova",
+      "url": "https://arxiv.org/abs/2412.14169",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2412.14169"
+    },
+    {
+      "id": "kondratyuk2023videopoet",
+      "url": "https://arxiv.org/abs/2312.14125",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2312.14125"
+    },
+    {
+      "id": "yan2021videogpt",
+      "url": "https://arxiv.org/abs/2104.10157",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2104.10157"
+    },
+    {
+      "id": "zhang2026vidus2",
+      "url": "https://arxiv.org/abs/2609.11638",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2609.11638"
+    },
+    {
+      "id": "huang2026flowactr2",
+      "url": "https://arxiv.org/abs/2609.35728",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2609.35728"
+    },
+    {
+      "id": "habib2026pixreenact",
+      "url": "https://arxiv.org/abs/2610.05233",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2610.05233"
+    },
+    {
+      "id": "su2026routedforcing",
+      "url": "https://arxiv.org/abs/2609.30963",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2609.30963"
+    },
+    {
+      "id": "huang2026dynaforcing",
+      "url": "https://arxiv.org/abs/2608.17707",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2608.17707"
+    },
+    {
+      "id": "li2026avatarforever",
+      "url": "https://arxiv.org/abs/2608.12107",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2608.12107"
+    },
+    {
+      "id": "wang2026wananimate2",
+      "url": "https://arxiv.org/abs/2608.06009",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2608.06009"
+    },
+    {
+      "id": "han2026vorchstreamer",
+      "url": "https://arxiv.org/abs/2608.05663",
+      "status": 200,
+      "finalUrl": "https://arxiv.org/abs/2608.05663"
     }
   ]
 }

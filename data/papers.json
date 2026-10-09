@@ -4068,7 +4068,9 @@
     "tags": [
       "dataset",
       "dyadic interaction",
-      "multi-turn"
+      "multi-turn",
+      "visual autoregression",
+      "AR baseline"
     ],
     "url": "https://arxiv.org/abs/2507.09862",
     "arxiv": "2507.09862",
@@ -4078,7 +4080,12 @@
       "bibliography": "bib/dataset_metric.bib",
       "sections": [
         "sec_new/7_datasets_and_evaluation.tex"
-      ]
+      ],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "zhang2025speakervid"
+      }
     },
     "bibtex": "@article{zhang2025speakervid,\n  author        = {Zhang, Youliang and Li, Zhaoyang and Wang, Duomin and Zhang, Jiahe and Zhou, Deyu and Yin, Zixin and Dai, Xili and Yu, Gang and Li, Xiu},\n  title         = {{SpeakerVid-5M}: A Large-Scale High-Quality Dataset for Audio-Visual Dyadic Interactive Human Generation},\n  journal       = {arXiv preprint arXiv:2507.09862},\n  year          = {2025},\n  eprint        = {2507.09862},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.CV},\n  doi           = {10.48550/arXiv.2507.09862}\n}",
     "featured": false,
@@ -4087,8 +4094,32 @@
       "metadata": "Manuscript bibliography",
       "summary": "Manuscript synthesis",
       "yearPolicy": "Bibliography year; may differ from first preprint date",
-      "linkSource": "Manuscript bibliography"
-    }
+      "linkSource": "Manuscript bibliography",
+      "baselineSummary": "Primary-paper synthesis, accepted Sections 5.1–5.2",
+      "baselineEvidence": [
+        {
+          "section": "Accepted §§5.1–5.2, pp. 7–8; Figure 4",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/bf7dbac50ed7f6e12ad529c5b9396bc4-Paper-Conference.pdf#page=7",
+          "finding": "The next-chunk AR generator predicts dense 3D-VAE patch embeddings and audio tokens from preceding chunks. Spatial AR produces patch-aligned visual outputs; a diffusion MLP samples local visual latents, which the VAE directly decodes."
+        },
+        {
+          "section": "Accepted Appendix A.7–A.8, p. 20",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/bf7dbac50ed7f6e12ad529c5b9396bc4-Paper-Conference.pdf#page=20",
+          "finding": "A chunk has 360 continuous visual tokens and 12 audio tokens, covering four raw frames. Spatial refinement expands each latent frame to 1,440 visual tokens. The stated 8 FPS is the standardized media rate, not independently demonstrated real-time throughput."
+        }
+      ],
+      "publicationYear": 2026,
+      "publicationUrl": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/bf7dbac50ed7f6e12ad529c5b9396bc4-Abstract-Conference.html",
+      "note": "The paper also introduces a native visual-AR audiovisual baseline. Cross-listed for AR browsing; counted once under datasets. The 2025 preprint year and original BibTeX are retained despite ICLR 2026 publication. Media frame rate is not treated as measured generation throughput."
+    },
+    "crossListings": [
+      {
+        "route": "autoregressive",
+        "label": "AR baseline",
+        "summary": "Provides a large audiovisual interaction dataset and a video-chat baseline that jointly predicts audio tokens and dense 3D-VAE visual patches chunk by chunk. A NOVA spatial transformer and local diffusion MLP refine the visual latents before VAE decoding.",
+        "evidenceUrl": "https://proceedings.iclr.cc/paper_files/paper/2026/file/bf7dbac50ed7f6e12ad529c5b9396bc4-Paper-Conference.pdf#page=7"
+      }
+    ]
   },
   {
     "id": "wang2025talkverse",
@@ -5178,6 +5209,540 @@
       "linkSource": "Supplied CSV bibliography and original arXiv record",
       "verificationUrl": "https://arxiv.org/html/2509.12052v3",
       "note": "Added from CSV paper ID 338. The model predicts image-token keyframes, with RGB reconstruction from visual tokens, so it satisfies the manuscript's native visual-AR rule. It was not cited in the draft's AR comparison table. No real-time or streaming latency claim is inferred."
+    }
+  },
+  {
+    "id": "deng2024nova",
+    "title": "Autoregressive Video Generation without Vector Quantization",
+    "shortTitle": "NOVA",
+    "year": 2025,
+    "summary": "Generates videos through causal prediction across latent frames and set-by-set prediction within each frame, using continuous 3D-VAE representations. A small diffusion MLP samples each predicted visual token, providing a general foundation for visual autoregression.",
+    "url": "https://arxiv.org/abs/2412.14169",
+    "arxiv": "2412.14169",
+    "bibtex": "@inproceedings{ICLR2025_6e5112ea,\n author = {Deng, Haoge and Pan, Ting and Diao, Haiwen and Luo, Zhengxiong and Cui, Yufeng and Lu, Huchuan and Shan, Shiguang and Qi, Yonggang and Wang, Xinlong},\n booktitle = {International Conference on Learning Representations},\n editor = {Y. Yue and A. Garg and N. Peng and F. Sha and R. Yu},\n pages = {44730--44745},\n title = {Autoregressive Video Generation without Vector Quantization},\n url = {https://proceedings.iclr.cc/paper_files/paper/2025/file/6e5112eaa45f8c30b242c5f576213a92-Paper-Conference.pdf},\n volume = {2025},\n year = {2025}\n}",
+    "venue": "ICLR 2025",
+    "authors": "Haoge Deng, Ting Pan, Haiwen Diao, Zhengxiong Luo, Yufeng Cui, Huchuan Lu, Shiguang Shan, Yonggang Qi, Xinlong Wang",
+    "category": "foundations",
+    "subcategory": "General-video visual AR",
+    "tags": [
+      "AR foundations",
+      "visual autoregression",
+      "general video"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "ICLR2025_6e5112ea",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "deng2024nova"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "yearPolicy": "Published ICLR 2025 edition; first preprint was 2024.",
+      "metadata": "Official ICLR proceedings and arXiv metadata",
+      "summary": "Primary-paper synthesis",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2412.14169v2#S3.SS2",
+      "evidence": [
+        {
+          "section": "§§3.2–3.4; Figure 2; equations (2)–(4)",
+          "url": "https://arxiv.org/html/2412.14169v2#S3.SS2",
+          "finding": "A 3D VAE supplies continuous video latents. Frame-level causal attention carries previous visual state; spatial AR predicts sets within the current latent frame; the MLP diffusion objective is per visual token."
+        }
+      ],
+      "firstPreprintYear": 2024,
+      "firstPreprintDate": "2024-12-18",
+      "bibtexSource": "https://proceedings.iclr.cc/paper_files/paper/1852-/bibtex",
+      "bibtexNote": "Official ICLR export preserved, including citation key and page range. Site ID retains the collection ID, whose year denotes first preprint.",
+      "note": "General-video methodology reference; not counted as a virtual-human primary-route method. The package classification and first-preprint date are correct. Add ICLR 2025 as the verified publication venue; the older project page still labels the work Arxiv 2024.",
+      "publicationUrl": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/6e5112eaa45f8c30b242c5f576213a92-Abstract-Conference.html"
+    }
+  },
+  {
+    "id": "kondratyuk2023videopoet",
+    "title": "VideoPoet: A Large Language Model for Zero-Shot Video Generation",
+    "shortTitle": "VideoPoet",
+    "year": 2024,
+    "summary": "Uses a decoder-only Transformer to autoregressively generate MAGVIT-v2 visual tokens and SoundStream audio tokens from multimodal conditions. A unified training scheme supports text-to-video, image-to-video, video editing, and video-to-audio tasks.",
+    "url": "https://arxiv.org/abs/2312.14125",
+    "arxiv": "2312.14125",
+    "bibtex": "@InProceedings{pmlr-v235-kondratyuk24a,\n  title = \t {{V}ideo{P}oet: A Large Language Model for Zero-Shot Video Generation},\n  author =       {Kondratyuk, Dan and Yu, Lijun and Gu, Xiuye and Lezama, Jose and Huang, Jonathan and Schindler, Grant and Hornung, Rachel and Birodkar, Vighnesh and Yan, Jimmy and Chiu, Ming-Chang and Somandepalli, Krishna and Akbari, Hassan and Alon, Yair and Cheng, Yong and Dillon, Joshua V. and Gupta, Agrim and Hahn, Meera and Hauth, Anja and Hendon, David and Martinez, Alonso and Minnen, David and Sirotenko, Mikhail and Sohn, Kihyuk and Yang, Xuan and Adam, Hartwig and Yang, Ming-Hsuan and Essa, Irfan and Wang, Huisheng and Ross, David A and Seybold, Bryan and Jiang, Lu},\n  booktitle = \t {Proceedings of the 41st International Conference on Machine Learning},\n  pages = \t {25105--25124},\n  year = \t {2024},\n  editor = \t {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},\n  volume = \t {235},\n  series = \t {Proceedings of Machine Learning Research},\n  month = \t {21--27 Jul},\n  publisher =    {PMLR},\n  pdf = \t {https://raw.githubusercontent.com/mlresearch/v235/main/assets/kondratyuk24a/kondratyuk24a.pdf},\n  url = \t {https://proceedings.mlr.press/v235/kondratyuk24a.html},\n}",
+    "venue": "ICML 2024",
+    "authors": "Dan Kondratyuk, Lijun Yu, Xiuye Gu, Jose Lezama, Jonathan Huang, Grant Schindler, Rachel Hornung, Vighnesh Birodkar, Jimmy Yan, Ming-Chang Chiu, Krishna Somandepalli, Hassan Akbari, Yair Alon, Yong Cheng, Joshua V. Dillon, Agrim Gupta, Meera Hahn, Anja Hauth, David Hendon, Alonso Martinez, David Minnen, Mikhail Sirotenko, Kihyuk Sohn, Xuan Yang, Hartwig Adam, Ming-Hsuan Yang, Irfan Essa, Huisheng Wang, David A Ross, Bryan Seybold, Lu Jiang",
+    "category": "foundations",
+    "subcategory": "General-video visual AR",
+    "tags": [
+      "AR foundations",
+      "visual autoregression",
+      "general video"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "pmlr-v235-kondratyuk24a",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "kondratyuk2023videopoet"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "yearPolicy": "Published ICML 2024 edition; first preprint was 2023.",
+      "metadata": "Official PMLR proceedings and arXiv metadata",
+      "summary": "Primary-paper synthesis",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2312.14125v4#S3.SS1",
+      "evidence": [
+        {
+          "section": "§§3.1–3.2; Figure 2",
+          "url": "https://arxiv.org/html/2312.14125v4#S3.SS1",
+          "finding": "MAGVIT-v2 encodes complete video appearance into discrete spatiotemporal visual codes; the decoder-only model predicts visual and audio tokens. The visual tokenizer decodes the codes to pixels. Text conditions use T5 embeddings."
+        },
+        {
+          "section": "§3.3; Appendix A.5.2",
+          "url": "https://arxiv.org/html/2312.14125v4",
+          "finding": "Separate super-resolution transformers refine the base visual output using masked token modeling. Evaluation concerns general video tasks, not a conversational-avatar deployment."
+        }
+      ],
+      "firstPreprintYear": 2023,
+      "firstPreprintDate": "2023-12-21",
+      "bibtexSource": "https://proceedings.mlr.press/v235/kondratyuk24a.html",
+      "bibtexNote": "All official PMLR bibliographic fields retained; abstract field omitted. Official publication metadata uses Jose Lezama, Joshua V. Dillon and David A Ross; arXiv uses José Lezama, Josh Dillon and David A. Ross.",
+      "note": "General-video methodology reference; not counted as a virtual-human primary-route method. The package classification and first-preprint date are correct. Add ICML 2024 publication metadata and cite the final v4 paper for evidence; supplied v2 evidence remains architecturally consistent.",
+      "publicationUrl": "https://proceedings.mlr.press/v235/kondratyuk24a.html"
+    }
+  },
+  {
+    "id": "yan2021videogpt",
+    "title": "VideoGPT: Video Generation using VQ-VAE and Transformers",
+    "shortTitle": "VideoGPT",
+    "year": 2021,
+    "summary": "Learns discrete video latents with a spatiotemporal VQ-VAE, then trains a GPT-style prior to generate those codes autoregressively. Its experiments establish an early visual-token AR foundation, including human-action clips from UCF-101.",
+    "url": "https://arxiv.org/abs/2104.10157",
+    "arxiv": "2104.10157",
+    "bibtex": "@misc{yan2021videogpt,\n  title={VideoGPT: Video Generation using VQ-VAE and Transformers},\n  author={Wilson Yan and Yunzhi Zhang and Pieter Abbeel and Aravind Srinivas},\n  year={2021},\n  eprint={2104.10157},\n  archivePrefix={arXiv},\n  primaryClass={cs.CV}\n}",
+    "venue": "arXiv preprint",
+    "authors": "Wilson Yan, Yunzhi Zhang, Pieter Abbeel, Aravind Srinivas",
+    "category": "foundations",
+    "subcategory": "General-video visual AR",
+    "tags": [
+      "AR foundations",
+      "visual autoregression",
+      "general video"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "yan2021videogpt",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "yan2021videogpt"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "yearPolicy": "ArXiv 2021 preprint.",
+      "metadata": "arXiv and official repository citation",
+      "summary": "Primary-paper synthesis",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2104.10157v2#S3",
+      "evidence": [
+        {
+          "section": "§3; Figure 2; §4.5",
+          "url": "https://arxiv.org/html/2104.10157v2#S3",
+          "finding": "The VQ-VAE compresses video using 3D convolutions and axial attention. The second-stage GPT prior models the discrete spatiotemporal visual codes, decoded by the video VQ-VAE. UCF-101 experiments concern general human-action video."
+        }
+      ],
+      "firstPreprintYear": 2021,
+      "firstPreprintDate": "2021-04-20",
+      "bibtexSource": "https://github.com/wilson1yan/VideoGPT#citation",
+      "bibtexNote": "Official repository citation with whitespace normalized. No conference venue verified from primary sources.",
+      "note": "General-video methodology reference; not counted as a virtual-human primary-route method. No substantive inaccuracies found in the supplied package. The paper emphasizes unconditional UCF-101 experiments, while the official project also displays class-conditional UCF-101 samples."
+    }
+  },
+  {
+    "id": "zhang2026vidus2",
+    "title": "Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation",
+    "shortTitle": "Vidu S2",
+    "year": 2026,
+    "summary": "Vidu S2-Avatar uses a joint audio-video Diffusion Transformer with block-causal denoising and Self-Replay Forcing to support changing references and interactive character generation. The broader system also provides streaming video editing and explores spatial video.",
+    "url": "https://arxiv.org/abs/2609.11638",
+    "arxiv": "2609.11638",
+    "bibtex": "@misc{zhang2026vidus2,\n  title = {{Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation}},\n  author = {Zhang, Jintao and Jiang, Kai and Chen, Jintao and Wang, Xu and Liu, Deyuan and Li, Jungang and Chen, Dechuang and Lin, Ming and Zhou, Jingjiang and Jin, Haopeng and Jia, Qi and Wang, Xiaohang and Wang, Yaole and Zhang, Zhanqiang and Li, Ran and Huang, Zhengkun and Xiong, Shuyue and Wang, Yuji and Dai, Zikun and He, Hui and Luo, Yang and Ning, Mang and Feng, Weiqi and Ye, Chengyang and Lin, Xinyue and Zhao, Min and Zhu, Hongzhou and Tan, Hengkai and Wang, Zeyuan and Xiang, Chendong and Zheng, Kaiwen and Deng, Zhijie and Bao, Fan and Chen, Jianfei and Zhu, Jun},\n  year = {2026},\n  eprint = {2609.11638},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CV},\n  url = {https://arxiv.org/abs/2609.11638}\n}",
+    "venue": "arXiv preprint",
+    "authors": "Jintao Zhang, Kai Jiang, Jintao Chen, Xu Wang, Deyuan Liu, Jungang Li, Dechuang Chen, Ming Lin, Jingjiang Zhou, Haopeng Jin, Qi Jia, Xiaohang Wang, Yaole Wang, Zhanqiang Zhang, Ran Li, Zhengkun Huang, Shuyue Xiong, Yuji Wang, Zikun Dai, Hui He, Yang Luo, Mang Ning, Weiqi Feng, Chengyang Ye, Xinyue Lin, Min Zhao, Hongzhou Zhu, Hengkai Tan, Zeyuan Wang, Chendong Xiang, Kaiwen Zheng, Zhijie Deng, Fan Bao, Jianfei Chen, Jun Zhu",
+    "category": "diffusion",
+    "subcategory": "Interactive audiovisual diffusion",
+    "tags": [
+      "streaming",
+      "joint audio-video",
+      "block-causal denoising",
+      "Self-Replay Forcing",
+      "dynamic references"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "zhang2026vidus2",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "zhang2026vidus2"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "metadata": "Original arXiv metadata, verified 2026-10-09",
+      "summary": "Original paper v1 method synthesis",
+      "yearPolicy": "Year of the cited arXiv edition",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2609.11638v1",
+      "evidenceUrls": [
+        "https://arxiv.org/abs/2609.11638",
+        "https://arxiv.org/html/2609.11638v1"
+      ],
+      "firstPreprintDate": "2026-09-10",
+      "verifiedVersion": "v1",
+      "revisedDate": "2026-09-10",
+      "note": "Diffusion classification follows Section 2.2: the DiT denoises dense audiovisual latents; block recurrence does not introduce an independent visual-token AR backbone. Scope includes both avatar generation and general video editing/spatial video; do not present every component as a talking-head method. Metadata agrees with the local collection; first submitted 2026-09-10. No public model-code availability claim is made."
+    }
+  },
+  {
+    "id": "huang2026flowactr2",
+    "title": "FlowAct-R2: Beyond Talking Avatar via Streaming Multimodal References and Proactive Agent Planning",
+    "shortTitle": "FlowAct-R2",
+    "year": 2026,
+    "summary": "FlowAct-R2 adapts the Seedance 2.0 Mini diffusion backbone to rolling prompts, audio, and changing multimodal references, with temporal reference alignment and noised history conditioning. A separate interaction agent plans and schedules behaviors that the generator realizes as a continuous video stream.",
+    "url": "https://arxiv.org/abs/2609.35728",
+    "arxiv": "2609.35728",
+    "bibtex": "@misc{huang2026flowactr2,\n  title = {{FlowAct-R2: Beyond Talking Avatar via Streaming Multimodal References and Proactive Agent Planning}},\n  author = {Huang, Ziyao and Rong, Zhengkun and Qin, Shiyang and Liang, Shuang and Hu, Wentao and Luo, Yuxuan and Zhang, Yuan and Gao, Mingyuan},\n  year = {2026},\n  eprint = {2609.35728},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CV},\n  url = {https://arxiv.org/abs/2609.35728}\n}",
+    "venue": "arXiv preprint",
+    "authors": "Ziyao Huang, Zhengkun Rong, Shiyang Qin, Shuang Liang, Wentao Hu, Yuxuan Luo, Yuan Zhang, Mingyuan Gao",
+    "category": "diffusion",
+    "subcategory": "Interactive streaming diffusion",
+    "tags": [
+      "streaming",
+      "diffusion forcing",
+      "multimodal references",
+      "agent planning",
+      "history conditioning"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "huang2026flowactr2",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "huang2026flowactr2"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "metadata": "Original arXiv metadata, verified 2026-10-09",
+      "summary": "Original paper v1 method synthesis",
+      "yearPolicy": "Year of the cited arXiv edition",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2609.35728v1",
+      "evidenceUrls": [
+        "https://arxiv.org/abs/2609.35728",
+        "https://arxiv.org/html/2609.35728v1"
+      ],
+      "firstPreprintDate": "2026-09-28",
+      "verifiedVersion": "v1",
+      "revisedDate": "2026-09-28",
+      "note": "Sections 2.1–2.2 assign dense video synthesis to the reference-to-video DiT and behavior planning to a separate agent; classify the visual generator as diffusion. The arXiv first-submission date is 2026-09-28; the manuscript title block says September 29, 2026. Use the arXiv date for chronological filtering. The paper links a Hugging Face demo Space; this does not establish a public model-code release."
+    }
+  },
+  {
+    "id": "habib2026pixreenact",
+    "title": "PixReenact: Pixel-Conditioned Causal Video Diffusion for Streaming Head-Avatar Reenactment",
+    "shortTitle": "PixReenact",
+    "year": 2026,
+    "summary": "PixReenact conditions a causal video diffusion model directly on encoded reference and driving-video pixels for cross-identity head reenactment. Dual-teacher distillation trains a four-step rolling denoiser that emits four frames per update, using one latent of driving-video lookahead.",
+    "url": "https://arxiv.org/abs/2610.05233",
+    "arxiv": "2610.05233",
+    "bibtex": "@misc{habib2026pixreenact,\n  title = {{PixReenact: Pixel-Conditioned Causal Video Diffusion for Streaming Head-Avatar Reenactment}},\n  author = {Habib, Gavriel and Samuel, Dvir and Shimshi, Or and Ben-Ari, Rami},\n  year = {2026},\n  eprint = {2610.05233},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CV},\n  url = {https://arxiv.org/abs/2610.05233}\n}",
+    "venue": "arXiv preprint",
+    "authors": "Gavriel Habib, Dvir Samuel, Or Shimshi, Rami Ben-Ari",
+    "category": "diffusion",
+    "subcategory": "Streaming head reenactment",
+    "tags": [
+      "streaming",
+      "pixel conditioning",
+      "cross-identity reenactment",
+      "dual-teacher distillation",
+      "rolling denoising"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "habib2026pixreenact",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "habib2026pixreenact"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "metadata": "Original arXiv metadata, verified 2026-10-09",
+      "summary": "Original paper v1 method synthesis",
+      "yearPolicy": "Year of the cited arXiv edition",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2610.05233v1",
+      "evidenceUrls": [
+        "https://arxiv.org/abs/2610.05233",
+        "https://arxiv.org/html/2610.05233v1"
+      ],
+      "firstPreprintDate": "2026-10-04",
+      "verifiedVersion": "v1",
+      "revisedDate": "2026-10-04",
+      "note": "Sections 3.2–3.4 and Appendix A identify a Wan2.1-T2V-1.3B DiT adapted with causal attention, LoRA, and CausVid-style DMD; dense visual latents remain diffusion-generated. Driving conditioning includes one-latent lookahead. The authors say this fits inside their rolling pipeline without additional emission delay; it is not zero-lookahead input causality. The official project URL is linked in the paper but returned a fetch error during verification. Public code was not verified."
+    }
+  },
+  {
+    "id": "su2026routedforcing",
+    "title": "Where and When to Force: Routed Forcing for Streaming Avatars",
+    "shortTitle": "Routed Forcing",
+    "year": 2026,
+    "summary": "Routed Forcing applies real-data distillation supervision to non-mouth person regions at high noise while retaining distribution matching elsewhere. This trains a causal OmniAvatar diffusion student to preserve motion diversity, lip synchronization, and scene quality during streaming.",
+    "url": "https://arxiv.org/abs/2609.30963",
+    "arxiv": "2609.30963",
+    "bibtex": "@misc{su2026routedforcing,\n  title = {{Where and When to Force: Routed Forcing for Streaming Avatars}},\n  author = {Su, Zihan and Lu, Siwen and Zhuang, Junhao and Xue, Zeyue and Huang, Haoyang and Li, Guanghao and Tan, Xiaofeng and Yuan, Chun and Duan, Nan},\n  year = {2026},\n  eprint = {2609.30963},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CV},\n  url = {https://arxiv.org/abs/2609.30963}\n}",
+    "venue": "arXiv preprint",
+    "authors": "Zihan Su, Siwen Lu, Junhao Zhuang, Zeyue Xue, Haoyang Huang, Guanghao Li, Xiaofeng Tan, Chun Yuan, Nan Duan",
+    "category": "diffusion",
+    "subcategory": "Streaming diffusion distillation",
+    "tags": [
+      "streaming",
+      "distillation",
+      "semantic region routing",
+      "noise-stage routing",
+      "motion diversity"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "su2026routedforcing",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "su2026routedforcing"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "metadata": "Original arXiv metadata, verified 2026-10-09",
+      "summary": "Original paper v1 method synthesis",
+      "yearPolicy": "Year of the cited arXiv edition",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2609.30963v1",
+      "evidenceUrls": [
+        "https://arxiv.org/abs/2609.30963",
+        "https://arxiv.org/html/2609.30963v1"
+      ],
+      "firstPreprintDate": "2026-09-25",
+      "verifiedVersion": "v1",
+      "revisedDate": "2026-09-25",
+      "note": "Section 4.1 uses a causal OmniAvatar-1.3B student initialized from LiveTalk and a bidirectional OmniAvatar-14B teacher; inference uses three latent frames per block and four denoising steps. The innovation changes diffusion-training supervision rather than visual-state ownership. Generalization beyond streaming avatars is left open in Section 4.4. Metadata agrees with the local collection. No official project or public code link was verified in the original paper."
+    }
+  },
+  {
+    "id": "huang2026dynaforcing",
+    "title": "DynaForcing: Overcoming Dynamic Collapse in Self-Forcing Distillation for Streaming Avatar Generation",
+    "shortTitle": "DynaForcing",
+    "year": 2026,
+    "summary": "DynaForcing addresses motion collapse during self-forcing distillation through data-anchored rollout starts, dynamics rewards, and reference-image perturbations. Its WanS2V diffusion student retains chunked streaming inference, while gradient replay reduces training memory requirements.",
+    "url": "https://arxiv.org/abs/2608.17707",
+    "arxiv": "2608.17707",
+    "bibtex": "@misc{huang2026dynaforcing,\n  title = {{DynaForcing: Overcoming Dynamic Collapse in Self-Forcing Distillation for Streaming Avatar Generation}},\n  author = {Huang, Yubo and Zhao, Sirui and Yao, Xinchen and Zhang, Zhengye and Huang, Jinyang and Cui, Fengqi and Wu, Shiwei and Chen, Enhong},\n  year = {2026},\n  eprint = {2608.17707},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CV},\n  note = {Accepted at ACM Multimedia 2026, as reported in the arXiv metadata},\n  url = {https://arxiv.org/abs/2608.17707}\n}",
+    "venue": "ACM Multimedia 2026 (accepted)",
+    "authors": "Yubo Huang, Sirui Zhao, Xinchen Yao, Zhengye Zhang, Jinyang Huang, Fengqi Cui, Shiwei Wu, Enhong Chen",
+    "category": "diffusion",
+    "subcategory": "Streaming diffusion distillation",
+    "tags": [
+      "streaming",
+      "self-forcing",
+      "dynamics rewards",
+      "reference perturbation",
+      "gradient replay"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "huang2026dynaforcing",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "huang2026dynaforcing"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "metadata": "Original arXiv metadata, verified 2026-10-09",
+      "summary": "Original paper v1 method synthesis",
+      "yearPolicy": "Year of the cited arXiv edition",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2608.17707v1",
+      "evidenceUrls": [
+        "https://arxiv.org/abs/2608.17707",
+        "https://arxiv.org/html/2608.17707v1"
+      ],
+      "firstPreprintDate": "2026-08-18",
+      "verifiedVersion": "v1",
+      "revisedDate": "2026-08-18",
+      "note": "The arXiv comments report acceptance at ACM International Conference on Multimedia (MM 2026); no proceedings DOI or page range was verified. The BibTeX below cites the arXiv version and records that reported acceptance. Sections 3–5 retain WanS2V-14B dense-video diffusion with LiveAvatar diffusion-forcing pretraining; the contribution changes training rather than replacing the visual generator. Reported throughput uses a single H800 node at 720×400; do not restate this as a verified single-GPU result. Public code was not verified."
+    }
+  },
+  {
+    "id": "li2026avatarforever",
+    "title": "Avatar-Forever: Decoupled Parallel Training for High-Quality Real-Time Infinite Avatars",
+    "shortTitle": "Avatar-Forever",
+    "year": 2026,
+    "summary": "Avatar-Forever independently trains a four-step distilled video generator and a recovery adapter that learns from accumulated rollout errors, then combines them for audio-driven avatars. ForeverCache reuses history features across denoising steps to accelerate streaming generation.",
+    "url": "https://arxiv.org/abs/2608.12107",
+    "arxiv": "2608.12107",
+    "bibtex": "@misc{li2026avatarforever,\n  title = {{Avatar-Forever: Decoupled Parallel Training for High-Quality Real-Time Infinite Avatars}},\n  author = {Li, Ruibin and Yang, Tao and Ma, Zhiyuan and Ai, Fangzhou and Wen, Shilei and Zhang, Lei},\n  year = {2026},\n  eprint = {2608.12107},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CV},\n  url = {https://arxiv.org/abs/2608.12107}\n}",
+    "venue": "arXiv preprint",
+    "authors": "Ruibin Li, Tao Yang, Zhiyuan Ma, Fangzhou Ai, Shilei Wen, Lei Zhang",
+    "category": "diffusion",
+    "subcategory": "Long-horizon streaming diffusion",
+    "tags": [
+      "streaming",
+      "decoupled training",
+      "recovery-oriented rollout",
+      "LoRA",
+      "history feature caching"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "li2026avatarforever",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "li2026avatarforever"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "metadata": "Original arXiv metadata, verified 2026-10-09",
+      "summary": "Original paper v1 method synthesis",
+      "yearPolicy": "Year of the cited arXiv edition",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2608.12107v1",
+      "evidenceUrls": [
+        "https://arxiv.org/abs/2608.12107",
+        "https://arxiv.org/html/2608.12107v1",
+        "https://leeruibin.github.io/avatarforever-project-page/",
+        "https://github.com/leeruibin/avatarforever"
+      ],
+      "firstPreprintDate": "2026-08-12",
+      "verifiedVersion": "v1",
+      "revisedDate": "2026-08-12",
+      "note": "Sections 3.1–3.3 retain an LTX dense-video denoiser; DMD and flow-matching recovery training place visual generation in the diffusion route. Author discrepancy: arXiv lists six authors including Shilei Wen; the project page and repository citation list five and omit him. The metadata and BibTeX here follow arXiv. The official repository contains inference code and a model download link. Its documented checkpoint uses LTX 2.3 22B; project examples beyond avatars should not be treated as an avatar-specific benchmark."
+    }
+  },
+  {
+    "id": "wang2026wananimate2",
+    "title": "Wan-Animate-2: Pushing the Application Boundaries of Character Animation",
+    "shortTitle": "Wan-Animate-2",
+    "year": 2026,
+    "summary": "Wan-Animate-2-Lite converts the paper’s character-animation diffusion model into a causal generator that processes eight-frame driving-video chunks. Teacher forcing, error-buffer conditioning, and self-forcing distillation address accumulated context errors and denoising cost.",
+    "url": "https://arxiv.org/abs/2608.06009",
+    "arxiv": "2608.06009",
+    "bibtex": "@misc{wang2026wananimate2,\n  title = {{Wan-Animate-2: Pushing the Application Boundaries of Character Animation}},\n  author = {Wang, Guangyuan and Hu, Li and Meng, Dechao and Zhang, Zhongyi and Zhang, Peng and Zhang, Xindi and Huang, Mingyang and Zhang, Ruoshi and Sun, Ke and Zhang, Zhe and Wang, Xingjun and Cheng, Gang and Xu, Hai and Zhang, Bang},\n  year = {2026},\n  eprint = {2608.06009},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CV},\n  url = {https://arxiv.org/abs/2608.06009}\n}",
+    "venue": "arXiv preprint",
+    "authors": "Guangyuan Wang, Li Hu, Dechao Meng, Zhongyi Zhang, Peng Zhang, Xindi Zhang, Mingyang Huang, Ruoshi Zhang, Ke Sun, Zhe Zhang, Xingjun Wang, Gang Cheng, Hai Xu, Bang Zhang",
+    "category": "diffusion",
+    "subcategory": "Streaming character animation (Lite)",
+    "tags": [
+      "Lite streaming variant",
+      "video-driven animation",
+      "causal DiT",
+      "error buffer",
+      "self-forcing distillation"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "wang2026wananimate2",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "wang2026wananimate2"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "metadata": "Original arXiv metadata, verified 2026-10-09",
+      "summary": "Original paper v2 method synthesis",
+      "yearPolicy": "Year of the cited arXiv edition",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2608.06009v2",
+      "evidenceUrls": [
+        "https://arxiv.org/abs/2608.06009",
+        "https://arxiv.org/html/2608.06009v2",
+        "https://github.com/Wan-Video/Wan-Animate-2"
+      ],
+      "firstPreprintDate": "2026-08-06",
+      "verifiedVersion": "v2",
+      "revisedDate": "2026-08-08",
+      "note": "One paper entry covers Base and Lite; the streaming description is specifically Lite (Section 4, Figure 2). Base uses a dual-branch DiT and is not established as the same streaming system. First submitted 2026-08-06; current v2 dated 2026-08-08 was verified. The local collection links v1. Repository release notes name Base and Distillation models, not a verified Lite checkpoint. Its BibTeX has a placeholder arXiv ID, a different title, and omits Xindi Zhang and Hai Xu; use the arXiv metadata below."
+    }
+  },
+  {
+    "id": "han2026vorchstreamer",
+    "title": "Vorch-Streamer: Extending Human Audio-Visual Generation to Real-Time Long-Form Streaming",
+    "shortTitle": "Vorch-Streamer",
+    "year": 2026,
+    "summary": "Vorch-Streamer adapts LTX2.3 to jointly generate audio and video through block-causal flow matching and four-step self-forcing distillation. A speech-planning language model conditions the audio branch, while bounded visual history supports long-form avatar streaming.",
+    "url": "https://arxiv.org/abs/2608.05663",
+    "arxiv": "2608.05663",
+    "bibtex": "@misc{han2026vorchstreamer,\n  title = {{Vorch-Streamer: Extending Human Audio-Visual Generation to Real-Time Long-Form Streaming}},\n  author = {Han, Menglin and Ding, Yang and Lu, Yulei and Yu, Haoran and Ma, Xin and Chen, Junyi and Ni, Zhangkai and Ma, Lin and Wang, Yaohui},\n  year = {2026},\n  eprint = {2608.05663},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.CV},\n  url = {https://arxiv.org/abs/2608.05663}\n}",
+    "venue": "arXiv preprint",
+    "authors": "Menglin Han, Yang Ding, Yulei Lu, Haoran Yu, Xin Ma, Junyi Chen, Zhangkai Ni, Lin Ma, Yaohui Wang",
+    "category": "diffusion",
+    "subcategory": "Joint audiovisual streaming diffusion",
+    "tags": [
+      "joint audio-video",
+      "streaming",
+      "flow matching",
+      "speech planning",
+      "bounded KV cache"
+    ],
+    "section": "AR paper collection supplement",
+    "source": {
+      "citationKey": "han2026vorchstreamer",
+      "sections": [],
+      "collection": {
+        "name": "AR_Paper_Collection",
+        "file": "papers.json",
+        "paperId": "han2026vorchstreamer"
+      }
+    },
+    "featured": false,
+    "provenance": {
+      "metadata": "Original arXiv metadata, verified 2026-10-09",
+      "summary": "Original paper v2 method synthesis",
+      "yearPolicy": "Year of the cited arXiv edition",
+      "linkSource": "Original arXiv record",
+      "verificationUrl": "https://arxiv.org/html/2608.05663v2",
+      "evidenceUrls": [
+        "https://arxiv.org/abs/2608.05663",
+        "https://arxiv.org/html/2608.05663v2",
+        "https://vorch-project.github.io/Vorch-Streamer-project/"
+      ],
+      "firstPreprintDate": "2026-08-06",
+      "verifiedVersion": "v2",
+      "revisedDate": "2026-08-07",
+      "note": "Sections 3.2–3.4 preserve bidirectional attention within approximately one-second blocks and causal bounded history across blocks. The external language model plans speech; the LTX diffusion backbone owns dense visual generation. First submitted 2026-08-06; current v2 dated 2026-08-07 was verified. The local collection links v1. The official project code link remains marked Coming soon. Evaluation targets joint text-to-audio-video generation, so audio-conditioned avatar baselines have different inputs."
     }
   }
 ]

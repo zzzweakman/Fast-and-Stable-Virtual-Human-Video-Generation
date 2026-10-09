@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { countRoutes, filterPapers, groupOf, paperUrl, readState, safeUrl } from '../catalog.js';
+import { countRoutes, countBrowseRoutes, crossListingOf, filterPapers, groupOf, paperUrl, readState, safeUrl } from '../catalog.js';
 
 const papers = JSON.parse(fs.readFileSync(new URL('../data/papers.json', import.meta.url), 'utf8'));
 const defaults = { q: '', route: 'all', year: 'all', tag: '', sort: 'newest' };
@@ -28,6 +28,32 @@ test('combined search, year, and route filters can find a specific paper', () =>
   assert.ok(matches.some(m => m.id === p.id));
   assert.equal(filterPapers(papers, { ...defaults, q: 'zzzz-no-such-method-98765' }).length, 0);
   assert.equal(filterPapers(papers, { ...defaults, q: 'LivePortrait', route: 'gan' }).length, 0);
+});
+
+test('a dataset baseline is discoverable in AR without duplicating records or statistics', () => {
+  const speaker = papers.find(p => p.id === 'zhang2025speakervid');
+  assert.equal(speaker.category, 'datasets');
+  assert.equal(crossListingOf(speaker, 'autoregressive').label, 'AR baseline');
+  for (const route of ['all', 'supporting', 'autoregressive']) {
+    const matches = filterPapers(papers, { ...defaults, route, q: 'SpeakerVid', year: String(speaker.year) });
+    assert.deepEqual(matches.map(p => p.id), [speaker.id]);
+    assert.equal(matches[0].bibtex, speaker.bibtex);
+  }
+  assert.equal(filterPapers(papers, { ...defaults, route: 'diffusion', q: 'SpeakerVid' }).length, 0);
+  const primary = countRoutes(papers), browsing = countBrowseRoutes(papers);
+  assert.equal(primary.autoregressive, papers.filter(p => p.category === 'autoregressive').length);
+  assert.equal(browsing.autoregressive, primary.autoregressive + 1);
+  assert.equal(Object.values(primary).reduce((a, b) => a + b, 0), papers.length);
+  assert.equal(filterPapers(papers, { ...defaults, route: 'autoregressive' }).length, browsing.autoregressive);
+  assert.ok(filterPapers(papers, { ...defaults, route: 'autoregressive', q: 'SpeakerVid 3D-VAE' }).some(p => p.id === speaker.id));
+});
+
+test('general-video AR foundations remain separate from the native method route', () => {
+  const foundations = filterPapers(papers, { ...defaults, route: 'supporting', tag: 'AR foundations' });
+  assert.deepEqual(new Set(foundations.map(p => p.shortTitle)), new Set(['NOVA', 'VideoPoet', 'VideoGPT']));
+  assert.ok(foundations.every(p => p.category === 'foundations'));
+  assert.equal(filterPapers(papers, { ...defaults, route: 'autoregressive', tag: 'AR foundations' }).length, 0);
+  assert.equal(new Set(papers.map(p => p.id)).size, papers.length);
 });
 
 test('sorting and historical buckets operate on numeric bibliography years', () => {

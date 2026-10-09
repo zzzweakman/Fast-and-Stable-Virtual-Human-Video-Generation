@@ -9,12 +9,17 @@ export const SUPPORT_LABELS = { foundations: 'Foundations', datasets: 'Datasets'
 export const groupOf = paper => Object.hasOwn ? (Object.hasOwn(ROUTES, paper.category) ? paper.category : 'supporting') : (Object.prototype.hasOwnProperty.call(ROUTES, paper.category) ? paper.category : 'supporting');
 export const textOf = value => Array.isArray(value) ? value.join(', ') : String(value || '');
 export const normalize = value => textOf(value).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+export const crossListingOf = (paper, route) => (paper.crossListings || []).find(listing => listing.route === route);
+export const matchesRoute = (paper, route) => route === 'all' || groupOf(paper) === route || Boolean(crossListingOf(paper, route));
+export function countBrowseRoutes(papers) {
+  return Object.fromEntries(Object.keys(ROUTES).map(route => [route, papers.filter(p => matchesRoute(p, route)).length]));
+}
 export function filterPapers(papers, state) {
   const tokens = normalize(state.q).trim().split(/\s+/).filter(Boolean);
   const result = papers.filter(p => {
-    if (state.route !== 'all' && groupOf(p) !== state.route) return false;
+    if (!matchesRoute(p, state.route)) return false;
     if (state.year !== 'all' && (state.year.startsWith('before:') ? p.year >= +state.year.split(':')[1] : p.year !== +state.year)) return false;
-    const haystack = normalize([p.title, p.shortTitle, p.authors, p.summary, p.subcategory, ...(p.tags || [])].join(' '));
+    const haystack = normalize([p.title, p.shortTitle, p.authors, p.summary, p.subcategory, ...(p.tags || []), ...(p.crossListings || []).map(c => `${c.label} ${c.summary}`)].join(' '));
     if (state.tag && !haystack.includes(normalize(state.tag))) return false;
     return tokens.every(token => haystack.includes(token));
   });

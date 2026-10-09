@@ -22,6 +22,15 @@ def validate():
         assert urlparse(paper['url']).scheme in ('https', 'http'), f"Invalid URL: {paper['id']}"
         assert isinstance(paper['tags'], list), f"Tags must be a list: {paper['id']}"
         assert re.match(r'@\w+\s*\{', paper['bibtex']), f"Invalid citation: {paper['id']}"
+        listings = paper.get('crossListings', [])
+        assert isinstance(listings, list), f"Invalid cross-listings: {paper['id']}"
+        routes = [listing.get('route') for listing in listings]
+        assert len(routes) == len(set(routes)), f"Repeated cross-listing route: {paper['id']}"
+        for listing in listings:
+            assert listing['route'] in {'gan', 'diffusion', 'autoregressive', 'rendering'}, f"Invalid cross-listing route: {paper['id']}"
+            assert listing['route'] != paper['category'], f"Redundant cross-listing: {paper['id']}"
+            assert listing.get('label') and listing.get('summary'), f"Missing cross-listing context: {paper['id']}"
+            assert urlparse(listing.get('evidenceUrl', '')).scheme == 'https', f"Missing cross-listing evidence: {paper['id']}"
     for key, asset in assets.items():
         for field in ('path', 'heroPath'):
             if field not in asset:

@@ -34,7 +34,7 @@ with sync_playwright() as p:
     page.locator('#gallery-prev').click()
     assert page.locator('#hero-image img').get_attribute('src') == first_image
     page.locator('[data-filter-route="autoregressive"]').click()
-    expected_ar = sum(p['category'] == 'autoregressive' for p in papers)
+    expected_ar = sum(p['category'] == 'autoregressive' or any(c['route'] == 'autoregressive' for c in p.get('crossListings', [])) for p in papers)
     assert page.locator('.paper-card').count() == expected_ar
     page.locator('#search').fill('MIDAS')
     assert page.locator('.paper-card').count() == 1
