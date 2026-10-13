@@ -101,7 +101,7 @@ A spacious research index pairs open Manrope typography with real paper imagery.
 **Key Characteristics:**
 - Clear reading surfaces with thin borders and restrained rounding.
 - Source figures or explicitly labelled text covers.
-- Categorical colors connecting navigation, papers, and charts.
+- Categorical colors connecting navigation and papers; a single forest color for publication totals.
 - Dense literature browsing beneath a spacious introduction.
 
 ## Colors
@@ -112,7 +112,7 @@ Forest carries the identity, principal actions, heading emphasis, and selected m
 
 ### Secondary
 
-The categorical palette is semantic: warm brown for GAN, blue for diffusion, plum for autoregressive generation, and teal for rendering. Supporting references use muted green-gray. Preserve these mappings across route markers, paper metadata, filters, bars, and legends.
+The categorical palette is semantic: warm brown for GAN, blue for diffusion, plum for autoregressive generation, and teal for rendering. Supporting references use muted green-gray. Preserve these mappings across route markers, paper metadata, and filters. The annual publication chart uses forest throughout, without category segments or a legend.
 
 ### Neutral
 
@@ -132,7 +132,7 @@ Section headlines step down to 28px and 26px. Paper titles range from 16px on de
 
 The main container is capped at 1344px, with 48px side margins on wide screens, 32px below 1190px, and 20px below 720px. The desktop hero pairs a wider text column with a figure gallery. The catalogue uses a 190px filter rail and a three-column grid; the rail narrows to 166px at 1190px. Cards switch to two columns at 960px and one at 430px.
 
-Below 720px, filters wrap above results, the hero and supporting panels stack, and sticky navigation uses two rows. Anchor offsets account for the header. List view uses a 174px image column that shrinks to 100px on mobile. Principal mobile filter, citation, view, gallery, and chart-row controls have a 44px target floor.
+Below 720px, filters wrap above results, the hero and supporting panels stack, and sticky navigation uses two rows. Anchor offsets account for the header. List view uses a 174px image column that shrinks to 100px on mobile. Principal mobile filter, citation, view, and gallery controls have a 44px target floor. The landscape contains a single full-width annual publication chart.
 
 ## Elevation & Depth
 
@@ -151,8 +151,8 @@ Small tags and controls use compact rounding; reading cards and lens panels use 
 - **Navigation:** muted links turn forest on hover; the active section receives a thin underline. Scroll tracking updates the active state and aria-current.
 - **Filters and chips:** selected routes use a pale green surface; selected mechanisms use forest and white. Active-filter chips include an SVG remove control. Mobile filters wrap.
 - **Paper cards:** source preview or labelled text cover, route/year, title, citation metadata, summary, and up to three tags. The ruled footer holds source and citation actions; citations expand inside the card. Failed images use the text cover.
-- **Feedback and statistics:** live result counts accompany filters; empty and error states offer recovery actions. Chart bars filter the catalogue and repeat category text, colors, and a legend.
-- **Cross-listed baselines:** a mineral scope note in the AR view explains overlapping browsing, regional examples, and exclusive statistics. Baselines use the route color plus their source paper's supporting category, with a distinct title, summary, and tags; the same record retains its main-method presentation elsewhere. Wrapping 44px text-link targets lead to general-video foundations and spatial or unresolved AR context. Source-paper titles and citations remain visible in either view.
+- **Feedback and statistics:** the results toolbar reports the current result count; route filters show category names without number badges. Empty and error states offer recovery actions. The landscape shows one unsegmented annual total for each year, covering the full catalogue regardless of active filters. Clicking a year filters the catalogue. Category bars, category totals, and the chart legend are omitted to avoid competing counting conventions.
+- **Cross-listed baselines:** a mineral scope note in the AR view explains the inclusion of visual methods, related baselines, and motion controllers. Baselines use the route color plus their source paper's supporting category, with a distinct title, summary, and tags; the same record retains its main-method presentation elsewhere. Wrapping 44px text-link targets lead to general-video foundations and spatial or unresolved AR context. Source-paper titles and citations remain visible in either view.
 - **Stability disclosures:** native details/summary rows use thin rules. An SVG plus rotates when open; expanded text retains the reading floor.
 
 ## Do's and Don'ts

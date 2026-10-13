@@ -1,4 +1,4 @@
-import { ROUTES, SUPPORT_LABELS, groupOf, textOf, filterPapers, countRoutes, countBrowseRoutes, crossListingOf, paperUrl, safeUrl, readState } from './catalog.js';
+import { ROUTES, SUPPORT_LABELS, groupOf, textOf, filterPapers, crossListingOf, paperUrl, safeUrl, readState } from './catalog.js';
 import { PATTERNS, attachEvidence, defaultConfiguration, fieldText } from './evidence.js';
 
 const $ = selector => document.querySelector(selector);
@@ -91,8 +91,7 @@ function updateFilters() {
   const focused = document.activeElement;
   const restore = focused?.matches('[data-filter-route]') ? ['data-filter-route', focused.dataset.filterRoute]
     : focused?.matches('[data-mechanism]') ? ['data-mechanism', focused.dataset.mechanism] : null;
-  const counts = countBrowseRoutes(papers);
-  $('#route-filters').innerHTML = `<button class="route-filter ${state.route === 'all' ? 'active' : ''}" type="button" data-filter-route="all" aria-pressed="${state.route === 'all'}">All literature <span class="filter-count">${papers.length}</span></button>` + Object.entries(ROUTES).map(([key, route]) => `${key === 'supporting' ? '<div class="filter-separator"></div>' : ''}<button class="route-filter ${state.route === key ? 'active' : ''}" style="--category:${route.color}" type="button" data-filter-route="${key}" aria-pressed="${state.route === key}"><span class="filter-dot" aria-hidden="true"></span>${route.label}<span class="filter-count">${counts[key]}</span></button>`).join('');
+  $('#route-filters').innerHTML = `<button class="route-filter ${state.route === 'all' ? 'active' : ''}" type="button" data-filter-route="all" aria-pressed="${state.route === 'all'}">All literature</button>` + Object.entries(ROUTES).map(([key, route]) => `${key === 'supporting' ? '<div class="filter-separator"></div>' : ''}<button class="route-filter ${state.route === key ? 'active' : ''}" style="--category:${route.color}" type="button" data-filter-route="${key}" aria-pressed="${state.route === key}"><span class="filter-dot" aria-hidden="true"></span>${route.label}</button>`).join('');
   $('#mechanism-filters').innerHTML = mechanisms.map(tag => `<button type="button" class="mechanism-button ${state.tag === tag ? 'active' : ''}" data-mechanism="${esc(tag)}" aria-pressed="${state.tag === tag}" ${PATTERNS[tag] ? `title="${esc(PATTERNS[tag])}" aria-label="${esc(tag + ': ' + PATTERNS[tag])}"` : ''}>${esc(tag)}</button>`).join('');
   const chips = [];
   if (state.route !== 'all') chips.push(['route', ROUTES[state.route].label]);
@@ -111,15 +110,7 @@ function render({ preserveFilters = false } = {}) {
   $('#paper-grid').setAttribute('aria-busy', 'false');
   $('#results-count').innerHTML = `<strong>${filtered.length}</strong> ${filtered.length === 1 ? 'paper' : 'papers'}${filtered.length !== papers.length ? ` of ${papers.length}` : ' in the catalogue'}`;
   $('#pagination-note').textContent = filtered.length ? `Showing ${shown} of ${filtered.length} papers` : '';
-  const primaryCount = papers.filter(p => p.category === 'autoregressive').length;
-  const crossCount = papers.filter(p => crossListingOf(p, 'autoregressive')).length;
-  const controllerCount = papers.filter(p => crossListingOf(p, 'autoregressive')?.kind === 'controller').length;
-  const foundationCount = papers.filter(p => p.category === 'foundations' && p.tags.includes('AR foundations')).length;
-  const contextCount = papers.filter(p => p.category === 'context' && p.tags.includes('AR scope context')).length;
   $('#ar-scope').hidden = state.route !== 'autoregressive';
-  $('#ar-scope-summary').textContent = `${primaryCount} visual AR papers + ${crossCount - controllerCount} cross-listed baselines${controllerCount ? ` + ${controllerCount} AR ${controllerCount === 1 ? 'controller' : 'controllers'}` : ''}. Controllers retain their appearance-generation route in the charts; each source paper is counted once.`;
-  $('#ar-foundations-link').textContent = `Explore ${foundationCount} general-video AR foundations`;
-  $('#ar-context-link').textContent = `Explore ${contextCount} spatial or unresolved AR papers`;
   $('#empty-state').hidden = filtered.length > 0; $('#load-more').hidden = shown >= filtered.length;
   $('#export-button').disabled = !filtered.length;
   for (const view of ['grid', 'list']) {
@@ -145,23 +136,14 @@ function download(text, filename, type = 'application/x-bibtex') {
 }
 
 function renderStats() {
-  const counts = countRoutes(papers), mainRoutes = Object.keys(ROUTES).filter(k => k !== 'supporting'), total = papers.length - counts.supporting;
-  $('#method-total').textContent = `${total} method papers`;
-  const maxCount = Math.max(...mainRoutes.map(k => counts[k]), 1);
-  $('#route-chart').innerHTML = mainRoutes.map(key => `<button class="bar-row" type="button" data-stats-route="${key}" aria-label="${counts[key]} primary ${ROUTES[key].label} papers; explore this route and its cross-listed references"><span>${ROUTES[key].label}</span><span class="bar-track"><span class="bar-fill" style="--percent:${counts[key] / maxCount * 100}%;--category:${ROUTES[key].color}"></span></span><span class="bar-value">${counts[key]}</span></button>`).join('');
+  $('#catalogue-total').textContent = `${papers.length} papers in the catalogue`;
   const allYears = [...new Set(papers.map(p => p.year))].sort((a, b) => a - b), latest = allYears.at(-1), cutoff = latest - 9;
   const buckets = [];
   const older = papers.filter(p => p.year < cutoff);
   if (older.length) buckets.push({ label: `≤${cutoff - 1}`, value: `before:${cutoff}`, papers: older });
   for (let year = Math.max(cutoff, allYears[0]); year <= latest; year++) buckets.push({ label: String(year), value: String(year), papers: papers.filter(p => p.year === year) });
   const max = Math.max(...buckets.map(b => b.papers.length), 1);
-  $('#year-chart').innerHTML = buckets.map(b => {
-    const c = countRoutes(b.papers);
-    return `<button class="year-column" type="button" data-stats-year="${b.value}" title="${b.label}: ${b.papers.length} papers" aria-label="Explore ${b.papers.length} papers from ${b.label}"><span class="year-value">${b.papers.length}</span><span class="year-bar" style="--height:${b.papers.length / max * 126}px">${Object.keys(ROUTES).filter(k => c[k]).map(k => `<span class="year-segment" style="--part:${c[k] / b.papers.length * 100}%;--category:${ROUTES[k].color}"></span>`).join('')}</span><span class="year-label">${b.label}</span></button>`;
-  }).join('');
-  $('#year-legend').innerHTML = Object.values(ROUTES).map(route => `<li><span class="legend-swatch" style="background:${route.color}" aria-hidden="true"></span>${route.label}</li>`).join('');
-  const imageCount = papers.filter(p => imageFor(p)).length;
-  $('#coverage-line').innerHTML = `<span><strong>${papers.length}</strong> catalogued papers</span><span><strong>${total}</strong> route-assigned papers</span><span><strong>${counts.supporting}</strong> supporting references</span><span><strong>${imageCount}</strong> source previews</span>`;
+  $('#year-chart').innerHTML = buckets.map(b => `<button class="year-column" type="button" data-stats-year="${b.value}" title="${b.label}: ${b.papers.length} papers" aria-label="Explore ${b.papers.length} papers from ${b.label}"><span class="year-value">${b.papers.length}</span><span class="year-bar" style="--height:${b.papers.length / max}" aria-hidden="true"></span><span class="year-label">${b.label}</span></button>`).join('');
 }
 function renderFeature() {
   if (!featured.length) return;
@@ -249,7 +231,6 @@ document.addEventListener('click', async event => {
   const routeLink = event.target.closest('[data-route]'); if (routeLink) change({ route: routeLink.dataset.route, q: '', year: 'all', tag: '' });
   const tag = event.target.closest('[data-mechanism]'); if (tag) change({ tag: state.tag === tag.dataset.mechanism ? '' : tag.dataset.mechanism });
   const clear = event.target.closest('[data-clear]'); if (clear) change({ [clear.dataset.clear]: ['route', 'year'].includes(clear.dataset.clear) ? 'all' : '' });
-  const statsRoute = event.target.closest('[data-stats-route]'); if (statsRoute) change({ route: statsRoute.dataset.statsRoute, q: '', year: 'all', tag: '' }, true);
   const statsYear = event.target.closest('[data-stats-year]'); if (statsYear) change({ year: statsYear.dataset.statsYear, route: 'all', q: '', tag: '' }, true);
   const cite = event.target.closest('[data-cite]');
   if (cite) { const panel = document.getElementById(cite.getAttribute('aria-controls')); panel.hidden = !panel.hidden; cite.setAttribute('aria-expanded', String(!panel.hidden)); }
