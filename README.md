@@ -12,11 +12,14 @@ Python 3.10+ and Node.js 18+ are recommended. No package installation is needed.
 
 ```sh
 npm test
+python3 -m unittest discover -s tests -p 'test_*.py'
 python3 scripts/build.py
 python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 ```
 
 Open http://127.0.0.1:4173. Serve over HTTP rather than opening the HTML as a local file, because the catalogue loads as JSON.
+
+The build gives CSS and JavaScript files a shared content-based version, including module imports. Changes to the page, styles, or modules update their published URLs together, preventing cached assets from a previous layout from breaking the catalogue or annual chart.
 
 ## Current literature revision — 13 October 2026
 
