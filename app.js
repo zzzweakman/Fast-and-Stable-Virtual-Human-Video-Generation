@@ -1,5 +1,5 @@
 import { ROUTES, SUPPORT_LABELS, groupOf, textOf, filterPapers, countRoutes, countBrowseRoutes, crossListingOf, paperUrl, safeUrl, readState } from './catalog.js';
-import { PATTERNS, EVIDENCE_STATUS, attachEvidence, defaultConfiguration, fieldText } from './evidence.js';
+import { PATTERNS, attachEvidence, defaultConfiguration, fieldText } from './evidence.js';
 
 const $ = selector => document.querySelector(selector);
 const esc = value => textOf(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -15,13 +15,13 @@ const mechanisms = ['Streaming', 'Distillation', 'Caching', 'Identity', '3D Gaus
 
 function evidenceConfiguration(row) {
   const fields = Object.entries(row.fields).filter(([, f]) => f.status !== 'not-audited');
-  const labels = { throughput: 'Throughput', latency: 'Timing', hardware: 'Hardware', resolution: 'Resolution', precision: 'Precision', duration: 'Evaluated horizon', stability: 'Stability evidence', nfe: 'Model calls' };
+  const labels = { throughput: 'Throughput', latency: 'Timing', hardware: 'Hardware', resolution: 'Resolution', precision: 'Precision', duration: 'Evaluated horizon', stability: 'Temporal evaluation', nfe: 'Model calls' };
   const source = row.source;
   const url = safeUrl(source.url);
-  return `<p class="evidence-boundary">${esc(row.boundary)}</p>${fields.length ? `<dl class="evidence-fields">${fields.map(([key, f]) => `<dt>${esc(labels[key] || key)}</dt><dd>${esc(fieldText(f))}${f.note ? `<small>${esc(f.note)}</small>` : ''}</dd>`).join('')}</dl>` : '<p>Architecture record. Timing and duration fields have not been audited for this configuration.</p>'}
+  return `<p class="evidence-boundary">${esc(row.boundary)}</p>${fields.length ? `<dl class="evidence-fields">${fields.map(([key, f]) => `<dt>${esc(labels[key] || key)}</dt><dd>${esc(fieldText(f))}${f.note ? `<small>${esc(f.note)}</small>` : ''}</dd>`).join('')}</dl>` : ''}
     ${row.assignment ? `<p><strong>Assignment:</strong> ${esc(row.assignment.reason)}</p>` : ''}
-    ${(row.patterns || []).map(p => `<p class="pattern-evidence"><strong>${esc(p.code)}</strong> · ${p.status.map(s => esc(EVIDENCE_STATUS[s])).join(', ')}<br>${esc(p.note)}</p>`).join('')}
-    <p class="evidence-source"><strong>Checked edition:</strong> ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(source.edition)}</a>` : esc(source.edition)}<br>${source.locations.map(esc).join('; ')}</p>
+    ${(row.patterns || []).filter(p => p.status.includes('A')).map(p => `<p class="pattern-evidence"><strong>${esc(p.code)} · ${esc(PATTERNS[p.code])}</strong><br>${esc(p.note)}</p>`).join('')}
+    <p class="evidence-source"><strong>Source edition:</strong> ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(source.edition)}</a>` : esc(source.edition)}<br>${source.locations.map(esc).join('; ')}</p>
     ${(row.additionalSources || []).map(s => `<p class="evidence-source"><strong>Additional source:</strong> <a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.edition)}</a><br>${s.locations.map(esc).join('; ')}</p>`).join('')}`;
 }
 
@@ -31,13 +31,14 @@ function provenance(p) {
   return `<div class="catalogue-provenance"><p><strong>Bibliography edition:</strong> ${esc(p.venue || 'Recorded bibliography entry')} · ${p.year}${cited ? ` · <a href="${esc(cited)}" target="_blank" rel="noopener noreferrer">Open cited edition</a>` : ''}</p>
     ${details.map(t => `<p>${esc(t)}</p>`).join('')}
     ${(pr.evidence || []).map(e => `<p><strong>${esc(e.version)}:</strong> ${esc(e.section)}${e.pdfPages ? `, PDF p. ${esc(e.pdfPages.join(', '))}` : ''}. ${esc(e.finding)}</p>`).join('')}
-    <p><strong>Catalogue provenance:</strong> ${esc(p.source?.collection || p.source?.bibliography || 'Manuscript collection')} · ${esc(p.source?.citationKey || p.id)}. ${esc(p.section || '')}</p></div>`;
+    <p><strong>Survey section:</strong> ${esc(p.section || '')}</p></div>`;
 }
 
 function evidenceDisclosure(p, index) {
   const rows = p.evidence || [], selected = defaultConfiguration(rows);
-  return `<details class="paper-evidence"><summary>${rows.length ? 'Fast / Stable evidence' : 'Source & catalogue provenance'}</summary><div class="evidence-content">
-    ${selected ? `${rows.length > 1 ? `<label for="evidence-config-${index}">Source configuration</label><select id="evidence-config-${index}" data-evidence-config="${esc(p.id)}">${rows.map(r => `<option value="${esc(r.id)}" ${r.id === selected.id ? 'selected' : ''}>${esc(r.configuration)}</option>`).join('')}</select>` : ''}<div class="configuration-content">${evidenceConfiguration(selected)}</div><p class="snapshot-note">Checked source configurations. Each value retains its reported measurement boundary.</p>` : '<p>A detailed Fast / Stable extraction is not yet available for this record.</p>'}
+  return `<details class="paper-evidence"><summary>${rows.length ? 'Reported measurements & source' : 'About this paper'}</summary><div class="evidence-content">
+    ${selected ? `${rows.length > 1 ? `<label for="evidence-config-${index}">Source configuration</label><select id="evidence-config-${index}" data-evidence-config="${esc(p.id)}">${rows.map(r => `<option value="${esc(r.id)}" ${r.id === selected.id ? 'selected' : ''}>${esc(r.configuration)}</option>`).join('')}</select>` : ''}<div class="configuration-content">${evidenceConfiguration(selected)}</div><p class="snapshot-note">Values reported by the original authors under the stated conditions. Our common-environment measurements are pending.</p>` : ''}
+    ${(p.mechanisms || []).map(m => `<p class="pattern-evidence"><strong>${esc(m.code)} · ${esc(PATTERNS[m.code])}</strong><br>${esc(m.note)}</p>`).join('')}
     ${provenance(p)}</div></details>`;
 }
 

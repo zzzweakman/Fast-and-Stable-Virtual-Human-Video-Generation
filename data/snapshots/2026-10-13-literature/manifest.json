@@ -1,0 +1,44 @@
+{
+  "snapshot": "VH-2026-10-13-literature",
+  "manuscript": {
+    "path": "assets/survey/survey-2026-10-13-literature.pdf",
+    "pages": 55,
+    "references": 263
+  },
+  "sourcePackage": "assets/survey/virtual-human-survey-literature-2026-10-13.zip",
+  "catalogue": {
+    "path": "data/snapshots/2026-10-13-literature/papers.json",
+    "records": 185
+  },
+  "measurements": "Pending; template contains only a header.",
+  "files": [
+    {
+      "path": "assets/survey/survey-2026-10-13-literature.pdf",
+      "sha256": "1e01211cf0e63ea8c9427c8ebc65e9be6f9d9c2811423a1a2ad755f8651b2111"
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-literature-2026-10-13.zip",
+      "sha256": "a386d3430d13931a4e86e17f9c6d59b6e42efc304fe58cbe2d425b1fa1b50427"
+    },
+    {
+      "path": "data/literature-additions-2026-10-13.bib",
+      "sha256": "eee050393ffcb0c1f4fa893808994ff70e2b668be22abf1848386e4a4ffbb128"
+    },
+    {
+      "path": "data/literature-update-2026-10-13.md",
+      "sha256": "940fdebd014fea358a1757447d5c9f2936e38b7bb25ceed1e399ca49020a6829"
+    },
+    {
+      "path": "data/measurement-template-2026-10-13.csv",
+      "sha256": "82be515e069e3b8649474792e85848660ef5dacd199f5c57c9f0743c4e8d92a6"
+    },
+    {
+      "path": "data/snapshots/2026-10-13-literature/papers.json",
+      "sha256": "7cef0f22b19a9e7675b45828ec7075975c307716fa6c290065138b9f71ae596b"
+    },
+    {
+      "path": "data/snapshots/2026-10-13-literature/paper-previews.json",
+      "sha256": "7e3b8dd31064407b7945f6dac3485fc999f7121e6c849dd1b6fa4ce87d77079d"
+    }
+  ]
+}

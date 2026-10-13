@@ -11,8 +11,32 @@ const audited = attachEvidence(papers, snapshot);
 
 test('hybrid correction preserves one primary record and the total catalogue', () => {
   assert.equal(papers.find(p => p.id === 'wang2023styleavatar').category, 'rendering');
-  assert.equal(papers.length, 164);
-  assert.deepEqual(countRoutes(papers), { gan: 21, diffusion: 43, autoregressive: 5, rendering: 54, supporting: 41 });
+  assert.equal(papers.length, 185);
+  assert.deepEqual(countRoutes(papers), { gan: 21, diffusion: 53, autoregressive: 5, rendering: 59, supporting: 47 });
+});
+
+test('new literature keeps cache lifetime and visual ownership distinct', () => {
+  const find = id => audited.find(p => p.id === id);
+  for (const id of ['song2026interactiveavatar', 'gan2026taomate', 'zhang2026liveanimate']) assert.ok(matchesPattern(find(id), 'L2'), id);
+  assert.ok(!matchesPattern(find('li2026avatarforever'), 'L2'));
+  assert.equal(find('an2026motar').category, 'diffusion');
+  assert.equal(find('hong2026efficientsync').category, 'rendering');
+  assert.equal(find('wang2026talklikeyou').category, 'rendering');
+  assert.equal(find('zhang2026ttsac').category, 'context');
+});
+
+test('source identity survives title collisions and catalogue updates', () => {
+  const arxivIds = papers.filter(p => p.arxiv).map(p => p.arxiv.replace(/v\d+$/, ''));
+  assert.equal(new Set(arxivIds).size, arxivIds.length);
+  assert.equal(papers.find(p => p.id === 'cui2026avatarforcing').arxiv, '2603.14331');
+  assert.equal(papers.find(p => p.id === 'zhu2026omnihumandataset').category, 'datasets');
+  const joy = papers.find(p => p.id === 'li2025joyavatar');
+  assert.equal(joy.shortTitle, 'JoyStreamer-Flash');
+  assert.match(joy.url, /2512\.11423v3$/);
+  assert.ok(filterPapers(papers, { ...defaults, q: 'JoyAvatar-Flash' }).some(p => p.id === joy.id));
+  const archived = JSON.parse(fs.readFileSync(new URL('../data/snapshots/2026-10-09-final/papers.json', import.meta.url), 'utf8'));
+  assert.equal(archived.length, 164);
+  assert.deepEqual(countRoutes(archived), { gan: 21, diffusion: 43, autoregressive: 5, rendering: 54, supporting: 41 });
 });
 
 test('pattern filters distinguish corrupted history, generated history, and memory types', () => {

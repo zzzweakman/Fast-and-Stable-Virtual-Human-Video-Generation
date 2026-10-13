@@ -1,11 +1,11 @@
 {
   "surveyPdf": {
-    "path": "assets/survey/survey-2026-10-09-final.pdf",
-    "source": "virtual-human-survey/1009_final/main.tex",
-    "pages": 51,
-    "snapshot": "VH-2026-10-09-final",
-    "sha256": "0c945829ce35514c73c4a4ba0ae739f97cdab23f6d121b251a25144a97483130",
-    "note": "Completed illustrations and the checked OmniResponse/ResponseNet revision; compiled from the exact source files in 1009_final_overleaf.zip."
+    "path": "assets/survey/survey-2026-10-13-literature.pdf",
+    "source": "virtual-human-survey/1013_literature_enriched/main.tex",
+    "pages": 55,
+    "snapshot": "VH-2026-10-13-literature",
+    "sha256": "1e01211cf0e63ea8c9427c8ebc65e9be6f9d9c2811423a1a2ad755f8651b2111",
+    "note": "26 selectively integrated references; 263 cited references in total. Common-environment runtime and memory results are pending."
   },
   "figures": {
     "fig1_fast_stable": {
@@ -107,5 +107,13 @@
       "sha256": "4b2b9a3f74a160ee59fa0b6d2059bf2d8c9e3116b76c47bfc69d9105cb7d20d1",
       "note": "Returned author-provided diagram; retained in the illustrated manuscript."
     }
+  },
+  "previousRevision20261009": {
+    "path": "assets/survey/survey-2026-10-09-final.pdf",
+    "source": "virtual-human-survey/1009_final/main.tex",
+    "pages": 51,
+    "snapshot": "VH-2026-10-09-final",
+    "sha256": "0c945829ce35514c73c4a4ba0ae739f97cdab23f6d121b251a25144a97483130",
+    "note": "Completed illustrations and the checked OmniResponse/ResponseNet revision; compiled from the exact source files in 1009_final_overleaf.zip."
   }
 }

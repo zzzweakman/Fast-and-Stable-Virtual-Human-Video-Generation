@@ -68,6 +68,9 @@ def validate():
         assert isinstance(paper['year'], int) and 1900 <= paper['year'] <= 2026, f"Invalid year: {paper['id']}"
         assert urlparse(paper['url']).scheme in ('https', 'http'), f"Invalid URL: {paper['id']}"
         assert isinstance(paper['tags'], list), f"Tags must be a list: {paper['id']}"
+        for mechanism in paper.get('mechanisms', []):
+            assert mechanism.get('code') in {'L1','L2','L3','L4-G','L4-C','L5'}, f"Invalid mechanism: {paper['id']}"
+            assert mechanism.get('note') and urlparse(mechanism.get('sourceUrl', '')).scheme == 'https', f"Missing mechanism source: {paper['id']}"
         assert set(paper.get('evidenceIds', [])) == by_paper[paper['id']], f"Evidence links out of sync: {paper['id']}"
         assert re.match(r'@\w+\s*\{', paper['bibtex']), f"Invalid citation: {paper['id']}"
         listings = paper.get('crossListings', [])

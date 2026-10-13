@@ -17,6 +17,10 @@ export function attachEvidence(papers, snapshot) {
 
 export function patternAssociations(paper) {
   const unique = new Map();
+  // Current literature annotations describe mechanisms without grading papers.
+  for (const p of paper.mechanisms || []) {
+    if (PATTERNS[p.code] && p.sourceUrl) unique.set(`${p.code}:${p.note}`, { ...p, documented: true });
+  }
   for (const row of paper.evidence || []) for (const p of row.patterns || []) {
     const key = `${p.code}:${p.note}`;
     if (!unique.has(key)) unique.set(key, p);
@@ -25,7 +29,7 @@ export function patternAssociations(paper) {
 }
 
 export function matchesPattern(paper, code) {
-  return patternAssociations(paper).some(p => (p.code === code || (code === 'L4' && p.code.startsWith('L4-'))) && p.status.includes('A'));
+  return patternAssociations(paper).some(p => (p.code === code || (code === 'L4' && p.code.startsWith('L4-'))) && (p.documented || p.status?.includes('A')));
 }
 
 export function defaultConfiguration(rows) {
