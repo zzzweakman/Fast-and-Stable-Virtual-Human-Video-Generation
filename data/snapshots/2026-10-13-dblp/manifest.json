@@ -1,0 +1,52 @@
+{
+  "snapshot": "VH-2026-10-13-dblp",
+  "manuscript": {
+    "path": "assets/survey/survey-2026-10-13-dblp.pdf",
+    "pages": 58,
+    "references": 263,
+    "dblpMatchedReferences": 252
+  },
+  "sourcePackage": "assets/survey/virtual-human-survey-dblp-2026-10-13.zip",
+  "catalogue": {
+    "path": "data/snapshots/2026-10-13-dblp/papers.json",
+    "records": 185,
+    "dblpMatchedRecords": 180
+  },
+  "referenceCheck": {
+    "path": "data/dblp-reference-check-2026-10-13.json",
+    "combinedRecords": 284,
+    "matched": 270,
+    "unmatched": 14
+  },
+  "measurements": "Pending; the template contains only a header.",
+  "files": [
+    {
+      "path": "assets/survey/survey-2026-10-13-dblp.pdf",
+      "sha256": "007fbe7169c274ce6ec90ce175264f024a804106b2e1d2589608c86bde9909f4"
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-dblp-2026-10-13.zip",
+      "sha256": "aa203af1a9a2d7b3681a249f72072e2d068c58f9e0ac4f927616f92a696ff2fb"
+    },
+    {
+      "path": "data/dblp-update-2026-10-13.md",
+      "sha256": "1f4be6bffc6c912dbdadf8ee349dc0321e66bec6264ae9d520c94b13522d4c51"
+    },
+    {
+      "path": "data/references-dblp-2026-10-13.bib",
+      "sha256": "b2e958b74f1d6ae2c4763772047f38dbd7766b962dd4ad8dbba48883f29866cd"
+    },
+    {
+      "path": "data/dblp-reference-check-2026-10-13.json",
+      "sha256": "2ef186c1768d2998aeb99f336e3cf20c8b193492c998d4ef2dd70c206838dbd7"
+    },
+    {
+      "path": "data/snapshots/2026-10-13-dblp/papers.json",
+      "sha256": "7f57f62f20f3199b276befc6329766626ebbeb65a005dc66378cfcf1e9df17a4"
+    },
+    {
+      "path": "data/measurement-template-2026-10-13.csv",
+      "sha256": "82be515e069e3b8649474792e85848660ef5dacd199f5c57c9f0743c4e8d92a6"
+    }
+  ]
+}

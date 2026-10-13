@@ -21,7 +21,18 @@ Open http://127.0.0.1:4173. Serve over HTTP rather than opening the HTML as a lo
 
 The build gives CSS and JavaScript files a shared content-based version, including module imports. Changes to the page, styles, or modules update their published URLs together, preventing cached assets from a previous layout from breaking the catalogue or annual chart.
 
-## Current literature revision — 13 October 2026
+## Current DBLP reference revision — 13 October 2026
+
+The current manuscript has **263 cited references** and 58 pages. The website retains **185 unique papers**. Of 284 combined citation records, 270 matched DBLP: 252 of the 263 cited manuscript references and 180 of the 185 website entries. The 14 unmatched records are retained with their original sources and listed explicitly; they are not declared DBLP-verified.
+
+- [Current survey PDF](assets/survey/survey-2026-10-13-dblp.pdf) and [complete source package](assets/survey/virtual-human-survey-dblp-2026-10-13.zip).
+- [Reference update notes](data/dblp-update-2026-10-13.md), [catalogue BibTeX](data/references-dblp-2026-10-13.bib), [before/after metadata](data/dblp-reference-check-2026-10-13.json), and [release manifest](data/snapshots/2026-10-13-dblp/manifest.json).
+
+Matched records use DBLP titles, ordered authors, condensed venues, citation years, pages and identifiers. Conference citation years follow the event year, as in DBLP BibTeX. Later version names such as JoyStreamer-Flash and FluentAvatar remain searchable and are explained alongside the DBLP titles JoyAvatar and AvatarSync. Source-specific method descriptions and measurements remain attached to the reviewed versions.
+
+All earlier PDF files, source packages and frozen snapshots remain unchanged. The measurement template still contains only a header.
+
+## Previous literature revision — 13 October 2026
 
 The manuscript now cites 263 references, including 26 selected additions checked against primary manuscripts. The catalogue contains **185 unique papers with source previews**: 21 newly added records and five revised existing entries. Primary route totals are GAN 21, diffusion 53, visual AR 5, and rendering 59; 47 supporting references are counted separately.
 
@@ -33,14 +44,14 @@ Cards describe methods and original-source measurements in plain language. The c
 
 ## Content and preserved sources
 
-- `data/papers.json`: curated records, summaries, original bibliography entries, and manuscript provenance.
+- `data/papers.json`: curated records, summaries, DBLP-aligned bibliography entries where matched, and manuscript provenance.
 - `data/catalog-notes.md`: selection policy and source limitations.
 - `data/ar-supplement-notes.md`: review of all 28 AR-labelled CSV rows, including the later correction to FluentAvatar's classification.
 - `data/ar-collection-review.md`: review of the 15-paper AR collection, baseline cross-listing, foundations, and streaming-diffusion additions.
 - `data/ar-second-pass-review.md`: historical AR additions, spatial and unresolved boundary cases, and recommended survey placements.
 - `data/image-supplement-review.md` and `data/image-supplement-audit.json`: validation and source checks for the 92 supplied missing previews.
 - `assets/papers/manifest.json`: preview provenance, source pages, figure captions, and image paths.
-- `assets/survey/survey-2026-10-13-literature.pdf`: current 55-page manuscript; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
+- `assets/survey/survey-2026-10-13-dblp.pdf`: current 58-page manuscript; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
 - `assets/survey/survey-2026-10-09.pdf`: the preserved earlier revision associated with snapshot VH-2026-10-09.
 - `assets/survey/survey.pdf`: the preserved draft reviewed on 9 October (`main_revised.pdf`, 48 pages).
 - `assets/survey/provenance.json`: source information for the survey PDF and diagrams.
@@ -50,7 +61,7 @@ Cards describe methods and original-source measurements in plain language. The c
 - `data/evidence-guide-final.md`: selection, missing-value, source-edition, and mechanism-evidence conventions.
 - `data/snapshots/2026-10-09-final/`: frozen catalogue and a manifest pairing its hashes with the revised PDF and evidence files.
 
-Methods are assigned by the manuscript's **visual owner**, not solely by whether any component uses GANs, diffusion, autoregression, or rendering. Supporting foundations, datasets, evaluation work, surveys, and related methods retain their own categories. Verified baselines and explicitly labelled AR controllers may also appear in route browsing through `crossListings`. Route filters show names without counts; the landscape shows only overall publication totals by year, counting each source paper once across the full catalogue regardless of active filters. This avoids mixing overlapping browsing counts with exclusive category totals. The strict AR route requires temporal visual-state dependence; regional outputs and model variants are labelled explicitly. Years follow the cited bibliography edition and may differ from the earliest preprint. Counts describe the curated collection and are not an exhaustive census or a speed leaderboard.
+Methods are assigned by the manuscript's **visual owner**, not solely by whether any component uses GANs, diffusion, autoregression, or rendering. Supporting foundations, datasets, evaluation work, surveys, and related methods retain their own categories. Verified baselines and explicitly labelled AR controllers may also appear in route browsing through `crossListings`. Route filters show names without counts; the landscape shows only overall publication totals by year, counting each source paper once across the full catalogue regardless of active filters. This avoids mixing overlapping browsing counts with exclusive category totals. The strict AR route requires temporal visual-state dependence; regional outputs and model variants are labelled explicitly. Years follow the DBLP citation edition where matched; unmatched records retain their original-source year. Citation years may differ from the earliest preprint. Counts describe the curated collection and are not an exhaustive census or a speed leaderboard.
 
 The supplied Feishu literature document returned HTTP 404 during preparation. The local CSV and two AR collections were reviewed against original papers. The archived 9 October catalogue contains **164 unique papers, all with source previews**; AR browsing shows **five visual-AR papers, three cross-listed baselines, and one AR controller**. The second pass added DualLip, the MMVID and ParaLip source papers, and spatial-AR context for Taming Transformer. FluentAvatar remains available as related context because its strict temporal dependence is unresolved. The review notes explain the evidence and survey implications. Source paper previews are reproduced for scholarly reference and remain attributable to their respective authors. The supplied missing-image package filled all 92 remaining preview gaps after checksum, original-source, and visual checks. A visibly labelled text cover remains the fallback if an image cannot load. Manrope is distributed under its included SIL Open Font License.
 

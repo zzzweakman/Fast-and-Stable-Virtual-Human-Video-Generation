@@ -156,7 +156,7 @@ test('spatial and unresolved AR cases remain discoverable outside strict tempora
 test('OmniResponse is discoverable as a 2025 AR controller without changing visual-AR counts', () => {
   const omni = audited.find(p => p.id === 'luo2026omniresponse');
   assert.equal(omni.year, 2025);
-  assert.equal(omni.venue, 'NeurIPS 2025');
+  assert.equal(omni.venue, 'NeurIPS');
   assert.equal(omni.category, 'rendering');
   assert.equal(crossListingOf(omni, 'autoregressive').kind, 'controller');
   for (const route of ['all', 'autoregressive', 'rendering']) {

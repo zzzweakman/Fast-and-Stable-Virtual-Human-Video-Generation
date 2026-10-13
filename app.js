@@ -28,7 +28,7 @@ function evidenceConfiguration(row) {
 function provenance(p) {
   const pr = p.provenance || {}, cited = safeUrl(pr.publicationUrl || pr.bibtexSource);
   const details = [pr.yearPolicy, pr.note].filter(Boolean);
-  return `<div class="catalogue-provenance"><p><strong>Bibliography edition:</strong> ${esc(p.venue || 'Recorded bibliography entry')} · ${p.year}${cited ? ` · <a href="${esc(cited)}" target="_blank" rel="noopener noreferrer">Open cited edition</a>` : ''}</p>
+  return `<div class="catalogue-provenance"><p><strong>Bibliography edition:</strong> ${esc(p.venue || 'Recorded bibliography entry')} · ${p.year}${cited ? ` · <a href="${esc(cited)}" target="_blank" rel="noopener noreferrer">${p.bibliography?.authority === 'DBLP' ? 'View DBLP record' : 'Open cited edition'}</a>` : ''}</p>
     ${details.map(t => `<p>${esc(t)}</p>`).join('')}
     ${(pr.evidence || []).map(e => `<p><strong>${esc(e.version)}:</strong> ${esc(e.section)}${e.pdfPages ? `, PDF p. ${esc(e.pdfPages.join(', '))}` : ''}. ${esc(e.finding)}</p>`).join('')}
     <p><strong>Survey section:</strong> ${esc(p.section || '')}</p></div>`;
@@ -67,7 +67,7 @@ function renderPaper(p, index) {
     <div class="paper-tags">${(listing?.tags || p.tags || []).slice(0, 3).map(tag => `<span class="paper-tag">${esc(tag)}</span>`).join('')}</div></div>
     <div class="paper-footer"><a class="paper-source" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${arxiv ? 'arXiv' : 'Read paper'} ${icon('external')}</a><button class="citation-button" type="button" data-cite="${esc(p.id)}" aria-expanded="false" aria-controls="citation-${index}">${icon('quote')} Cite</button></div>
     ${evidenceDisclosure(p, index)}
-    <div class="citation-details" id="citation-${index}" hidden><strong>BibTeX citation</strong><p>Citation from the recorded source edition. Verify the publication record before use.</p><label class="sr-only" for="bib-${index}">BibTeX for ${esc(p.shortTitle || p.title)}</label><textarea id="bib-${index}" readonly spellcheck="false">${esc(p.bibtex)}</textarea><div class="citation-actions"><button type="button" data-copy="${esc(p.id)}">Copy citation</button><button type="button" data-download="${esc(p.id)}">Download .bib</button></div></div>
+    <div class="citation-details" id="citation-${index}" hidden><strong>BibTeX citation</strong><p>${p.bibliography?.authority === 'DBLP' ? 'Bibliographic details follow DBLP, checked 13 October 2026.' : 'Citation retained from the original source; no matching DBLP record was found on 13 October 2026.'}</p><label class="sr-only" for="bib-${index}">BibTeX for ${esc(p.shortTitle || p.title)}</label><textarea id="bib-${index}" readonly spellcheck="false">${esc(p.bibtex)}</textarea><div class="citation-actions"><button type="button" data-copy="${esc(p.id)}">Copy citation</button><button type="button" data-download="${esc(p.id)}">Download .bib</button></div></div>
     </article>`;
 }
 
