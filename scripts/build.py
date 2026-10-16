@@ -49,7 +49,7 @@ def main():
     shutil.copytree(ROOT / 'data/snapshots', out / 'data/snapshots', dirs_exist_ok=True)
     for name in ('dblp-update-2026-10-13.md', 'references-dblp-2026-10-13.bib', 'dblp-reference-check-2026-10-13.json'):
         shutil.copy2(ROOT / 'data' / name, out / 'data' / name)
-    for name in ('h200-results-2026-10-16.json', 'h200-results-2026-10-16.csv', 'h200-measurement-notes-2026-10-16.md'):
+    for name in ('h200-results-2026-10-16.json', 'h200-results-2026-10-16.csv', 'h200-measurement-notes-2026-10-16.md', 'ar-measurement-coverage-2026-10-16.md'):
         shutil.copy2(ROOT / 'data' / name, out / 'data' / name)
     (out / '.nojekyll').touch()
     print(f'Built static website: {out}')

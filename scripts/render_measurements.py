@@ -31,7 +31,7 @@ def render(data):
     groups=[]
     for route,title in GROUPS:
         rows=[r for r in data['rows'] if r['route']==route]
-        context='UniLS predicts motion and exports a FLAME visualization. This is not a native visual-AR or photorealistic appearance measurement.' if route=='motion' else 'Original demo inputs and implementation-specific processing stages.'
+        context='Open-source availability limited the AR evaluation: at measurement time, most surveyed AR-based methods had not released implementations, and UniLS was the only one we could identify and evaluate for this separate AR-component measurement. DyStream and Talker-T2AV are measured under Render-based because their renderers own appearance. UniLS predicts motion and exports a FLAME visualization; this result does not represent native visual-AR generation or the AR category as a whole.' if route=='motion' else 'Original demo inputs and implementation-specific processing stages.'
         groups.append(f'''<section class="result-group" id="{route}" aria-labelledby="{route}-title">
 <h2 id="{route}-title">{title}</h2><p class="result-group-note">{context}</p>
 <div class="results-scroll" role="region" aria-label="{title} measurement table; scroll horizontally for all columns" tabindex="0">
@@ -63,7 +63,7 @@ def render(data):
 <dt>Memory</dt><dd>NVML samples the process and descendants every 100 ms over the entire process, including loading and auxiliary stages. This sampled peak can miss brief allocations and is not a minimum device-capacity requirement. Separate PyTorch allocated/reserved counters are included in the downloads; some exceed the sampled NVML peak.</dd>
 <dt>Scope</dt><dd>These short demo runs do not measure matched visual quality, sustained service, streaming startup, or long-session drift. StyleAvatar uses two frames; LeapTalk uses one chunk; TaoMate uses one window. Paper-reported performance remains attached to the literature records.</dd></dl>
 <details class="result-configurations"><summary>Input settings and stage boundaries for each published run</summary><dl>{configs}</dl></details>
-<p><a href="data/h200-measurement-notes-2026-10-16.md">Download the protocol and field definitions</a></p></section>
+<p><a href="data/h200-measurement-notes-2026-10-16.md">Download the protocol and field definitions</a> · <a href="data/ar-measurement-coverage-2026-10-16.md">AR measurement coverage</a></p></section>
 </main><footer class="container results-footer"><p>Results published 16 October 2026.</p><a href="https://github.com/zzzweakman/Fast-and-Stable-Virtual-Human-Video-Generation">View data and source on GitHub</a></footer>
 </body></html>'''
 

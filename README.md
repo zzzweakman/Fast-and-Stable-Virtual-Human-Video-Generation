@@ -31,6 +31,8 @@ The build gives CSS and JavaScript files a shared content-based version, includi
 
 The tables report completed frames, output dimensions, Pre/Gen/Post times, loading, complete process time, and sampled process-tree GPU memory. Demo inputs and software differ. These are single-run implementation observations, not a controlled speed ranking or a quality/stability evaluation. The five blank entries contain no substitute values from original papers.
 
+Public code availability limits AR coverage: at measurement time, most surveyed AR-based methods had not released implementations. UniLS was the only open-source implementation we identified and could evaluate for the separate AR-component measurement. Its motion prediction and FLAME visualization do not represent native visual-AR generation or the AR category as a whole. DyStream and Talker-T2AV are measured under render-based methods because their renderers own appearance. See the [AR coverage clarification](data/ar-measurement-coverage-2026-10-16.md).
+
 `scripts/export_measurements.py` creates a public export from supplied measurements, withholding pending rows before writing any public artifact. `scripts/render_measurements.py` generates the static table page from that export. `scripts/validate_measurements.py` checks HTML/CSV/JSON consistency and blank fields; these checks run during the Pages build. The result tables remain available without JavaScript.
 
 ## Published DBLP manuscript and catalogue — 13 October 2026
