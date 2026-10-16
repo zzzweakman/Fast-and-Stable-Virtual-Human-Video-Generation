@@ -11,7 +11,8 @@ WEB_ASSETS = ('styles.css', 'app.js', 'catalog.js', 'evidence.js')
 
 def write_web_assets(source, output):
     """Keep each HTML release paired with its own styles and module graph."""
-    texts = {name: (source / name).read_text(encoding='utf-8') for name in ('index.html', *WEB_ASSETS)}
+    pages = sorted(path.name for path in source.glob('*.html'))
+    texts = {name: (source / name).read_text(encoding='utf-8') for name in (*pages, *WEB_ASSETS)}
     digest = hashlib.sha256()
     for name, content in texts.items():
         digest.update(name.encode('utf-8') + b'\0' + content.encode('utf-8') + b'\0')
@@ -27,9 +28,10 @@ def write_web_assets(source, output):
         (output / names[name]).write_text(content, encoding='utf-8')
         # Retain the original URLs for existing links and local source previews.
         shutil.copy2(source / name, output / name)
-    html = texts['index.html'].replace('href="styles.css"', f'href="{names["styles.css"]}"')
-    html = html.replace('src="app.js"', f'src="{names["app.js"]}"')
-    (output / 'index.html').write_text(html, encoding='utf-8')
+    for page in pages:
+        html = texts[page].replace('href="styles.css"', f'href="{names["styles.css"]}"')
+        html = html.replace('src="app.js"', f'src="{names["app.js"]}"')
+        (output / page).write_text(html, encoding='utf-8')
 
 
 def main():
@@ -46,6 +48,8 @@ def main():
         shutil.copy2(ROOT / 'data' / name, out / 'data' / name)
     shutil.copytree(ROOT / 'data/snapshots', out / 'data/snapshots', dirs_exist_ok=True)
     for name in ('dblp-update-2026-10-13.md', 'references-dblp-2026-10-13.bib', 'dblp-reference-check-2026-10-13.json'):
+        shutil.copy2(ROOT / 'data' / name, out / 'data' / name)
+    for name in ('h200-results-2026-10-16.json', 'h200-results-2026-10-16.csv', 'h200-measurement-notes-2026-10-16.md'):
         shutil.copy2(ROOT / 'data' / name, out / 'data' / name)
     (out / '.nojekyll').touch()
     print(f'Built static website: {out}')

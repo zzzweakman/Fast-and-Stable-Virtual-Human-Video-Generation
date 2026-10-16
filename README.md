@@ -21,7 +21,19 @@ Open http://127.0.0.1:4173. Serve over HTTP rather than opening the HTML as a lo
 
 The build gives CSS and JavaScript files a shared content-based version, including module imports. Changes to the page, styles, or modules update their published URLs together, preventing cached assets from a previous layout from breaking the catalogue or annual chart.
 
-## Current DBLP reference revision — 13 October 2026
+## Runtime and memory results — 16 October 2026
+
+**44 implementation results are now available**, measured on one H200 per run. Five entries are intentionally blank: MuseTalk and VideoReTalking await remeasurement; SoulX-LiveAct, SoulX-FlashTalk, and SoulX-FlashHead await measurement. They are excluded from the 44-result count. All their numerical and run-configuration fields are empty in CSV and `null` in JSON.
+
+- [View the results](https://zzzweakman.github.io/Fast-and-Stable-Virtual-Human-Video-Generation/measurements.html).
+- Download [CSV](data/h200-results-2026-10-16.csv) or [JSON](data/h200-results-2026-10-16.json), with full precision and per-run stage descriptions.
+- Read the [measurement protocol](data/h200-measurement-notes-2026-10-16.md) and [release manifest](data/snapshots/2026-10-16-measurements/manifest.json).
+
+The tables report completed frames, output dimensions, Pre/Gen/Post times, loading, complete process time, and sampled process-tree GPU memory. Demo inputs and software differ. These are single-run implementation observations, not a controlled speed ranking or a quality/stability evaluation. The five blank entries contain no substitute values from original papers.
+
+`scripts/export_measurements.py` creates a public export from supplied measurements, withholding pending rows before writing any public artifact. `scripts/render_measurements.py` generates the static table page from that export. `scripts/validate_measurements.py` checks HTML/CSV/JSON consistency and blank fields; these checks run during the Pages build. The result tables remain available without JavaScript.
+
+## Published DBLP manuscript and catalogue — 13 October 2026
 
 The current manuscript has **263 cited references** and 58 pages. The website retains **185 unique papers**. Of 284 combined citation records, 270 matched DBLP: 252 of the 263 cited manuscript references and 180 of the 185 website entries. The 14 unmatched records are retained with their original sources and listed explicitly; they are not declared DBLP-verified.
 

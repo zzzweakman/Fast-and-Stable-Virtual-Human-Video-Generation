@@ -16,7 +16,7 @@ Researchers and engineers exploring virtual-human video generation (inferred fro
 
 ## Product Purpose
 
-Showcase Fast and Stable Virtual Human Video Generation: A Survey, with real paper thumbnails, linked titles, concise summaries, annual publication totals, and a downloadable supplied draft.
+Showcase Fast and Stable Virtual Human Video Generation: A Survey, with real paper thumbnails, linked titles, concise summaries, annual publication totals, a downloadable supplied draft, and implementation runtime/memory results with explicit measurement boundaries.
 
 ## Capabilities and Constraints
 

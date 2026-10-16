@@ -10,6 +10,8 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 
 def validate():
+    from validate_measurements import validate_measurements
+    validate_measurements()
     papers = json.loads((ROOT / 'data/papers.json').read_text())
     assets = json.loads((ROOT / 'assets/papers/manifest.json').read_text())
     assert papers, 'Empty catalogue'

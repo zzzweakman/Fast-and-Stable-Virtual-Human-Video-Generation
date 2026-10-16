@@ -1,0 +1,30 @@
+{
+  "snapshot": "VH-2026-10-16-MEASUREMENTS",
+  "measured_at": "2026-10-15",
+  "published_results": 44,
+  "pending_results": 5,
+  "pending_methods": [
+    "MuseTalk",
+    "VideoReTalking",
+    "SoulX-LiveAct",
+    "SoulX-FlashTalk",
+    "SoulX-FlashHead"
+  ],
+  "files": [
+    {
+      "path": "data/h200-results-2026-10-16.json",
+      "sha256": "d3b421fb0ad6436f863aa7f5a0286723a2e889d645a69e340475c8a61964c014",
+      "bytes": 65451
+    },
+    {
+      "path": "data/h200-results-2026-10-16.csv",
+      "sha256": "f17bd415328d21bbf612ce7115f1a9c77f282878ec55ff246ba24e64d4ac3178",
+      "bytes": 27496
+    },
+    {
+      "path": "data/h200-measurement-notes-2026-10-16.md",
+      "sha256": "603bca7376ef541a9b66a1984aaea24877d3a5b6e82942a25eb086b70f188ae5",
+      "bytes": 5527
+    }
+  ]
+}

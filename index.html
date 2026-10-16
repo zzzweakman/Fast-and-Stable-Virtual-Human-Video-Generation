@@ -43,6 +43,7 @@
         <div class="hero-actions">
           <a class="button button-primary" href="#literature">Explore the literature <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
           <a class="button button-outline" href="assets/survey/survey-2026-10-13-dblp.pdf" target="_blank" rel="noopener">Read the survey <span class="file-label">PDF</span></a>
+          <a class="text-button" href="measurements.html">Runtime &amp; memory results</a>
         </div>
         <p class="edition-note">Research companion <span aria-hidden="true">·</span> Literature expanded · 13 October 2026</p>
       </div>
@@ -70,7 +71,7 @@
         <div><h2 id="literature-title">Explore the literature<span class="heading-period">.</span></h2><p>Find a method. Follow an idea. Go straight to the source.</p></div>
         <button class="text-button" type="button" id="export-button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/></svg>Export results <span class="file-label">BIB</span></button>
       </div>
-      <p class="catalog-introduction"><strong>Fast</strong> asks what it costs to produce visible output. <strong>Stable</strong> asks which attributes remain reliable over time. Open a paper for its mechanism, reported operating conditions, and source edition. A common-environment runtime and memory comparison is planned.</p>
+      <p class="catalog-introduction"><strong>Fast</strong> asks what it costs to produce visible output. <strong>Stable</strong> asks which attributes remain reliable over time. Open a paper for its mechanism, reported operating conditions, and source edition. <a href="measurements.html">Single-H200 runtime and memory results</a> are available separately, with each implementation's input and timing boundaries.</p>
       <details class="taxonomy-explanation" id="taxonomy">
         <summary>How routes and hybrid systems are assigned</summary>
         <div class="taxonomy-content"><p>Apply the rules in order: geometric reuse of identity-specific appearance → rendering; a noise-independent causal visual state with a local output head → visual AR; a temporal backbone repeatedly denoising the current visual sample → diffusion; otherwise, an adversarial feed-forward visual generator → GAN. The primary route is a reading index. Appearance representation, temporal state, training, and personalization remain separate annotations.</p>
@@ -128,7 +129,7 @@
       </div>
     </section>
 
-    <section class="snapshot-section container" id="snapshot" aria-labelledby="snapshot-title"><h2 id="snapshot-title">Runtime and memory comparison.</h2><p>We will measure all open-source methods in the survey on a common machine and software environment. Each run will record output frame count, resolution, preprocessing time, generation time, postprocessing time, and peak GPU memory.</p><p>Results will be added after measurement. Values shown in individual paper records are reported by their original authors under the stated conditions.</p><div class="snapshot-links"><a href="data/measurement-template-2026-10-13.csv" download>Measurement template CSV</a><a href="data/dblp-update-2026-10-13.md">Reference update notes</a><a href="data/references-dblp-2026-10-13.bib" download>Catalogue BibTeX</a><a href="assets/survey/virtual-human-survey-dblp-2026-10-13.zip" download>Survey source package</a><a href="data/snapshots/2026-10-13-dblp/manifest.json">Release files</a></div></section>
+    <section class="snapshot-section container" id="snapshot" aria-labelledby="snapshot-title"><h2 id="snapshot-title">Runtime and memory results.</h2><p>Explore 44 implementation runs measured on one H200 per run: completed frames, output dimensions, preprocessing, generation, postprocessing, model loading, process time, and sampled GPU memory. Demo inputs and software differ across methods.</p><p>Five entries remain blank: MuseTalk and VideoReTalking await remeasurement; SoulX-LiveAct, SoulX-FlashTalk, and SoulX-FlashHead await their first measurements. These entries are excluded from the published-result count.</p><div class="snapshot-links"><a href="measurements.html">View measured results</a><a href="data/h200-results-2026-10-16.csv" download>Results CSV</a><a href="data/h200-results-2026-10-16.json" download>Results JSON</a><a href="data/h200-measurement-notes-2026-10-16.md">Measurement protocol</a><a href="data/snapshots/2026-10-16-measurements/manifest.json">Release files</a></div></section>
 
     <section class="read-survey container" aria-label="Read and contribute"><div><h2>The full picture is in the survey.</h2><p>Explore the taxonomy, computational trade-offs, datasets, and open research questions.</p></div><div><a class="button button-primary" href="assets/survey/survey-2026-10-13-dblp.pdf" target="_blank" rel="noopener">Read the survey <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><a class="contribute-link" href="https://github.com/zzzweakman/Fast-and-Stable-Virtual-Human-Video-Generation/issues/new" target="_blank" rel="noopener">Suggest a paper or correction</a></div></section>
   </main>
