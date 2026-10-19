@@ -1,0 +1,42 @@
+{
+  "snapshot": "VH-MEASURED-V4",
+  "description": "56-page concise survey with consistent two-column appendix text, compact spanning configuration tables, and natural attribution of published versus local measurements. Memory-diagnostic narrative and table removed. Main results and original measurement files preserved.",
+  "measurement_source_manifest": "data/snapshots/2026-10-19-measurements/manifest.json",
+  "published_results": 56,
+  "methods": 55,
+  "warmup_calls": 168,
+  "measured_calls": 168,
+  "pending_results": 0,
+  "files": [
+    {
+      "path": "data/h200-results-2026-10-19.json",
+      "sha256": "ed19978ee31900cad1bcb4f0dbc63572d4acf1a9187ccb7a43edc09360ab7101",
+      "bytes": 513633
+    },
+    {
+      "path": "data/h200-results-2026-10-19.csv",
+      "sha256": "128f1c3162e00971e3069e7a22440812597c471a8702a6455c4580521211114f",
+      "bytes": 69567
+    },
+    {
+      "path": "data/h200-trials-2026-10-19.csv",
+      "sha256": "08b195ba83f742e348ff8f07c1f4f338c3b75755937397a2527ca97090b7ead8",
+      "bytes": 53455
+    },
+    {
+      "path": "data/h200-measurement-notes-v4.md",
+      "sha256": "7a657a55710643e0fc363a953ebe9b2b55720161777afc9e9b422c2585fcc4a2",
+      "bytes": 7379
+    },
+    {
+      "path": "assets/survey/survey-measured-v4.pdf",
+      "sha256": "0fc056e30d917d513e5e9adb6e9c3e9c9b6a417ed68d96f96130828402bdea3b",
+      "bytes": 10280619
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-measured-v4.zip",
+      "sha256": "5732895d5a662a1d69454d65f5cd65b75fa7fffd802fc2f4a0f0055023d87b62",
+      "bytes": 10104396
+    }
+  ]
+}

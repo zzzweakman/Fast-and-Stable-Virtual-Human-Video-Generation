@@ -70,7 +70,7 @@ def validate_measurements():
     assert page == render(data) + '\n', 'Generated result page is stale'
     assert page.count('data-status="measured"') == 56
     assert '35 / 33 / 34' in page and 'Suite total' in page and 'Call ± SD' in page
-    assert 'Warm peak' in page and 'id="memory-diagnostics"' in page
+    assert 'Warm peak' in page and 'id="memory-diagnostics"' not in page
     assert 'awaiting measurement' not in page.lower()
     index = (ROOT / 'index.html').read_text()
     assert '56 configurations' in index and '55 methods' in index

@@ -6,9 +6,9 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = 'h200-results-2026-10-19'
-SURVEY = 'survey-measured-v3.pdf'
-PROTOCOL = 'h200-measurement-notes-v2.md'
-MANIFEST = 'data/snapshots/measured-v3/manifest.json'
+SURVEY = 'survey-measured-v4.pdf'
+PROTOCOL = 'h200-measurement-notes-v4.md'
+MANIFEST = 'data/snapshots/measured-v4/manifest.json'
 GROUPS = [('gan', 'GAN-based'), ('diffusion', 'Diffusion-based'), ('render', 'Render-based'), ('motion', 'Motion visualization')]
 NAMES = {'Wav2Lip-GAN': 'Wav2Lip+GAN', 'LiveSpeechPortraits': 'Live Speech Portraits',
          'AvatarForcing-SlidingWindow': 'AvatarForcing-SW', 'TalkLikeYou': 'Talk Like You',
@@ -59,13 +59,6 @@ def render(data):
         f'<p>{ESC(r["stage_definition"])}</p><p>Attention: {ESC(r["attention_backend"])}. {ESC(r["attention_evidence"])}</p></dd>'
         for r in data['rows'])
     nav = ''.join(f'<a href="#{key}">{title}</a>' for key, title in GROUPS)
-    memory = ' '.join(f'{r["method"]}: <strong>{r["measured_nvml_peak_gib"]:.2f} GiB</strong> in each measured call.'
-                      for r in data['rows'] if r['method'] in ('MuseTalk', 'VideoReTalking'))
-    memory_rows = ''.join(
-        f'<tr data-memory-config="{ESC(r["config_id"], quote=True)}"><th scope="row">{ESC(NAMES.get(r["method"], r["method"]))}</th>'
-        + ''.join(f'<td>{number(r[k])}</td>' for k in ('measured_nvml_peak_gib', 'first_warmup_nvml_peak_gib', 'suite_nvml_peak_gib'))
-        + f'<td>{number(r["warmup_iterations"][0]["torch_allocated_peak_gib"])}</td></tr>'
-        for r in data['rows'])
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#193e35"><meta name="description" content="Repeated single-H200 runtime and memory measurements: 56 configurations, 55 methods, three warm-ups and three measured calls each.">
@@ -79,7 +72,7 @@ def render(data):
 <p>Fifteen configurations retain audited models or a GPU worker; 41 reload models each call. Different inputs, settings and residency modes make these configuration-specific observations. They do not form a controlled quality or speed ranking.</p>
 <div class="results-downloads"><a class="button button-primary" href="data/{DATA}.csv" download>Summary CSV</a><a class="button button-outline" href="data/{DATA}.json" download>Full JSON</a><a class="button button-outline" href="data/h200-trials-2026-10-19.csv" download>All 336 calls</a><a class="results-protocol-link" href="#protocol">Read the protocol</a></div>
 <p class="results-pending-note"><strong>Call and suite are different clocks.</strong> Call reports the measured request. Suite total includes setup, all three warm-ups, all three measured calls, output checks and shutdown. Neither is time to first frame.</p>
-<p class="results-pending-note"><strong>Main tables report warmed memory.</strong> {memory} Each value includes the complete call's preparation, generation and output processing. First-call spikes are documented separately in the <a href="#memory-diagnostics">memory diagnostics</a>; the observations do not establish minimum GPU memory requirements.</p></div>
+<p class="results-pending-note"><strong>Main tables report warmed memory.</strong> Each value is the maximum sampled peak over the three measured calls and includes preparation, generation and output processing.</p></div>
 <nav class="result-jump-links" aria-label="Result groups">{nav}</nav>
 <p class="results-scroll-hint">Scroll each table horizontally to see all columns. Retained means audited model objects or the neural worker remain resident; clip state is rebuilt. NR means no recorded value, not zero. Stage SDs and per-call values are in the downloads.</p>
 {''.join(groups)}
@@ -88,17 +81,13 @@ def render(data):
 <dt>Output workload</dt><dd>Dimensions show generated regions or paste-back canvases, excluding comparison panels. Internal face crops may be smaller. Wan retains the actual final frame counts 35 / 33 / 34; their mean is not substituted. Talker-T2AV resets seed 42 at the generation boundary and produces 136 frames in all six calls. No common seed is imposed across methods.</dd>
 <dt>Stages and Call</dt><dd>Pre, Gen and Post use implementation-specific synchronized event boundaries. VAE decoding is generally in Post for dense diffusion; controller plus renderer are generally in Gen for appearance reuse. Call includes per-call loading, native validation and unclassified overhead. Ditto and Talk Like You overlap phases, so stage sums are not elapsed time. SyncTalk has native validation inside Call, outside Pre/Gen/Post. Generic output QA is outside Call.</dd>
 <dt>Suite total</dt><dd>The complete 3+3 process includes startup/import, setup, all six calls, output QA and shutdown. This replaces the old fresh-process interpretation and must not be divided by six to estimate measured-call latency. The first measured call is already after three warm-ups.</dd>
-<dt>Memory windows</dt><dd>Own-process/worker NVML samples are collected approximately every 100 ms. Warm peak in the main tables is the maximum of the three measured-window peaks after warm-up. First-call and whole-suite peaks are supplementary diagnostics below and in the downloads. Suite peak covers setup, warm-ups, measured calls and QA. Sampling may miss brief allocations; framework counters do not cover every CUDA allocator. Neither window establishes the minimum memory required to run the model.</dd>
+<dt>Memory measurement</dt><dd>Own-process/worker NVML samples are collected approximately every 100 ms. Warm peak is the maximum of the three measured-window peaks after warm-up. Sampling may miss brief allocations; framework counters do not cover every CUDA allocator.</dd>
 <dt>Model and input state</dt><dd>Same interpreter does not mean every model stays resident. StyleAvatar retains neural objects while rebuilding FaceVerse state; Wan retains its actual GPU worker. Precomputed tracking, features, masks and subject-trained assets remain prerequisites where the demo expects them. First calls may reuse disk caches.</dd>
 <dt>Metadata and evidence</dt><dd>No new attention capture accompanies these timed runs. The original 46 labels are historical execution observations; the ten new labels are source/configuration inspections. Package versions and Git heads are post-run inventories. Full sampling/decoder settings for six additional configurations were not supplied.</dd>
 <dt>Interpretation limits</dt><dd>The delivery contains a workbook and README; referenced server-side traces, adapters, separate JSON and videos were not provided for independent inspection. All reported means, sample SDs, memory maxima, phase unions and frame sequences were reconciled with the workbook's 336 calls. Basic output validity checks do not measure visual quality. Repeated short clips do not establish TTFF, sustained service or long-session stability.</dd></dl>
-<details class="result-configurations" id="memory-diagnostics"><summary>First-call and whole-suite memory diagnostics</summary>
-<p>MuseTalk records 137.85 GiB and VideoReTalking 133.69 GiB in their first calls. Their second and third warm-ups and all three measured calls record 9.49 and 16.01 GiB, respectively. First-call Torch allocated peaks of 136.13 and 132.33 GiB corroborate large recorded allocations. These spikes describe the tested configurations and do not establish typical model occupancy or a minimum GPU capacity.</p>
-<p>The supplied audit proposes face-detector cuDNN autotuning/workspace allocation as an explanation. Raw allocation traces and a controlled benchmark-enabled/disabled comparison were not supplied, so the cause remains unconfirmed.</p>
-<div class="results-scroll" role="region" aria-label="Supplementary memory diagnostics; scroll horizontally for all columns" tabindex="0"><table class="results-table"><caption>All memory windows are retained in GiB. The first call is the first complete warm-up. Whole-suite NVML includes setup, all six calls and output checks. Torch and NVML counters have different scopes.</caption><thead><tr><th scope="col">Configuration</th><th scope="col">Warm NVML peak</th><th scope="col">First-call NVML peak</th><th scope="col">Whole-suite NVML peak</th><th scope="col">First-call Torch allocated peak</th></tr></thead><tbody>{memory_rows}</tbody></table></div></details>
 <details class="result-configurations"><summary>Input settings, stage boundaries and attention evidence</summary><dl>{configs}</dl></details>
 <p><a href="data/{PROTOCOL}">Download the full protocol</a> · <a href="assets/survey/{SURVEY}">Read the updated survey</a> · <a href="{MANIFEST}">Release manifest</a> · <a href="data/h200-results-2026-10-16.json">Archived single-run results</a></p></section>
-</main><footer class="container results-footer"><p>Repeated-call measurements with separate first-call diagnostics.</p><a href="https://github.com/zzzweakman/Fast-and-Stable-Virtual-Human-Video-Generation">View data and source on GitHub</a></footer>
+</main><footer class="container results-footer"><p>Repeated-call runtime and memory measurements.</p><a href="https://github.com/zzzweakman/Fast-and-Stable-Virtual-Human-Video-Generation">View data and source on GitHub</a></footer>
 </body></html>'''
 
 
