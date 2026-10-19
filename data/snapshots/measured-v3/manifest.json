@@ -1,0 +1,42 @@
+{
+  "snapshot": "VH-MEASURED-V3",
+  "description": "Concise 57-page survey: prose reduced by 19.1 percent; figures and tables redistributed; full-width implementation appendix. Measurements, bibliography files and warmed-memory reporting are unchanged.",
+  "measurement_source_manifest": "data/snapshots/2026-10-19-measurements/manifest.json",
+  "published_results": 56,
+  "methods": 55,
+  "warmup_calls": 168,
+  "measured_calls": 168,
+  "pending_results": 0,
+  "files": [
+    {
+      "path": "data/h200-results-2026-10-19.json",
+      "sha256": "ed19978ee31900cad1bcb4f0dbc63572d4acf1a9187ccb7a43edc09360ab7101",
+      "bytes": 513633
+    },
+    {
+      "path": "data/h200-results-2026-10-19.csv",
+      "sha256": "128f1c3162e00971e3069e7a22440812597c471a8702a6455c4580521211114f",
+      "bytes": 69567
+    },
+    {
+      "path": "data/h200-trials-2026-10-19.csv",
+      "sha256": "08b195ba83f742e348ff8f07c1f4f338c3b75755937397a2527ca97090b7ead8",
+      "bytes": 53455
+    },
+    {
+      "path": "data/h200-measurement-notes-v2.md",
+      "sha256": "aee5c063ea3eaa7648cfe8c4f5187987cecbdf1601d591ef4d39359760b4af53",
+      "bytes": 8340
+    },
+    {
+      "path": "assets/survey/survey-measured-v3.pdf",
+      "sha256": "61c6acbee3a64c1ad0f79b1c192af7f65c2a5efaf1a13d6139eaf7e8c611fb75",
+      "bytes": 10287044
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-measured-v3.zip",
+      "sha256": "516159df7b2875a6445430eace8654901524d499766b2825306c1f40dbc30906",
+      "bytes": 10110589
+    }
+  ]
+}

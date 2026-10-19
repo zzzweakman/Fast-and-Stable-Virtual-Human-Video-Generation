@@ -27,8 +27,10 @@ The build gives CSS and JavaScript files a shared content-based version, includi
 
 - [View the results](https://zzzweakman.github.io/Fast-and-Stable-Virtual-Human-Video-Generation/measurements.html).
 - Download the [summary CSV](data/h200-results-2026-10-19.csv), [full JSON](data/h200-results-2026-10-19.json), or [all 336 calls](data/h200-trials-2026-10-19.csv).
-- Read the [measurement protocol](data/h200-measurement-notes-v2.md) and [release manifest](data/snapshots/measured-v2/manifest.json).
-- Read the [updated survey PDF](assets/survey/survey-measured-v2.pdf) or download its [source package](assets/survey/virtual-human-survey-measured-v2.zip).
+- Read the [measurement protocol](data/h200-measurement-notes-v2.md) and [release manifest](data/snapshots/measured-v3/manifest.json).
+- Read the [updated survey PDF](assets/survey/survey-measured-v3.pdf) or download its [source package](assets/survey/virtual-human-survey-measured-v3.zip).
+
+The current survey is **57 pages**, with prose reduced by about **19%** and revised figure/table placement. All measurements, table values and bibliography files are preserved; the source package includes the style and layout revision report.
 
 The table reports measured-call means and Call ± sample standard deviation. **Call** spans inference entry to synchronized return; **Suite total** spans setup, all six calls, QA and shutdown. The suite total is not a single-call latency and must not be divided by six to estimate measured latency. Fifteen configurations retain audited model objects or a GPU worker; 41 reload each call. Inputs, supplied assets and software differ.
 
@@ -72,7 +74,7 @@ Cards describe methods and original-source measurements in plain language. The c
 - `data/ar-second-pass-review.md`: historical AR additions, spatial and unresolved boundary cases, and recommended survey placements.
 - `data/image-supplement-review.md` and `data/image-supplement-audit.json`: validation and source checks for the 92 supplied missing previews.
 - `assets/papers/manifest.json`: preview provenance, source pages, figure captions, and image paths.
-- `assets/survey/survey-measured-v2.pdf`: current measured revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
+- `assets/survey/survey-measured-v3.pdf`: current measured revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
 - `assets/survey/survey-2026-10-09.pdf`: the preserved earlier revision associated with snapshot VH-2026-10-09.
 - `assets/survey/survey.pdf`: the preserved draft reviewed on 9 October (`main_revised.pdf`, 48 pages).
 - `assets/survey/provenance.json`: source information for the survey PDF and diagrams.
