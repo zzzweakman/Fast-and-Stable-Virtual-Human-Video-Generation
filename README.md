@@ -21,18 +21,18 @@ Open http://127.0.0.1:4173. Serve over HTTP rather than opening the HTML as a lo
 
 The build gives CSS and JavaScript files a shared content-based version, including module imports. Changes to the page, styles, or modules update their published URLs together, preventing cached assets from a previous layout from breaking the catalogue or annual chart.
 
-## Runtime and memory results — 19 October 2026
+## Runtime and memory results
 
 **56 measured configurations covering 55 methods are available**, each using one H200. Every configuration executes three complete warm-ups followed by three measured calls in the same interpreter. All **336 calls** are included: 168 warm-ups and 168 measured repetitions. MuseTalk and VideoReTalking have completed remeasurements; SoulX-LiveAct, SoulX-FlashTalk, and both FlashHead Lite/Pro configurations now have results. Six additional diffusion implementations are also included.
 
 - [View the results](https://zzzweakman.github.io/Fast-and-Stable-Virtual-Human-Video-Generation/measurements.html).
 - Download the [summary CSV](data/h200-results-2026-10-19.csv), [full JSON](data/h200-results-2026-10-19.json), or [all 336 calls](data/h200-trials-2026-10-19.csv).
-- Read the [measurement protocol](data/h200-measurement-notes-2026-10-19.md) and [release manifest](data/snapshots/2026-10-19-measurements/manifest.json).
-- Read the [updated survey PDF](assets/survey/survey-2026-10-19-measured.pdf) or download its [source package](assets/survey/virtual-human-survey-measured-2026-10-19.zip).
+- Read the [measurement protocol](data/h200-measurement-notes-v2.md) and [release manifest](data/snapshots/measured-v2/manifest.json).
+- Read the [updated survey PDF](assets/survey/survey-measured-v2.pdf) or download its [source package](assets/survey/virtual-human-survey-measured-v2.zip).
 
 The table reports measured-call means and Call ± sample standard deviation. **Call** spans inference entry to synchronized return; **Suite total** spans setup, all six calls, QA and shutdown. The suite total is not a single-call latency and must not be divided by six to estimate measured latency. Fifteen configurations retain audited model objects or a GPU worker; 41 reload each call. Inputs, supplied assets and software differ.
 
-Memory windows are explicit: the measured peak is the maximum over three measured calls, while the suite peak includes initialization and warm-up. MuseTalk's first-call/measured peaks are **137.85 / 9.49 GiB**; VideoReTalking's are **133.69 / 16.01 GiB**. Warmed values do not replace startup capacity requirements. Wan's actual final frame counts remain **35 / 33 / 34**, and unrecorded load intervals remain null/NR.
+The main result tables show **Warm peak**, the maximum NVML peak over the three measured calls after warm-up: **9.49 GiB for MuseTalk and 16.01 GiB for VideoReTalking**. The first-call spikes of 137.85 and 133.69 GiB are retained in supplementary memory diagnostics and raw downloads. These configuration-specific observations do not establish minimum GPU-capacity requirements; the proposed cuDNN autotuning cause remains unconfirmed. The revised manuscript removes calendar dates from its narrative, tables and reference notes while retaining bibliographic publication years. Wan's actual final frame counts remain **35 / 33 / 34**, and unrecorded load intervals remain null/NR.
 
 Coverage is 11 GAN, 20 diffusion, 24 rendering configurations and one UniLS motion visualization. FlashHead Lite/Pro account for the configuration/method count difference. Native visual-AR coverage is zero. These measurements do not establish a matched quality/speed ranking, TTFF or continuous-session stability. Full sampling/decoder settings for the six additional configurations were not supplied; attention labels are historical execution or source/configuration evidence, not fresh kernel captures.
 
@@ -72,7 +72,7 @@ Cards describe methods and original-source measurements in plain language. The c
 - `data/ar-second-pass-review.md`: historical AR additions, spatial and unresolved boundary cases, and recommended survey placements.
 - `data/image-supplement-review.md` and `data/image-supplement-audit.json`: validation and source checks for the 92 supplied missing previews.
 - `assets/papers/manifest.json`: preview provenance, source pages, figure captions, and image paths.
-- `assets/survey/survey-2026-10-19-measured.pdf`: current measured revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
+- `assets/survey/survey-measured-v2.pdf`: current measured revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
 - `assets/survey/survey-2026-10-09.pdf`: the preserved earlier revision associated with snapshot VH-2026-10-09.
 - `assets/survey/survey.pdf`: the preserved draft reviewed on 9 October (`main_revised.pdf`, 48 pages).
 - `assets/survey/provenance.json`: source information for the survey PDF and diagrams.

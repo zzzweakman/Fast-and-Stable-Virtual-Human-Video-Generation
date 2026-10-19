@@ -7,7 +7,7 @@ import math
 import statistics
 
 from export_measurements import NUMERIC, csv_cell
-from render_measurements import DATA, render
+from render_measurements import DATA, SURVEY, render
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -70,12 +70,13 @@ def validate_measurements():
     assert page == render(data) + '\n', 'Generated result page is stale'
     assert page.count('data-status="measured"') == 56
     assert '35 / 33 / 34' in page and 'Suite total' in page and 'Call ± SD' in page
+    assert 'Warm peak' in page and 'id="memory-diagnostics"' in page
     assert 'awaiting measurement' not in page.lower()
     index = (ROOT / 'index.html').read_text()
     assert '56 configurations' in index and '55 methods' in index
     for text in [json.dumps(data, ensure_ascii=False), page]:
         assert all(token not in text for token in ('/aiboxian/', '/bxai/', 'VR-boxian-dev', 'Mao-dev-', 'GPU-')), 'Private machine identifiers in public export'
-    assert (ROOT / 'assets/survey/survey-2026-10-19-measured.pdf').read_bytes().startswith(b'%PDF')
+    assert (ROOT / 'assets/survey' / SURVEY).read_bytes().startswith(b'%PDF')
     print('Validated 56 configurations, 336 calls, means/sample SDs, memory windows, HTML and CSV/JSON.')
     return data
 

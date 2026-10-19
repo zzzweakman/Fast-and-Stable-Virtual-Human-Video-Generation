@@ -1,0 +1,42 @@
+{
+  "snapshot": "VH-MEASURED-V2",
+  "description": "Warmed memory in main results; first-call diagnostics in appendix; calendar dates removed from manuscript prose, captions and reference notes. Original measurements unchanged.",
+  "measurement_source_manifest": "data/snapshots/2026-10-19-measurements/manifest.json",
+  "published_results": 56,
+  "methods": 55,
+  "warmup_calls": 168,
+  "measured_calls": 168,
+  "pending_results": 0,
+  "files": [
+    {
+      "path": "data/h200-results-2026-10-19.json",
+      "sha256": "ed19978ee31900cad1bcb4f0dbc63572d4acf1a9187ccb7a43edc09360ab7101",
+      "bytes": 513633
+    },
+    {
+      "path": "data/h200-results-2026-10-19.csv",
+      "sha256": "128f1c3162e00971e3069e7a22440812597c471a8702a6455c4580521211114f",
+      "bytes": 69567
+    },
+    {
+      "path": "data/h200-trials-2026-10-19.csv",
+      "sha256": "08b195ba83f742e348ff8f07c1f4f338c3b75755937397a2527ca97090b7ead8",
+      "bytes": 53455
+    },
+    {
+      "path": "data/h200-measurement-notes-v2.md",
+      "sha256": "aee5c063ea3eaa7648cfe8c4f5187987cecbdf1601d591ef4d39359760b4af53",
+      "bytes": 8340
+    },
+    {
+      "path": "assets/survey/survey-measured-v2.pdf",
+      "sha256": "7cacbbdca9df19ea510c7333bab39a8042d3cf24a90466b3d359f05804536246",
+      "bytes": 10305278
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-measured-v2.zip",
+      "sha256": "9aecfae21ad3a03091cadccd0d934367a8a038e7c0124814d7a2c1a848eb95ec",
+      "bytes": 10121650
+    }
+  ]
+}
