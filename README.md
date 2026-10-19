@@ -21,30 +21,37 @@ Open http://127.0.0.1:4173. Serve over HTTP rather than opening the HTML as a lo
 
 The build gives CSS and JavaScript files a shared content-based version, including module imports. Changes to the page, styles, or modules update their published URLs together, preventing cached assets from a previous layout from breaking the catalogue or annual chart.
 
-## Runtime and memory results — 16 October 2026
+## Runtime and memory results — 19 October 2026
 
-**44 implementation results are now available**, measured on one H200 per run. Five entries are intentionally blank: MuseTalk and VideoReTalking await remeasurement; SoulX-LiveAct, SoulX-FlashTalk, and SoulX-FlashHead await measurement. They are excluded from the 44-result count. All their numerical and run-configuration fields are empty in CSV and `null` in JSON.
+**56 measured configurations covering 55 methods are available**, each using one H200. Every configuration executes three complete warm-ups followed by three measured calls in the same interpreter. All **336 calls** are included: 168 warm-ups and 168 measured repetitions. MuseTalk and VideoReTalking have completed remeasurements; SoulX-LiveAct, SoulX-FlashTalk, and both FlashHead Lite/Pro configurations now have results. Six additional diffusion implementations are also included.
 
 - [View the results](https://zzzweakman.github.io/Fast-and-Stable-Virtual-Human-Video-Generation/measurements.html).
-- Download [CSV](data/h200-results-2026-10-16.csv) or [JSON](data/h200-results-2026-10-16.json), with full precision and per-run stage descriptions.
-- Read the [measurement protocol](data/h200-measurement-notes-2026-10-16.md) and [release manifest](data/snapshots/2026-10-16-measurements/manifest.json).
+- Download the [summary CSV](data/h200-results-2026-10-19.csv), [full JSON](data/h200-results-2026-10-19.json), or [all 336 calls](data/h200-trials-2026-10-19.csv).
+- Read the [measurement protocol](data/h200-measurement-notes-2026-10-19.md) and [release manifest](data/snapshots/2026-10-19-measurements/manifest.json).
+- Read the [updated survey PDF](assets/survey/survey-2026-10-19-measured.pdf) or download its [source package](assets/survey/virtual-human-survey-measured-2026-10-19.zip).
 
-The tables report completed frames, output dimensions, Pre/Gen/Post times, loading, complete process time, and sampled process-tree GPU memory. Demo inputs and software differ. These are single-run implementation observations, not a controlled speed ranking or a quality/stability evaluation. The five blank entries contain no substitute values from original papers.
+The table reports measured-call means and Call ± sample standard deviation. **Call** spans inference entry to synchronized return; **Suite total** spans setup, all six calls, QA and shutdown. The suite total is not a single-call latency and must not be divided by six to estimate measured latency. Fifteen configurations retain audited model objects or a GPU worker; 41 reload each call. Inputs, supplied assets and software differ.
 
-Public code availability limits AR coverage: at measurement time, most surveyed AR-based methods had not released implementations. UniLS was the only open-source implementation we identified and could evaluate for the separate AR-component measurement. Its motion prediction and FLAME visualization do not represent native visual-AR generation or the AR category as a whole. DyStream and Talker-T2AV are measured under render-based methods because their renderers own appearance. See the [AR coverage clarification](data/ar-measurement-coverage-2026-10-16.md).
+Memory windows are explicit: the measured peak is the maximum over three measured calls, while the suite peak includes initialization and warm-up. MuseTalk's first-call/measured peaks are **137.85 / 9.49 GiB**; VideoReTalking's are **133.69 / 16.01 GiB**. Warmed values do not replace startup capacity requirements. Wan's actual final frame counts remain **35 / 33 / 34**, and unrecorded load intervals remain null/NR.
 
-`scripts/export_measurements.py` creates a public export from supplied measurements, withholding pending rows before writing any public artifact. `scripts/render_measurements.py` generates the static table page from that export. `scripts/validate_measurements.py` checks HTML/CSV/JSON consistency and blank fields; these checks run during the Pages build. The result tables remain available without JavaScript.
+Coverage is 11 GAN, 20 diffusion, 24 rendering configurations and one UniLS motion visualization. FlashHead Lite/Pro account for the configuration/method count difference. Native visual-AR coverage is zero. These measurements do not establish a matched quality/speed ranking, TTFF or continuous-session stability. Full sampling/decoder settings for the six additional configurations were not supplied; attention labels are historical execution or source/configuration evidence, not fresh kernel captures.
 
-## Published DBLP manuscript and catalogue — 13 October 2026
+The supplied workbook and README contain the evidence for this integration. All summaries were reconciled with individual workbook calls. Referenced server-side traces, a separate JSON delivery and videos were not supplied for independent inspection. Public exports omit internal machine identifiers and paths.
 
-The current manuscript has **263 cited references** and 58 pages. The website retains **185 unique papers**. Of 284 combined citation records, 270 matched DBLP: 252 of the 263 cited manuscript references and 180 of the 185 website entries. The 14 unmatched records are retained with their original sources and listed explicitly; they are not declared DBLP-verified.
+Regenerate the public files with `scripts/export_measurements.py --input <verified-h200_results.json> --output-dir <new-directory>` and the static page with `scripts/render_measurements.py --output <new-file>`. Run `npm test`, Python unit tests and `scripts/build.py` before publishing. Validation checks means/SDs, memory windows, phase unions, frame sequences and HTML/CSV/JSON consistency. The static tables work without JavaScript.
 
-- [Current survey PDF](assets/survey/survey-2026-10-13-dblp.pdf) and [complete source package](assets/survey/virtual-human-survey-dblp-2026-10-13.zip).
+The [16 October data](data/h200-results-2026-10-16.json) remains an archived release of 44 published single-run results and five pending entries; its protocol differs from this repeated-call release.
+
+## Archived DBLP manuscript and catalogue — 13 October 2026
+
+The 13 October manuscript has **263 cited references** and 58 pages. The website retains **185 unique papers**. Of 284 combined citation records, 270 matched DBLP: 252 of the 263 cited manuscript references and 180 of the 185 website entries. The 14 unmatched records are retained with their original sources and listed explicitly; they are not declared DBLP-verified.
+
+- [13 October survey PDF](assets/survey/survey-2026-10-13-dblp.pdf) and [complete source package](assets/survey/virtual-human-survey-dblp-2026-10-13.zip).
 - [Reference update notes](data/dblp-update-2026-10-13.md), [catalogue BibTeX](data/references-dblp-2026-10-13.bib), [before/after metadata](data/dblp-reference-check-2026-10-13.json), and [release manifest](data/snapshots/2026-10-13-dblp/manifest.json).
 
 Matched records use DBLP titles, ordered authors, condensed venues, citation years, pages and identifiers. Conference citation years follow the event year, as in DBLP BibTeX. Later version names such as JoyStreamer-Flash and FluentAvatar remain searchable and are explained alongside the DBLP titles JoyAvatar and AvatarSync. Source-specific method descriptions and measurements remain attached to the reviewed versions.
 
-All earlier PDF files, source packages and frozen snapshots remain unchanged. The measurement template still contains only a header.
+All earlier PDF files, source packages and frozen snapshots remain unchanged. The archived measurement template contains only a header; current results are linked above.
 
 ## Previous literature revision — 13 October 2026
 
@@ -52,7 +59,7 @@ The manuscript now cites 263 references, including 26 selected additions checked
 
 - [Revised survey PDF](assets/survey/survey-2026-10-13-literature.pdf) and [complete source package](assets/survey/virtual-human-survey-literature-2026-10-13.zip).
 - [Literature update notes](data/literature-update-2026-10-13.md), [added BibTeX](data/literature-additions-2026-10-13.bib), and [release manifest](data/snapshots/2026-10-13-literature/manifest.json).
-- [Measurement template](data/measurement-template-2026-10-13.csv): header only. The authors will measure output frames, resolution, preprocessing/generation/postprocessing time, and peak GPU memory for all open-source methods in a common environment. No common-environment results have been supplied.
+- [Measurement template](data/measurement-template-2026-10-13.csv): header only. The authors will measure output frames, resolution, preprocessing/generation/postprocessing time, and peak GPU memory for all open-source methods in a common environment. This historical template predates the measurements linked above.
 
 Cards describe methods and original-source measurements in plain language. The current literature annotations use `mechanisms` with a code, explanation, and primary-source URL. L2 requires bounded recent and older memory with an update policy; a within-chunk feature cache alone does not qualify. Existing source configuration records remain available without displaying the earlier assessment labels.
 
@@ -65,7 +72,7 @@ Cards describe methods and original-source measurements in plain language. The c
 - `data/ar-second-pass-review.md`: historical AR additions, spatial and unresolved boundary cases, and recommended survey placements.
 - `data/image-supplement-review.md` and `data/image-supplement-audit.json`: validation and source checks for the 92 supplied missing previews.
 - `assets/papers/manifest.json`: preview provenance, source pages, figure captions, and image paths.
-- `assets/survey/survey-2026-10-13-dblp.pdf`: current 58-page manuscript; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
+- `assets/survey/survey-2026-10-19-measured.pdf`: current measured revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
 - `assets/survey/survey-2026-10-09.pdf`: the preserved earlier revision associated with snapshot VH-2026-10-09.
 - `assets/survey/survey.pdf`: the preserved draft reviewed on 9 October (`main_revised.pdf`, 48 pages).
 - `assets/survey/provenance.json`: source information for the survey PDF and diagrams.

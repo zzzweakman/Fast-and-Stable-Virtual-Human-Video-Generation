@@ -1,0 +1,58 @@
+{
+  "snapshot": "VH-2026-10-19-MEASUREMENTS",
+  "measured_at": "2026-10-19",
+  "published_results": 56,
+  "methods": 55,
+  "warmup_calls": 168,
+  "measured_calls": 168,
+  "pending_results": 0,
+  "source_inputs": {
+    "measurement_date": "2026-10-19",
+    "files": {
+      "single_H200_warmup_final_20261019.xlsx": "93f28a15f165214766b695866b18d6908faf9f7505993d16b6ce82f3fd944839",
+      "README.md": "fd0aa61b64d6da111c1c82e545c768b7c7ea90acc69bca9a21e561e3131e029a"
+    },
+    "inputs_received": [
+      "workbook",
+      "README"
+    ],
+    "not_received": [
+      "JSON mentioned by delivery README",
+      "server-side adapters and raw traces",
+      "output videos"
+    ],
+    "verification": "All 56 summary means/sample SDs, measured NVML maxima, frame sequences and phase unions checked against 336 workbook calls; no GPU inference or independent output-quality review performed."
+  },
+  "files": [
+    {
+      "path": "data/h200-results-2026-10-19.json",
+      "sha256": "ed19978ee31900cad1bcb4f0dbc63572d4acf1a9187ccb7a43edc09360ab7101",
+      "bytes": 513633
+    },
+    {
+      "path": "data/h200-results-2026-10-19.csv",
+      "sha256": "128f1c3162e00971e3069e7a22440812597c471a8702a6455c4580521211114f",
+      "bytes": 69567
+    },
+    {
+      "path": "data/h200-trials-2026-10-19.csv",
+      "sha256": "08b195ba83f742e348ff8f07c1f4f338c3b75755937397a2527ca97090b7ead8",
+      "bytes": 53455
+    },
+    {
+      "path": "data/h200-measurement-notes-2026-10-19.md",
+      "sha256": "104dfbbac168068e7b81a1d3bc2bcc8dae6c2243a117ee6de2b80653e22aff7f",
+      "bytes": 7692
+    },
+    {
+      "path": "assets/survey/survey-2026-10-19-measured.pdf",
+      "sha256": "2261e93eb466748073c78770efb3d1e228f907141becef26c3fe5fded2c3dc47",
+      "bytes": 10303673
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-measured-2026-10-19.zip",
+      "sha256": "0315fd98e7a8bb9a050e1f3374011102b32e78c33f6862926f8fc14b7c44704a",
+      "bytes": 10119921
+    }
+  ]
+}
