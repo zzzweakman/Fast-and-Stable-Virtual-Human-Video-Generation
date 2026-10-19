@@ -1,0 +1,46 @@
+{
+  "snapshot": "VH-MEASURED-V6",
+  "description": "56-page survey with ten redesigned vector figures and synchronized captions, source attribution and panel references. Publication-year columns in 15 tables, four Takeaways cards and two-column appendix text are retained. Measurement values, configuration descriptions and cited references are preserved.",
+  "measurement_source_manifest": "data/snapshots/2026-10-19-measurements/manifest.json",
+  "published_results": 56,
+  "methods": 55,
+  "warmup_calls": 168,
+  "measured_calls": 168,
+  "pending_results": 0,
+  "files": [
+    {
+      "path": "data/h200-results-2026-10-19.json",
+      "sha256": "ed19978ee31900cad1bcb4f0dbc63572d4acf1a9187ccb7a43edc09360ab7101",
+      "bytes": 513633
+    },
+    {
+      "path": "data/h200-results-2026-10-19.csv",
+      "sha256": "128f1c3162e00971e3069e7a22440812597c471a8702a6455c4580521211114f",
+      "bytes": 69567
+    },
+    {
+      "path": "data/h200-trials-2026-10-19.csv",
+      "sha256": "08b195ba83f742e348ff8f07c1f4f338c3b75755937397a2527ca97090b7ead8",
+      "bytes": 53455
+    },
+    {
+      "path": "data/h200-measurement-notes-v4.md",
+      "sha256": "7a657a55710643e0fc363a953ebe9b2b55720161777afc9e9b422c2585fcc4a2",
+      "bytes": 7379
+    },
+    {
+      "path": "assets/survey/survey-measured-v6.pdf",
+      "sha256": "4a92dee376ac870885ce9db929b4f15c9b9786b10795924141afdbd83c5077ef",
+      "bytes": 9159795
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-measured-v6.zip",
+      "sha256": "564624cdd3627d14c1ae2677448b3685afd197a0aac1278f900198f890e0f574",
+      "bytes": 18782440
+    }
+  ],
+  "pages": 56,
+  "publication_year_tables": 15,
+  "takeaway_cards": 4,
+  "redesigned_figures": 10
+}
