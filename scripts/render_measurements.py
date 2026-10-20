@@ -6,9 +6,9 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = 'h200-results-2026-10-19'
-SURVEY = 'survey-measured-v6.pdf'
+SURVEY = 'survey-measured-v7.pdf'
 PROTOCOL = 'h200-measurement-notes-v4.md'
-MANIFEST = 'data/snapshots/measured-v6/manifest.json'
+MANIFEST = 'data/snapshots/measured-v7/manifest.json'
 GROUPS = [('gan', 'GAN-based'), ('diffusion', 'Diffusion-based'), ('render', 'Render-based'), ('motion', 'Motion visualization')]
 NAMES = {'Wav2Lip-GAN': 'Wav2Lip+GAN', 'LiveSpeechPortraits': 'Live Speech Portraits',
          'AvatarForcing-SlidingWindow': 'AvatarForcing-SW', 'TalkLikeYou': 'Talk Like You',
