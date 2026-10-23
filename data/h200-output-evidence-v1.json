@@ -1,0 +1,525 @@
+{
+  "archive_sha256": "5cba40610837179187a53ef7a186e363c25b8ac71b1ccffa54fce99896ad97e3",
+  "selection": "First measured call after three complete warm-ups. Deterministic frame indices recorded below. No enhancement, retouching, interpolation or synthetic output. Crops isolate native reference, driving or generated panels; proportional placement preserves aspect ratio.",
+  "design": "Author vector layouts, using the guizang PPT skill grid, whitespace and screenshot-fidelity rules for paper figures.",
+  "baseline_figure_sha256": {
+    "03_visual_scope.pdf": "1286fd6a4e184233c8e3e68f75a99f5d7ce43e37a83c04c38af77a8309b58b49",
+    "04_fast_stable.pdf": "5940f7f5c5c6e2c59d67122be65ad3a66b25ad01901e66a83491eca395d61c76",
+    "05_system_boundary.pdf": "eab04158bd4ed723cb72174530fce6db14b29708df5893312cf00813c3835359",
+    "06_hybrid_ownership.pdf": "7efbf5a81dda372bb7ec1dbf244a5969e8889c01693807fd5669f0879da54b6b",
+    "07_stability_operations.pdf": "d2769bcb36a0abd17147d1d1c43f7cd225f88a13e4a24305dfb341f1ab96f529",
+    "08_diffusion_execution.pdf": "6ee8a67fd5f92b2e7593489f0d47dd3373728f69e85f326467c6d0fcca19927b",
+    "09_rendering_interfaces.pdf": "2e14f9d9bb0ec6e4b3d996afe818cb87713509e66ee4dec92be341e4f5109d15"
+  },
+  "assets": [
+    {
+      "file": "figures/measured/liveportrait_reference.png",
+      "sha256": "c31708e6ff77bf76a788996bf89372001bc57ef2d005b41164dcd6ccbbe7f2b0",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 0,
+      "crop_xywh": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "role": "reference panel in archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_face_000.png",
+      "sha256": "1ef4a9c9754a0c53684c56a1de8300e8cacc593fd999a529b52fdfbeca1de18b",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 0,
+      "crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "role": "generated face panel in archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_face_015.png",
+      "sha256": "6937aa036bc953e673b12af9ff50fa2f4e976b57684a0c895f2aa3cf5f3f70ef",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 15,
+      "crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "role": "generated face panel in archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_face_019.png",
+      "sha256": "08d22e0431e123f1ca5dc07aa19095b4b0edf79f95faaef92dffa344365acf42",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 19,
+      "crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "role": "generated face panel in archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_face_031.png",
+      "sha256": "308b3e04232f380d7ecd27323ca9a2956073662fc68e0674a59ea131d230f874",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 31,
+      "crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "role": "generated face panel in archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_face_039.png",
+      "sha256": "e4c41002d7d7c77eee8153faef1ac366cf5bb1ff10dcf61b1b6b3821f30cc34e",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 39,
+      "crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "role": "generated face panel in archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_face_046.png",
+      "sha256": "aeac4d8b8c0940ea2619ecc8e68d7a646333cd8f8326f0e9ad55284ad44273dc",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 46,
+      "crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "role": "generated face panel in archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_face_058.png",
+      "sha256": "456c7a20fe250322626e8a519757b6587355d42f25a4cd8b774c8dad979578c3",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 58,
+      "crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "role": "generated face panel in archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_face_062.png",
+      "sha256": "b898db20a5d33396b3995a56bae5f9dbe8118778da5ff507d2cb1aabc7411132",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 62,
+      "crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "role": "generated face panel in archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_face_077.png",
+      "sha256": "fa6cbea5df621afb28c3cd66718520e9cd3304969f79dd268a28566808b935f8",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 77,
+      "crop_xywh": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "role": "generated face panel in archived comparison output"
+    },
+    {
+      "file": "figures/measured/styleavatar_uv.png",
+      "sha256": "59319ec8285e5b732bebef3da2b9faf43d4e17c0e31ad26b6e6ff8a6ee84c5c0",
+      "source_archive_path": "results/StyleAvatar/measured_01/preprocessed/uv/000001.png",
+      "source_sha256": "59319ec8285e5b732bebef3da2b9faf43d4e17c0e31ad26b6e6ff8a6ee84c5c0",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": null,
+      "crop_xywh": null,
+      "role": "native preprocessing asset, not a final generated RGB frame"
+    },
+    {
+      "file": "figures/measured/liveportrait_sequence.png",
+      "sha256": "d683126c51a80c435c5e3cf7c6596adb29d0cd3cc005f22fa878cde6c1260ab2",
+      "role": "unmodified output crops arranged left to right with 12-pixel white gaps",
+      "constituents": [
+        "figures/measured/liveportrait_face_000.png",
+        "figures/measured/liveportrait_face_015.png",
+        "figures/measured/liveportrait_face_031.png",
+        "figures/measured/liveportrait_face_046.png",
+        "figures/measured/liveportrait_face_062.png",
+        "figures/measured/liveportrait_face_077.png"
+      ]
+    },
+    {
+      "file": "figures/measured/videoretalking_000.png",
+      "sha256": "5292fde90269ff6182e6c874232d3af248a815e65a1d760e20ebde3359e45822",
+      "source_archive_path": "results/VideoReTalking/measured_01/demo.mp4",
+      "source_sha256": "e3bcc936c386794586f481818ef3d3d02ec06ca97d86696a948631afdb2b76b4",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 0,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/videoretalking_073.png",
+      "sha256": "8a4748badb6c1d506d800795455b66d10810bbc87b5e2f68c6b912f6a22e4fc9",
+      "source_archive_path": "results/VideoReTalking/measured_01/demo.mp4",
+      "source_sha256": "e3bcc936c386794586f481818ef3d3d02ec06ca97d86696a948631afdb2b76b4",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 73,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/videoretalking_146.png",
+      "sha256": "e682ff14dfc7b8334c6c52403e8e39f1104cb3910c33a5d2c4d0b449eee16723",
+      "source_archive_path": "results/VideoReTalking/measured_01/demo.mp4",
+      "source_sha256": "e3bcc936c386794586f481818ef3d3d02ec06ca97d86696a948631afdb2b76b4",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 146,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/soulx_flashtalk_000.png",
+      "sha256": "ffffaa16707433d7f9ad3d7b67b8fe3238148ca6601185fa5cdd0a0c2511138e",
+      "source_archive_path": "results/soulx_flashtalk/measured_01/res_soulx_flashtalk.mp4",
+      "source_sha256": "9c2e42449c2ef5c068d9919faf362d4b1cf973766f9f6ac306f683d5b64f9b55",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 0,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/soulx_flashtalk_125.png",
+      "sha256": "0f53efb321d7e91e1024b15ccdef3f2934052fc8035d27f95ea748ba347d332d",
+      "source_archive_path": "results/soulx_flashtalk/measured_01/res_soulx_flashtalk.mp4",
+      "source_sha256": "9c2e42449c2ef5c068d9919faf362d4b1cf973766f9f6ac306f683d5b64f9b55",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 125,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/soulx_flashtalk_249.png",
+      "sha256": "6ade338a88ec5065162c9a3a28875925aef45ea76f00441c261c0deb5cfa687c",
+      "source_archive_path": "results/soulx_flashtalk/measured_01/res_soulx_flashtalk.mp4",
+      "source_sha256": "9c2e42449c2ef5c068d9919faf362d4b1cf973766f9f6ac306f683d5b64f9b55",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 249,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/everanimate_000.png",
+      "sha256": "9366abd77b7ad45aa1a4ef89485667ee03f13c8b964cd29211b033e366e5ac4b",
+      "source_archive_path": "results/EverAnimate/measured_01/demo.mp4",
+      "source_sha256": "41201f978902a8ce8a467417445f6231c62cc52311d5804976933ac45e253434",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 0,
+      "crop_xywh": [
+        0,
+        0,
+        832,
+        480
+      ],
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/everanimate_038.png",
+      "sha256": "301e9d0110aa9396335efe3017c7eddced117bf0eec1db74ec09f17b9f6731d8",
+      "source_archive_path": "results/EverAnimate/measured_01/demo.mp4",
+      "source_sha256": "41201f978902a8ce8a467417445f6231c62cc52311d5804976933ac45e253434",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 38,
+      "crop_xywh": [
+        0,
+        0,
+        832,
+        480
+      ],
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/everanimate_076.png",
+      "sha256": "0371b0703e6685e652523f503cd32e74df882814b675764d1808a5636b80be5a",
+      "source_archive_path": "results/EverAnimate/measured_01/demo.mp4",
+      "source_sha256": "41201f978902a8ce8a467417445f6231c62cc52311d5804976933ac45e253434",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 76,
+      "crop_xywh": [
+        0,
+        0,
+        832,
+        480
+      ],
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/lam_000.png",
+      "sha256": "d8b54947f0b51c33f68e9a6e9536b94215b3f666e11e322a9c6eb17d654decd2",
+      "source_archive_path": "results/LAM/measured_01/videos/barbara.mp4",
+      "source_sha256": "7852de885a5ebf1233c132adf145b153b4432a53c2283d478fa9fb8b53238383",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 0,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/lam_025.png",
+      "sha256": "ef36b986d5b62867af560d9b0af2640f94900054962a58b52440ed560c6e0bd8",
+      "source_archive_path": "results/LAM/measured_01/videos/barbara.mp4",
+      "source_sha256": "7852de885a5ebf1233c132adf145b153b4432a53c2283d478fa9fb8b53238383",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 25,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/lam_050.png",
+      "sha256": "e0732afd950a6cf550ad09907cd9ac560207164708b55b279ce0ff9e7adafcc5",
+      "source_archive_path": "results/LAM/measured_01/videos/barbara.mp4",
+      "source_sha256": "7852de885a5ebf1233c132adf145b153b4432a53c2283d478fa9fb8b53238383",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 50,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/adnerf_008.png",
+      "sha256": "b6aec77e348594a34f7a8713134ca11962441f2acc0c26ac6487f52cc8cf3920",
+      "source_archive_path": "results/AD-NeRF/measured_01/result.avi",
+      "source_sha256": "b828621f26b4c3d32024252a30c1cbaf51ab7cbdae3520fbf3540c7e03f00f63",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 8,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/styleavatar_000.png",
+      "sha256": "36448cc837b218693ab61d7e135a80e809474569b89a5a713585a05f1d2c8a7e",
+      "source_archive_path": "results/StyleAvatar/measured_01/styleavatar.mp4",
+      "source_sha256": "a316f79d6b3a25483e161945d695534cced7f4a7f47f1329306a067a0fa0e839",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 0,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/follow_emoji_008.png",
+      "sha256": "e7fa30f0b284c93e45afc7e18c5757e7a842f5a638917421f8ec5a80ec02f776",
+      "source_archive_path": "results/follow_your_emoji_faster/measured_01/videos/test_temple_reference_oo.mp4",
+      "source_sha256": "73d6d45c72c775ff056c5a514477963749a739d1295e575cbdc3562cfadcc548",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 8,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/liveportrait_driver_000.png",
+      "sha256": "f2bf0dcca82c8e79f1e720457c5a6dc95830d548c9b66d830bdabb193dfee52b",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 0,
+      "crop_xywh": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "role": "driving-video panel in the archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_driver_039.png",
+      "sha256": "fc333a98a9dc65681f86dd07839d24e091c33d3a93a3935ce7c400f8f14ae0c5",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 39,
+      "crop_xywh": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "role": "driving-video panel in the archived comparison output"
+    },
+    {
+      "file": "figures/measured/liveportrait_driver_077.png",
+      "sha256": "d5ea7ee70a61f80532c33bd859e686b0d247b6a805cf2a97de16df3311aa7a42",
+      "source_archive_path": "results/LivePortrait/measured_01/videos/s0--d0_concat.mp4",
+      "source_sha256": "0bd04c1a45be223c44ab570b6363f6e3fbb11ed249a114d2a9769470c499d897",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 77,
+      "crop_xywh": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "role": "driving-video panel in the archived comparison output"
+    },
+    {
+      "file": "figures/measured/soulx_flashtalk_062.png",
+      "sha256": "a3abc1a13b856722cf07b1591dfa81762e9cebe49586cda6964c1d35e618c108",
+      "source_archive_path": "results/soulx_flashtalk/measured_01/res_soulx_flashtalk.mp4",
+      "source_sha256": "9c2e42449c2ef5c068d9919faf362d4b1cf973766f9f6ac306f683d5b64f9b55",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 62,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/soulx_flashtalk_187.png",
+      "sha256": "ed51fe55e48ec523c80b4598ae33814836f00f50a4ea72d99eab4480f4151436",
+      "source_archive_path": "results/soulx_flashtalk/measured_01/res_soulx_flashtalk.mp4",
+      "source_sha256": "9c2e42449c2ef5c068d9919faf362d4b1cf973766f9f6ac306f683d5b64f9b55",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 187,
+      "crop_xywh": null,
+      "role": "generated output"
+    },
+    {
+      "file": "figures/measured/follow_emoji_reference.png",
+      "sha256": "d78c7372ab21c192eb66ebc4033d50b01949adbc683c30fdf15cb1c8ea6e09ba",
+      "source_archive_path": "results/follow_your_emoji_faster/measured_01/videos/test_temple_reference_all.mp4",
+      "source_sha256": "44a24e764d7ef3d7aa9e469db8629be3ebf1954c46e843ebed31ed82a6efa16f",
+      "call_kind": "measured",
+      "call_index": 1,
+      "frame_index": 0,
+      "crop_xywh": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "role": "reference panel in the archived comparison output"
+    }
+  ],
+  "literature_panel": {
+    "figure": "03_visual_scope.pdf",
+    "panel": "e",
+    "method": "MIDAS",
+    "cite_key": "chen2025midas",
+    "source": "Retained from the previously attributed literature illustration; no native visual-AR run is claimed."
+  },
+  "schematic_panels": [
+    "Fast/Stable arrival times",
+    "System boundaries and clocks",
+    "Hybrid architecture and diffusion RGB frame icon",
+    "L1-L5 state operations",
+    "Diffusion denoising and FADA call counts",
+    "Neural-field, Gaussian-scene and feature-stack representations"
+  ],
+  "evidence_review": {
+    "iteration_elapsed_seconds_matched": 336,
+    "first_measured_primary_videos_decoded_and_matched": 56,
+    "performance_measurements_rerun": false
+  },
+  "configuration_annotations": {
+    "follow_your_emoji_faster": {
+      "input_configuration": "16 decoded frames at 512 × 512; primary output uses 7 FPS playback. The reference and generated panels used in the figures are identified separately. Sampler defaults remain unspecified.",
+      "stage_definition": "The archive supplies synchronized phase events and per-call records. The published phase means retain their original boundaries.",
+      "source_archive_path": "results/follow_your_emoji_faster/job.json",
+      "source_sha256": "e2534326037ad6114b035d2066ab6b3579c2df7cbff7607dd50cbbdc1461625c"
+    },
+    "hallo_live": {
+      "input_configuration": "21 decoded frames at 992 × 512 and 24 FPS playback. The launch selects the dual-stream DMD configuration, EMA weights and one sample. Full sampler defaults remain unspecified.",
+      "stage_definition": "Models reload each call. Phase events and per-call records are available in the archive.",
+      "source_archive_path": "results/hallo_live/job.json",
+      "source_sha256": "edb57e2e9b9968008a1d45635fd08bd43dafa169467f355f159c2fe7a5e86f7d"
+    },
+    "lightningcp": {
+      "input_configuration": "16 decoded frames at 512 × 512. Image, audio and a prepared mask are launch inputs. Full sampler defaults remain unspecified.",
+      "stage_definition": "Models reload and media preprocessing repeats each call. The archive supplies phase events and per-call records.",
+      "source_archive_path": "results/lightningcp/job.json",
+      "source_sha256": "d123ef0cff5cac72e686107b628f91a23623f0751ad25780b3a19d741e2fe343"
+    },
+    "lipforcing": {
+      "input_configuration": "9 decoded frames at 512 × 512; the launch requests 3 latent frames. A fresh face-cache directory is used for each call.",
+      "stage_definition": "Models reload each call. The archived job record places text-encoder construction and checkpoint/tokenizer setup in Load, and actual prompt encoding in Pre. Native Wav2Vec warm-up and allocator cleanup are retained.",
+      "source_archive_path": "results/lipforcing/job.json",
+      "source_sha256": "4fd6b42b0f5837ad7f88b8a4721b9cde92da35fb36314b04f58322590256bf1a"
+    },
+    "liveavatar": {
+      "input_configuration": "45 decoded frames at 704 × 384. Launch options request 48 frames, one clip, 4 Euler steps, guidance scale 0, seed 420 and one DiT GPU. Model offloading is enabled. Actual output length remains 45.",
+      "stage_definition": "Models reload and media preprocessing repeats each call. The archive supplies phase events and per-call records. This is a single-H200 configuration.",
+      "source_archive_path": "results/liveavatar/job.json",
+      "source_sha256": "7272ba3dfe9fddf2fabc12a006df44ad2bc43825ff77c9ee69ba34a40c8bc4b9"
+    },
+    "personalive": {
+      "input_configuration": "16 decoded frames at 512 × 512; these length and spatial dimensions are explicit launch options. Full sampler and decoder defaults remain unspecified.",
+      "stage_definition": "Models reload and media preprocessing repeats each call. Phase events and per-call records are available in the archive.",
+      "source_archive_path": "results/personalive/job.json",
+      "source_sha256": "940ded2a792b2a4bcb26ff40f531bbff9472ad322734b151609f445badc698ad"
+    }
+  },
+  "scope": "Supplementary figure and configuration evidence. The frozen numeric exports retain their original annotation text; these reviewed annotations and the current protocol supersede statements that videos, JSON reports or phase records were unavailable."
+}

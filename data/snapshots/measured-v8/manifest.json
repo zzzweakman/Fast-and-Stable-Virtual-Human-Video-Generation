@@ -1,0 +1,55 @@
+{
+  "snapshot": "VH-MEASURED-V8",
+  "description": "55-page survey with seven figures using archived H200 outputs, references and UV assets. Captions and text distinguish measured frames from schematics and the retained MIDAS literature example. Archive records reconcile all 336 call times and the first measured output of all 56 configurations; launch records supplement six configurations. Numeric results, short measurement captions, publication years, Takeaways cards and two-column appendix text are retained.",
+  "measurement_source_manifest": "data/snapshots/2026-10-19-measurements/manifest.json",
+  "published_results": 56,
+  "methods": 55,
+  "warmup_calls": 168,
+  "measured_calls": 168,
+  "pending_results": 0,
+  "files": [
+    {
+      "path": "data/h200-results-2026-10-19.json",
+      "sha256": "ed19978ee31900cad1bcb4f0dbc63572d4acf1a9187ccb7a43edc09360ab7101",
+      "bytes": 513633
+    },
+    {
+      "path": "data/h200-results-2026-10-19.csv",
+      "sha256": "128f1c3162e00971e3069e7a22440812597c471a8702a6455c4580521211114f",
+      "bytes": 69567
+    },
+    {
+      "path": "data/h200-trials-2026-10-19.csv",
+      "sha256": "08b195ba83f742e348ff8f07c1f4f338c3b75755937397a2527ca97090b7ead8",
+      "bytes": 53455
+    },
+    {
+      "path": "data/h200-measurement-notes-v5.md",
+      "sha256": "417db58c1e55bc227b5fdcf848a404501c9c46e0d7f75140c9bf9f4a5a8be61b",
+      "bytes": 8825
+    },
+    {
+      "path": "assets/survey/survey-measured-v8.pdf",
+      "sha256": "c399d515758049221c75a171bf34b379815c0bcd772e22229887406f4357132b",
+      "bytes": 16414764
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-measured-v8.zip",
+      "sha256": "9c3778a12018e45c349a047d22d58c825d9d57786061e5f9232a0252e65baaf4",
+      "bytes": 35003911
+    },
+    {
+      "path": "data/h200-output-evidence-v1.json",
+      "bytes": 22555,
+      "sha256": "ff1a17ec0809b45cd7b052c7bdbcb6b780d4b074c9f5c67836092ab49eee6f75"
+    }
+  ],
+  "pages": 55,
+  "publication_year_tables": 15,
+  "takeaway_cards": 4,
+  "redesigned_figures": 10,
+  "measurement_table_note_blocks": 0,
+  "measured_output_figures": 7,
+  "selected_image_assets": 33,
+  "source_package_files": 133
+}

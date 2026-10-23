@@ -6,9 +6,10 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = 'h200-results-2026-10-19'
-SURVEY = 'survey-measured-v7.pdf'
-PROTOCOL = 'h200-measurement-notes-v4.md'
-MANIFEST = 'data/snapshots/measured-v7/manifest.json'
+SURVEY = 'survey-measured-v8.pdf'
+PROTOCOL = 'h200-measurement-notes-v5.md'
+MANIFEST = 'data/snapshots/measured-v8/manifest.json'
+EVIDENCE = 'h200-output-evidence-v1.json'
 GROUPS = [('gan', 'GAN-based'), ('diffusion', 'Diffusion-based'), ('render', 'Render-based'), ('motion', 'Motion visualization')]
 NAMES = {'Wav2Lip-GAN': 'Wav2Lip+GAN', 'LiveSpeechPortraits': 'Live Speech Portraits',
          'AvatarForcing-SlidingWindow': 'AvatarForcing-SW', 'TalkLikeYou': 'Talk Like You',
@@ -40,6 +41,7 @@ def row_html(row):
 
 
 def render(data):
+    annotations = json.loads((ROOT / 'data' / EVIDENCE).read_text())['configuration_annotations']
     groups = []
     for route, title in GROUPS:
         rows = [r for r in data['rows'] if r['route'] == route]
@@ -55,8 +57,8 @@ def render(data):
 <thead><tr><th scope="col">Configuration</th><th scope="col">Models</th><th scope="col">Frames</th><th scope="col">Output<br><span>W × H</span></th><th scope="col">Pre<br><span>s</span></th><th scope="col">Gen<br><span>s</span></th><th scope="col">Post<br><span>s</span></th><th scope="col">Load/call<br><span>s</span></th><th scope="col">Call ± SD<br><span>s</span></th><th scope="col">Warm peak<br><span>GiB · after 3 warm-ups</span></th><th scope="col">Suite total<br><span>s · all 6 calls</span></th></tr></thead>
 <tbody>{''.join(row_html(r) for r in rows)}</tbody></table></div></section>''')
     configs = ''.join(
-        f'<dt>{ESC(NAMES.get(r["method"], r["method"]))}</dt><dd><p>{ESC(r["input_configuration"])}</p>'
-        f'<p>{ESC(r["stage_definition"])}</p><p>Attention: {ESC(r["attention_backend"])}. {ESC(r["attention_evidence"])}</p></dd>'
+        f'<dt>{ESC(NAMES.get(r["method"], r["method"]))}</dt><dd><p>{ESC(annotations.get(r["config_id"], r)["input_configuration"])}</p>'
+        f'<p>{ESC(annotations.get(r["config_id"], r)["stage_definition"])}</p><p>Attention: {ESC(r["attention_backend"])}. {ESC(r["attention_evidence"])}</p></dd>'
         for r in data['rows'])
     nav = ''.join(f'<a href="#{key}">{title}</a>' for key, title in GROUPS)
     return f'''<!doctype html>
@@ -83,8 +85,9 @@ def render(data):
 <dt>Suite total</dt><dd>The complete 3+3 process includes startup/import, setup, all six calls, output QA and shutdown. This replaces the old fresh-process interpretation and must not be divided by six to estimate measured-call latency. The first measured call is already after three warm-ups.</dd>
 <dt>Memory measurement</dt><dd>Own-process/worker NVML samples are collected approximately every 100 ms. Warm peak is the maximum of the three measured-window peaks after warm-up. Sampling may miss brief allocations; framework counters do not cover every CUDA allocator.</dd>
 <dt>Model and input state</dt><dd>Same interpreter does not mean every model stays resident. StyleAvatar retains neural objects while rebuilding FaceVerse state; Wan retains its actual GPU worker. Precomputed tracking, features, masks and subject-trained assets remain prerequisites where the demo expects them. First calls may reuse disk caches.</dd>
-<dt>Metadata and evidence</dt><dd>No new attention capture accompanies these timed runs. The original 46 labels are historical execution observations; the ten new labels are source/configuration inspections. Package versions and Git heads are post-run inventories. Full sampling/decoder settings for six additional configurations were not supplied.</dd>
-<dt>Interpretation limits</dt><dd>The delivery contains a workbook and README; referenced server-side traces, adapters, separate JSON and videos were not provided for independent inspection. All reported means, sample SDs, memory maxima, phase unions and frame sequences were reconciled with the workbook's 336 calls. Basic output validity checks do not measure visual quality. Repeated short clips do not establish TTFF, sustained service or long-session stability.</dd></dl>
+<dt>Metadata and evidence</dt><dd>No new attention capture accompanies these timed runs. The original 46 labels are historical execution observations; the ten new labels are source/configuration inspections. Package versions and Git heads are post-run inventories. Archived launch records supplement the six additional configurations; unrecorded sampler and decoder defaults remain unspecified.</dd>
+<dt>Archived outputs</dt><dd>The workbook is supported by JSON reports, iteration records, phase events, NVML samples and output videos. All 336 call times match the archived iteration records. The first measured primary output of every configuration was decoded, with frame counts and canvas dimensions checked against the records. Seven survey figures now use actual output crops and intermediate assets; the source package includes their <a href="data/{EVIDENCE}">frame provenance and configuration evidence</a>. MIDAS remains an attributed literature example.</dd>
+<dt>Interpretation limits</dt><dd>All reported means, sample SDs, memory maxima, phase unions and frame sequences were reconciled with the workbook's 336 calls. Adapter source, model weights and complete environments were not included in the output archive. Output checks and selected frames do not measure perceptual quality. Repeated short clips do not establish TTFF, sustained service or long-session stability. Numeric exports are unchanged; the current protocol and notes below include the archive review.</dd></dl>
 <details class="result-configurations"><summary>Input settings, stage boundaries and attention evidence</summary><dl>{configs}</dl></details>
 <p><a href="data/{PROTOCOL}">Download the full protocol</a> · <a href="assets/survey/{SURVEY}">Read the updated survey</a> · <a href="{MANIFEST}">Release manifest</a> · <a href="data/h200-results-2026-10-16.json">Archived single-run results</a></p></section>
 </main><footer class="container results-footer"><p>Repeated-call runtime and memory measurements.</p><a href="https://github.com/zzzweakman/Fast-and-Stable-Virtual-Human-Video-Generation">View data and source on GitHub</a></footer>
