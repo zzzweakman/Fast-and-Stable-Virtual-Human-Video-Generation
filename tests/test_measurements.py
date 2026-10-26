@@ -6,7 +6,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from export_measurements import export_rows
+from export_measurements import export_rows, complete_rows
 from validate_measurements import validate_measurements
 
 
@@ -33,6 +33,22 @@ class PublicMeasurementTests(unittest.TestCase):
         self.assertAlmostEqual(muse['measured_nvml_peak_gib'], 9.4921875)
         self.assertAlmostEqual(muse['first_warmup_nvml_peak_gib'], 137.849609375)
         self.assertEqual(muse['model_mode'], 'resident_models_or_worker')
+
+    def test_selection_and_loading_use_the_initial_invocation(self):
+        current = json.loads((ROOT / 'data/h200-results-v9.json').read_text())['rows']
+        years = {r['cite_key']: r['publication_year'] for r in current}
+        selected, excluded = complete_rows(self.rows, years)
+        self.assertEqual(len(selected), 51)
+        self.assertEqual(set(excluded), {'wan_animate_2', 'StyleAvatar', 'soulx_flashtalk',
+                                         'soulx_flashhead_lite', 'soulx_flashhead_pro'})
+        by_id = {r['config_id']: r for r in selected}
+        self.assertAlmostEqual(by_id['MuseTalk']['first_load_s'], 7.988955043)
+        self.assertLess(by_id['MuseTalk']['statistics']['load_s']['mean'], 0.01)
+        self.assertNotIn('load_s', by_id['MuseTalk'])
+        # These resident implementations lack a measured-call loading interval,
+        # but have valid initial loads and must remain in the displayed subset.
+        self.assertAlmostEqual(by_id['EAT']['first_load_s'], 3.668869879)
+        self.assertAlmostEqual(by_id['HyperReenact']['first_load_s'], 16.108619939)
 
     def test_public_artifacts_and_statistics_agree(self):
         validate_measurements()

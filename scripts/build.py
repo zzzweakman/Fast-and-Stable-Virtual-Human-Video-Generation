@@ -53,6 +53,8 @@ def main():
         shutil.copy2(ROOT / 'data' / name, out / 'data' / name)
     for name in ('h200-results-2026-10-19.json', 'h200-results-2026-10-19.csv', 'h200-trials-2026-10-19.csv', 'h200-measurement-notes-2026-10-19.md', 'h200-measurement-notes-v2.md', 'h200-measurement-notes-v4.md', 'h200-measurement-notes-v5.md', 'h200-output-evidence-v1.json'):
         shutil.copy2(ROOT / 'data' / name, out / 'data' / name)
+    for name in ('h200-results-v9.json', 'h200-results-v9.csv', 'h200-trials-v9.csv', 'h200-measurement-notes-v9.md'):
+        shutil.copy2(ROOT / 'data' / name, out / 'data' / name)
     (out / '.nojekyll').touch()
     print(f'Built static website: {out}')
 

@@ -37,7 +37,7 @@ function provenance(p) {
 function evidenceDisclosure(p, index) {
   const rows = p.evidence || [], selected = defaultConfiguration(rows);
   return `<details class="paper-evidence"><summary>${rows.length ? 'Reported measurements & source' : 'About this paper'}</summary><div class="evidence-content">
-    ${selected ? `${rows.length > 1 ? `<label for="evidence-config-${index}">Source configuration</label><select id="evidence-config-${index}" data-evidence-config="${esc(p.id)}">${rows.map(r => `<option value="${esc(r.id)}" ${r.id === selected.id ? 'selected' : ''}>${esc(r.configuration)}</option>`).join('')}</select>` : ''}<div class="configuration-content">${evidenceConfiguration(selected)}</div><p class="snapshot-note">Values reported by the original authors under the stated conditions. Our common-environment measurements are pending.</p>` : ''}
+    ${selected ? `${rows.length > 1 ? `<label for="evidence-config-${index}">Source configuration</label><select id="evidence-config-${index}" data-evidence-config="${esc(p.id)}">${rows.map(r => `<option value="${esc(r.id)}" ${r.id === selected.id ? 'selected' : ''}>${esc(r.configuration)}</option>`).join('')}</select>` : ''}<div class="configuration-content">${evidenceConfiguration(selected)}</div><p class="snapshot-note">Values reported by the original authors under the stated conditions. Our <a href="measurements.html">single-H200 measurements</a> are available separately.</p>` : ''}
     ${(p.mechanisms || []).map(m => `<p class="pattern-evidence"><strong>${esc(m.code)} · ${esc(PATTERNS[m.code])}</strong><br>${esc(m.note)}</p>`).join('')}
     ${provenance(p)}</div></details>`;
 }

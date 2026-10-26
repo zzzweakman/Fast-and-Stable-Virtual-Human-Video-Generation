@@ -23,26 +23,33 @@ The build gives CSS and JavaScript files a shared content-based version, includi
 
 ## Runtime and memory results
 
-**56 measured configurations covering 55 methods are available**, each using one H200. Every configuration executes three complete warm-ups followed by three measured calls in the same interpreter. All **336 calls** are included: 168 warm-ups and 168 measured repetitions. MuseTalk and VideoReTalking have completed remeasurements; SoulX-LiveAct, SoulX-FlashTalk, and both FlashHead Lite/Pro configurations now have results. Six additional diffusion implementations are also included.
+**51 measured configurations covering 51 methods are reported**, each using one H200: 11 GAN, 16 diffusion, 23 rendering, and one UniLS motion visualization. The tables include configurations with recorded first-call loading and all listed timing and memory fields. Each configuration has three complete warm-ups and three measured calls, giving **306 included calls**.
 
 - [View the results](https://zzzweakman.github.io/Fast-and-Stable-Virtual-Human-Video-Generation/measurements.html).
-- Download the [summary CSV](data/h200-results-2026-10-19.csv), [full JSON](data/h200-results-2026-10-19.json), or [all 336 calls](data/h200-trials-2026-10-19.csv).
-- Read the [measurement protocol](data/h200-measurement-notes-v5.md) and [release manifest](data/snapshots/measured-v8/manifest.json).
-- Read the [updated survey PDF](assets/survey/survey-measured-v8.pdf) or download its [source package](assets/survey/virtual-human-survey-measured-v8.zip).
+- Download the [summary CSV](data/h200-results-v9.csv), [full JSON](data/h200-results-v9.json), or [306 included calls](data/h200-trials-v9.csv).
+- Read the [measurement protocol](data/h200-measurement-notes-v9.md) and [release manifest](data/snapshots/measured-v9/manifest.json).
+- Read the [updated survey PDF](assets/survey/survey-measured-v9.pdf) or download its [clean source package](assets/survey/virtual-human-survey-measured-v9.zip).
 
-The current **55-page survey** uses actual output frames and intermediate assets in **seven figures**, with captions and body text aligned to the archived runs. Task examples include VideoReTalking, SoulX-FlashTalk, LivePortrait, EverAnimate and LAM; the diffusion and rendering diagrams also use Follow-Your-Emoji-Faster, StyleAvatar and AD-NeRF. MIDAS remains an attributed literature example. Architecture, timing and representation diagrams remain schematic. The source package includes **33 image assets**, reusable vector layouts, a rebuilding script and [frame provenance](data/h200-output-evidence-v1.json). Publication-year columns in **15 tables**, four **Takeaways cards**, concise measurement captions, two-column appendix text and all numerical results are retained.
+**Load₁ reports the first invocation, `warmup_01`.** MuseTalk, LAM, and GUAVA have initial loads of **7.99 s, 23.09 s, and 30.20 s**. Pre, Gen, Post, and Call remain means of three measured calls after three full warm-ups; Call also reports sample standard deviation. Initial loading cannot be added to these warmed means to obtain a measured total. Ten configurations retain audited model objects; 41 reload models each call. The first invocation may reuse disk caches.
 
-The table reports measured-call means and Call ± sample standard deviation. **Call** spans inference entry to synchronized return; **Suite total** spans setup, all six calls, QA and shutdown. The suite total is not a single-call latency and must not be divided by six to estimate measured latency. Fifteen configurations retain audited model objects or a GPU worker; 41 reload each call. Inputs, supplied assets and software differ.
+Warm peak is the maximum NVML peak across the three measured calls: **9.49 GiB for MuseTalk and 16.01 GiB for VideoReTalking**. Call spans inference entry to synchronized return, including any loading in that call. Suite total covers the complete 3+3 process, including setup and output checks; it is neither single-call latency nor TTFF. Inputs, settings, and model residency differ, so these results do not establish a controlled quality/speed ranking or continuous-session stability.
 
-The main result tables show **Warm peak**, the maximum NVML peak over the three measured calls after warm-up: **9.49 GiB for MuseTalk and 16.01 GiB for VideoReTalking**. The revised manuscript removes calendar dates from its narrative, tables and reference notes while retaining bibliographic publication years. Wan's actual final frame counts remain **35 / 33 / 34**, and unrecorded load intervals remain null/NR.
+The current **54-page survey** includes a radial taxonomy, updated schematic portraits and representation diagrams, and a pipeline-cost figure whose stages and total all come from the same first invocation. Captions distinguish illustrations from recorded measurements. The clean source package contains **52 files** and only the ten figure PDFs used by the paper. Publication-year columns, Takeaways cards, concise result captions, and two-column appendix text are retained.
 
-Coverage is 11 GAN, 20 diffusion, 24 rendering configurations and one UniLS motion visualization. FlashHead Lite/Pro account for the configuration/method count difference. Native visual-AR coverage is zero. These measurements do not establish a matched quality/speed ranking, TTFF or continuous-session stability. Archived launch records supplement the six additional configurations, including Live Avatar’s four Euler steps and enabled offloading; unrecorded sampler and decoder defaults remain unspecified. Attention labels are historical execution or source/configuration evidence, not fresh kernel captures.
+The [original 56-configuration JSON](data/h200-results-2026-10-19.json), [summary CSV](data/h200-results-2026-10-19.csv), and [all 336 calls](data/h200-trials-2026-10-19.csv) remain archived, including the five configurations omitted for missing initial loading intervals. Their original mean-loading fields keep their original meaning. The new summary uses `first_load_s`; measured loading statistics remain within `statistics` and the per-call records.
 
-The workbook is supported by archived JSON reports, iteration records, phase events, NVML samples and videos. All **336 call times** match the archived iteration records; the first measured primary output from each of the **56 configurations** was decoded and checked for frame count and canvas dimensions. Adapter source, model weights and complete environments remain outside the archive. Numeric exports are frozen; the current protocol and supplementary evidence update their original availability notes. Public exports omit internal machine identifiers and absolute server paths.
+The workbook is supported by archived JSON reports, iteration records, phase events, NVML samples, and videos. Included values and the 306 corresponding calls match the source records. Labels for 44 included implementations describe separate execution observations; seven use source/configuration inspection. Adapter source, model weights, and complete environments remain outside the archive. Public exports omit internal machine identifiers and absolute server paths.
 
-Regenerate the public files with `scripts/export_measurements.py --input <verified-h200_results.json> --output-dir <new-directory>` and the static page with `scripts/render_measurements.py --output <new-file>`. Run `npm test`, Python unit tests and `scripts/build.py` before publishing. Validation checks means/SDs, memory windows, phase unions, frame sequences and HTML/CSV/JSON consistency. The static tables work without JavaScript.
+Regenerate the current data from the preserved records and the manuscript's publication-year columns:
 
-The [16 October data](data/h200-results-2026-10-16.json) remains an archived release of 44 published single-run results and five pending entries; its protocol differs from this repeated-call release.
+```sh
+python3 scripts/export_measurements.py --input data/h200-results-2026-10-19.json --manuscript-dir <current-clean-manuscript> --output-dir <new-directory>
+python3 scripts/render_measurements.py --output <new-html-file>
+```
+
+Copy the newly exported files into `data/` before rendering. Run `npm test`, the Python unit tests, and `scripts/build.py` before publishing. Validation checks selection, initial loading, means/SDs, memory windows, phase unions, frame sequences, and HTML/CSV/JSON consistency. The static result tables work without JavaScript. Preserve earlier release files and create a new snapshot for later revisions.
+
+The [earlier single-run data](data/h200-results-2026-10-16.json) remains archived; its protocol differs from the repeated-call release.
 
 ## Archived DBLP manuscript and catalogue — 13 October 2026
 
@@ -74,7 +81,7 @@ Cards describe methods and original-source measurements in plain language. The c
 - `data/ar-second-pass-review.md`: historical AR additions, spatial and unresolved boundary cases, and recommended survey placements.
 - `data/image-supplement-review.md` and `data/image-supplement-audit.json`: validation and source checks for the 92 supplied missing previews.
 - `assets/papers/manifest.json`: preview provenance, source pages, figure captions, and image paths.
-- `assets/survey/survey-measured-v8.pdf`: current measured revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
+- `assets/survey/survey-measured-v9.pdf`: current measured revision; `survey-measured-v8.pdf` preserves the earlier output-crop revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
 - `assets/survey/survey-2026-10-09.pdf`: the preserved earlier revision associated with snapshot VH-2026-10-09.
 - `assets/survey/survey.pdf`: the preserved draft reviewed on 9 October (`main_revised.pdf`, 48 pages).
 - `assets/survey/provenance.json`: source information for the survey PDF and diagrams.

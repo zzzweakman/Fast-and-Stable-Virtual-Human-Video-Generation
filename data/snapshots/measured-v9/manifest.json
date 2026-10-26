@@ -1,0 +1,51 @@
+{
+  "snapshot": "VH-MEASURED-V9",
+  "description": "54-page survey with 51 configurations selected for complete first-call loading and displayed timing and memory fields. Initial loading comes from warmup_01; other table stages retain means of three measured calls after three warm-ups. The paper includes a radial taxonomy, revised schematic portraits and representation diagrams, and a pipeline-cost figure using stages and total from the same first invocation. Earlier data and releases remain unchanged.",
+  "measurement_source_manifest": "data/snapshots/2026-10-19-measurements/manifest.json",
+  "published_results": 51,
+  "methods": 51,
+  "warmup_calls": 153,
+  "measured_calls": 153,
+  "pending_results": 0,
+  "archive_configurations": 56,
+  "archive_calls": 336,
+  "files": [
+    {
+      "path": "data/h200-results-v9.json",
+      "sha256": "c8b6099ed5af609fe10068529bacbcd50d429b4e30313f667809971769968384",
+      "bytes": 468612
+    },
+    {
+      "path": "data/h200-results-v9.csv",
+      "sha256": "4457cfa57e9e0dbfb3d7c42fac7de1c1d6864ca37bc8877d300f117420bfed90",
+      "bytes": 62065
+    },
+    {
+      "path": "data/h200-trials-v9.csv",
+      "sha256": "2e2eda2a136c41c8e400d9eb96be7157e1d6dbb401505deff3a5dce3736c1bc3",
+      "bytes": 48909
+    },
+    {
+      "path": "data/h200-measurement-notes-v9.md",
+      "sha256": "99c20232c421eb13eb2e5b6fd357d75871ade61b17afc4d011e16d57dddd4823",
+      "bytes": 7219
+    },
+    {
+      "path": "assets/survey/survey-measured-v9.pdf",
+      "sha256": "ecf87113d478c4854b10039a20060380f334adf87a065aa62b16e2244707e104",
+      "bytes": 15132991
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-measured-v9.zip",
+      "sha256": "4f392dc666cfd050ae217052297cda66dcbe96371f8ad4946a4eb80ed645f22d",
+      "bytes": 29140520
+    }
+  ],
+  "pages": 54,
+  "publication_year_tables": 15,
+  "takeaway_cards": 4,
+  "redesigned_figures": 10,
+  "measurement_table_note_blocks": 0,
+  "schematic_portraits": true,
+  "source_package_files": 52
+}
