@@ -1,11 +1,11 @@
 {
   "surveyPdf": {
-    "path": "assets/survey/survey-measured-v10.pdf",
+    "path": "assets/survey/survey-measured-v11.pdf",
     "source": "virtual-human-survey/1028_astra_v0/main.tex",
     "pages": 43,
-    "snapshot": "VH-MEASURED-V10",
-    "sha256": "319dafe24d509ce40f2f7771721798b0e789cf149e1a72cdf6f5abb9446ffa2b",
-    "note": "Runtime, HDTF and StreamEval revision with 268 cited references. StreamEval retains four content metrics and excludes unresolved synchronization and dependent aggregate scores."
+    "snapshot": "VH-MEASURED-V11",
+    "sha256": "fd54f70e71a5803b5e2aca1396b4821e76a9cd7a3d9ea8df4de9c278b8c8d2ec",
+    "note": "Concise dataset and measurement descriptions, with unchanged runtime, HDTF and StreamEval results and 268 cited references."
   },
   "figures": {
     "fig1_fast_stable": {
@@ -131,5 +131,13 @@
     "snapshot": "VH-2026-10-13-dblp",
     "sha256": "007fbe7169c274ce6ec90ce175264f024a804106b2e1d2589608c86bde9909f4",
     "note": "DBLP bibliography revision; 263 cited references, 252 matched in DBLP. Runtime and memory measurements remain pending."
+  },
+  "previousMeasuredV10": {
+    "path": "assets/survey/survey-measured-v10.pdf",
+    "source": "virtual-human-survey/1028_astra_v0/main.tex",
+    "pages": 43,
+    "snapshot": "VH-MEASURED-V10",
+    "sha256": "319dafe24d509ce40f2f7771721798b0e789cf149e1a72cdf6f5abb9446ffa2b",
+    "note": "Runtime, HDTF and StreamEval revision with 268 cited references. StreamEval retains four content metrics and excludes unresolved synchronization and dependent aggregate scores."
   }
 }

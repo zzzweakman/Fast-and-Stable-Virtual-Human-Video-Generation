@@ -1,0 +1,76 @@
+{
+  "snapshot": "VH-MEASURED-V11",
+  "description": "43-page 1028_astra_v0 survey with concise dataset and measurement descriptions. Runtime, HDTF and StreamEval values are unchanged.",
+  "measurement_source_manifest": "data/snapshots/2026-10-19-measurements/manifest.json",
+  "published_results": 51,
+  "methods": 51,
+  "warmup_calls": 153,
+  "measured_calls": 153,
+  "pending_results": 0,
+  "archive_configurations": 56,
+  "archive_calls": 336,
+  "hdtf_configurations": 23,
+  "streameval_configurations": 6,
+  "pages": 43,
+  "cited_references": 268,
+  "catalogue_records": 186,
+  "figures": 10,
+  "source_package_files": 53,
+  "files": [
+    {
+      "path": "data/h200-results-v11.json",
+      "sha256": "f6af464eddf2e7ee9428cfdb4a41e1f91c8d7815b60f1e700cff2002d2fe03d8",
+      "bytes": 467477
+    },
+    {
+      "path": "data/h200-results-v11.csv",
+      "sha256": "795c7d48e2ac09683bdccac60de72c5a2059d390db8fa1da7ef3c5a075cba573",
+      "bytes": 57703
+    },
+    {
+      "path": "data/h200-trials-v11.csv",
+      "sha256": "2e2eda2a136c41c8e400d9eb96be7157e1d6dbb401505deff3a5dce3736c1bc3",
+      "bytes": 48909
+    },
+    {
+      "path": "data/h200-measurement-notes-v11.md",
+      "sha256": "3a898441f638d15da00242af6c8c5e9f4aaa889f14b27d8e427dc5b7614fbc08",
+      "bytes": 5405
+    },
+    {
+      "path": "data/benchmark-results-v11.json",
+      "sha256": "ad42f432e31a958c9be842199779d1f1d30fb361011b3b3337b31d430253410f",
+      "bytes": 8889
+    },
+    {
+      "path": "data/hdtf-results-v11.csv",
+      "sha256": "ff4e6a21f96a164ab957fad70fbe26ca5940751afa64c105b6ee2433b8e294ee",
+      "bytes": 1932
+    },
+    {
+      "path": "data/streameval-results-v11.csv",
+      "sha256": "8233c70be611e6e4f3dd8bdc64fdd5639699c1769fc9a2491420293cd390168b",
+      "bytes": 260
+    },
+    {
+      "path": "assets/survey/survey-measured-v11.pdf",
+      "sha256": "fd54f70e71a5803b5e2aca1396b4821e76a9cd7a3d9ea8df4de9c278b8c8d2ec",
+      "bytes": 15416547
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-measured-v11.zip",
+      "sha256": "d28bd75789cc7435a4df30994c92561911b29d73dd4f9663593540725234c9c5",
+      "bytes": 14440790
+    },
+    {
+      "path": "data/snapshots/measured-v11/papers.json",
+      "sha256": "de88cf87342ef6a300ffc361765fccab62489967181a36cfdfbda0633c6892e9",
+      "bytes": 455638
+    },
+    {
+      "path": "data/snapshots/measured-v11/literature-addition.bib",
+      "sha256": "2c5954c1cb2f47f85306a80e8a5c3255da673321a32daeb7c0b981dfb673aabd",
+      "bytes": 776
+    }
+  ]
+}

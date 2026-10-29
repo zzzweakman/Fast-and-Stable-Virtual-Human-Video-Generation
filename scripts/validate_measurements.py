@@ -106,7 +106,7 @@ def validate_measurements():
             group = benchmarks[key]
             assert len(group['rows']) == group['configurations'] == count
             assert group['rows'] == parse((manuscript / 'tables' / filename).read_text()), f'{key}: manuscript and website differ'
-            with (ROOT / 'data' / f'{key}-results-v10.csv').open(newline='') as stream:
+            with (ROOT / 'data' / f'{key}-results-v11.csv').open(newline='') as stream:
                 actual = list(csv.DictReader(stream))
             assert actual == [{k: str(v) for k, v in r.items()} for r in group['rows']], f'{key}: CSV and JSON differ'
             assert page.count(f'data-benchmark="{key}"') == count

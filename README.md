@@ -26,10 +26,10 @@ The build gives CSS and JavaScript files a shared content-based version, includi
 **51 measured configurations covering 51 methods are reported**, each using one H200: 11 GAN, 16 diffusion, 23 rendering, and one UniLS motion visualization. The tables include configurations with recorded first-call loading and all listed timing and memory fields. Each configuration has three complete warm-ups and three measured calls, giving **306 included calls**.
 
 - [View the results](https://zzzweakman.github.io/Fast-and-Stable-Virtual-Human-Video-Generation/measurements.html).
-- Download the [runtime CSV](data/h200-results-v10.csv), [full runtime JSON](data/h200-results-v10.json), or [306 included calls](data/h200-trials-v10.csv).
-- Download the [HDTF CSV](data/hdtf-results-v10.csv), [StreamEval CSV](data/streameval-results-v10.csv), or [benchmark JSON](data/benchmark-results-v10.json).
-- Read the [measurement protocol](data/h200-measurement-notes-v10.md) and [release manifest](data/snapshots/measured-v10/manifest.json).
-- Read the [updated survey PDF](assets/survey/survey-measured-v10.pdf) or download its [clean source package](assets/survey/virtual-human-survey-measured-v10.zip).
+- Download the [runtime CSV](data/h200-results-v11.csv), [full runtime JSON](data/h200-results-v11.json), or [306 included calls](data/h200-trials-v11.csv).
+- Download the [HDTF CSV](data/hdtf-results-v11.csv), [StreamEval CSV](data/streameval-results-v11.csv), or [benchmark JSON](data/benchmark-results-v11.json).
+- Read the [measurement protocol](data/h200-measurement-notes-v11.md) and [release manifest](data/snapshots/measured-v11/manifest.json).
+- Read the [updated survey PDF](assets/survey/survey-measured-v11.pdf) or download its [clean source package](assets/survey/virtual-human-survey-measured-v11.zip).
 
 **Load₁ reports the first invocation, `warmup_01`.** MuseTalk, LAM, and GUAVA have initial loads of **7.99 s, 23.09 s, and 30.20 s**. Pre, Gen, Post, and Call remain means of three measured calls after three full warm-ups; Call also reports sample standard deviation. Initial loading cannot be added to these warmed means to obtain a measured total. Ten configurations retain audited model objects; 41 reload models each call. The first invocation may reuse disk caches.
 
@@ -87,7 +87,7 @@ Cards describe methods and original-source measurements in plain language. The c
 - `data/ar-second-pass-review.md`: historical AR additions, spatial and unresolved boundary cases, and recommended survey placements.
 - `data/image-supplement-review.md` and `data/image-supplement-audit.json`: validation and source checks for the 92 supplied missing previews.
 - `assets/papers/manifest.json`: preview provenance, source pages, figure captions, and image paths.
-- `assets/survey/survey-measured-v10.pdf`: current measured revision; `survey-measured-v9.pdf` preserves the previous runtime release; `survey-measured-v8.pdf` preserves the earlier output-crop revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
+- `assets/survey/survey-measured-v11.pdf`: current measured revision; `survey-measured-v10.pdf` preserves the previous benchmark release; `survey-measured-v9.pdf` preserves the earlier runtime release; `survey-measured-v8.pdf` preserves the earlier output-crop revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
 - `assets/survey/survey-2026-10-09.pdf`: the preserved earlier revision associated with snapshot VH-2026-10-09.
 - `assets/survey/survey.pdf`: the preserved draft reviewed on 9 October (`main_revised.pdf`, 48 pages).
 - `assets/survey/provenance.json`: source information for the survey PDF and diagrams.

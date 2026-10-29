@@ -5,7 +5,7 @@ import csv
 import json
 import re
 
-RELEASE = 'v10'
+RELEASE = 'v11'
 HDTF_METRICS = ('sync_c', 'sync_d', 'identity', 'fid', 'fvd')
 STREAM_METRICS = ('quality', 'stability', 'following', 'identity')
 

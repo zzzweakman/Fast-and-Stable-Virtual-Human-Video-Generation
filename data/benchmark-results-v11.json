@@ -1,0 +1,331 @@
+{
+  "release": "v11",
+  "manuscript_revision": "1028_astra_v0",
+  "hdtf": {
+    "configurations": 23,
+    "test_cases": 40,
+    "clip_seconds": 15,
+    "generated_videos": 920,
+    "real_reference_clips": 20,
+    "display_decimals": 4,
+    "protocol": "Matched inputs from the Let Them Talk HDTF split. SyncNet uses 25 FPS without offset correction. Identity is raw ArcFace cosine similarity averaged over 16 temporal-bin midpoint frames per clip. FID and FVD use center-square full-frame clips.",
+    "limits": "Identity scores depend on preserved source pixels and pose variation. FID and FVD are sensitive to framing and the small reference pool. These measurements do not establish long-session stability.",
+    "rows": [
+      {
+        "method": "Wav2Lip+GAN",
+        "cite_key": "prajwal2020lip",
+        "year": 2020,
+        "route": "GAN",
+        "sync_c": 7.8614,
+        "sync_d": 7.2206,
+        "identity": 0.9345,
+        "fid": 125.5026,
+        "fvd": 460.0848
+      },
+      {
+        "method": "MuseTalk",
+        "cite_key": "zhang2024musetalk",
+        "year": 2024,
+        "route": "GAN",
+        "sync_c": 6.7746,
+        "sync_d": 7.6902,
+        "identity": 0.9402,
+        "fid": 123.2035,
+        "fvd": 460.0232
+      },
+      {
+        "method": "EDTalk",
+        "cite_key": "tan2024edtalk",
+        "year": 2024,
+        "route": "GAN",
+        "sync_c": 6.2825,
+        "sync_d": 8.8483,
+        "identity": 0.9263,
+        "fid": 123.6688,
+        "fvd": 389.8324
+      },
+      {
+        "method": "VideoReTalking",
+        "cite_key": "cheng2022videoretalking",
+        "year": 2022,
+        "route": "GAN",
+        "sync_c": 7.576,
+        "sync_d": 7.1019,
+        "identity": 0.8726,
+        "fid": 122.6412,
+        "fvd": 456.9658
+      },
+      {
+        "method": "MakeItTalk",
+        "cite_key": "zhou2020makelttalk",
+        "year": 2020,
+        "route": "GAN",
+        "sync_c": 4.443,
+        "sync_d": 9.5825,
+        "identity": 0.8947,
+        "fid": 118.5316,
+        "fvd": 439.505
+      },
+      {
+        "method": "StableAvatar",
+        "cite_key": "tu2025stableavatar",
+        "year": 2025,
+        "route": "Diffusion",
+        "sync_c": 3.5585,
+        "sync_d": 11.4132,
+        "identity": 0.8549,
+        "fid": 113.8779,
+        "fvd": 383.7462
+      },
+      {
+        "method": "InfiniteTalk",
+        "cite_key": "yang2025infinitetalk",
+        "year": 2025,
+        "route": "Diffusion",
+        "sync_c": 7.4545,
+        "sync_d": 7.7165,
+        "identity": 0.8629,
+        "fid": 113.9264,
+        "fvd": 389.5934
+      },
+      {
+        "method": "LiveTalk",
+        "cite_key": "chern2025livetalk",
+        "year": 2025,
+        "route": "Diffusion",
+        "sync_c": 3.5085,
+        "sync_d": 10.9031,
+        "identity": 0.8016,
+        "fid": 118.1108,
+        "fvd": 424.3754
+      },
+      {
+        "method": "AvatarForcing-SW",
+        "cite_key": "cui2026avatarforcing",
+        "year": 2026,
+        "route": "Diffusion",
+        "sync_c": 4.0755,
+        "sync_d": 11.1357,
+        "identity": 0.768,
+        "fid": 116.9224,
+        "fvd": 419.1612
+      },
+      {
+        "method": "LeapTalk",
+        "cite_key": "zhang2026leaptalk",
+        "year": 2026,
+        "route": "Diffusion",
+        "sync_c": 6.987,
+        "sync_d": 8.2025,
+        "identity": 0.8668,
+        "fid": 120.2615,
+        "fvd": 405.0797
+      },
+      {
+        "method": "FLOAT",
+        "cite_key": "ki2025float",
+        "year": 2025,
+        "route": "Render",
+        "sync_c": 6.1561,
+        "sync_d": 8.6035,
+        "identity": 0.9091,
+        "fid": 143.3191,
+        "fvd": 402.5805
+      },
+      {
+        "method": "Ditto",
+        "cite_key": "li2025ditto",
+        "year": 2025,
+        "route": "Render",
+        "sync_c": 5.3529,
+        "sync_d": 9.3416,
+        "identity": 0.9647,
+        "fid": 120.3729,
+        "fvd": 412.5909
+      },
+      {
+        "method": "MoDA",
+        "cite_key": "li2025moda",
+        "year": 2025,
+        "route": "Render",
+        "sync_c": 7.0538,
+        "sync_d": 7.9658,
+        "identity": 0.9261,
+        "fid": 118.0633,
+        "fvd": 395.3063
+      },
+      {
+        "method": "JoyVASA",
+        "cite_key": "cao2024joyvasa",
+        "year": 2024,
+        "route": "Render",
+        "sync_c": 6.4922,
+        "sync_d": 8.6513,
+        "identity": 0.8942,
+        "fid": 117.9605,
+        "fvd": 418.708
+      },
+      {
+        "method": "DyStream",
+        "cite_key": "chen2025dystream",
+        "year": 2025,
+        "route": "Render",
+        "sync_c": 6.9169,
+        "sync_d": 7.9157,
+        "identity": 0.9237,
+        "fid": 133.1542,
+        "fvd": 523.6795
+      },
+      {
+        "method": "Talk Like You",
+        "cite_key": "wang2026talklikeyou",
+        "year": 2026,
+        "route": "Render",
+        "sync_c": 6.5973,
+        "sync_d": 8.0582,
+        "identity": 0.8851,
+        "fid": 121.4178,
+        "fvd": 402.9893
+      },
+      {
+        "method": "Avatar-Forever",
+        "cite_key": "li2026avatarforever",
+        "year": 2026,
+        "route": "Diffusion",
+        "sync_c": 3.6331,
+        "sync_d": 11.3872,
+        "identity": 0.8923,
+        "fid": 147.6847,
+        "fvd": 767.2
+      },
+      {
+        "method": "SoulX-LiveAct",
+        "cite_key": "zhen2026soulx",
+        "year": 2026,
+        "route": "Diffusion",
+        "sync_c": 7.6385,
+        "sync_d": 7.6401,
+        "identity": 0.8696,
+        "fid": 116.6186,
+        "fvd": 395.7511
+      },
+      {
+        "method": "SoulX-FlashTalk",
+        "cite_key": "shen2026soulxflashtalkrealtimeinfinitestreaming",
+        "year": 2025,
+        "route": "Diffusion",
+        "sync_c": 7.6845,
+        "sync_d": 8.2497,
+        "identity": 0.9059,
+        "fid": 169.2544,
+        "fvd": 1199.6986
+      },
+      {
+        "method": "SoulX-FlashHead Lite",
+        "cite_key": "yu2026soulx",
+        "year": 2026,
+        "route": "Diffusion",
+        "sync_c": 7.1473,
+        "sync_d": 7.9148,
+        "identity": 0.9019,
+        "fid": 115.4446,
+        "fvd": 413.4087
+      },
+      {
+        "method": "SoulX-FlashHead Pro",
+        "cite_key": "yu2026soulx",
+        "year": 2026,
+        "route": "Diffusion",
+        "sync_c": 6.4332,
+        "sync_d": 8.6539,
+        "identity": 0.9259,
+        "fid": 115.684,
+        "fvd": 390.0262
+      },
+      {
+        "method": "LightningCP",
+        "cite_key": "long2026lightning",
+        "year": 2026,
+        "route": "Diffusion",
+        "sync_c": 6.8113,
+        "sync_d": 7.9428,
+        "identity": 0.9163,
+        "fid": 120.0276,
+        "fvd": 419.8881
+      },
+      {
+        "method": "Live Avatar",
+        "cite_key": "huang2025live",
+        "year": 2025,
+        "route": "Diffusion",
+        "sync_c": 6.6594,
+        "sync_d": 8.6303,
+        "identity": 0.8445,
+        "fid": 117.3549,
+        "fvd": 373.4172
+      }
+    ]
+  },
+  "streameval": {
+    "configurations": 6,
+    "condition_fraction": 0.2,
+    "repetitions": 3,
+    "sessions_per_configuration": 36,
+    "sessions": 216,
+    "display_decimals": 2,
+    "duration_strata_seconds": [
+      15,
+      30,
+      60,
+      120,
+      300
+    ],
+    "protocol": "Avatar-performance subset with supplied portraits, incrementally released speech, and live visual directions. Average repetitions, then conditions within each duration stratum, then the five strata equally. Failures and unsupported controls remain in the denominator.",
+    "judges": "Local Qwen vision models replace the reference judges. Independent calibration has not been established.",
+    "limits": "The selected subset and local judges limit direct comparison with published StreamEval scores. Unresolved synchronization and its dependent aggregate scores are omitted. All tested configurations support custom portraits, so the fixed five-point customization bonus is also omitted.",
+    "rows": [
+      {
+        "method": "Avatar-Forever",
+        "quality": 24.76,
+        "stability": 31.09,
+        "following": 14.94,
+        "identity": 65.01
+      },
+      {
+        "method": "AvatarForcing",
+        "quality": 54.38,
+        "stability": 66.06,
+        "following": 8.89,
+        "identity": 88.97
+      },
+      {
+        "method": "LiveAvatar",
+        "quality": 25.55,
+        "stability": 30.33,
+        "following": 12.59,
+        "identity": 88.25
+      },
+      {
+        "method": "LiveTalk",
+        "quality": 40.7,
+        "stability": 39.0,
+        "following": 12.22,
+        "identity": 82.26
+      },
+      {
+        "method": "SoulX-FlashTalk",
+        "quality": 44.53,
+        "stability": 49.2,
+        "following": 0.0,
+        "identity": 97.0
+      },
+      {
+        "method": "SoulX-LiveAct",
+        "quality": 22.92,
+        "stability": 26.94,
+        "following": 13.09,
+        "identity": 70.23
+      }
+    ]
+  }
+}

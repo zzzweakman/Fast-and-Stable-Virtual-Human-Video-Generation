@@ -5,7 +5,7 @@ import csv
 import json
 import re
 
-RELEASE = 'v10'
+RELEASE = 'v11'
 SOURCE_RELEASE = '2026-10-19'
 ROOT = Path(__file__).resolve().parents[1]
 NUMERIC = ('frames', 'duration_s', 'output_width', 'output_height', 'encoded_width', 'encoded_height',
@@ -33,6 +33,8 @@ def export_rows(source):
     rows = []
     for row in source:
         public = {k: row.get(k) for k in (*CONTEXT, *NUMERIC, *NESTED)}
+        public['attention_evidence'] = public['attention_evidence'].split(';', 1)[0].rstrip('.') + '.'
+        public['metadata_scope'] = 'Post-run environment and repository inventory.'
         for key in ('measured_iterations', 'warmup_iterations'):
             public[key] = [{k: t.get(k) for k in TRIAL_FIELDS} for t in row[key]]
         rows.append(public)
@@ -146,8 +148,8 @@ def main():
             'suite_time': 'suite_process_s covers the entire 3+3 process, including setup, warm-ups, measured calls, QA and shutdown. It is neither single-call latency nor TTFF; do not divide by six to estimate measured latency.',
             'memory': 'Approximately 100-ms own-process/worker NVML sampling. measured_nvml_peak_gib is the maximum of three measured-window peaks; first_warmup_nvml_peak_gib is the first call; suite_nvml_peak_gib includes setup, all calls and QA.',
             'inputs': 'Unless stated otherwise, inputs follow the demo recommended in the official open-source README. Wav2Lip+GAN uses the EDTalk pair and FOMM uses the TPS pair. Third-party implementations use their supplied demos. Lengths, dimensions, sampling, precision, offloading and precomputed prerequisites differ across repositories.',
-            'metadata': 'No current-run attention capture. Labels for 44 included implementations are historical execution observations; seven use source/configuration inspections. Package versions and Git heads are post-run inventories.',
-            'limits': 'These runtime trials do not measure matched-input quality, TTFF, delivery jitter or continuous-session drift. Separate quality benchmarks are reported in benchmark-results-v10.json. Three short repetitions do not establish sustained service.',
+            'metadata': 'Labels for 44 included implementations are historical execution observations; seven use source/configuration inspections. Package versions and Git heads are post-run inventories.',
+            'limits': 'These runtime trials do not measure matched-input quality, TTFF, delivery jitter or continuous-session drift. Separate quality benchmarks are reported in benchmark-results-v11.json. Three short repetitions do not establish sustained service.',
             'missing': 'The displayed subset has all table metrics. Null/empty fields elsewhere in the underlying records mean unavailable, not zero. Unrecorded sampler and decoder defaults for six configurations remain unspecified.',
             'provenance': 'The workbook is supported by archived JSON reports, iteration records, phase events, NVML samples and output videos. The 306 included calls and aggregate statistics were reconciled; original exports preserve all 336 calls. Adapter source, model weights and complete environments were not supplied.'
         },

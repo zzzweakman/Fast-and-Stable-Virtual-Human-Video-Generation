@@ -5,13 +5,13 @@ import html
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = 'h200-results-v10'
-TRIALS = 'h200-trials-v10.csv'
-SURVEY = 'survey-measured-v10.pdf'
-SOURCE = 'virtual-human-survey-measured-v10.zip'
-PROTOCOL = 'h200-measurement-notes-v10.md'
-MANIFEST = 'data/snapshots/measured-v10/manifest.json'
-BENCHMARKS = 'benchmark-results-v10.json'
+DATA = 'h200-results-v11'
+TRIALS = 'h200-trials-v11.csv'
+SURVEY = 'survey-measured-v11.pdf'
+SOURCE = 'virtual-human-survey-measured-v11.zip'
+PROTOCOL = 'h200-measurement-notes-v11.md'
+MANIFEST = 'data/snapshots/measured-v11/manifest.json'
+BENCHMARKS = 'benchmark-results-v11.json'
 EVIDENCE = 'h200-output-evidence-v1.json'
 GROUPS = [('gan', 'GAN-based'), ('diffusion', 'Diffusion-based'), ('render', 'Render-based'), ('motion', 'Motion visualization')]
 NAMES = {'Wav2Lip-GAN': 'Wav2Lip+GAN', 'LiveSpeechPortraits': 'Live Speech Portraits',
@@ -73,7 +73,7 @@ def benchmark_sections(benchmarks):
 <thead><tr>{''.join(f'<th scope="col">{label}</th>' for label in headings)}</tr></thead>
 <tbody>{''.join(rows)}</tbody></table></div>
 <p>{ESC(group['protocol'])}</p>{judge}<p>{ESC(group['limits'])}</p>
-<p><a href="data/{key}-results-v10.csv" download>Download {title} CSV</a> · <a href="data/{BENCHMARKS}" download>Benchmark JSON</a></p></section>''')
+<p><a href="data/{key}-results-v11.csv" download>Download {title} CSV</a> · <a href="data/{BENCHMARKS}" download>Benchmark JSON</a></p></section>''')
     return '\n'.join(sections)
 
 
@@ -127,7 +127,7 @@ def render(data, benchmarks=None):
 <dt>Suite total</dt><dd>The complete 3+3 process includes startup/import, setup, all six calls, output QA and shutdown. This replaces the old fresh-process interpretation and must not be divided by six to estimate measured-call latency. The first measured call is already after three warm-ups.</dd>
 <dt>Memory measurement</dt><dd>Own-process/worker NVML samples are collected approximately every 100 ms. Warm peak is the maximum of the three measured-window peaks after warm-up. Sampling may miss brief allocations; framework counters do not cover every CUDA allocator.</dd>
 <dt>Model and input state</dt><dd>Unless stated otherwise, inputs follow the demo recommended in the official open-source README. Wav2Lip+GAN uses the EDTalk pair, and FOMM uses the TPS Motion Model pair. Third-party implementations use their supplied demos. Ten configurations retain models; 41 reload each call. Precomputed tracking, features, masks and subject-trained assets remain prerequisites where required. LAM performs fresh FLAME tracking.</dd>
-<dt>Metadata and evidence</dt><dd>No new attention capture accompanies these timed runs. Labels for 44 included implementations are historical execution observations; seven use source/configuration inspections. Package versions and Git heads are post-run inventories. Archived launch records supplement six configurations; unrecorded sampler and decoder defaults remain unspecified.</dd>
+<dt>Metadata and evidence</dt><dd>Labels for 44 included implementations are historical execution observations; seven use source/configuration inspections. Package versions and Git heads are post-run inventories. Archived launch records supplement six configurations; unrecorded sampler and decoder defaults remain unspecified.</dd>
 <dt>Archived outputs and paper figures</dt><dd>The updated survey includes compact runtime tables, HDTF and StreamEval results, and a stage-cost figure derived from first-call timings. The 306 included runtime calls retain their original records. Earlier output crops and their <a href="data/{EVIDENCE}">provenance</a> remain archived.</dd>
 <dt>Interpretation limits</dt><dd>Initial loads, measured means, sample SDs, memory maxima, phase unions and frame sequences were reconciled with the corresponding records. Adapter source, model weights and complete environments were not included in the archive. Output checks do not measure perceptual quality. Different workloads and repeated short clips do not establish a controlled ranking, TTFF, sustained service or long-session stability.</dd></dl>
 <details class="result-configurations"><summary>Input settings, stage boundaries and attention evidence</summary><dl>{configs}</dl></details>
