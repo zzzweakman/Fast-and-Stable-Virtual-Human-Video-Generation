@@ -310,6 +310,10 @@ summary:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #83
 .results-table tbody th a{text-decoration:underline;text-decoration-color:var(--line)}
 .results-table tbody th a:hover{color:var(--rendering);text-decoration-color:currentColor}
 .results-table tbody tr:hover th,.results-table tbody tr:hover td{background:var(--soft)}
+#hdtf .results-table{min-width:900px}
+#streameval .results-table{min-width:640px}
+.result-group>p:not(.result-group-note){max-width:90ch;margin-top:14px;font-size:14px;line-height:1.7}
+.result-group>p a{text-decoration:underline}
 .result-status{display:block;font-size:12px;font-weight:400;color:var(--muted);margin-top:4px}
 .result-protocol{margin-top:52px;border-top:1px solid var(--line);padding-top:36px;max-width:78ch;scroll-margin-top:104px}
 .result-protocol dl{margin:26px 0}

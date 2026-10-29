@@ -4043,5 +4043,15 @@
     "kind": "figure",
     "credit": "Original paper authors; reproduced as a research preview.",
     "sourceSha256": "65360734c03308abed4df692785fb4f76ac71afaf8e14bd4db603bcc06459d0d"
+  },
+  "zhang2026exomni2d": {
+    "path": "assets/papers/zhang2026exomni2d.png",
+    "width": 2504,
+    "height": 2492,
+    "sourceUrl": "https://arxiv.org/html/2608.10720v2#S2.F1",
+    "sourceImageUrl": "https://arxiv.org/html/2608.10720v2/figs/pipeline.png",
+    "caption": "Figure 1: model architecture in the original paper.",
+    "kind": "figure",
+    "credit": "Original paper authors; reproduced as a research preview."
   }
 }

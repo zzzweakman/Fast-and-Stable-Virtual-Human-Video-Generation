@@ -5,9 +5,11 @@ import csv
 import json
 import math
 import statistics
+import zipfile
 
-from export_measurements import NUMERIC, csv_cell
-from render_measurements import DATA, TRIALS, SURVEY, render
+from export_measurements import NUMERIC, attention_labels, csv_cell
+from export_benchmarks import hdtf_rows, streaming_rows
+from render_measurements import BENCHMARKS, DATA, TRIALS, SURVEY, SOURCE, render
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -90,7 +92,26 @@ def validate_measurements():
     for text in [json.dumps(data, ensure_ascii=False), page]:
         assert all(token not in text for token in ('/aiboxian/', '/bxai/', 'VR-boxian-dev', 'Mao-dev-', 'GPU-')), 'Private machine identifiers in public export'
     assert (ROOT / 'assets/survey' / SURVEY).read_bytes().startswith(b'%PDF')
-    print('Validated 51 configurations, 306 calls, first loads, warmed statistics, HTML and CSV/JSON; original archive retained.')
+    benchmarks = json.loads((ROOT / 'data' / BENCHMARKS).read_text())
+    with zipfile.ZipFile(ROOT / 'assets/survey' / SOURCE) as archive:
+        manuscript = zipfile.Path(archive) / benchmarks['manuscript_revision']
+        attention = attention_labels(manuscript)
+        assert sum(r['attention_source_only'] for r in rows) == 7
+        for row in rows:
+            assert {k: row[k] for k in ('attention_label', 'attention_source_only')} == attention[row['cite_key']]
+        for key, filename, parse, count in [
+            ('hdtf', 'measured_hdtf_quality.tex', hdtf_rows, 23),
+            ('streameval', 'measured_streaming_subset20.tex', streaming_rows, 6),
+        ]:
+            group = benchmarks[key]
+            assert len(group['rows']) == group['configurations'] == count
+            assert group['rows'] == parse((manuscript / 'tables' / filename).read_text()), f'{key}: manuscript and website differ'
+            with (ROOT / 'data' / f'{key}-results-v10.csv').open(newline='') as stream:
+                actual = list(csv.DictReader(stream))
+            assert actual == [{k: str(v) for k, v in r.items()} for r in group['rows']], f'{key}: CSV and JSON differ'
+            assert page.count(f'data-benchmark="{key}"') == count
+    assert all(set(row) == {'method', 'quality', 'stability', 'following', 'identity'} for row in benchmarks['streameval']['rows'])
+    print('Validated 51 runtime configurations, 306 calls, 23 HDTF rows, six StreamEval rows, and agreement with the downloadable manuscript.')
     return data
 
 

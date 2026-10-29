@@ -11,8 +11,8 @@ const audited = attachEvidence(papers, snapshot);
 
 test('hybrid correction preserves one primary record and the total catalogue', () => {
   assert.equal(papers.find(p => p.id === 'wang2023styleavatar').category, 'rendering');
-  assert.equal(papers.length, 185);
-  assert.deepEqual(countRoutes(papers), { gan: 21, diffusion: 53, autoregressive: 5, rendering: 59, supporting: 47 });
+  assert.equal(papers.length, 186);
+  assert.deepEqual(countRoutes(papers), { gan: 21, diffusion: 54, autoregressive: 5, rendering: 59, supporting: 47 });
 });
 
 test('new literature keeps cache lifetime and visual ownership distinct', () => {
@@ -23,6 +23,8 @@ test('new literature keeps cache lifetime and visual ownership distinct', () => 
   assert.equal(find('hong2026efficientsync').category, 'rendering');
   assert.equal(find('wang2026talklikeyou').category, 'rendering');
   assert.equal(find('zhang2026ttsac').category, 'context');
+  assert.equal(find('zhang2026exomni2d').category, 'diffusion');
+  assert.equal(crossListingOf(find('zhang2026exomni2d'), 'autoregressive').kind, 'controller');
 });
 
 test('source identity survives title collisions and catalogue updates', () => {
@@ -150,7 +152,7 @@ test('spatial and unresolved AR cases remain discoverable outside strict tempora
   assert.ok(context.every(p => p.category === 'context'));
   assert.equal(filterPapers(papers, { ...defaults, route: 'autoregressive', tag: 'AR scope context' }).length, 0);
   assert.equal(countRoutes(papers).autoregressive, 5);
-  assert.equal(countBrowseRoutes(papers).autoregressive, 9);
+  assert.equal(countBrowseRoutes(papers).autoregressive, 10);
 });
 
 test('OmniResponse is discoverable as a 2025 AR controller without changing visual-AR counts', () => {

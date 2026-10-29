@@ -35,7 +35,7 @@ class PublicMeasurementTests(unittest.TestCase):
         self.assertEqual(muse['model_mode'], 'resident_models_or_worker')
 
     def test_selection_and_loading_use_the_initial_invocation(self):
-        current = json.loads((ROOT / 'data/h200-results-v9.json').read_text())['rows']
+        current = json.loads((ROOT / 'data/h200-results-v10.json').read_text())['rows']
         years = {r['cite_key']: r['publication_year'] for r in current}
         selected, excluded = complete_rows(self.rows, years)
         self.assertEqual(len(selected), 51)

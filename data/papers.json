@@ -8144,5 +8144,57 @@
       "publicationUrl": "https://arxiv.org/abs/2610.06658v1",
       "note": "Included in the 13 October 2026 literature revision."
     }
+  },
+  {
+    "id": "zhang2026exomni2d",
+    "title": "Ex-Omni-2D: Expressive Omni-Modal Dialogue Models with Native Visual Presence",
+    "shortTitle": "Ex-Omni-2D",
+    "authors": "Haoyu Zhang, Zhipeng Li, Xiaoying Tang, Tianshu Yu, Yiwen Guo",
+    "year": 2026,
+    "category": "diffusion",
+    "subcategory": "Dialogue-driven avatar generation",
+    "summary": "An autoregressive dialogue model produces a visual plan and speech units for a flow-matching video generator. The streaming student carries a clean latent prefix between chunks.",
+    "tags": [
+      "AR dialogue controller",
+      "flow matching",
+      "streaming",
+      "multimodal dialogue"
+    ],
+    "url": "https://arxiv.org/html/2608.10720v2",
+    "arxiv": "2608.10720",
+    "section": "Autoregressive Methods",
+    "source": {
+      "citationKey": "DBLP:journals/corr/abs-2608-10720",
+      "bibliography": "bib/AR.bib",
+      "sections": [
+        "sec_new/5_autoregressive_methods.tex"
+      ]
+    },
+    "bibtex": "@article{DBLP:journals/corr/abs-2608-10720,\n  author       = {Haoyu Zhang and\n                  Zhipeng Li and\n                  Xiaoying Tang and\n                  Tianshu Yu and\n                  Yiwen Guo},\n  title        = {Ex-Omni-2D: Expressive Omni-Modal Dialogue Models with Native Visual\n                  Presence},\n  journal      = {CoRR},\n  volume       = {abs/2608.10720},\n  year         = {2026},\n  url          = {https://doi.org/10.48550/arXiv.2608.10720},\n  doi          = {10.48550/ARXIV.2608.10720},\n  eprinttype   = {arXiv},\n  eprint       = {2608.10720},\n  timestamp    = {Sun, 06 Sep 2026 09:25:34 +0200},\n  biburl       = {https://dblp.org/rec/journals/corr/abs-2608-10720.bib},\n  bibsource    = {dblp computer science bibliography, https://dblp.org}\n}\n",
+    "featured": false,
+    "venue": "CoRR",
+    "provenance": {
+      "metadata": "User-supplied DBLP BibTeX",
+      "summary": "Architecture checked against arXiv v2, Sections 3.2–3.4. Visual ownership is the survey classification.",
+      "linkSource": "User-specified primary manuscript",
+      "bibtexSource": "https://dblp.org/rec/journals/corr/abs-2608-10720.bib",
+      "note": "The bibliography uses the supplied DBLP entry. Architecture follows arXiv v2, Sections 3.2–3.4."
+    },
+    "crossListings": [
+      {
+        "route": "autoregressive",
+        "kind": "controller",
+        "label": "AR dialogue controller",
+        "shortTitle": "Ex-Omni-2D",
+        "summary": "Causal response and visual planning condition a flow-matching avatar generator.",
+        "evidenceUrl": "https://arxiv.org/html/2608.10720v2#S3.SS2"
+      }
+    ],
+    "bibliography": {
+      "authority": "DBLP",
+      "recordUrl": "https://dblp.org/rec/journals/corr/abs-2608-10720",
+      "citationKey": "DBLP:journals/corr/abs-2608-10720",
+      "providedBy": "user"
+    }
   }
 ]

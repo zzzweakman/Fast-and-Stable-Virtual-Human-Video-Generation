@@ -1,0 +1,76 @@
+{
+  "snapshot": "VH-MEASURED-V10",
+  "description": "43-page 1028_astra_v0 survey with compact attention-aware runtime tables, HDTF quality, four-metric StreamEval results, and Ex-Omni-2D in the AR controller discussion. Earlier releases remain unchanged.",
+  "measurement_source_manifest": "data/snapshots/2026-10-19-measurements/manifest.json",
+  "published_results": 51,
+  "methods": 51,
+  "warmup_calls": 153,
+  "measured_calls": 153,
+  "pending_results": 0,
+  "archive_configurations": 56,
+  "archive_calls": 336,
+  "hdtf_configurations": 23,
+  "streameval_configurations": 6,
+  "pages": 43,
+  "cited_references": 268,
+  "catalogue_records": 186,
+  "figures": 10,
+  "source_package_files": 53,
+  "files": [
+    {
+      "path": "data/h200-results-v10.json",
+      "sha256": "c273b367ef6db8a2b12cdf698fa0175698918ffb2b9dd4a70dc55bafa12b6645",
+      "bytes": 472588
+    },
+    {
+      "path": "data/h200-results-v10.csv",
+      "sha256": "e8049c208d7abae3ba12fda54f8aba9fbc351434d1b74fa011055df3cf4c391d",
+      "bytes": 62780
+    },
+    {
+      "path": "data/h200-trials-v10.csv",
+      "sha256": "2e2eda2a136c41c8e400d9eb96be7157e1d6dbb401505deff3a5dce3736c1bc3",
+      "bytes": 48909
+    },
+    {
+      "path": "data/h200-measurement-notes-v10.md",
+      "sha256": "91963529aa4c7ce04219f0235f008a34a203f8673b5f47a8523d0fb626868a39",
+      "bytes": 5464
+    },
+    {
+      "path": "data/benchmark-results-v10.json",
+      "sha256": "32174a932c4109ebac768dbd43e707955c484c3231c5b0b78265909f5b16ffe2",
+      "bytes": 8889
+    },
+    {
+      "path": "data/hdtf-results-v10.csv",
+      "sha256": "ff4e6a21f96a164ab957fad70fbe26ca5940751afa64c105b6ee2433b8e294ee",
+      "bytes": 1932
+    },
+    {
+      "path": "data/streameval-results-v10.csv",
+      "sha256": "8233c70be611e6e4f3dd8bdc64fdd5639699c1769fc9a2491420293cd390168b",
+      "bytes": 260
+    },
+    {
+      "path": "assets/survey/survey-measured-v10.pdf",
+      "sha256": "319dafe24d509ce40f2f7771721798b0e789cf149e1a72cdf6f5abb9446ffa2b",
+      "bytes": 15416899
+    },
+    {
+      "path": "assets/survey/virtual-human-survey-measured-v10.zip",
+      "sha256": "340be0f6b59ff2c71a99d73cc1e1fc04e068159bfd871c2955d498f2e32d18fa",
+      "bytes": 14440862
+    },
+    {
+      "path": "data/snapshots/measured-v10/papers.json",
+      "sha256": "de88cf87342ef6a300ffc361765fccab62489967181a36cfdfbda0633c6892e9",
+      "bytes": 455638
+    },
+    {
+      "path": "data/snapshots/measured-v10/literature-addition.bib",
+      "sha256": "2c5954c1cb2f47f85306a80e8a5c3255da673321a32daeb7c0b981dfb673aabd",
+      "bytes": 776
+    }
+  ]
+}

@@ -21,20 +21,25 @@ Open http://127.0.0.1:4173. Serve over HTTP rather than opening the HTML as a lo
 
 The build gives CSS and JavaScript files a shared content-based version, including module imports. Changes to the page, styles, or modules update their published URLs together, preventing cached assets from a previous layout from breaking the catalogue or annual chart.
 
-## Runtime and memory results
+## Current survey and measured results
 
 **51 measured configurations covering 51 methods are reported**, each using one H200: 11 GAN, 16 diffusion, 23 rendering, and one UniLS motion visualization. The tables include configurations with recorded first-call loading and all listed timing and memory fields. Each configuration has three complete warm-ups and three measured calls, giving **306 included calls**.
 
 - [View the results](https://zzzweakman.github.io/Fast-and-Stable-Virtual-Human-Video-Generation/measurements.html).
-- Download the [summary CSV](data/h200-results-v9.csv), [full JSON](data/h200-results-v9.json), or [306 included calls](data/h200-trials-v9.csv).
-- Read the [measurement protocol](data/h200-measurement-notes-v9.md) and [release manifest](data/snapshots/measured-v9/manifest.json).
-- Read the [updated survey PDF](assets/survey/survey-measured-v9.pdf) or download its [clean source package](assets/survey/virtual-human-survey-measured-v9.zip).
+- Download the [runtime CSV](data/h200-results-v10.csv), [full runtime JSON](data/h200-results-v10.json), or [306 included calls](data/h200-trials-v10.csv).
+- Download the [HDTF CSV](data/hdtf-results-v10.csv), [StreamEval CSV](data/streameval-results-v10.csv), or [benchmark JSON](data/benchmark-results-v10.json).
+- Read the [measurement protocol](data/h200-measurement-notes-v10.md) and [release manifest](data/snapshots/measured-v10/manifest.json).
+- Read the [updated survey PDF](assets/survey/survey-measured-v10.pdf) or download its [clean source package](assets/survey/virtual-human-survey-measured-v10.zip).
 
 **Load₁ reports the first invocation, `warmup_01`.** MuseTalk, LAM, and GUAVA have initial loads of **7.99 s, 23.09 s, and 30.20 s**. Pre, Gen, Post, and Call remain means of three measured calls after three full warm-ups; Call also reports sample standard deviation. Initial loading cannot be added to these warmed means to obtain a measured total. Ten configurations retain audited model objects; 41 reload models each call. The first invocation may reuse disk caches.
 
 Warm peak is the maximum NVML peak across the three measured calls: **9.49 GiB for MuseTalk and 16.01 GiB for VideoReTalking**. Call spans inference entry to synchronized return, including any loading in that call. Suite total covers the complete 3+3 process, including setup and output checks; it is neither single-call latency nor TTFF. Inputs, settings, and model residency differ, so these results do not establish a controlled quality/speed ranking or continuous-session stability.
 
-The current **54-page survey** includes a radial taxonomy, updated schematic portraits and representation diagrams, and a pipeline-cost figure whose stages and total all come from the same first invocation. Captions distinguish illustrations from recorded measurements. The clean source package contains **52 files** and only the ten figure PDFs used by the paper. Publication-year columns, Takeaways cards, concise result captions, and two-column appendix text are retained.
+The current **43-page survey** is the `1028_astra_v0` revision, with concise prose, compact runtime tables, ten figure PDFs, and 268 cited references. The runtime tables now include the attention backend. Unless stated otherwise, inputs use the demo recommended by the official open-source README. Wav2Lip+GAN uses the EDTalk pair, FOMM uses the TPS Motion Model pair, and third-party implementations use their supplied demos. Detailed input and stage records remain in the downloadable data.
+
+HDTF reports 23 configurations on 40 matched fifteen-second cases. StreamEval reports six configurations on a 20% avatar-performance subset, using local Qwen judges. Its columns match the paper: Quality, Stability, Following, and Identity. Synchronization remains unresolved, so A–V Sync and the aggregate scores that depend on it are omitted. StreamEval awards a fixed five-point customization bonus to every tested configuration because each accepts a supplied portrait. That shared capability is explained in the text. The subset and local judges limit comparison with published StreamEval scores.
+
+The catalogue now contains **186 unique papers**: 21 GAN, 54 diffusion, five visual-AR, 59 rendering, and 47 supporting references. Ex-Omni-2D is included in the AR discussion as a dialogue controller, with diffusion as its primary visual-owner category. Its architecture was checked against the [original paper](https://arxiv.org/html/2608.10720v2), and its bibliography uses the supplied DBLP entry. Its preview is Figure 1 from that paper.
 
 The [original 56-configuration JSON](data/h200-results-2026-10-19.json), [summary CSV](data/h200-results-2026-10-19.csv), and [all 336 calls](data/h200-trials-2026-10-19.csv) remain archived, including the five configurations omitted for missing initial loading intervals. Their original mean-loading fields keep their original meaning. The new summary uses `first_load_s`; measured loading statistics remain within `statistics` and the per-call records.
 
@@ -44,6 +49,7 @@ Regenerate the current data from the preserved records and the manuscript's publ
 
 ```sh
 python3 scripts/export_measurements.py --input data/h200-results-2026-10-19.json --manuscript-dir <current-clean-manuscript> --output-dir <new-directory>
+python3 scripts/export_benchmarks.py --manuscript-dir <current-clean-manuscript> --output-dir <new-directory>
 python3 scripts/render_measurements.py --output <new-html-file>
 ```
 
@@ -53,7 +59,7 @@ The [earlier single-run data](data/h200-results-2026-10-16.json) remains archive
 
 ## Archived DBLP manuscript and catalogue — 13 October 2026
 
-The 13 October manuscript has **263 cited references** and 58 pages. The website retains **185 unique papers**. Of 284 combined citation records, 270 matched DBLP: 252 of the 263 cited manuscript references and 180 of the 185 website entries. The 14 unmatched records are retained with their original sources and listed explicitly; they are not declared DBLP-verified.
+The 13 October manuscript has **263 cited references** and 58 pages. Its archived catalogue has **185 unique papers**. Of 284 combined citation records, 270 matched DBLP: 252 of the 263 cited manuscript references and 180 of the 185 catalogue entries. The 14 unmatched records are retained with their original sources and listed explicitly; they are not declared DBLP-verified.
 
 - [13 October survey PDF](assets/survey/survey-2026-10-13-dblp.pdf) and [complete source package](assets/survey/virtual-human-survey-dblp-2026-10-13.zip).
 - [Reference update notes](data/dblp-update-2026-10-13.md), [catalogue BibTeX](data/references-dblp-2026-10-13.bib), [before/after metadata](data/dblp-reference-check-2026-10-13.json), and [release manifest](data/snapshots/2026-10-13-dblp/manifest.json).
@@ -64,7 +70,7 @@ All earlier PDF files, source packages and frozen snapshots remain unchanged. Th
 
 ## Previous literature revision — 13 October 2026
 
-The manuscript now cites 263 references, including 26 selected additions checked against primary manuscripts. The catalogue contains **185 unique papers with source previews**: 21 newly added records and five revised existing entries. Primary route totals are GAN 21, diffusion 53, visual AR 5, and rendering 59; 47 supporting references are counted separately.
+That revision cites 263 references, including 26 selected additions checked against primary manuscripts. Its catalogue contains **185 unique papers with source previews**: 21 newly added records and five revised existing entries. Primary route totals are GAN 21, diffusion 53, visual AR 5, and rendering 59; 47 supporting references are counted separately.
 
 - [Revised survey PDF](assets/survey/survey-2026-10-13-literature.pdf) and [complete source package](assets/survey/virtual-human-survey-literature-2026-10-13.zip).
 - [Literature update notes](data/literature-update-2026-10-13.md), [added BibTeX](data/literature-additions-2026-10-13.bib), and [release manifest](data/snapshots/2026-10-13-literature/manifest.json).
@@ -81,7 +87,7 @@ Cards describe methods and original-source measurements in plain language. The c
 - `data/ar-second-pass-review.md`: historical AR additions, spatial and unresolved boundary cases, and recommended survey placements.
 - `data/image-supplement-review.md` and `data/image-supplement-audit.json`: validation and source checks for the 92 supplied missing previews.
 - `assets/papers/manifest.json`: preview provenance, source pages, figure captions, and image paths.
-- `assets/survey/survey-measured-v9.pdf`: current measured revision; `survey-measured-v8.pdf` preserves the earlier output-crop revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
+- `assets/survey/survey-measured-v10.pdf`: current measured revision; `survey-measured-v9.pdf` preserves the previous runtime release; `survey-measured-v8.pdf` preserves the earlier output-crop revision; `survey-2026-10-13-dblp.pdf` preserves the 58-page DBLP revision; `survey-2026-10-13-literature.pdf` preserves the 55-page literature revision; `survey-2026-10-09-final.pdf` preserves the earlier illustrated revision.
 - `assets/survey/survey-2026-10-09.pdf`: the preserved earlier revision associated with snapshot VH-2026-10-09.
 - `assets/survey/survey.pdf`: the preserved draft reviewed on 9 October (`main_revised.pdf`, 48 pages).
 - `assets/survey/provenance.json`: source information for the survey PDF and diagrams.
