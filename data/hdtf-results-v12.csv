@@ -1,0 +1,24 @@
+method,cite_key,year,route,sync_c,sync_d,identity,fid,fvd
+Wav2Lip+GAN,prajwal2020lip,2020,GAN,7.8614,7.2206,0.9345,125.5026,460.0848
+MuseTalk,zhang2024musetalk,2024,GAN,6.7746,7.6902,0.9402,123.2035,460.0232
+VideoReTalking,cheng2022videoretalking,2022,GAN,7.576,7.1019,0.8726,122.6412,456.9658
+MakeItTalk,zhou2020makelttalk,2020,GAN,4.443,9.5825,0.8947,118.5316,439.505
+StableAvatar,tu2025stableavatar,2025,Diffusion,3.5585,11.4132,0.8549,113.8779,383.7462
+InfiniteTalk,yang2025infinitetalk,2025,Diffusion,7.4545,7.7165,0.8629,113.9264,389.5934
+LiveTalk,chern2025livetalk,2025,Diffusion,3.5085,10.9031,0.8016,118.1108,424.3754
+AvatarForcing-SW,cui2026avatarforcing,2026,Diffusion,4.0755,11.1357,0.768,116.9224,419.1612
+LeapTalk,zhang2026leaptalk,2026,Diffusion,6.987,8.2025,0.8668,120.2615,405.0797
+EDTalk,tan2024edtalk,2024,Render,6.2825,8.8483,0.9263,123.6688,389.8324
+FLOAT,ki2025float,2025,Render,6.1561,8.6035,0.9091,143.3191,402.5805
+Ditto,li2025ditto,2025,Render,5.3529,9.3416,0.9647,120.3729,412.5909
+MoDA,li2025moda,2025,Render,7.0538,7.9658,0.9261,118.0633,395.3063
+JoyVASA,cao2024joyvasa,2024,Render,6.4922,8.6513,0.8942,117.9605,418.708
+DyStream,chen2025dystream,2025,Render,6.9169,7.9157,0.9237,133.1542,523.6795
+Talk Like You,wang2026talklikeyou,2026,Render,6.5973,8.0582,0.8851,121.4178,402.9893
+Avatar-Forever,li2026avatarforever,2026,Diffusion,3.6331,11.3872,0.8923,147.6847,767.2
+SoulX-LiveAct,zhen2026soulx,2026,Diffusion,7.6385,7.6401,0.8696,116.6186,395.7511
+SoulX-FlashTalk,shen2026soulxflashtalkrealtimeinfinitestreaming,2025,Diffusion,7.6845,8.2497,0.9059,169.2544,1199.6986
+SoulX-FlashHead Lite,yu2026soulx,2026,Diffusion,7.1473,7.9148,0.9019,115.4446,413.4087
+SoulX-FlashHead Pro,yu2026soulx,2026,Diffusion,6.4332,8.6539,0.9259,115.684,390.0262
+LightningCP,long2026lightning,2026,Diffusion,6.8113,7.9428,0.9163,120.0276,419.8881
+Live Avatar,huang2025live,2025,Diffusion,6.6594,8.6303,0.8445,117.3549,373.4172

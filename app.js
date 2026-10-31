@@ -19,7 +19,7 @@ function evidenceConfiguration(row) {
   const source = row.source;
   const url = safeUrl(source.url);
   return `<p class="evidence-boundary">${esc(row.boundary)}</p>${fields.length ? `<dl class="evidence-fields">${fields.map(([key, f]) => `<dt>${esc(labels[key] || key)}</dt><dd>${esc(fieldText(f))}${f.note ? `<small>${esc(f.note)}</small>` : ''}</dd>`).join('')}</dl>` : ''}
-    ${row.assignment ? `<p><strong>Assignment:</strong> ${esc(row.assignment.reason)}</p>` : ''}
+    ${row.assignment ? `<p><strong>Assignment in the archived source review:</strong> ${esc(row.assignment.reason)}</p>` : ''}
     ${(row.patterns || []).filter(p => p.status.includes('A')).map(p => `<p class="pattern-evidence"><strong>${esc(p.code)} · ${esc(PATTERNS[p.code])}</strong><br>${esc(p.note)}</p>`).join('')}
     <p class="evidence-source"><strong>Source edition:</strong> ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(source.edition)}</a>` : esc(source.edition)}<br>${source.locations.map(esc).join('; ')}</p>
     ${(row.additionalSources || []).map(s => `<p class="evidence-source"><strong>Additional source:</strong> <a href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener noreferrer">${esc(s.edition)}</a><br>${s.locations.map(esc).join('; ')}</p>`).join('')}`;
@@ -30,6 +30,7 @@ function provenance(p) {
   const details = [pr.yearPolicy, pr.note].filter(Boolean);
   return `<div class="catalogue-provenance"><p><strong>Bibliography edition:</strong> ${esc(p.venue || 'Recorded bibliography entry')} · ${p.year}${cited ? ` · <a href="${esc(cited)}" target="_blank" rel="noopener noreferrer">${p.bibliography?.authority === 'DBLP' ? 'View DBLP record' : 'Open cited edition'}</a>` : ''}</p>
     ${details.map(t => `<p>${esc(t)}</p>`).join('')}
+    ${pr.classification ? `<p><strong>Classification review:</strong> ${esc(pr.classification.depth)}. ${esc(pr.classification.finding)}</p>` : ''}
     ${(pr.evidence || []).map(e => `<p><strong>${esc(e.version)}:</strong> ${esc(e.section)}${e.pdfPages ? `, PDF p. ${esc(e.pdfPages.join(', '))}` : ''}. ${esc(e.finding)}</p>`).join('')}
     <p><strong>Survey section:</strong> ${esc(p.section || '')}</p></div>`;
 }
@@ -67,7 +68,7 @@ function renderPaper(p, index) {
     <div class="paper-tags">${(listing?.tags || p.tags || []).slice(0, 3).map(tag => `<span class="paper-tag">${esc(tag)}</span>`).join('')}</div></div>
     <div class="paper-footer"><a class="paper-source" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${arxiv ? 'arXiv' : 'Read paper'} ${icon('external')}</a><button class="citation-button" type="button" data-cite="${esc(p.id)}" aria-expanded="false" aria-controls="citation-${index}">${icon('quote')} Cite</button></div>
     ${evidenceDisclosure(p, index)}
-    <div class="citation-details" id="citation-${index}" hidden><strong>BibTeX citation</strong><p>${p.bibliography?.providedBy === 'user' ? 'BibTeX supplied for this revision. Architecture checked against the linked manuscript.' : p.bibliography?.authority === 'DBLP' ? 'Bibliographic details follow DBLP, checked 13 October 2026.' : 'Citation retained from the original source; no matching DBLP record was found on 13 October 2026.'}</p><label class="sr-only" for="bib-${index}">BibTeX for ${esc(p.shortTitle || p.title)}</label><textarea id="bib-${index}" readonly spellcheck="false">${esc(p.bibtex)}</textarea><div class="citation-actions"><button type="button" data-copy="${esc(p.id)}">Copy citation</button><button type="button" data-download="${esc(p.id)}">Download .bib</button></div></div>
+    <div class="citation-details" id="citation-${index}" hidden><strong>BibTeX citation</strong><p>${p.bibliography?.revision === '1031_integrated_revision_v4' ? 'BibTeX matches the edition cited in the 31 October 2026 survey. Source-review details are recorded under About this paper.' : p.bibliography?.providedBy === 'user' ? 'BibTeX supplied for this revision. Architecture checked against the linked manuscript.' : p.bibliography?.authority === 'DBLP' ? 'Bibliographic details follow DBLP, checked 13 October 2026.' : 'Citation retained from its documented original source.'}</p><label class="sr-only" for="bib-${index}">BibTeX for ${esc(p.shortTitle || p.title)}</label><textarea id="bib-${index}" readonly spellcheck="false">${esc(p.bibtex)}</textarea><div class="citation-actions"><button type="button" data-copy="${esc(p.id)}">Copy citation</button><button type="button" data-download="${esc(p.id)}">Download .bib</button></div></div>
     </article>`;
 }
 
@@ -255,7 +256,7 @@ window.addEventListener('popstate', () => { state = readState(location.search); 
 function updateNavigation() {
   let current = 'survey';
   const line = $('.site-header').getBoundingClientRect().bottom + 90;
-  for (const id of ['survey', 'literature', 'landscape', 'perspectives']) {
+  for (const id of ['survey', 'literature', 'landscape', 'survey-figures', 'perspectives']) {
     if (document.getElementById(id).getBoundingClientRect().top <= line) current = id;
   }
   document.querySelectorAll('.nav-link').forEach(a => {

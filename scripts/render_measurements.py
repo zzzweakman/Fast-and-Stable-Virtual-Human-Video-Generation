@@ -5,13 +5,13 @@ import html
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = 'h200-results-v11'
-TRIALS = 'h200-trials-v11.csv'
-SURVEY = 'survey-measured-v11.pdf'
-SOURCE = 'virtual-human-survey-measured-v11.zip'
-PROTOCOL = 'h200-measurement-notes-v11.md'
-MANIFEST = 'data/snapshots/measured-v11/manifest.json'
-BENCHMARKS = 'benchmark-results-v11.json'
+DATA = 'h200-results-v12'
+TRIALS = 'h200-trials-v12.csv'
+SURVEY = 'survey-measured-v12.pdf'
+SOURCE = 'virtual-human-survey-measured-v12.zip'
+PROTOCOL = 'h200-measurement-notes-v12.md'
+MANIFEST = 'data/snapshots/measured-v12/manifest.json'
+BENCHMARKS = 'benchmark-results-v12.json'
 EVIDENCE = 'h200-output-evidence-v1.json'
 GROUPS = [('gan', 'GAN-based'), ('diffusion', 'Diffusion-based'), ('render', 'Render-based'), ('motion', 'Motion visualization')]
 NAMES = {'Wav2Lip-GAN': 'Wav2Lip+GAN', 'LiveSpeechPortraits': 'Live Speech Portraits',
@@ -73,7 +73,7 @@ def benchmark_sections(benchmarks):
 <thead><tr>{''.join(f'<th scope="col">{label}</th>' for label in headings)}</tr></thead>
 <tbody>{''.join(rows)}</tbody></table></div>
 <p>{ESC(group['protocol'])}</p>{judge}<p>{ESC(group['limits'])}</p>
-<p><a href="data/{key}-results-v11.csv" download>Download {title} CSV</a> · <a href="data/{BENCHMARKS}" download>Benchmark JSON</a></p></section>''')
+<p><a href="data/{key}-results-{benchmarks['release']}.csv" download>Download {title} CSV</a> · <a href="data/{BENCHMARKS}" download>Benchmark JSON</a></p></section>''')
     return '\n'.join(sections)
 
 

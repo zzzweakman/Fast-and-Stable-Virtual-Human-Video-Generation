@@ -11,8 +11,8 @@ const audited = attachEvidence(papers, snapshot);
 
 test('hybrid correction preserves one primary record and the total catalogue', () => {
   assert.equal(papers.find(p => p.id === 'wang2023styleavatar').category, 'rendering');
-  assert.equal(papers.length, 186);
-  assert.deepEqual(countRoutes(papers), { gan: 21, diffusion: 54, autoregressive: 5, rendering: 59, supporting: 47 });
+  assert.equal(papers.length, 220);
+  assert.deepEqual(countRoutes(papers), { gan: 24, diffusion: 75, autoregressive: 6, rendering: 69, supporting: 46 });
 });
 
 test('new literature keeps cache lifetime and visual ownership distinct', () => {
@@ -25,6 +25,22 @@ test('new literature keeps cache lifetime and visual ownership distinct', () => 
   assert.equal(find('zhang2026ttsac').category, 'context');
   assert.equal(find('zhang2026exomni2d').category, 'diffusion');
   assert.equal(crossListingOf(find('zhang2026exomni2d'), 'autoregressive').kind, 'controller');
+});
+
+test('every timeline method resolves to one catalogue record and its cited visual route', () => {
+  const mapping = JSON.parse(fs.readFileSync(new URL('../data/snapshots/measured-v12/figure-methods.json', import.meta.url), 'utf8'));
+  assert.equal(mapping.timeline.length, 136);
+  assert.equal(new Set(mapping.timeline.map(row => row.id)).size, 136);
+  for (const row of mapping.timeline) {
+    const paper = papers.find(p => p.id === row.id);
+    assert.equal(paper?.category, row.route, row.method);
+    assert.equal(paper.source.citationKey, row.citationKey, row.method);
+    assert.ok(paper.bibtex.includes(`{${row.citationKey},`), row.method);
+  }
+  assert.equal(papers.find(p => p.id === 'hu2025unitalker').category, 'diffusion');
+  for (const id of ['zhang2023dinet', 'tan2024edtalk', 'gan2023eat', 'deng2024ramavatar', 'tan2025fixtalk', 'zhong2023identity']) {
+    assert.equal(papers.find(p => p.id === id).category, 'rendering', id);
+  }
 });
 
 test('source identity survives title collisions and catalogue updates', () => {
@@ -146,25 +162,29 @@ test('historical AR baselines reuse their non-AR source paper and citation', () 
   assert.match(dual.shortTitle, /without duration/);
 });
 
-test('spatial and unresolved AR cases remain discoverable outside strict temporal counts', () => {
+test('AvatarSync follows the manuscript route while keeping its unresolved streaming boundary', () => {
   const context = filterPapers(papers, { ...defaults, route: 'supporting', tag: 'AR scope context' });
-  assert.deepEqual(new Set(context.map(p => p.id)), new Set(['deng2026fluentavatarflickerfreetalkingheadanimation', 'zhang2025tamingtransformer']));
+  assert.deepEqual(new Set(context.map(p => p.id)), new Set(['zhang2025tamingtransformer']));
   assert.ok(context.every(p => p.category === 'context'));
   assert.equal(filterPapers(papers, { ...defaults, route: 'autoregressive', tag: 'AR scope context' }).length, 0);
-  assert.equal(countRoutes(papers).autoregressive, 5);
-  assert.equal(countBrowseRoutes(papers).autoregressive, 10);
+  const avatar = papers.find(p => p.id === 'deng2026fluentavatarflickerfreetalkingheadanimation');
+  assert.equal(avatar.category, 'autoregressive');
+  assert.match(avatar.summary, /streaming execution remain unresolved/);
+  assert.deepEqual(filterPapers(papers, { ...defaults, route: 'autoregressive', q: 'FluentAvatar' }).map(p => p.id), [avatar.id]);
+  assert.equal(countRoutes(papers).autoregressive, 6);
+  assert.equal(countBrowseRoutes(papers).autoregressive, 11);
 });
 
 test('OmniResponse is discoverable as a 2025 AR controller without changing visual-AR counts', () => {
   const omni = audited.find(p => p.id === 'luo2026omniresponse');
   assert.equal(omni.year, 2025);
   assert.equal(omni.venue, 'NeurIPS');
-  assert.equal(omni.category, 'rendering');
+  assert.equal(omni.category, 'context');
   assert.equal(crossListingOf(omni, 'autoregressive').kind, 'controller');
-  for (const route of ['all', 'autoregressive', 'rendering']) {
+  for (const route of ['all', 'autoregressive', 'supporting']) {
     assert.deepEqual(filterPapers(audited, { ...defaults, route, year: '2025', q: 'OmniResponse' }).map(p => p.id), [omni.id]);
   }
-  assert.equal(countRoutes(papers).autoregressive, 5);
+  assert.equal(countRoutes(papers).autoregressive, 6);
   assert.match(omni.bibtex, /luo2025omniresponse/);
   const full = defaultConfiguration(omni.evidence);
   assert.equal(full.fields.throughput.value, 15.62);

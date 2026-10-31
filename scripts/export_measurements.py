@@ -5,7 +5,7 @@ import csv
 import json
 import re
 
-RELEASE = 'v11'
+RELEASE = 'v12'
 SOURCE_RELEASE = '2026-10-19'
 ROOT = Path(__file__).resolve().parents[1]
 NUMERIC = ('frames', 'duration_s', 'output_width', 'output_height', 'encoded_width', 'encoded_height',
@@ -68,6 +68,17 @@ def attention_labels(manuscript):
     return labels
 
 
+def publication_routes(manuscript):
+    """Use the current manuscript's grouping without altering measured values."""
+    routes = {}
+    for route in ('gan', 'diffusion', 'render', 'motion'):
+        text = (manuscript / f'tables/measured_{route}.tex').read_text()
+        for key in re.findall(r'\\cite\{([^}]+)\}\s*&\s*\d{4}\s*&', text):
+            assert key not in routes, key
+            routes[key] = route
+    return routes
+
+
 def complete_rows(source, years, annotations=None):
     """Select complete table records without changing the archived trial values."""
     rows, excluded = [], []
@@ -119,8 +130,10 @@ def main():
     annotations = json.loads((ROOT / 'data/h200-output-evidence-v1.json').read_text())['configuration_annotations']
     rows, excluded = complete_rows(source, publication_years(args.manuscript_dir), annotations)
     attention = attention_labels(args.manuscript_dir)
+    routes = publication_routes(args.manuscript_dir)
     for row in rows:
         row.update(attention[row['cite_key']])
+        row['route'] = routes[row['cite_key']]
     assert len(source) == 56 and len(rows) == 51 and len({r['method_family'] for r in rows}) == 51
     args.output_dir.mkdir(parents=True, exist_ok=False)
     data = {
@@ -149,7 +162,7 @@ def main():
             'memory': 'Approximately 100-ms own-process/worker NVML sampling. measured_nvml_peak_gib is the maximum of three measured-window peaks; first_warmup_nvml_peak_gib is the first call; suite_nvml_peak_gib includes setup, all calls and QA.',
             'inputs': 'Unless stated otherwise, inputs follow the demo recommended in the official open-source README. Wav2Lip+GAN uses the EDTalk pair and FOMM uses the TPS pair. Third-party implementations use their supplied demos. Lengths, dimensions, sampling, precision, offloading and precomputed prerequisites differ across repositories.',
             'metadata': 'Labels for 44 included implementations are historical execution observations; seven use source/configuration inspections. Package versions and Git heads are post-run inventories.',
-            'limits': 'These runtime trials do not measure matched-input quality, TTFF, delivery jitter or continuous-session drift. Separate quality benchmarks are reported in benchmark-results-v11.json. Three short repetitions do not establish sustained service.',
+            'limits': f'These runtime trials do not measure matched-input quality, TTFF, delivery jitter or continuous-session drift. Separate quality benchmarks are reported in benchmark-results-{RELEASE}.json. Three short repetitions do not establish sustained service.',
             'missing': 'The displayed subset has all table metrics. Null/empty fields elsewhere in the underlying records mean unavailable, not zero. Unrecorded sampler and decoder defaults for six configurations remain unspecified.',
             'provenance': 'The workbook is supported by archived JSON reports, iteration records, phase events, NVML samples and output videos. The 306 included calls and aggregate statistics were reconciled; original exports preserve all 336 calls. Adapter source, model weights and complete environments were not supplied.'
         },

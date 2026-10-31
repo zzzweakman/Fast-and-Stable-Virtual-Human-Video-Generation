@@ -7,7 +7,7 @@ import math
 import statistics
 import zipfile
 
-from export_measurements import NUMERIC, attention_labels, csv_cell
+from export_measurements import NUMERIC, attention_labels, publication_routes, csv_cell
 from export_benchmarks import hdtf_rows, streaming_rows
 from render_measurements import BENCHMARKS, DATA, TRIALS, SURVEY, SOURCE, render
 
@@ -25,7 +25,7 @@ def validate_measurements():
     assert len({r['config_id'] for r in rows}) == 51
     assert len({r['method_family'] for r in rows}) == data['methods'] == 51
     assert data['pending_results'] == 0 and all(r['status'] == 'measured' for r in rows)
-    assert Counter(r['route'] for r in rows) == {'gan': 11, 'diffusion': 16, 'render': 23, 'motion': 1}
+    assert Counter(r['route'] for r in rows) == {'gan': 8, 'diffusion': 16, 'render': 26, 'motion': 1}
     assert Counter(r['model_mode'] for r in rows) == {'resident_models_or_worker': 10, 'reload_each_call': 41}
     archived = json.loads((ROOT / 'data' / data['source_archive']).read_text())['rows']
     assert len(archived) == data['archive_configurations'] == 56
@@ -96,9 +96,11 @@ def validate_measurements():
     with zipfile.ZipFile(ROOT / 'assets/survey' / SOURCE) as archive:
         manuscript = zipfile.Path(archive) / benchmarks['manuscript_revision']
         attention = attention_labels(manuscript)
+        routes = publication_routes(manuscript)
         assert sum(r['attention_source_only'] for r in rows) == 7
         for row in rows:
             assert {k: row[k] for k in ('attention_label', 'attention_source_only')} == attention[row['cite_key']]
+            assert row['route'] == routes[row['cite_key']], 'Runtime route differs from manuscript'
         for key, filename, parse, count in [
             ('hdtf', 'measured_hdtf_quality.tex', hdtf_rows, 23),
             ('streameval', 'measured_streaming_subset20.tex', streaming_rows, 6),
@@ -106,7 +108,7 @@ def validate_measurements():
             group = benchmarks[key]
             assert len(group['rows']) == group['configurations'] == count
             assert group['rows'] == parse((manuscript / 'tables' / filename).read_text()), f'{key}: manuscript and website differ'
-            with (ROOT / 'data' / f'{key}-results-v11.csv').open(newline='') as stream:
+            with (ROOT / 'data' / f'{key}-results-{benchmarks["release"]}.csv').open(newline='') as stream:
                 actual = list(csv.DictReader(stream))
             assert actual == [{k: str(v) for k, v in r.items()} for r in group['rows']], f'{key}: CSV and JSON differ'
             assert page.count(f'data-benchmark="{key}"') == count

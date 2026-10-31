@@ -337,3 +337,16 @@ summary:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #83
  .results-table th,.results-table td{padding:12px 10px}
  .result-protocol{font-size:14px}
 }
+
+/* Figures reproduced from the current manuscript. */
+.survey-figures{padding-block:52px;border-bottom:1px solid var(--line)}
+.survey-figure{margin:32px 0 48px}
+.survey-figure h3{font-size:20px;margin-bottom:18px;color:var(--ink,#17232e)}
+.survey-figure-image{display:block;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.survey-figure-image img{display:block;width:100%;height:auto}
+.taxonomy-figure-image{max-width:1020px;margin-inline:auto}
+.survey-figure figcaption{font-size:15px;line-height:1.8;color:#263c34;margin-top:18px;max-width:94ch}
+.figure-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:13px;font-size:13px;font-weight:700}
+.figure-links a{text-decoration:underline;text-underline-offset:4px}
+.figure-background{font-size:15px;line-height:1.8;color:#263c34;max-width:94ch}
+@media(max-width:720px){.survey-figures{padding-block:35px}.survey-figure{margin:26px 0 34px}.survey-figure h3{font-size:18px}.survey-figure figcaption,.figure-background{font-size:14px}.figure-links{font-size:12px}nav{gap:10px}}

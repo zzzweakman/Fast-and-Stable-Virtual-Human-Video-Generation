@@ -58,10 +58,13 @@ with sync_playwright() as p:
     page.locator('#grid-view').click()
     page.locator('#load-more').click()
     assert page.locator('.paper-card').count() == 24
-    page.locator('[data-stats-route="rendering"]').click()
+    assert sum(map(int, page.locator('.year-value').all_text_contents())) == len(papers)
+    page.locator('[data-filter-route="rendering"]').click()
     assert 'route=rendering' in page.url
     assert all('Render-based' in label for label in page.locator('.paper-category').all_text_contents())
-    page.locator('#year').select_option('2024')
+    assert sum(map(int, page.locator('.year-value').all_text_contents())) == len(papers)
+    page.locator('[data-stats-year="2024"]').click()
+    assert page.locator('#year').input_value() == '2024'
     assert all(label == '2024' for label in page.locator('.paper-year').all_text_contents())
     page.locator('#sort').select_option('oldest')
     page.locator('#reset-filters').click()
@@ -71,6 +74,17 @@ with sync_playwright() as p:
     page.locator('.stability-patterns summary').first.click()
     assert page.locator('.stability-patterns details').first.get_attribute('open') is not None
     page.goto(BASE, wait_until='networkidle')
+    figures = page.locator('.survey-figure')
+    assert figures.count() == 2
+    assert 'claimed real-time performance' in figures.first.locator('figcaption strong').inner_text()
+    for i in range(2):
+        figure = figures.nth(i)
+        figure.scroll_into_view_if_needed()
+        figure.locator('img').evaluate('(img) => img.decode()')
+        assert figure.locator('img').evaluate('(img) => img.naturalWidth > 1000')
+        pdf = figure.locator('.survey-figure-image').get_attribute('href')
+        assert context.request.head(BASE + pdf).status == 200
+        figure.screenshot(path=str(OUT / f'desktop-figure-{i + 1}.png'))
     broken = page.locator('img').evaluate_all('(imgs) => imgs.filter(i => i.complete && !i.naturalWidth).map(i => i.src)')
     assert not broken, broken
     assert not errors, errors
@@ -85,6 +99,7 @@ with sync_playwright() as p:
             page.screenshot(path=str(OUT / 'mobile-overview.png'))
             page.locator('#literature').scroll_into_view_if_needed()
             page.screenshot(path=str(OUT / 'mobile-library.png'))
+            page.locator('.survey-figure').nth(1).screenshot(path=str(OUT / 'mobile-taxonomy.png'))
             page.locator('[data-filter-route="autoregressive"]').click()
             assert page.locator('.paper-card').count() == expected_ar
             page.locator('#list-view').click()

@@ -1,0 +1,914 @@
+{
+  "timeline": [
+    {
+      "id": "fenakel2026ganimate",
+      "citationKey": "fenakel2026ganimate",
+      "method": "GANimate",
+      "route": "gan"
+    },
+    {
+      "id": "liu2026fasttalk",
+      "citationKey": "liu2026fasttalk",
+      "method": "FastTalk",
+      "route": "gan"
+    },
+    {
+      "id": "jia2026sdtalk",
+      "citationKey": "jia2026sdtalk",
+      "method": "SDTalk",
+      "route": "rendering"
+    },
+    {
+      "id": "ye2026talker",
+      "citationKey": "ye2026talker",
+      "method": "Talker-T2AV",
+      "route": "rendering"
+    },
+    {
+      "id": "saggar2026embedtalk",
+      "citationKey": "saggar2026embedtalk",
+      "method": "EmbedTalk",
+      "route": "rendering"
+    },
+    {
+      "id": "song2026progressiveavatars",
+      "citationKey": "song2026progressiveavatars",
+      "method": "ProgressiveAvatars",
+      "route": "rendering"
+    },
+    {
+      "id": "zhang2026embodiedhead",
+      "citationKey": "zhang2026embodiedhead",
+      "method": "EmbodiedHead",
+      "route": "rendering"
+    },
+    {
+      "id": "yang2026gaussianemotalker",
+      "citationKey": "yang2026gaussianemotalker",
+      "method": "GaussianEmoTalker",
+      "route": "rendering"
+    },
+    {
+      "id": "hong2026efficientsync",
+      "citationKey": "hong2026efficientsync",
+      "method": "EfficientSync",
+      "route": "rendering"
+    },
+    {
+      "id": "wang2026vibeavatar",
+      "citationKey": "wang2026vibeavatar",
+      "method": "VibeAvatar",
+      "route": "rendering"
+    },
+    {
+      "id": "avtr1_2026",
+      "citationKey": "avtr1_2026",
+      "method": "AVTR-1",
+      "route": "rendering"
+    },
+    {
+      "id": "wang2026talklikeyou",
+      "citationKey": "wang2026talklikeyou",
+      "method": "Talk Like You",
+      "route": "rendering"
+    },
+    {
+      "id": "huang2026flowactr2",
+      "citationKey": "huang2026flowactr2",
+      "method": "FlowAct-R2",
+      "route": "diffusion"
+    },
+    {
+      "id": "sun2026streamavatar",
+      "citationKey": "sun2026streamavatar",
+      "method": "StreamAvatar",
+      "route": "diffusion"
+    },
+    {
+      "id": "gan2026taomate",
+      "citationKey": "gan2026taomate",
+      "method": "TaoMate",
+      "route": "diffusion"
+    },
+    {
+      "id": "zhang2026vidus1realtimeinteractive",
+      "citationKey": "zhang2026vidus1realtimeinteractive",
+      "method": "Vidu S1",
+      "route": "diffusion"
+    },
+    {
+      "id": "li2026avatarforever",
+      "citationKey": "li2026avatarforever",
+      "method": "Avatar-Forever",
+      "route": "diffusion"
+    },
+    {
+      "id": "cui2026avatarforcing",
+      "citationKey": "cui2026avatarforcing",
+      "method": "AvatarForcing",
+      "route": "diffusion"
+    },
+    {
+      "id": "huang2026dynaforcing",
+      "citationKey": "huang2026dynaforcing",
+      "method": "DynaForcing",
+      "route": "diffusion"
+    },
+    {
+      "id": "yang2026gloria",
+      "citationKey": "yang2026gloria",
+      "method": "Gloria",
+      "route": "diffusion"
+    },
+    {
+      "id": "song2026interactiveavatar",
+      "citationKey": "song2026interactiveavatar",
+      "method": "InteractiveAvatar",
+      "route": "diffusion"
+    },
+    {
+      "id": "zhen2026soulx",
+      "citationKey": "zhen2026soulx",
+      "method": "SoulX-LiveAct",
+      "route": "diffusion"
+    },
+    {
+      "id": "zhang2026exomni2d",
+      "citationKey": "DBLP:journals/corr/abs-2608-10720",
+      "method": "Ex-Omni-2D",
+      "route": "diffusion"
+    },
+    {
+      "id": "zhang2026liveanimate",
+      "citationKey": "zhang2026liveanimate",
+      "method": "LiveAnimate",
+      "route": "diffusion"
+    },
+    {
+      "id": "wang2026read",
+      "citationKey": "wang2026read",
+      "method": "READ",
+      "route": "diffusion"
+    },
+    {
+      "id": "yu2026soulx",
+      "citationKey": "yu2026soulx",
+      "method": "SoulX-FlashHead",
+      "route": "diffusion"
+    },
+    {
+      "id": "liu2026turbotalk",
+      "citationKey": "liu2026turbotalk",
+      "method": "TurboTalk",
+      "route": "diffusion"
+    },
+    {
+      "id": "huang2026video",
+      "citationKey": "huang2026video",
+      "method": "Wan-Streamer v0.3",
+      "route": "diffusion"
+    },
+    {
+      "id": "meng2026echotorrent",
+      "citationKey": "meng2026echotorrent",
+      "method": "EchoTorrent",
+      "route": "diffusion"
+    },
+    {
+      "id": "li2026everanimate",
+      "citationKey": "li2026everanimate",
+      "method": "EverAnimate",
+      "route": "diffusion"
+    },
+    {
+      "id": "li2026hallo",
+      "citationKey": "li2026hallo",
+      "method": "Hallo-Live",
+      "route": "diffusion"
+    },
+    {
+      "id": "cho2026lip",
+      "citationKey": "cho2026lip",
+      "method": "Lip Forcing",
+      "route": "diffusion"
+    },
+    {
+      "id": "an2026motar",
+      "citationKey": "an2026motar",
+      "method": "Motar",
+      "route": "diffusion"
+    },
+    {
+      "id": "li2026personalive",
+      "citationKey": "li2026personalive",
+      "method": "PersonaLive",
+      "route": "diffusion"
+    },
+    {
+      "id": "zhang2026vidus2",
+      "citationKey": "zhang2026vidus2",
+      "method": "Vidu S2",
+      "route": "diffusion"
+    },
+    {
+      "id": "weng2026eartalking",
+      "citationKey": "weng2026eartalking",
+      "method": "EARTalking",
+      "route": "autoregressive"
+    },
+    {
+      "id": "tan2025fixtalk",
+      "citationKey": "tan2025fixtalk",
+      "method": "FixTalk",
+      "route": "rendering"
+    },
+    {
+      "id": "chang2025enhancing",
+      "citationKey": "chang2025enhancing",
+      "method": "ViVFace",
+      "route": "gan"
+    },
+    {
+      "id": "guo2025arig",
+      "citationKey": "guo2025arig",
+      "method": "ARIG",
+      "route": "rendering"
+    },
+    {
+      "id": "li2025ditto",
+      "citationKey": "li2025ditto",
+      "method": "Ditto",
+      "route": "rendering"
+    },
+    {
+      "id": "tang2025real",
+      "citationKey": "tang2025real",
+      "method": "RAD-NeRF",
+      "route": "rendering"
+    },
+    {
+      "id": "iandola2025squeezeme",
+      "citationKey": "iandola2025squeezeme",
+      "method": "SqueezeMe",
+      "route": "rendering"
+    },
+    {
+      "id": "chen2025taoavatar",
+      "citationKey": "chen2025taoavatar",
+      "method": "TaoAvatar",
+      "route": "rendering"
+    },
+    {
+      "id": "chen2025dystream",
+      "citationKey": "chen2025dystream",
+      "method": "DyStream",
+      "route": "rendering"
+    },
+    {
+      "id": "ki2025float",
+      "citationKey": "ki2025float",
+      "method": "FLOAT",
+      "route": "rendering"
+    },
+    {
+      "id": "zhang2025guava",
+      "citationKey": "zhang2025guava",
+      "method": "GUAVA",
+      "route": "rendering"
+    },
+    {
+      "id": "he2025lam",
+      "citationKey": "he2025lam",
+      "method": "LAM",
+      "route": "rendering"
+    },
+    {
+      "id": "zhen2025teller",
+      "citationKey": "zhen2025teller",
+      "method": "Teller",
+      "route": "rendering"
+    },
+    {
+      "id": "xu2026vasa",
+      "citationKey": "xu2026vasa",
+      "method": "VASA-3D",
+      "route": "rendering"
+    },
+    {
+      "id": "qi2025chatanyone",
+      "citationKey": "qi2025chatanyone",
+      "method": "ChatAnyone",
+      "route": "rendering"
+    },
+    {
+      "id": "li2025moda",
+      "citationKey": "li2025moda",
+      "method": "MoDA",
+      "route": "rendering"
+    },
+    {
+      "id": "wang2025emotivetalk",
+      "citationKey": "wang2025emotivetalk",
+      "method": "EmotiveTalk",
+      "route": "diffusion"
+    },
+    {
+      "id": "yu2025llia",
+      "citationKey": "yu2025llia",
+      "method": "LLIA",
+      "route": "diffusion"
+    },
+    {
+      "id": "chern2025livetalk",
+      "citationKey": "chern2025livetalk",
+      "method": "LiveTalk",
+      "route": "diffusion"
+    },
+    {
+      "id": "shen2026soulxflashtalkrealtimeinfinitestreaming",
+      "citationKey": "shen2026soulxflashtalkrealtimeinfinitestreaming",
+      "method": "SoulX-FlashTalk",
+      "route": "diffusion"
+    },
+    {
+      "id": "hu2025unitalker",
+      "citationKey": "hu2025unitalker",
+      "method": "UniTalker",
+      "route": "diffusion"
+    },
+    {
+      "id": "cui2025hallo2",
+      "citationKey": "cui2025hallo2",
+      "method": "Hallo2",
+      "route": "diffusion"
+    },
+    {
+      "id": "DBLP:conf/cvpr/XuYZZJHJZCTL0L25",
+      "citationKey": "DBLP:conf/cvpr/XuYZZJHJZCTL0L25",
+      "method": "HunyuanPortrait",
+      "route": "diffusion"
+    },
+    {
+      "id": "li2025joyavatar",
+      "citationKey": "li2025joyavatar",
+      "method": "JoyAvatar",
+      "route": "diffusion"
+    },
+    {
+      "id": "huang2025live",
+      "citationKey": "huang2025live",
+      "method": "Live Avatar",
+      "route": "diffusion"
+    },
+    {
+      "id": "du2026rap",
+      "citationKey": "du2026rap",
+      "method": "RAP",
+      "route": "diffusion"
+    },
+    {
+      "id": "tu2025stableavatar",
+      "citationKey": "tu2025stableavatar",
+      "method": "StableAvatar",
+      "route": "diffusion"
+    },
+    {
+      "id": "xie2025x",
+      "citationKey": "xie2025x",
+      "method": "X-Streamer",
+      "route": "diffusion"
+    },
+    {
+      "id": "zhong2025fada",
+      "citationKey": "zhong2025fada",
+      "method": "FADA",
+      "route": "diffusion"
+    },
+    {
+      "id": "yang2025infinitetalk",
+      "citationKey": "yang2025infinitetalk",
+      "method": "InfiniteTalk",
+      "route": "diffusion"
+    },
+    {
+      "id": "lin2025omnihuman",
+      "citationKey": "lin2025omnihuman",
+      "method": "OmniHuman-1",
+      "route": "diffusion"
+    },
+    {
+      "id": "deng2026fluentavatarflickerfreetalkingheadanimation",
+      "citationKey": "deng2026fluentavatarflickerfreetalkingheadanimation",
+      "method": "AvatarSync",
+      "route": "autoregressive"
+    },
+    {
+      "id": "chen2025midas",
+      "citationKey": "chen2025midas",
+      "method": "MIDAS",
+      "route": "autoregressive"
+    },
+    {
+      "id": "pang2025unimo",
+      "citationKey": "pang2025unimo",
+      "method": "UniMo",
+      "route": "autoregressive"
+    },
+    {
+      "id": "tan2024edtalk",
+      "citationKey": "tan2024edtalk",
+      "method": "EDTalk",
+      "route": "rendering"
+    },
+    {
+      "id": "tan2024flowvqtalker",
+      "citationKey": "tan2024flowvqtalker",
+      "method": "FlowVQTalker",
+      "route": "gan"
+    },
+    {
+      "id": "zhang2024musetalk",
+      "citationKey": "zhang2024musetalk",
+      "method": "MuseTalk",
+      "route": "gan"
+    },
+    {
+      "id": "deng2024ramavatar",
+      "citationKey": "deng2024ramavatar",
+      "method": "RAM-Avatar",
+      "route": "rendering"
+    },
+    {
+      "id": "guan2024resyncer",
+      "citationKey": "guan2024resyncer",
+      "method": "ReSyncer",
+      "route": "gan"
+    },
+    {
+      "id": "cho2024gaussiantalker",
+      "citationKey": "cho2024gaussiantalker",
+      "method": "GaussianTalker",
+      "route": "rendering"
+    },
+    {
+      "id": "shao2024splattingavatar",
+      "citationKey": "shao2024splattingavatar",
+      "method": "SplattingAvatar",
+      "route": "rendering"
+    },
+    {
+      "id": "qian20243dgs",
+      "citationKey": "qian20243dgs",
+      "method": "3DGS-Avatar",
+      "route": "rendering"
+    },
+    {
+      "id": "chu2024generalizable",
+      "citationKey": "chu2024generalizable",
+      "method": "GAGAvatar",
+      "route": "rendering"
+    },
+    {
+      "id": "chugpavatar",
+      "citationKey": "chugpavatar",
+      "method": "GPAvatar",
+      "route": "rendering"
+    },
+    {
+      "id": "dhamo2024headgas",
+      "citationKey": "dhamo2024headgas",
+      "method": "HeadGaS",
+      "route": "rendering"
+    },
+    {
+      "id": "guo2024liveportrait",
+      "citationKey": "guo2024liveportrait",
+      "method": "LivePortrait",
+      "route": "rendering"
+    },
+    {
+      "id": "peng2024synctalk",
+      "citationKey": "peng2024synctalk",
+      "method": "SyncTalk",
+      "route": "rendering"
+    },
+    {
+      "id": "xu2024vasa",
+      "citationKey": "xu2024vasa",
+      "method": "VASA-1",
+      "route": "rendering"
+    },
+    {
+      "id": "xiang2024flashavatar",
+      "citationKey": "xiang2024flashavatar",
+      "method": "FlashAvatar",
+      "route": "rendering"
+    },
+    {
+      "id": "qian2024gaussianavatars",
+      "citationKey": "qian2024gaussianavatars",
+      "method": "GaussianAvatars",
+      "route": "rendering"
+    },
+    {
+      "id": "hu2024animate",
+      "citationKey": "hu2024animate",
+      "method": "Animate Anyone",
+      "route": "diffusion"
+    },
+    {
+      "id": "tian2024emo",
+      "citationKey": "tian2024emo",
+      "method": "EMO",
+      "route": "diffusion"
+    },
+    {
+      "id": "ao2024body",
+      "citationKey": "ao2024body",
+      "method": "Body of Her",
+      "route": "autoregressive"
+    },
+    {
+      "id": "zhang2023dinet",
+      "citationKey": "zhang2023dinet",
+      "method": "DINet",
+      "route": "rendering"
+    },
+    {
+      "id": "zhong2023identity",
+      "citationKey": "zhong2023identity",
+      "method": "IP-LAP",
+      "route": "rendering"
+    },
+    {
+      "id": "ki2023stylelipsync",
+      "citationKey": "ki2023stylelipsync",
+      "method": "StyleLipSync",
+      "route": "gan"
+    },
+    {
+      "id": "guan2023stylesync",
+      "citationKey": "guan2023stylesync",
+      "method": "StyleSync",
+      "route": "gan"
+    },
+    {
+      "id": "wang2023seeing",
+      "citationKey": "wang2023seeing",
+      "method": "TalkLip",
+      "route": "gan"
+    },
+    {
+      "id": "wang2023efficient",
+      "citationKey": "wang2023efficient",
+      "method": "VPGC",
+      "route": "gan"
+    },
+    {
+      "id": "gan2023eat",
+      "citationKey": "gan2023eat",
+      "method": "EAT",
+      "route": "rendering"
+    },
+    {
+      "id": "li2023efficient",
+      "citationKey": "li2023efficient",
+      "method": "ER-NeRF",
+      "route": "rendering"
+    },
+    {
+      "id": "zheng2023avatarrex",
+      "citationKey": "zheng2023avatarrex",
+      "method": "AvatarReX",
+      "route": "rendering"
+    },
+    {
+      "id": "athar2023flame",
+      "citationKey": "athar2023flame",
+      "method": "FLAME-in-NeRF",
+      "route": "rendering"
+    },
+    {
+      "id": "song2023rc",
+      "citationKey": "song2023rc",
+      "method": "RC-SMPL",
+      "route": "rendering"
+    },
+    {
+      "id": "wang2023styleavatar",
+      "citationKey": "wang2023styleavatar",
+      "method": "StyleAvatar",
+      "route": "rendering"
+    },
+    {
+      "id": "cheng2022videoretalking",
+      "citationKey": "cheng2022videoretalking",
+      "method": "VideoReTalking",
+      "route": "gan"
+    },
+    {
+      "id": "park2022synctalkface",
+      "citationKey": "park2022synctalkface",
+      "method": "SyncTalkFace",
+      "route": "gan"
+    },
+    {
+      "id": "hong2022headnerf",
+      "citationKey": "hong2022headnerf",
+      "method": "HeadNeRF",
+      "route": "rendering"
+    },
+    {
+      "id": "wang2022latent",
+      "citationKey": "wang2022latent",
+      "method": "LIA",
+      "route": "rendering"
+    },
+    {
+      "id": "Zhao_2022_CVPR",
+      "citationKey": "Zhao_2022_CVPR",
+      "method": "TPSMM",
+      "route": "rendering"
+    },
+    {
+      "id": "lu2021live",
+      "citationKey": "lu2021live",
+      "method": "Live Speech Portraits",
+      "route": "gan"
+    },
+    {
+      "id": "zhou2021pose",
+      "citationKey": "zhou2021pose",
+      "method": "PC-AVS",
+      "route": "gan"
+    },
+    {
+      "id": "wang2021one",
+      "citationKey": "wang2021one",
+      "method": "Face-vid2vid",
+      "route": "rendering"
+    },
+    {
+      "id": "guo2021ad",
+      "citationKey": "guo2021ad",
+      "method": "AD-NeRF",
+      "route": "rendering"
+    },
+    {
+      "id": "richard2021audio",
+      "citationKey": "richard2021audio",
+      "method": "Audio/Gaze Codec Avatars",
+      "route": "rendering"
+    },
+    {
+      "id": "siarohin2021motion",
+      "citationKey": "siarohin2021motion",
+      "method": "MRAA",
+      "route": "rendering"
+    },
+    {
+      "id": "tripathy2021facegan",
+      "citationKey": "tripathy2021facegan",
+      "method": "FACEGAN",
+      "route": "gan"
+    },
+    {
+      "id": "meshry2021lsr",
+      "citationKey": "meshry2021lsr",
+      "method": "LSR",
+      "route": "gan"
+    },
+    {
+      "id": "min2022styletalker",
+      "citationKey": "min2022styletalker",
+      "method": "StyleTalker",
+      "route": "gan"
+    },
+    {
+      "id": "bounareli2022directions",
+      "citationKey": "bounareli2022directions",
+      "method": "FD / LOR",
+      "route": "gan"
+    },
+    {
+      "id": "bounareli2023stylemask",
+      "citationKey": "bounareli2023stylemask",
+      "method": "StyleMask",
+      "route": "gan"
+    },
+    {
+      "id": "bounareli2023hyperreenact",
+      "citationKey": "bounareli2023hyperreenact",
+      "method": "HyperReenact",
+      "route": "gan"
+    },
+    {
+      "id": "yu2023probabilistic",
+      "citationKey": "yu2023probabilistic",
+      "method": "A2V Priors",
+      "route": "gan"
+    },
+    {
+      "id": "shen2023difftalk",
+      "citationKey": "shen2023difftalk",
+      "method": "DiffTalk",
+      "route": "diffusion"
+    },
+    {
+      "id": "stypulkowski2024diffusedheads",
+      "citationKey": "stypulkowski2024diffusedheads",
+      "method": "Diffused Heads",
+      "route": "diffusion"
+    },
+    {
+      "id": "karras2023dreampose",
+      "citationKey": "karras2023dreampose",
+      "method": "DreamPose",
+      "route": "diffusion"
+    },
+    {
+      "id": "wang2024disco",
+      "citationKey": "wang2024disco",
+      "method": "DisCo",
+      "route": "diffusion"
+    },
+    {
+      "id": "xu2024magicanimate",
+      "citationKey": "xu2024magicanimate",
+      "method": "MagicAnimate",
+      "route": "diffusion"
+    },
+    {
+      "id": "wei2024aniportrait",
+      "citationKey": "wei2024aniportrait",
+      "method": "AniPortrait",
+      "route": "diffusion"
+    },
+    {
+      "id": "xie2024xportrait",
+      "citationKey": "xie2024xportrait",
+      "method": "X-Portrait",
+      "route": "diffusion"
+    },
+    {
+      "id": "wang2024vexpress",
+      "citationKey": "wang2024vexpress",
+      "method": "V-Express",
+      "route": "diffusion"
+    },
+    {
+      "id": "xu2024hallo",
+      "citationKey": "xu2024hallo",
+      "method": "Hallo",
+      "route": "diffusion"
+    },
+    {
+      "id": "chen2025echomimic",
+      "citationKey": "chen2025echomimic",
+      "method": "EchoMimic",
+      "route": "diffusion"
+    },
+    {
+      "id": "jiang2024loopy",
+      "citationKey": "jiang2024loopy",
+      "method": "Loopy",
+      "route": "diffusion"
+    },
+    {
+      "id": "cui2024hallo3",
+      "citationKey": "cui2024hallo3",
+      "method": "Hallo3",
+      "route": "diffusion"
+    },
+    {
+      "id": "zheng2024memo",
+      "citationKey": "zheng2024memo",
+      "method": "MEMO",
+      "route": "diffusion"
+    },
+    {
+      "id": "mukhopadhyay2024diff2lip",
+      "citationKey": "mukhopadhyay2024diff2lip",
+      "method": "Diff2Lip",
+      "route": "diffusion"
+    },
+    {
+      "id": "li2024latentsync",
+      "citationKey": "li2024latentsync",
+      "method": "LatentSync",
+      "route": "diffusion"
+    },
+    {
+      "id": "wang2025fantasytalking",
+      "citationKey": "wang2025fantasytalking",
+      "method": "FantasyTalking",
+      "route": "diffusion"
+    },
+    {
+      "id": "gan2025omniavatar",
+      "citationKey": "gan2025omniavatar",
+      "method": "OmniAvatar",
+      "route": "diffusion"
+    },
+    {
+      "id": "DBLP:conf/nips/KongGZKWCCL25",
+      "citationKey": "DBLP:conf/nips/KongGZKWCCL25",
+      "method": "MultiTalk",
+      "route": "diffusion"
+    }
+  ],
+  "mechanismGroups": 14,
+  "backgroundOmission": "Dense conditioned video",
+  "addedCatalogueIds": [
+    "fenakel2026ganimate",
+    "liu2026fasttalk",
+    "song2026progressiveavatars",
+    "yang2026gaussianemotalker",
+    "avtr1_2026",
+    "chang2025enhancing",
+    "DBLP:conf/cvpr/XuYZZJHJZCTL0L25",
+    "zhong2023identity",
+    "athar2023flame",
+    "richard2021audio",
+    "siarohin2021motion",
+    "tripathy2021facegan",
+    "meshry2021lsr",
+    "min2022styletalker",
+    "bounareli2022directions",
+    "yu2023probabilistic",
+    "shen2023difftalk",
+    "stypulkowski2024diffusedheads",
+    "karras2023dreampose",
+    "wang2024disco",
+    "xu2024magicanimate",
+    "wei2024aniportrait",
+    "xie2024xportrait",
+    "wang2024vexpress",
+    "xu2024hallo",
+    "chen2025echomimic",
+    "jiang2024loopy",
+    "cui2024hallo3",
+    "zheng2024memo",
+    "mukhopadhyay2024diff2lip",
+    "li2024latentsync",
+    "wang2025fantasytalking",
+    "gan2025omniavatar",
+    "DBLP:conf/nips/KongGZKWCCL25"
+  ],
+  "routeChanges": [
+    {
+      "id": "zhang2026vidus1realtimeinteractive",
+      "method": "Vidu S1",
+      "before": "foundations",
+      "after": "diffusion"
+    },
+    {
+      "id": "tan2025fixtalk",
+      "method": "FixTalk",
+      "before": "gan",
+      "after": "rendering"
+    },
+    {
+      "id": "hu2025unitalker",
+      "method": "UniTalker",
+      "before": "rendering",
+      "after": "diffusion"
+    },
+    {
+      "id": "deng2026fluentavatarflickerfreetalkingheadanimation",
+      "method": "AvatarSync",
+      "before": "context",
+      "after": "autoregressive"
+    },
+    {
+      "id": "tan2024edtalk",
+      "method": "EDTalk",
+      "before": "gan",
+      "after": "rendering"
+    },
+    {
+      "id": "deng2024ramavatar",
+      "method": "RAM-Avatar",
+      "before": "gan",
+      "after": "rendering"
+    },
+    {
+      "id": "zhang2023dinet",
+      "method": "DINet",
+      "before": "gan",
+      "after": "rendering"
+    },
+    {
+      "id": "gan2023eat",
+      "method": "EAT",
+      "before": "gan",
+      "after": "rendering"
+    },
+    {
+      "id": "luo2026omniresponse",
+      "method": "OmniResponse",
+      "before": "rendering",
+      "after": "context"
+    }
+  ]
+}

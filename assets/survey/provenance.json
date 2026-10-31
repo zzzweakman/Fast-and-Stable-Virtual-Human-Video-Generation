@@ -1,11 +1,11 @@
 {
   "surveyPdf": {
-    "path": "assets/survey/survey-measured-v11.pdf",
-    "source": "virtual-human-survey/1028_astra_v0/main.tex",
-    "pages": 43,
-    "snapshot": "VH-MEASURED-V11",
-    "sha256": "fd54f70e71a5803b5e2aca1396b4821e76a9cd7a3d9ea8df4de9c278b8c8d2ec",
-    "note": "Concise dataset and measurement descriptions, with unchanged runtime, HDTF and StreamEval results and 268 cited references."
+    "path": "assets/survey/survey-measured-v12.pdf",
+    "source": "virtual-human-survey/1031_integrated_revision/main.tex",
+    "pages": 46,
+    "snapshot": "VH-MEASURED-V12",
+    "sha256": "50c74f6462740895912c42b88f951df50bbdb9104db87650b68517e9796ad51f",
+    "note": "31 October integrated revision v4: full 136-method timeline, 14 representative mechanism groups, and 293 cited references. Measured values are unchanged."
   },
   "figures": {
     "fig1_fast_stable": {
@@ -52,7 +52,7 @@
     "builtAt": "2026-10-08T11:52:20Z",
     "note": "Preserved 48-page draft reviewed on 9 October 2026."
   },
-  "figureNote": "Legacy standalone website previews remain archived. The current manuscript includes the returned author-provided diagrams and attributed source-failure panels, recorded in data/snapshots/2026-10-09-final/.",
+  "figureNote": "Current previews reproduce the 31 October v4 manuscript figures. Earlier standalone previews and manuscript provenance remain archived.",
   "earlierRevisionPdf": {
     "path": "assets/survey/survey-2026-10-09.pdf",
     "source": "virtual-human-survey/1008_overleaf/main_revised_1009.pdf",
@@ -139,5 +139,31 @@
     "snapshot": "VH-MEASURED-V10",
     "sha256": "319dafe24d509ce40f2f7771721798b0e789cf149e1a72cdf6f5abb9446ffa2b",
     "note": "Runtime, HDTF and StreamEval revision with 268 cited references. StreamEval retains four content metrics and excludes unresolved synchronization and dependent aggregate scores."
+  },
+  "previousMeasuredV11": {
+    "path": "assets/survey/survey-measured-v11.pdf",
+    "source": "virtual-human-survey/1028_astra_v0/main.tex",
+    "pages": 43,
+    "snapshot": "VH-MEASURED-V11",
+    "sha256": "fd54f70e71a5803b5e2aca1396b4821e76a9cd7a3d9ea8df4de9c278b8c8d2ec",
+    "note": "Concise dataset and measurement descriptions, with unchanged runtime, HDTF and StreamEval results and 268 cited references."
+  },
+  "currentFigures": {
+    "timeline": {
+      "path": "assets/survey/timeline-2026-10-31.png",
+      "pdf": "assets/survey/timeline-2026-10-31.pdf",
+      "source": "1031_integrated_revision/figures/02_timeline.pdf",
+      "methods": 136,
+      "paperFigure": 3,
+      "paperPage": 4
+    },
+    "taxonomy": {
+      "path": "assets/survey/taxonomy-2026-10-31.png",
+      "pdf": "assets/survey/taxonomy-2026-10-31.pdf",
+      "source": "1031_integrated_revision/figures/taxonomy_classification.pdf",
+      "mechanismGroups": 14,
+      "paperFigure": 4,
+      "paperPage": 6
+    }
   }
 }
